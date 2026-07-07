@@ -7,6 +7,7 @@ import Upload from "./pages/Upload";
 import Process from "./pages/Process";
 import Research from "./pages/Research";
 import Board from "./pages/Board";
+import Cohort from "./pages/Cohort";
 import "./pajamas.css";
 
 // HashRouter: static hosting (GitLab Pages / Netlify) with no server rewrite.
@@ -17,6 +18,7 @@ const router = createHashRouter([
   { path: "/report/:chartNo", element: <ReportPage /> },
   { path: "/research", element: <Research /> },
   { path: "/board/:chartNo", element: <Board /> },
+  { path: "/cohort", element: <Cohort /> },
 ]);
 
 createRoot(document.getElementById("root")!).render(

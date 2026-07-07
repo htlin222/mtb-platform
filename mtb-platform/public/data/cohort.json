@@ -1,0 +1,39 @@
+{
+  "title": "Real-world clinical actionability of comprehensive genomic profiling in advanced solid tumors",
+  "subtitle": "Prospective single-center pan-cancer cohort · ESMO 2026 (poster)",
+  "n": 62,
+  "cancerTypes": 11,
+  "months": 8,
+  "panel": "TruSight Oncology 500 (523-gene) · DRAGEN v2.6",
+  "biomarkers": [
+    { "label": "TMB-High (≥10 mut/Mb)", "n": 8, "pct": 12.9, "signal": true },
+    { "label": "TMB-Intermediate", "n": 19, "pct": 30.6, "signal": false },
+    { "label": "MSI-High", "n": 2, "pct": 3.2, "signal": true },
+    { "label": "HRD-positive (GIS ≥42)", "n": 6, "pct": 9.7, "signal": true }
+  ],
+  "therapyMatch": [
+    { "label": "On-label match (OncoKB L1/2/3A)", "n": 21, "pct": 33.9, "tone": "success" },
+    { "label": "Off-label match (L3B/4)", "n": 38, "pct": 61.3, "tone": "info" },
+    { "label": "Any therapy match", "n": 48, "pct": 77.4, "tone": "success" },
+    { "label": "Resistance flag (R1/R2)", "n": 6, "pct": 9.7, "tone": "danger" }
+  ],
+  "topGenes": [
+    { "gene": "TP53", "n": 26 },
+    { "gene": "KRAS", "n": 16 },
+    { "gene": "PIK3CA", "n": 16 },
+    { "gene": "PTEN", "n": 11 },
+    { "gene": "ARID1A", "n": 9 },
+    { "gene": "APC", "n": 7 },
+    { "gene": "ESR1", "n": 6 }
+  ],
+  "distribution": [
+    { "type": "Endometrial", "n": 16 },
+    { "type": "Breast", "n": 14 },
+    { "type": "Colorectal", "n": 9 },
+    { "type": "NSCLC", "n": 8 },
+    { "type": "Ovarian", "n": 7 },
+    { "type": "Others", "n": 8 }
+  ],
+  "marquee": "A BRCA1 large rearrangement (exon 7 loss, fold change 0.15) in an HRD-positive breast cancer supported on-label PARP inhibition. OncoKB resistance variants (KRAS G12D, NRAS G13D/Q61L) flagged anti-EGFR ineligibility in 6 colorectal cases.",
+  "conclusion": "Routine pan-cancer CGP at a Taiwanese tertiary cancer center yielded an on-label therapy match in roughly 1 in 3 advanced solid tumors — consistent with international cohorts. Patient reports openly browseable."
+}

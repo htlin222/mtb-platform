@@ -1,0 +1,28 @@
+##fileformat=VCFv4.2
+##source=TSO500-demo
+##reference=GRCh37
+##FILTER=<ID=PASS,Description="All filters passed">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth">
+##INFO=<ID=GermlineStatus,Number=1,Type=String,Description="Germline classification">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=AF,Number=A,Type=Float,Description="Allele fraction">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read depth">
+##contig=<ID=chr1,length=249250621>
+##contig=<ID=chr2,length=243199373>
+##contig=<ID=chr3,length=198022430>
+##contig=<ID=chr7,length=159138663>
+##contig=<ID=chr12,length=133851895>
+##contig=<ID=chr17,length=81195210>
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	DEMO_dna
+chr7	140453136	.	A	T	.	PASS	DP=312;GermlineStatus=Somatic	GT:AF:DP	0/1:0.341:312
+chr7	55259515	.	T	G	.	PASS	DP=288;GermlineStatus=Somatic	GT:AF:DP	0/1:0.286:288
+chr12	25398285	.	C	A	.	PASS	DP=254;GermlineStatus=Somatic	GT:AF:DP	0/1:0.223:254
+chr3	178952085	.	A	G	.	PASS	DP=301;GermlineStatus=Somatic	GT:AF:DP	0/1:0.312:301
+chr2	209113112	.	C	T	.	PASS	DP=199;GermlineStatus=Somatic	GT:AF:DP	0/1:0.187:199
+chr17	7578406	.	C	T	.	PASS	DP=276;GermlineStatus=Somatic	GT:AF:DP	0/1:0.402:276
+chr17	41245466	.	G	A	.	PASS	DP=241;GermlineStatus=Somatic	GT:AF:DP	0/1:0.298:241
+chr1	115256530	.	T	C	.	PASS	DP=210;GermlineStatus=Somatic	GT:AF:DP	0/1:0.155:210
+chr1	11205058	.	C	T	.	PASS	DP=200;GermlineStatus=Germline_DB	GT:AF:DP	0/1:0.501:200
+chr5	112175770	.	C	T	.	PASS	DP=233;GermlineStatus=Somatic	GT:AF:DP	0/1:0.264:233
+chr9	21971120	.	G	A	.	PASS	DP=180;GermlineStatus=Somatic	GT:AF:DP	0/1:0.211:180
+chr4	1807894	.	G	A	.	PASS	DP=190;GermlineStatus=Somatic	GT:AF:DP	0/1:0.176:190

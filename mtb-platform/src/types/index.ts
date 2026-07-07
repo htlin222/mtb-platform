@@ -36,6 +36,7 @@ export interface Variant {
   resistanceLevel: string | null;
   treatments: Treatment[];
   narrative?: string; // curated markdown narrative, when available
+  vaf?: number; // allele fraction (from a parsed VCF)
 }
 
 // ── Biomarkers ─────────────────────────────────────────────────────────────

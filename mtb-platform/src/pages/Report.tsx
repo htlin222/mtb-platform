@@ -84,14 +84,26 @@ export default function ReportPage() {
         <GlBadge variant={signed ? "success" : status.variant}>{signed ? "Signed off" : status.label}</GlBadge>
       </div>
       <div className="gl-meta">
-        <span className="mono gl-text-xs">{patient.chartNo}</span>
-        <span className="dot">·</span>
-        <span>{patient.sex === "F" ? "Female" : "Male"}, {patient.age}</span>
-        <span className="dot">·</span>
-        <span style={{ color: "var(--text)" }}>{patient.cancerType}</span>
-        <GlBadge variant="neutral">{patient.stage}</GlBadge>
-        <span className="dot">·</span>
-        <span>{patient.team} · {patient.attending}</span>
+        {patient.chartNo === "live" ? (
+          <>
+            <span className="mono gl-text-xs">{patient.sampleId}</span>
+            <span className="dot">·</span>
+            <span style={{ color: "var(--text)" }}>{patient.cancerType}</span>
+            <span className="dot">·</span>
+            <span>{patient.panel}</span>
+          </>
+        ) : (
+          <>
+            <span className="mono gl-text-xs">{patient.chartNo}</span>
+            <span className="dot">·</span>
+            <span>{patient.sex === "F" ? "Female" : "Male"}, {patient.age}</span>
+            <span className="dot">·</span>
+            <span style={{ color: "var(--text)" }}>{patient.cancerType}</span>
+            <GlBadge variant="neutral">{patient.stage}</GlBadge>
+            <span className="dot">·</span>
+            <span>{patient.team} · {patient.attending}</span>
+          </>
+        )}
       </div>
 
       {/* decision bar: select findings for the board & sign off */}
