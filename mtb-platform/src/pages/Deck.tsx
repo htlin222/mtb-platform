@@ -75,7 +75,7 @@ export default function Deck() {
       if (!res.ok) { setNarrateState("error"); return; }
       const data = await res.json();
       const text = data.narration || "";
-      setNarration({ evidence: text, recommendation: text });
+      setNarration({ evidence: text });
       setNarrateState("idle");
     } catch { setNarrateState("error"); }
   }
@@ -155,9 +155,6 @@ function renderSlide(
           <ul className="gl-slide-list">
             {slide.bullets?.map((b, i) => <li key={i}>{b}</li>)}
           </ul>
-          {slide.kind === "recommendation" && (
-            <NarrationBlock kind="recommendation" narration={narration} narrateState={narrateState} draftNarration={draftNarration} />
-          )}
         </div>
       );
 

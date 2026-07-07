@@ -8,7 +8,11 @@ export default function Redacted({ children }: { children: ReactNode }) {
     <span
       className={`gl-redacted${revealed ? " revealed" : ""}`}
       title={revealed ? "Click to hide" : "Click to reveal"}
+      role="button"
+      tabIndex={0}
+      aria-pressed={revealed}
       onClick={() => setRevealed((r) => !r)}
+      onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); setRevealed((r) => !r); } }}
     >
       {children}
     </span>

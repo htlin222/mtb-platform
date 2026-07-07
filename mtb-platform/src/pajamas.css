@@ -524,4 +524,7 @@ details.gl-disclosure[open] .gl-chevron { transform: rotate(90deg); }
     -webkit-print-color-adjust: exact; print-color-adjust: exact;
   }
   .gl-deck-print .gl-slide:last-child { break-after: auto; page-break-after: auto; }
+  /* Interactive controls must not leak into the printed clinical deliverable
+     (the drafted narration text is kept). */
+  .gl-deck-print .gl-button { display: none !important; }
 }
