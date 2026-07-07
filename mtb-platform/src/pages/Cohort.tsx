@@ -4,6 +4,8 @@ import { GlCard, GlBadge, ScaleIcon } from "../components/gl";
 import type { Report } from "../types";
 import { loadWorklist, loadReport } from "../lib/data";
 import Oncoprint from "../components/Oncoprint";
+import LollipopPlot from "../components/LollipopPlot";
+import { mutatedGenes } from "../lib/mutationMapper";
 
 interface CohortData {
   title: string; subtitle: string; n: number; cancerTypes: number; months: number; panel: string;
@@ -89,6 +91,8 @@ export default function Cohort() {
         </GlCard>
       </div>
 
+      {reports.length > 0 && <CohortMutationMapper reports={reports} />}
+
       {reports.length > 0 && (
         <div style={{ marginTop: 16 }}>
           <GlCard header="Sample matrix (oncoprint)">
@@ -116,6 +120,33 @@ export default function Cohort() {
           </div>
         </GlCard>
       </div>
+    </div>
+  );
+}
+
+function CohortMutationMapper({ reports }: { reports: Report[] }) {
+  const genes = mutatedGenes(reports);
+  const [gene, setGene] = useState(genes[0]?.gene ?? "");
+  if (!genes.length) return null;
+  const active = genes.some((g) => g.gene === gene) ? gene : genes[0].gene;
+  return (
+    <div style={{ marginTop: 16 }}>
+      <GlCard header="Mutation mapper (lollipop)">
+        <p className="gl-text-xs gl-text-muted" style={{ margin: "0 0 12px" }}>
+          Cohort-wide protein map of point mutations per gene — recurrent residues cluster into
+          hotspots against Pfam domains. In the spirit of the cBioPortal Mutation Mapper.
+        </p>
+        <div className="gl-row gl-wrap" style={{ gap: 6, marginBottom: 14 }}>
+          {genes.map((g) => (
+            <button key={g.gene} onClick={() => setGene(g.gene)}
+              className={`gl-chip${g.gene === active ? " on" : ""}`}
+              style={{ cursor: "pointer" }}>
+              <span className="mono">{g.gene}</span> <span style={{ opacity: 0.7 }}>{g.count}</span>
+            </button>
+          ))}
+        </div>
+        <LollipopPlot gene={active} reports={reports} height={196} />
+      </GlCard>
     </div>
   );
 }

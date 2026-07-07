@@ -159,7 +159,7 @@ function PanelPicker({ selected, setSelected, onConvene }: {
   selected: Set<string>; setSelected: (s: Set<string>) => void; onConvene: () => void;
 }) {
   const cats = ["clinical", "molecular", "pharmacy", "trials"] as Category[];
-  const toggle = (id: string) => { const n = new Set(selected); n.has(id) ? n.delete(id) : n.add(id); setSelected(n); };
+  const toggle = (id: string) => { const n = new Set(selected); if (n.has(id)) n.delete(id); else n.add(id); setSelected(n); };
   return (
     <div style={{ marginTop: 20 }}>
       <div className="gl-row gl-center gl-between" style={{ marginBottom: 12 }}>

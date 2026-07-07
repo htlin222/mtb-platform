@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "data": "node scripts/build-data.mjs",
+    "check:citations": "node scripts/check-citations.mjs",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",

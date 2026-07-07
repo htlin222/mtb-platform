@@ -63,7 +63,21 @@ export const onRequestPost = async (context: { request: Request; env: Env }): Pr
     const detail = await resp.text();
     return Response.json({ error: "upstream", status: resp.status, detail: detail.slice(0, 400) }, { status: 502 });
   }
-  const data = (await resp.json()) as { content?: { type: string; text?: string }[] };
+  const data = (await resp.json()) as {
+    stop_reason?: string;
+    content?: { type: string; text?: string }[];
+  };
+  // Claude may decline in a high-stakes clinical framing. A refusal returns HTTP
+  // 200, so guard on stop_reason and never render the refusal text as narration.
+  if (data.stop_reason === "refusal") {
+    return Response.json(
+      { error: "refusal", hint: "Claude declined to draft narration; present the findings directly." },
+      { status: 422 },
+    );
+  }
   const text = (data.content ?? []).filter((c) => c.type === "text").map((c) => c.text).join("").trim();
+  if (!text) {
+    return Response.json({ error: "empty", hint: "No narration text returned." }, { status: 422 });
+  }
   return Response.json({ narration: text });
 };

@@ -7,7 +7,7 @@ import { GlBadge } from "../components/gl";
 import Redacted from "../components/Redacted";
 import { buildSlides, type Slide } from "../lib/deck";
 
-type NarrateState = "idle" | "loading" | "unconfigured" | "error";
+type NarrateState = "idle" | "loading" | "unconfigured" | "refusal" | "error";
 
 // Full-screen, keyboard-navigable, printable case-presentation deck. Slides are
 // modelled by lib/deck.ts; this page renders them one at a time on screen (and
@@ -72,6 +72,11 @@ export default function Deck() {
         method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body),
       });
       if (res.status === 503) { setNarrateState("unconfigured"); return; }
+      if (res.status === 422) {
+        const data = await res.json().catch(() => ({}));
+        setNarrateState(data.error === "refusal" ? "refusal" : "error");
+        return;
+      }
       if (!res.ok) { setNarrateState("error"); return; }
       const data = await res.json();
       const text = data.narration || "";
@@ -243,6 +248,7 @@ function NarrationBlock({
             {narrateState === "loading" ? "Drafting…" : text ? "Redraft narration" : "✦ Draft narration"}
           </button>
           {narrateState === "unconfigured" && <span className="gl-text-xs gl-text-muted">Set the ANTHROPIC_API_KEY secret to enable.</span>}
+          {narrateState === "refusal" && <span className="gl-text-xs gl-text-muted">Model declined — present the findings on the slide directly.</span>}
           {narrateState === "error" && <span className="gl-text-xs" style={{ color: "var(--red-700)" }}>Could not reach the narration service.</span>}
         </div>
       )}

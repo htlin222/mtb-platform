@@ -166,7 +166,7 @@ export default function ReportPage() {
                       const on = selected.has(key);
                       return (
                         <button key={key}
-                          onClick={() => setSelected((s) => { const n = new Set(s); n.has(key) ? n.delete(key) : n.add(key); return n; })}
+                          onClick={() => setSelected((s) => { const n = new Set(s); if (n.has(key)) n.delete(key); else n.add(key); return n; })}
                           className="gl-badge"
                           style={{
                             cursor: "pointer", fontSize: 13, padding: "4px 10px",

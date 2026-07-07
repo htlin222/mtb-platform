@@ -2,6 +2,8 @@ import type { Report, Variant } from "../types";
 import { ESCAT_META, ESCAT_ORDER, KIND_LABEL, levelSense } from "../lib/format";
 import { GlBadge, ChevronRightIcon } from "./gl";
 import Markdown from "./Markdown";
+import LollipopPlot from "./LollipopPlot";
+import { proteinPosition } from "../lib/mutationMapper";
 
 export default function VariantsTab({ report }: { report: Report }) {
   const sorted = [...report.variants].sort(
@@ -14,15 +16,16 @@ export default function VariantsTab({ report }: { report: Report }) {
         {report.droppedVus > 0 && ` ${report.droppedVus} variant(s) of unknown significance filtered.`}
       </p>
       {sorted.map((v) => (
-        <VariantRow key={`${v.gene}-${v.alteration}`} v={v} />
+        <VariantRow key={`${v.gene}-${v.alteration}`} v={v} report={report} />
       ))}
     </div>
   );
 }
 
-function VariantRow({ v }: { v: Variant }) {
+function VariantRow({ v, report }: { v: Variant; report: Report }) {
   const meta = ESCAT_META[v.escat];
-  const hasDetail = !!v.narrative || v.treatments.length > 0;
+  const showLollipop = v.kind === "mutation" && proteinPosition(v.alteration) != null;
+  const hasDetail = !!v.narrative || v.treatments.length > 0 || showLollipop;
   const head = (
     <div className="gl-row gl-center gl-wrap" style={{ gap: 12, padding: 16 }}>
       {hasDetail && <span className="gl-chevron"><ChevronRightIcon /></span>}
@@ -43,6 +46,14 @@ function VariantRow({ v }: { v: Variant }) {
         <details className="gl-disclosure">
           <summary>{head}</summary>
           <div style={{ padding: 16, borderTop: "1px solid var(--border)" }}>
+            {showLollipop && (
+              <div style={{ marginBottom: 16 }}>
+                <div className="gl-text-xs gl-text-muted" style={{ marginBottom: 4 }}>
+                  Protein map · {v.gene} <span className="gl-text-muted">(cBioPortal-style lollipop)</span>
+                </div>
+                <LollipopPlot gene={v.gene} reports={[report]} />
+              </div>
+            )}
             {v.mutationEffect && (
               <p className="gl-text-sm gl-text-muted" style={{ margin: "0 0 8px" }}>
                 Mutation effect: {v.mutationEffect} · {meta.label}

@@ -56,7 +56,7 @@ export default function KnowledgeCard({
 
   // ── Live synthesis (Anthropic, graceful degradation) ──────────────────────
   const [synthesis, setSynthesis] = useState<string | null>(null);
-  const [state, setState] = useState<"idle" | "loading" | "unconfigured" | "error">("idle");
+  const [state, setState] = useState<"idle" | "loading" | "unconfigured" | "refusal" | "error">("idle");
 
   async function runLitReview() {
     setState("loading");
@@ -73,6 +73,11 @@ export default function KnowledgeCard({
         method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body),
       });
       if (res.status === 503) { setState("unconfigured"); return; }
+      if (res.status === 422) {
+        const data = await res.json().catch(() => ({}));
+        setState(data.error === "refusal" ? "refusal" : "error");
+        return;
+      }
       if (!res.ok) { setState("error"); return; }
       const data = await res.json();
       setSynthesis(data.synthesis || ""); setState("idle");
@@ -141,6 +146,7 @@ export default function KnowledgeCard({
           {state === "loading" ? "Appraising…" : synthesis ? "Re-run" : "✦ Run robust-lit-review"}
         </button>
         {state === "unconfigured" && <span className="gl-text-xs gl-text-muted">Set the ANTHROPIC_API_KEY secret to enable.</span>}
+        {state === "refusal" && <span className="gl-text-xs gl-text-muted">Model declined — showing the appraised GRADE summary above.</span>}
         {state === "error" && <span className="gl-text-xs" style={{ color: "var(--red-700)" }}>Could not reach the appraisal service.</span>}
       </div>
 

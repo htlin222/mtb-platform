@@ -8,7 +8,7 @@ import { GlCard, GlBadge } from "./gl";
 // when the key isn't configured or when running without the Function (dev).
 export default function AiSummary({ report }: { report: Report }) {
   const [text, setText] = useState<string | null>(null);
-  const [state, setState] = useState<"idle" | "loading" | "unconfigured" | "error">("idle");
+  const [state, setState] = useState<"idle" | "loading" | "unconfigured" | "refusal" | "error">("idle");
 
   async function generate() {
     setState("loading"); setText(null);
@@ -28,6 +28,11 @@ export default function AiSummary({ report }: { report: Report }) {
         method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(body),
       });
       if (res.status === 503) { setState("unconfigured"); return; }
+      if (res.status === 422) {
+        const data = await res.json().catch(() => ({}));
+        setState(data.error === "refusal" ? "refusal" : "error");
+        return;
+      }
       if (!res.ok) { setState("error"); return; }
       const data = await res.json();
       setText(data.summary || ""); setState("idle");
@@ -38,6 +43,22 @@ export default function AiSummary({ report }: { report: Report }) {
     <GlCard header={<>✦ MTB AI summary <GlBadge variant="info">Claude</GlBadge></>}>
       {text ? (
         <p className="gl-text-sm" style={{ whiteSpace: "pre-line", lineHeight: 1.6, margin: 0 }}>{text}</p>
+      ) : state === "refusal" ? (
+        <div className="gl-text-sm" style={{ margin: 0, lineHeight: 1.6 }}>
+          <p style={{ margin: "0 0 8px" }}>
+            Claude declined to synthesize a recommendation for this case. Showing the
+            grounded, deterministic findings instead — nothing is inferred beyond the
+            annotated data.
+          </p>
+          <ul className="gl-text-sm" style={{ margin: 0, paddingLeft: 18 }}>
+            {report.variants.filter(isActionable).map((v) => (
+              <li key={`${v.gene}-${v.alteration}`}>
+                <span className="mono gl-strong">{v.gene}</span> {v.alteration} · ESCAT {v.escat}
+                {v.treatments.length ? ` → ${v.treatments.map((t) => t.drugs).slice(0, 3).join(", ")}` : ""}
+              </li>
+            ))}
+          </ul>
+        </div>
       ) : (
         <p className="gl-text-sm gl-text-muted" style={{ margin: 0 }}>
           Generate a discussion summary from this patient's molecular findings.
@@ -49,6 +70,7 @@ export default function AiSummary({ report }: { report: Report }) {
           {state === "loading" ? "Generating…" : text ? "Regenerate" : "✦ Generate summary"}
         </button>
         {state === "unconfigured" && <span className="gl-text-xs gl-text-muted">Set the ANTHROPIC_API_KEY secret to enable.</span>}
+        {state === "refusal" && <span className="gl-text-xs gl-text-muted">Model declined — showing grounded findings.</span>}
         {state === "error" && <span className="gl-text-xs" style={{ color: "var(--red-700)" }}>Could not reach the summary service.</span>}
       </div>
     </GlCard>
