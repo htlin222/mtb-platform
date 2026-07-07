@@ -15,7 +15,9 @@ The platform reads genuine OncoKB / ESCAT annotation, matches FDA and investigat
 therapies, appraises the evidence per gene, and re-annotates signed reports so a
 variant reported as a VUS today is flagged the day it becomes actionable.
 
-> **Live app → https://mtb-platform.pages.dev/**
+> ### ▶️ Try the live demo → **https://mtb-platform.pages.dev/**
+> No login, no install — the app runs fully client-side. Bring your own VCF (parsed
+> in-browser, nothing uploaded) or open a sample patient report.
 
 [![Per-gene PICO evidence knowledge card with PRISMA 2020 selection funnel and GRADE certainty rating in a molecular tumor board report](mtb-platform/docs/screenshots/03-literature-knowledge.png)](https://mtb-platform.pages.dev/)
 
@@ -34,6 +36,12 @@ variant reported as a VUS today is flagged the day it becomes actionable.
   live board meeting, with blur-until-click patient identity and AI-drafted narration.
 - 🔁 **Re-annotation** — signed reports are re-screened against updated knowledge bases;
   newly actionable variants raise an alert.
+- 🎯 **Mutation Mapper** — cBioPortal-style lollipop plots (Pfam domains, ESCAT rings,
+  recurrence scaling) per mutation and cohort-wide, so hotspots and functional context
+  are visible at a glance.
+- 🛡️ **Responsible AI by default** — every Claude call is grounded in the provided
+  evidence, refusals (`stop_reason: "refusal"`) are handled gracefully with a fallback
+  to deterministic findings, and a citation checker verifies every PMID/DOI resolves.
 - 🧪 **Live VCF upload**, animated tertiary-analysis pipeline view, tumor-board voting,
   cohort oncoprint dashboard, and IGV.js genome browser.
 
@@ -63,7 +71,10 @@ sample's pipeline artifacts (ESCAT tiers, OncoKB oncogenicity & matched treatmen
 biomarkers, CNV/fusions, PubMed hits). Patient identity is **mocked per sample and
 PHI-free** — real patient directories never enter the repo. Every AI feature is an
 Anthropic Pages Function that degrades gracefully (HTTP 503) when no key is set, so
-the app runs fully offline.
+the app runs fully offline. In this high-stakes domain the AI is grounded in the
+provided studies, and a Claude **refusal** returns a structured error the UI falls
+back from — never rendering a refusal as clinical advice. Run
+`pnpm check:citations` to verify every PMID/DOI in the data still resolves before a demo.
 
 ## Tech stack
 
