@@ -59,6 +59,9 @@ export default function Worklist() {
 					<h1>Molecular Tumor Board</h1>
 				</div>
 				<div className="gl-row" style={{ gap: 8 }}>
+					<button className="gl-button" onClick={() => navigate("/batch")}>
+						<ScaleIcon size={14} /> Batch
+					</button>
 					<button className="gl-button" onClick={() => navigate("/cohort")}>
 						<ScaleIcon size={14} /> Cohort
 					</button>

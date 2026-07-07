@@ -1,4 +1,4 @@
-import { StrictMode } from "react";
+import { StrictMode, lazy, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import Worklist from "./pages/Worklist";
@@ -11,6 +11,12 @@ import Cohort from "./pages/Cohort";
 import Evidence from "./pages/Evidence";
 import "./pajamas.css";
 
+// Batch pulls in IGV.js (~1.3 MB) — load it only when visited.
+const Batch = lazy(() => import("./pages/Batch"));
+const withSuspense = (el: React.ReactNode) => (
+  <Suspense fallback={<div className="gl-page"><div className="gl-spinner" /></div>}>{el}</Suspense>
+);
+
 // HashRouter: static hosting (GitLab Pages / Netlify) with no server rewrite.
 const router = createHashRouter([
   { path: "/", element: <Worklist /> },
@@ -21,6 +27,7 @@ const router = createHashRouter([
   { path: "/board/:chartNo", element: <Board /> },
   { path: "/cohort", element: <Cohort /> },
   { path: "/evidence", element: <Evidence /> },
+  { path: "/batch", element: withSuspense(<Batch />) },
 ]);
 
 createRoot(document.getElementById("root")!).render(

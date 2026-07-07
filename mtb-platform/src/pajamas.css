@@ -289,6 +289,45 @@ a:hover { color: var(--link-hover); text-decoration: underline; }
 }
 @keyframes gl-spin { to { transform: rotate(360deg); } }
 
+/* ---- IGV.js genome browser — restyled to Pajamas ------------------------ */
+.igv-wrap {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg-surface);
+}
+.igv-wrap .igv-root { font-family: var(--font-sans) !important; }
+.igv-wrap .igv-navbar {
+  background: var(--gray-10) !important;
+  border-bottom: 1px solid var(--border) !important;
+  color: var(--text) !important;
+}
+.igv-wrap .igv-navbar * { font-family: var(--font-sans) !important; }
+.igv-wrap .igv-search-input,
+.igv-wrap input[type="text"] {
+  border: 1px solid var(--border-strong) !important;
+  border-radius: var(--radius-sm) !important;
+  color: var(--text) !important;
+  font-family: var(--font-mono) !important;
+}
+.igv-wrap .igv-track-label {
+  font-family: var(--font-sans) !important;
+  background: var(--bg-surface) !important;
+  color: var(--text-secondary) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-sm) !important;
+  font-weight: 600 !important;
+}
+.igv-wrap .igv-ruler-sweeper, .igv-wrap .igv-column-shim { background: var(--bg-page) !important; }
+.igv-wrap .igv-axis-column, .igv-wrap .igv-sample-name-column { background: var(--bg-surface) !important; }
+.igv-wrap svg text { font-family: var(--font-sans) !important; }
+.igv-wrap .igv-loading-spinner-container { color: var(--blue-500) !important; }
+
+/* ---- batch grid ---------------------------------------------------------- */
+.gl-batch-legend { display: flex; gap: 14px; flex-wrap: wrap; }
+.gl-legend-dot { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-muted); }
+.gl-legend-dot i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+
 /* ---- avatars & board ----------------------------------------------------- */
 .gl-avatar {
   flex: 0 0 auto; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;
