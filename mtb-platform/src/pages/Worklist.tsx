@@ -53,6 +53,16 @@ export default function Worklist() {
 
 	return (
 		<div className="gl-page">
+			<div className="gl-row gl-center" style={{ gap: 12, marginBottom: 12 }}>
+				<img
+					src={`${import.meta.env.BASE_URL}kfsyscc-logo.webp`}
+					alt="Koo Foundation Sun Yat-Sen Cancer Center"
+					style={{ height: 34, width: "auto" }}
+				/>
+				<span className="gl-text-xs gl-text-muted" style={{ borderLeft: "1px solid var(--border)", paddingLeft: 12 }}>
+					Koo Foundation Sun Yat-Sen Cancer Center
+				</span>
+			</div>
 			<div className="gl-row gl-center gl-between gl-wrap">
 				<div className="gl-page-title">
 					<BeakerIcon size={22} />
