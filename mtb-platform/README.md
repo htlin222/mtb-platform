@@ -14,7 +14,27 @@ variant reported as VUS today is flagged when it becomes actionable tomorrow.
 A single TypeScript interface styled with GitLab's
 [Pajamas design system](https://design.gitlab.com/).
 
+## Screenshots
+
+| Worklist — shared multi-team inbox | Report — re-annotation + board sign-off |
+| --- | --- |
+| [![Molecular tumor board worklist showing per-patient NGS reports with ESCAT actionable-finding counts and review status](docs/screenshots/01-worklist.png)](docs/screenshots/01-worklist.png) | [![Per-patient molecular report with variant re-annotation alert and actionable-finding selection](docs/screenshots/02-report-overview.png)](docs/screenshots/02-report-overview.png) |
+| **Literature — per-gene PICO + PRISMA + GRADE** | **Case deck — blur-until-click PHI** |
+| [![Per-gene PICO evidence knowledge card with PRISMA 2020 selection funnel and GRADE certainty rating](docs/screenshots/03-literature-knowledge.png)](docs/screenshots/03-literature-knowledge.png) | [![Molecular tumor board case-presentation deck title slide with blurred patient name for PHI safety](docs/screenshots/04-deck-title.png)](docs/screenshots/04-deck-title.png) |
+
 ## What it does
+
+- **Per-gene PICO evidence knowledge** (Literature tab) — every annotated
+  alteration becomes a PICO question, appraised as a systematic review (PRISMA
+  2020 selection + GRADE certainty + verified studies) when evidence allows, or
+  derived from the retrieved literature otherwise. One click runs a live
+  [robust-lit-review](https://github.com/htlin222/robust-lit-review) evidence
+  synthesis via the Anthropic API.
+- **AMA-default citations** (Vancouver / APA too) with copy-to-clipboard, a
+  numbered reference-list export, and a [mybib.com](https://www.mybib.com/) hand-off.
+- **Case-presentation deck** (`/deck/:chartNo`) — an in-room, keyboard-navigable,
+  print-to-PDF slide deck synthesised from the report, with blur-until-click
+  patient identity and live AI-drafted narration.
 
 - **Worklist → report** with Overview, Clinical journal, Variants, Biomarkers,
   Therapies, and Literature (PRISMA + GRADE) tabs.
