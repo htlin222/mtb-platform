@@ -459,3 +459,7 @@ details.gl-disclosure > summary { list-style: none; cursor: pointer; }
 details.gl-disclosure > summary::-webkit-details-marker { display: none; }
 details.gl-disclosure[open] .gl-chevron { transform: rotate(90deg); }
 .gl-chevron { transition: transform 0.15s; color: var(--text-muted); display: inline-flex; }
+
+/* Redacted PHI — blur until clicked */
+.gl-redacted { filter: blur(6px); cursor: pointer; transition: filter 0.15s; user-select: none; }
+.gl-redacted.revealed { filter: none; user-select: text; }
