@@ -197,6 +197,31 @@ export interface JournalEvent {
   detail?: string;
 }
 
+// ── Re-annotation (variant significance changes over time) ─────────────────
+
+/** One variant reclassified by a routine re-annotation run. */
+export interface ReclassEvent {
+  gene: string;
+  alteration: string;
+  fromCall: string; // e.g. "Variant of unknown significance"
+  toCall: string; // e.g. "Likely Oncogenic"
+  fromTier: EscatTier;
+  toTier: EscatTier;
+  date: string; // ISO — when the re-annotation flipped it
+  source: string; // e.g. "OncoKB v4.16 + ClinVar 2026-06"
+  nowActionable: boolean; // crossed into Tier I/II
+  note: string; // curated clinical implication
+}
+
+/** Routine re-annotation status for a report. */
+export interface Reannotation {
+  cadence: string; // e.g. "Weekly · Mondays 02:00"
+  lastRun: string; // ISO
+  nextRun: string; // ISO
+  knowledgeBase: string; // current KB version
+  events: ReclassEvent[];
+}
+
 /** Mocked clinical context that frames the molecular report. */
 export interface ClinicalContext {
   consultReason: string;
@@ -220,6 +245,7 @@ export interface Report {
   fusions: Fusion[];
   literature: LiteratureHit[];
   appraisals: Appraisal[]; // robust-lit-review systematic appraisals
+  reannotation: Reannotation; // routine re-annotation status + reclassifications
   droppedVus: number; // count of Tier-X VUS filtered from the report
 }
 
@@ -227,4 +253,5 @@ export interface Report {
 export interface WorklistEntry extends Patient {
   actionableCount: number; // ESCAT I/II count
   topFindings: string; // e.g. "BRCA1, CCNE1"
+  pendingReclass: number; // variants newly actionable since sign-off
 }

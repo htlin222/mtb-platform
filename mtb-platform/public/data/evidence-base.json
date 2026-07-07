@@ -1,0 +1,49 @@
+{
+  "intro": "Every classification this platform shows rests on published, peer-reviewed frameworks. The background below grounds each pillar of tertiary analysis in its foundational literature (source: PubMed). This is why a community center's report can be trusted at the same bar as a university hospital's.",
+  "sections": [
+    {
+      "pillar": "Variant tiering",
+      "summary": "Somatic variants are tiered by clinical significance using two complementary frameworks. AMP/ASCO/CAP defines a four-tier system (Tier I strong, II potential, III unknown, IV benign) for standardized reporting; ESCAT ranks how ready a molecular target is for clinical decisions (Tier I ready for routine use → Tier X no evidence). This platform shows the ESCAT tier as its primary actionability signal.",
+      "citations": [
+        { "authors": "Li MM, et al.", "title": "Standards and Guidelines for the Interpretation and Reporting of Sequence Variants in Cancer: A Joint Consensus Recommendation of AMP, ASCO, and CAP.", "journal": "J Mol Diagn", "year": 2017, "pmid": "27993330", "doi": "10.1016/j.jmoldx.2016.10.002" },
+        { "authors": "Mateo J, et al.", "title": "A framework to rank genomic alterations as targets for cancer precision medicine: the ESMO Scale for Clinical Actionability of molecular Targets (ESCAT).", "journal": "Ann Oncol", "year": 2018, "pmid": "30137196", "doi": "10.1093/annonc/mdy263" }
+      ]
+    },
+    {
+      "pillar": "Actionability annotation",
+      "summary": "OncoKB is a curated precision-oncology knowledge base that maps specific alterations to therapeutic implications with defined evidence levels (Level 1 FDA-recognised biomarker → Level 4 compelling biological evidence; R1/R2 for resistance). Matched therapies and their levels in this platform are OncoKB annotations.",
+      "citations": [
+        { "authors": "Chakravarty D, et al.", "title": "OncoKB: A Precision Oncology Knowledge Base.", "journal": "JCO Precis Oncol", "year": 2017, "pmid": "28890946", "doi": "10.1200/PO.17.00011" }
+      ]
+    },
+    {
+      "pillar": "Biomarkers — TMB",
+      "summary": "High tumour mutational burden (≥10 mut/Mb) is a tissue-agnostic predictor of benefit from PD-1 blockade, established in the KEYNOTE-158 basket study and underpinning the pan-tumour pembrolizumab indication.",
+      "citations": [
+        { "authors": "Marabelle A, et al.", "title": "Association of tumour mutational burden with outcomes in patients with advanced solid tumours treated with pembrolizumab: KEYNOTE-158.", "journal": "Lancet Oncol", "year": 2020, "pmid": "32919526", "doi": "10.1016/S1470-2045(20)30445-9" }
+      ]
+    },
+    {
+      "pillar": "Biomarkers — MSI-H / dMMR",
+      "summary": "Microsatellite-instability-high / mismatch-repair-deficient tumours respond durably to immune checkpoint blockade; KEYNOTE-177 established first-line pembrolizumab over chemotherapy in MSI-H metastatic colorectal cancer.",
+      "citations": [
+        { "authors": "Diaz LA Jr, et al.", "title": "Pembrolizumab versus chemotherapy for microsatellite instability-high or mismatch repair-deficient metastatic colorectal cancer (KEYNOTE-177): final analysis.", "journal": "Lancet Oncol", "year": 2022, "pmid": "35427471", "doi": "10.1016/S1470-2045(22)00197-8" }
+      ]
+    },
+    {
+      "pillar": "Biomarkers — HRD / PARP",
+      "summary": "Homologous-recombination deficiency (BRCA mutation or a high genomic-instability score) predicts benefit from PARP inhibition; PAOLA-1 established olaparib plus bevacizumab maintenance in HRD-positive advanced ovarian cancer.",
+      "citations": [
+        { "authors": "Ray-Coquard I, et al.", "title": "Olaparib plus Bevacizumab as First-Line Maintenance in Ovarian Cancer (PAOLA-1).", "journal": "N Engl J Med", "year": 2019, "pmid": "31851799", "doi": "10.1056/NEJMoa1911361" }
+      ]
+    },
+    {
+      "pillar": "Real-world actionability",
+      "summary": "Real-world comprehensive genomic profiling platforms report actionable findings in roughly 20–40% of advanced solid tumours — the MONDTI precision-medicine platform is a representative single-institution cohort. Our own single-center pan-cancer cohort (n=62) sits within this range (33.9% on-label match), showing a community center can reproduce academic actionability rates.",
+      "citations": [
+        { "authors": "Kieler M, et al.", "title": "Interim analysis of a real-world precision medicine platform for molecular profiling of metastatic or advanced cancers: MONDTI.", "journal": "ESMO Open", "year": 2019, "pmid": "31423337", "doi": "10.1136/esmoopen-2019-000538" }
+      ]
+    }
+  ],
+  "attribution": "Literature retrieved via PubMed. Each citation links to its DOI. This platform does not replace expert review — it makes the evidence behind every recommendation one click away."
+}

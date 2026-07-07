@@ -82,6 +82,12 @@ export function buildLiveReport(pr: ParseResult): Report {
     fusions: [],
     literature: [],
     appraisals: [],
+    reannotation: {
+      cadence: "Weekly · Mondays 02:00",
+      lastRun: "", nextRun: "",
+      knowledgeBase: "OncoKB v4.16 · CIViC 2026-06 · ClinVar 2026-06",
+      events: [],
+    },
     droppedVus: pr.total - annotated.length,
   };
 }

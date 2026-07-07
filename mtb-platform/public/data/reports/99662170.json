@@ -749,5 +749,12 @@
       ]
     }
   ],
+  "reannotation": {
+    "cadence": "Weekly · Mondays 02:00",
+    "lastRun": "2026-06-11",
+    "nextRun": "2026-06-18",
+    "knowledgeBase": "OncoKB v4.16 · CIViC 2026-06 · ClinVar 2026-06",
+    "events": []
+  },
   "droppedVus": 479
 }

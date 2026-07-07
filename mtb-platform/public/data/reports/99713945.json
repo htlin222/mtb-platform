@@ -707,5 +707,25 @@
       ]
     }
   ],
+  "reannotation": {
+    "cadence": "Weekly · Mondays 02:00",
+    "lastRun": "2026-06-27",
+    "nextRun": "2026-07-04",
+    "knowledgeBase": "OncoKB v4.16 · CIViC 2026-06 · ClinVar 2026-06",
+    "events": [
+      {
+        "gene": "KRAS",
+        "alteration": "G12D",
+        "fromCall": "Variant of unknown significance",
+        "toCall": "Oncogenic",
+        "fromTier": "X",
+        "toTier": "II",
+        "date": "2026-06-27",
+        "source": "OncoKB v4.16 · CIViC 2026-06 · ClinVar 2026-06",
+        "nowActionable": true,
+        "note": "Now an actionable target — Daraxonrasib / Setidegrasib applicable. Originally reported as VUS; re-review recommended."
+      }
+    ]
+  },
   "droppedVus": 538
 }

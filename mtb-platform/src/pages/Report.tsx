@@ -5,7 +5,7 @@ import { loadReport } from "../lib/data";
 import { STATUS_META, isActionable, ESCAT_META } from "../lib/format";
 import {
   GlBadge, GlCount, GlLinkButton,
-  PersonIcon, PulseIcon, ScaleIcon, BeakerIcon, BookIcon, ListIcon, CommentIcon, CheckIcon,
+  PersonIcon, PulseIcon, ScaleIcon, BeakerIcon, BookIcon, ListIcon, CommentIcon, CheckIcon, SyncIcon,
 } from "../components/gl";
 import Overview from "../components/Overview";
 import ClinicalTab from "../components/ClinicalTab";
@@ -106,6 +106,37 @@ export default function ReportPage() {
         )}
       </div>
 
+      {/* re-annotation alert: variants reclassified since the report was issued */}
+      {report.reannotation.events.length > 0 && (
+        <div className="gl-card" style={{ marginTop: 16, borderColor: "var(--orange-100)", background: "var(--orange-50)" }}>
+          <div className="gl-card-body">
+            <div className="gl-row gl-center" style={{ gap: 8, marginBottom: 8 }}>
+              <span style={{ color: "var(--orange-700)", display: "inline-flex" }}><SyncIcon size={16} /></span>
+              <span className="gl-strong">
+                {report.reannotation.events.length} variant{report.reannotation.events.length > 1 ? "s" : ""} reclassified since this report was issued
+              </span>
+              <span className="gl-text-xs gl-text-muted">· re-annotated {report.reannotation.lastRun} · {report.reannotation.knowledgeBase}</span>
+            </div>
+            <div className="gl-col" style={{ gap: 8 }}>
+              {report.reannotation.events.map((e, i) => (
+                <div key={i} className="gl-row gl-center gl-wrap" style={{ gap: 8 }}>
+                  {e.nowActionable && <GlBadge variant="warning">Now actionable</GlBadge>}
+                  <span className="mono gl-strong">{e.gene}</span>
+                  <span className="mono gl-text-sm">{e.alteration}</span>
+                  <span className="gl-text-sm gl-text-muted">{e.fromCall}</span>
+                  <span className="gl-text-muted">→</span>
+                  <span className="gl-text-sm">{e.toCall}</span>
+                  <GlBadge variant={ESCAT_META[e.fromTier].variant}>{ESCAT_META[e.fromTier].short}</GlBadge>
+                  <span className="gl-text-muted">→</span>
+                  <GlBadge variant={ESCAT_META[e.toTier].variant}>{ESCAT_META[e.toTier].short}</GlBadge>
+                </div>
+              ))}
+            </div>
+            <p className="gl-text-sm gl-text-secondary" style={{ margin: "10px 0 0" }}>{report.reannotation.events[0].note}</p>
+          </div>
+        </div>
+      )}
+
       {/* decision bar: select findings for the board & sign off */}
       {actionable.length > 0 && (
         <div className="gl-card" style={{ marginTop: 16, borderColor: signed ? "var(--green-100)" : (isNew ? "var(--blue-100)" : "var(--border)") }}>
@@ -203,6 +234,17 @@ export default function ReportPage() {
               <GlBadge variant={biomarkers.msi === "MSI-H" ? "success" : "neutral"}>{biomarkers.msi}</GlBadge>
               <GlBadge variant={biomarkers.hrdStatus.toLowerCase().includes("positive") ? "success" : "neutral"}>{biomarkers.hrdStatus}</GlBadge>
             </div>
+            <hr className="gl-divider" />
+            <div className="gl-row gl-center" style={{ gap: 6, marginBottom: 4 }}>
+              <span style={{ color: "var(--text-muted)", display: "inline-flex" }}><SyncIcon size={13} /></span>
+              <span className="gl-text-xs gl-text-muted">Re-annotation</span>
+            </div>
+            <div className="gl-text-xs">{report.reannotation.cadence}</div>
+            {report.reannotation.lastRun && (
+              <div className="gl-text-xs gl-text-muted" style={{ marginTop: 2 }}>
+                last {report.reannotation.lastRun} · next {report.reannotation.nextRun}
+              </div>
+            )}
             <hr className="gl-divider" />
             <div className="gl-text-xs gl-text-muted">Sample</div>
             <div className="mono gl-text-xs">{patient.sampleId}</div>

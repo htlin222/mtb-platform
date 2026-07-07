@@ -88,8 +88,9 @@ export default function Cohort() {
       <div style={{ marginTop: 16 }}>
         <GlCard>
           <p className="gl-text-sm" style={{ margin: 0, lineHeight: 1.6 }}>{d.conclusion}</p>
-          <div style={{ marginTop: 12 }}>
+          <div style={{ marginTop: 12, display: "flex", gap: 8 }}>
             <button className="gl-button gl-button-confirm" onClick={() => navigate("/")}>Browse patient reports →</button>
+            <button className="gl-button" onClick={() => navigate("/evidence")}>Evidence base &amp; methods</button>
           </div>
         </GlCard>
       </div>

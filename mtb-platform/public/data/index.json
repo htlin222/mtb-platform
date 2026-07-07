@@ -15,7 +15,8 @@
     "sampleId": "EGA_OV_TSO500_001",
     "panel": "TSO500 · 1.94 Mb",
     "actionableCount": 3,
-    "topFindings": "BRCA1, CCNE1"
+    "topFindings": "BRCA1, CCNE1",
+    "pendingReclass": 1
   },
   {
     "chartNo": "99508213",
@@ -33,7 +34,8 @@
     "sampleId": "M25-1292R",
     "panel": "TSO500 · 1.21 Mb",
     "actionableCount": 3,
-    "topFindings": "PIK3CA, ERBB2"
+    "topFindings": "PIK3CA, ERBB2",
+    "pendingReclass": 0
   },
   {
     "chartNo": "99417882",
@@ -51,7 +53,8 @@
     "sampleId": "M25-1696R",
     "panel": "TSO500 · 1.27 Mb",
     "actionableCount": 3,
-    "topFindings": "PIK3CA, ESR1"
+    "topFindings": "PIK3CA, ESR1",
+    "pendingReclass": 0
   },
   {
     "chartNo": "99662170",
@@ -69,7 +72,8 @@
     "sampleId": "M25-1684R",
     "panel": "TSO500 · 1.28 Mb",
     "actionableCount": 2,
-    "topFindings": "EGFR"
+    "topFindings": "EGFR",
+    "pendingReclass": 0
   },
   {
     "chartNo": "99713945",
@@ -87,6 +91,7 @@
     "sampleId": "M25-1587R",
     "panel": "TSO500 · 1.25 Mb",
     "actionableCount": 1,
-    "topFindings": "KRAS"
+    "topFindings": "KRAS",
+    "pendingReclass": 1
   }
 ]

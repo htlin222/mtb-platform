@@ -12,6 +12,7 @@ import {
 	UploadIcon,
 	BookIcon,
 	ScaleIcon,
+	SyncIcon,
 } from "../components/gl";
 
 export default function Worklist() {
@@ -142,12 +143,23 @@ export default function Worklist() {
 									return (
 										<tr key={r.chartNo}>
 											<td>
-												<GlLinkButton
-													onClick={() => navigate(`/report/${r.chartNo}`)}
-													style={{ fontWeight: 600 }}
-												>
-													{r.name}
-												</GlLinkButton>
+												<span className="gl-row gl-center" style={{ gap: 8 }}>
+													<GlLinkButton
+														onClick={() => navigate(`/report/${r.chartNo}`)}
+														style={{ fontWeight: 600 }}
+													>
+														{r.name}
+													</GlLinkButton>
+													{r.pendingReclass > 0 && (
+														<span
+															title="A variant was reclassified as actionable since sign-off — re-review recommended"
+															className="gl-badge gl-badge-warning"
+															style={{ display: "inline-flex", alignItems: "center", gap: 3 }}
+														>
+															<SyncIcon size={11} /> Re-review
+														</span>
+													)}
+												</span>
 											</td>
 											<td className="mono gl-text-xs gl-text-muted">
 												{r.chartNo}

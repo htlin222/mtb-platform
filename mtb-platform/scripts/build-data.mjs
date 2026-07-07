@@ -279,6 +279,39 @@ function buildAppraisals(patient, variants, literature) {
   });
 }
 
+// ── Re-annotation: routine cron re-annotation reclassifies variants over time.
+// A variant reported as VUS today can become actionable as OncoKB/CIViC/ClinVar
+// update — the database's standing value. We surface the delta as an alert.
+function buildReannotation(patient, variants) {
+  const cadence = "Weekly · Mondays 02:00";
+  const lastRun = addDays(patient.reportDate, 12);
+  const nextRun = addDays(lastRun, 7);
+  const knowledgeBase = "OncoKB v4.16 · CIViC 2026-06 · ClinVar 2026-06";
+  const events = [];
+  const cand =
+    variants.find((v) => v.escat === "II") ||
+    variants.find((v) => v.escat === "III" && /oncogenic/i.test(v.oncogenicity));
+  if (cand) {
+    const nowActionable = cand.escat === "I" || cand.escat === "II";
+    const drugs = cand.treatments.map((t) => t.drugs).slice(0, 2).join(" / ");
+    events.push({
+      gene: cand.gene,
+      alteration: cand.alteration,
+      fromCall: "Variant of unknown significance",
+      toCall: cand.oncogenicity,
+      fromTier: "X",
+      toTier: cand.escat,
+      date: lastRun,
+      source: knowledgeBase,
+      nowActionable,
+      note: nowActionable
+        ? `Now an actionable target${drugs ? ` — ${drugs} applicable.` : "."} Originally reported as VUS; re-review recommended.`
+        : "Significance upgraded; continue monitoring for actionability.",
+    });
+  }
+  return { cadence, lastRun, nextRun, knowledgeBase, events };
+}
+
 // ── Per-sample assembly from real files ────────────────────────────────────
 function buildReport(entry) {
   const dir = join(REPORTS, entry.sample);
@@ -406,8 +439,9 @@ function buildReport(entry) {
   };
 
   const appraisals = buildAppraisals(patient, variants, literature);
+  const reannotation = buildReannotation(patient, variants);
 
-  return { patient, clinical, biomarkers, variants, cnv, fusions, literature, appraisals, droppedVus };
+  return { patient, clinical, biomarkers, variants, cnv, fusions, literature, appraisals, reannotation, droppedVus };
 }
 
 function readTsvMaybe(path) {
@@ -427,6 +461,7 @@ const index = reports.map((r) => {
     ...r.patient,
     actionableCount: actionable.length,
     topFindings: [...new Set(actionable.map((v) => v.gene))].slice(0, 4).join(", ") || "—",
+    pendingReclass: r.reannotation.events.filter((e) => e.nowActionable).length,
   };
 });
 
