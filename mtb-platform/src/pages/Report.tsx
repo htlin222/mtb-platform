@@ -1,22 +1,24 @@
 import { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, useSearchParams } from "react-router-dom";
 import type { Report } from "../types";
 import { loadReport } from "../lib/data";
-import { STATUS_META, isActionable } from "../lib/format";
+import { STATUS_META, isActionable, ESCAT_META } from "../lib/format";
 import {
   GlBadge, GlCount, GlLinkButton,
-  PersonIcon, PulseIcon, ScaleIcon, BeakerIcon, BookIcon, ListIcon,
+  PersonIcon, PulseIcon, ScaleIcon, BeakerIcon, BookIcon, ListIcon, CommentIcon, CheckIcon,
 } from "../components/gl";
 import Overview from "../components/Overview";
+import ClinicalTab from "../components/ClinicalTab";
 import VariantsTab from "../components/VariantsTab";
 import BiomarkersTab from "../components/BiomarkersTab";
 import TherapiesTab from "../components/TherapiesTab";
 import LiteratureTab from "../components/LiteratureTab";
 
-type TabKey = "overview" | "variants" | "biomarkers" | "therapies" | "literature";
+type TabKey = "overview" | "clinical" | "variants" | "biomarkers" | "therapies" | "literature";
 
 const TABS: { key: TabKey; label: string; icon: React.FC<{ size?: number }> }[] = [
   { key: "overview", label: "Overview", icon: ListIcon },
+  { key: "clinical", label: "Clinical", icon: CommentIcon },
   { key: "variants", label: "Variants", icon: PulseIcon },
   { key: "biomarkers", label: "Biomarkers", icon: ScaleIcon },
   { key: "therapies", label: "Therapies", icon: BeakerIcon },
@@ -26,14 +28,21 @@ const TABS: { key: TabKey; label: string; icon: React.FC<{ size?: number }> }[] 
 export default function ReportPage() {
   const { chartNo } = useParams();
   const navigate = useNavigate();
+  const [params] = useSearchParams();
+  const isNew = params.get("new") === "1";
   const [report, setReport] = useState<Report | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [tab, setTab] = useState<TabKey>("overview");
+  const [selected, setSelected] = useState<Set<string>>(new Set());
+  const [signed, setSigned] = useState(false);
 
   useEffect(() => {
     if (!chartNo) return;
-    setReport(null);
-    loadReport(chartNo).then(setReport).catch((e) => setError(e.message));
+    setReport(null); setSigned(false);
+    loadReport(chartNo).then((r) => {
+      setReport(r);
+      setSelected(new Set(r.variants.filter(isActionable).map((v) => `${v.gene} ${v.alteration}`)));
+    }).catch((e) => setError(e.message));
   }, [chartNo]);
 
   if (error) {
@@ -52,6 +61,7 @@ export default function ReportPage() {
   const status = STATUS_META[patient.status];
   const counts: Record<TabKey, number | null> = {
     overview: null,
+    clinical: report.clinical.journal.length,
     variants: report.variants.length,
     biomarkers: report.cnv.length + report.fusions.length,
     therapies: report.variants.reduce((n, v) => n + v.treatments.length, 0),
@@ -71,7 +81,7 @@ export default function ReportPage() {
       <div className="gl-row gl-center gl-wrap" style={{ gap: 10 }}>
         <PersonIcon size={20} />
         <h1 style={{ fontSize: 20 }}>{patient.name}</h1>
-        <GlBadge variant={status.variant}>{status.label}</GlBadge>
+        <GlBadge variant={signed ? "success" : status.variant}>{signed ? "Signed off" : status.label}</GlBadge>
       </div>
       <div className="gl-meta">
         <span className="mono gl-text-xs">{patient.chartNo}</span>
@@ -83,6 +93,60 @@ export default function ReportPage() {
         <span className="dot">·</span>
         <span>{patient.team} · {patient.attending}</span>
       </div>
+
+      {/* decision bar: select findings for the board & sign off */}
+      {actionable.length > 0 && (
+        <div className="gl-card" style={{ marginTop: 16, borderColor: signed ? "var(--green-100)" : (isNew ? "var(--blue-100)" : "var(--border)") }}>
+          <div className="gl-card-body">
+            {signed ? (
+              <div className="gl-row gl-center" style={{ gap: 10 }}>
+                <span className="gl-timeline-badge success" style={{ width: 28, height: 28 }}><CheckIcon size={15} /></span>
+                <div>
+                  <div className="gl-strong">Report signed off</div>
+                  <div className="gl-text-xs gl-text-muted">
+                    {selected.size} finding(s) taken to the board — {[...selected].join(", ")}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <>
+                <div className="gl-text-xs gl-text-muted" style={{ marginBottom: 8 }}>
+                  Select actionable findings to take to the board, then sign off.
+                </div>
+                <div className="gl-row gl-center gl-between gl-wrap" style={{ gap: 12 }}>
+                  <div className="gl-row gl-wrap" style={{ gap: 8 }}>
+                    {actionable.map((v) => {
+                      const key = `${v.gene} ${v.alteration}`;
+                      const on = selected.has(key);
+                      return (
+                        <button key={key}
+                          onClick={() => setSelected((s) => { const n = new Set(s); n.has(key) ? n.delete(key) : n.add(key); return n; })}
+                          className="gl-badge"
+                          style={{
+                            cursor: "pointer", fontSize: 13, padding: "4px 10px",
+                            border: `1px solid ${on ? "var(--blue-500)" : "var(--border-strong)"}`,
+                            background: on ? "var(--blue-50)" : "var(--bg-surface)",
+                            color: on ? "var(--blue-900)" : "var(--text-muted)",
+                          }}>
+                          {on ? <CheckIcon size={13} /> : null}
+                          <span className="mono gl-strong">{v.gene}</span>
+                          <span className="mono">{v.alteration}</span>
+                          <GlBadge variant={ESCAT_META[v.escat].variant}>{ESCAT_META[v.escat].short}</GlBadge>
+                        </button>
+                      );
+                    })}
+                  </div>
+                  <button className="gl-button gl-button-confirm" disabled={selected.size === 0}
+                    style={selected.size === 0 ? { opacity: 0.5, cursor: "not-allowed" } : undefined}
+                    onClick={() => setSigned(true)}>
+                    <CheckIcon size={14} /> Sign off report
+                  </button>
+                </div>
+              </>
+            )}
+          </div>
+        </div>
+      )}
 
       {/* body: content + rail */}
       <div style={{ display: "grid", gridTemplateColumns: "minmax(0, 1fr) 260px", gap: 24, marginTop: 20, alignItems: "start" }}>
@@ -101,6 +165,7 @@ export default function ReportPage() {
           </div>
 
           {tab === "overview" && <Overview report={report} onGoto={(t) => setTab(t as TabKey)} />}
+          {tab === "clinical" && <ClinicalTab report={report} />}
           {tab === "variants" && <VariantsTab report={report} />}
           {tab === "biomarkers" && <BiomarkersTab report={report} />}
           {tab === "therapies" && <TherapiesTab report={report} />}

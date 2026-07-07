@@ -4,8 +4,24 @@
 // FDA-approved therapies. Everything else stays neutral.
 // Variants map to GitLab Pajamas badge variants.
 // ---------------------------------------------------------------------------
-import type { EscatTier, ReportStatus, Variant, Biomarkers } from "../types";
+import type { EscatTier, ReportStatus, Variant, Biomarkers, GradeLevel } from "../types";
 import type { BadgeVariant } from "../components/gl";
+
+// ── GRADE certainty (robust-lit-review) ────────────────────────────────────
+export const GRADE_META: Record<GradeLevel, { variant: BadgeVariant; label: string }> = {
+  High: { variant: "success", label: "High certainty" },
+  Moderate: { variant: "info", label: "Moderate certainty" },
+  Low: { variant: "warning", label: "Low certainty" },
+  "Very Low": { variant: "danger", label: "Very low certainty" },
+};
+
+export const PROVENANCE_META: Record<
+  "systematic-review" | "rapid-review",
+  { variant: BadgeVariant; label: string }
+> = {
+  "systematic-review": { variant: "info", label: "Systematic review" },
+  "rapid-review": { variant: "warning", label: "Rapid review" },
+};
 
 // ── ESCAT: the one ordinal signal that carries colour ──────────────────────
 export const ESCAT_META: Record<

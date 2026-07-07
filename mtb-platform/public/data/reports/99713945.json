@@ -21,7 +21,179 @@
       "FOLFIRINOX"
     ],
     "ecog": 1,
-    "note": "Molecular profiling on the TSO500 · 1.25 Mb panel returned 15 clinically annotated alterations (538 variants of unknown significance filtered); TMB 16.9 mut/Mb, MSS, HRD-Negative."
+    "note": "Molecular profiling on the TSO500 · 1.25 Mb panel returned 15 clinically annotated alterations (538 variants of unknown significance filtered); TMB 16.9 mut/Mb, MSS, HRD-Negative.",
+    "consultNote": {
+      "fromTeam": "GI Oncology",
+      "toTeam": "Molecular Tumor Board",
+      "date": "2026-06-15",
+      "history": "67-year-old male with stage IV Pancreatic ductal adenocarcinoma. FOLFIRINOX. ECOG 1.",
+      "purpose": "Metastatic pancreatic adenocarcinoma — actionable driver assessment.",
+      "opinion": "KRAS G12D is a Tier II actionable target — Daraxonrasib / Setidegrasib indicated. Recommend review of matched options at MTB."
+    },
+    "chemo": [
+      {
+        "regimen": "FOLFIRINOX",
+        "cycleNo": "5",
+        "beginDate": "2026-04-18",
+        "status": "Completed"
+      },
+      {
+        "regimen": "FOLFIRINOX",
+        "cycleNo": "6",
+        "beginDate": "2026-05-09",
+        "status": "Completed"
+      },
+      {
+        "regimen": "Maintenance — pending MTB",
+        "cycleNo": "—",
+        "beginDate": "2026-06-22",
+        "status": "Planned"
+      }
+    ],
+    "labs": [
+      {
+        "key": "WBC",
+        "label": "WBC",
+        "value": "6",
+        "unit": "10³/µL",
+        "abnormal": null
+      },
+      {
+        "key": "ANC",
+        "label": "ANC",
+        "value": "4386",
+        "unit": "/µL",
+        "abnormal": null
+      },
+      {
+        "key": "Hb",
+        "label": "Hemoglobin",
+        "value": "14.5",
+        "unit": "g/dL",
+        "abnormal": null
+      },
+      {
+        "key": "PLT",
+        "label": "Platelets",
+        "value": "352",
+        "unit": "10³/µL",
+        "abnormal": null
+      },
+      {
+        "key": "Creatinine",
+        "label": "Creatinine",
+        "value": "1.2",
+        "unit": "mg/dL",
+        "abnormal": null
+      },
+      {
+        "key": "AST",
+        "label": "AST",
+        "value": "46.9",
+        "unit": "U/L",
+        "abnormal": "high"
+      },
+      {
+        "key": "ALT",
+        "label": "ALT",
+        "value": "0",
+        "unit": "U/L",
+        "abnormal": null
+      },
+      {
+        "key": "BUN",
+        "label": "BUN",
+        "value": "8.8",
+        "unit": "mg/dL",
+        "abnormal": null
+      }
+    ],
+    "journal": [
+      {
+        "date": "2026-06-15",
+        "kind": "consult",
+        "title": "MTB consult — GI Oncology → Molecular Tumor Board",
+        "actor": "Dr. J. Wang",
+        "detail": "Metastatic pancreatic adenocarcinoma — actionable driver assessment."
+      },
+      {
+        "date": "2026-06-10",
+        "kind": "draft",
+        "title": "Molecular report drafted",
+        "actor": "Dr. J. Wang",
+        "detail": "Ready for MTB discussion"
+      },
+      {
+        "date": "2026-06-08",
+        "kind": "literature",
+        "title": "Literature retrieval — 10 PubMed records",
+        "actor": "Dr. J. Wang",
+        "detail": "Retrieved for annotated alterations"
+      },
+      {
+        "date": "2026-06-07",
+        "kind": "annotation",
+        "title": "OncoKB / ESCAT annotation",
+        "actor": "Dr. J. Wang",
+        "detail": "Top finding: KRAS G12D (II)"
+      },
+      {
+        "date": "2026-06-05",
+        "kind": "biomarker",
+        "title": "Biomarkers computed",
+        "actor": "Dr. J. Wang",
+        "detail": "TMB 16.9 mut/Mb · MSS · HRD-Negative"
+      },
+      {
+        "date": "2026-06-03",
+        "kind": "variants",
+        "title": "Variant calling — 21 small variants",
+        "actor": "Dr. J. Wang",
+        "detail": "15 clinically annotated after filtering"
+      },
+      {
+        "date": "2026-06-01",
+        "kind": "qc",
+        "title": "Sequencing complete · QC passed",
+        "actor": "Dr. J. Wang",
+        "detail": "Coverage and tumour fraction within spec"
+      },
+      {
+        "date": "2026-05-28",
+        "kind": "sequencing",
+        "title": "Library prep & TSO500 sequencing",
+        "actor": "Dr. J. Wang",
+        "detail": "1.25 Mb panel"
+      },
+      {
+        "date": "2026-05-25",
+        "kind": "specimen",
+        "title": "Specimen accessioned for sequencing",
+        "actor": "Dr. J. Wang",
+        "detail": "M25-1587R · FFPE tumour block"
+      },
+      {
+        "date": "2026-05-22",
+        "kind": "review",
+        "title": "Referred to Molecular Tumor Board",
+        "actor": "Dr. J. Wang",
+        "detail": "Metastatic pancreatic adenocarcinoma — actionable driver assessment."
+      },
+      {
+        "date": "2026-05-09",
+        "kind": "chemo",
+        "title": "Chemotherapy — FOLFIRINOX, cycle 6 completed",
+        "actor": "Dr. J. Wang",
+        "detail": "Restaging planned"
+      },
+      {
+        "date": "2026-04-18",
+        "kind": "chemo",
+        "title": "Chemotherapy — FOLFIRINOX, cycle 5",
+        "actor": "Dr. J. Wang",
+        "detail": "GI Oncology"
+      }
+    ]
   },
   "biomarkers": {
     "tmb": 16.9,
@@ -408,6 +580,131 @@
       "year": "2025",
       "gene": "TMB",
       "alteration": ""
+    }
+  ],
+  "appraisals": [
+    {
+      "id": "99713945-ap1",
+      "linkedGene": "KRAS",
+      "linkedAlteration": "G12D",
+      "escat": "II",
+      "provenance": "systematic-review",
+      "grade": "Moderate",
+      "verdict": "Supported — trial-enabling",
+      "pico": {
+        "population": "Pancreatic ductal adenocarcinoma harbouring KRAS G12D",
+        "intervention": "Daraxonrasib / Setidegrasib",
+        "comparator": "Standard of care",
+        "outcome": "Progression-free survival, objective response",
+        "question": "In Pancreatic ductal adenocarcinoma with KRAS G12D, does Daraxonrasib improve progression-free survival versus standard of care?"
+      },
+      "prisma": {
+        "totalFound": 97,
+        "afterDedup": 87,
+        "afterYearFilter": 83,
+        "afterQuality": 12,
+        "afterValidation": 8,
+        "included": 8,
+        "excludedByQuality": 71
+      },
+      "includedStudies": [
+        {
+          "citationKey": "TMB2026A",
+          "title": "Pan-cancer analysis reveals FOLH1 as a prognostic biomarker and immune modulator in human tumors.",
+          "authors": "Fan W, Guo X, Wang Y, He S, Zhang P",
+          "journal": "Translational cancer research",
+          "year": "2026",
+          "pmid": "41969500",
+          "quartile": "Q1",
+          "citationCount": 17,
+          "verified": true,
+          "openAccess": true
+        },
+        {
+          "citationKey": "TMB2026B",
+          "title": "Unraveling the oncogenic and immunomodulatory roles of GINS1: a systematic pan-cancer study.",
+          "authors": "Zhang X, Lei W, Pan Y, Zhong L, Zhai L, Li H, Liu B",
+          "journal": "Cancer cell international",
+          "year": "2026",
+          "pmid": "41776634",
+          "quartile": "Q1",
+          "citationCount": 30,
+          "verified": true,
+          "openAccess": false
+        },
+        {
+          "citationKey": "TMB2025C",
+          "title": "Identification of Prognostic Genes and Establishment of a Risk Score Model Related to Pancreatic Adenocarcinoma and Brown Adipose Tissue Based on Transcriptomics and Experimental Validation.",
+          "authors": "Kang B, Wang W, Guo X, Bai T, Lv C, Shen Y",
+          "journal": "Genes",
+          "year": "2025",
+          "pmid": "41595468",
+          "quartile": "Q1",
+          "citationCount": 60,
+          "verified": true,
+          "openAccess": true
+        },
+        {
+          "citationKey": "TMB2025D",
+          "title": "Characterization of pancreatic cancer stem cells and construction of a stem cell-based prognostic signature.",
+          "authors": "Fang J, Ji H, Wang M, Zheng B, Zhou J, Xiao C",
+          "journal": "Scientific reports",
+          "year": "2025",
+          "pmid": "41436608",
+          "quartile": "Q1",
+          "citationCount": 73,
+          "verified": true,
+          "openAccess": false
+        },
+        {
+          "citationKey": "TMB2025E",
+          "title": "A autophagy related gene signature to predict the prognosis of pancreatic carcinoma and tumor immune microenvironment evaluation.",
+          "authors": "Wang X, Wang X, Ying B",
+          "journal": "Scientific reports",
+          "year": "2025",
+          "pmid": "41298756",
+          "quartile": "Q1",
+          "citationCount": 46,
+          "verified": true,
+          "openAccess": true
+        },
+        {
+          "citationKey": "TMB2025F",
+          "title": "Identification of pancreatic subtypes and prognostic markers on the basis of changes in immunologic signature gene sets activity.",
+          "authors": "Fang J, Gao S, Wang M, Ni W, Du J, Lin W, Lin M",
+          "journal": "Medicine",
+          "year": "2025",
+          "pmid": "41261631",
+          "quartile": "Q1",
+          "citationCount": 59,
+          "verified": true,
+          "openAccess": false
+        },
+        {
+          "citationKey": "TMB2025G",
+          "title": "Migrasome-related LncRNA features predict immune microenvironment and prognosis in pancreatic cancer.",
+          "authors": "Li W, Cao Y, Sun X, Wang T, Xu P, Li P",
+          "journal": "Scientific reports",
+          "year": "2025",
+          "pmid": "41253932",
+          "quartile": "Q2",
+          "citationCount": 72,
+          "verified": true,
+          "openAccess": true
+        },
+        {
+          "citationKey": "TMB2025H",
+          "title": "Integration of bulk and single-cell transcriptomic data reveals a novel signature related to liver metastasis and basement membrane in pancreatic cancer.",
+          "authors": "Zhou D, Zhong C, Yang Q, Cui B, Wang Y",
+          "journal": "Frontiers in immunology",
+          "year": "2025",
+          "pmid": "41235257",
+          "quartile": "Q2",
+          "citationCount": 45,
+          "verified": true,
+          "openAccess": false
+        }
+      ]
     }
   ],
   "droppedVus": 538

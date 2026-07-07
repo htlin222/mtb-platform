@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import type { WorklistEntry } from "../types";
 import { loadWorklist } from "../lib/data";
 import { STATUS_META } from "../lib/format";
-import { GlBadge, GlCount, GlLinkButton, SearchIcon, BeakerIcon } from "../components/gl";
+import { GlBadge, GlCount, GlLinkButton, SearchIcon, BeakerIcon, UploadIcon } from "../components/gl";
 
 export default function Worklist() {
   const navigate = useNavigate();
@@ -38,9 +38,14 @@ export default function Worklist() {
 
   return (
     <div className="gl-page">
-      <div className="gl-page-title">
-        <BeakerIcon size={22} />
-        <h1>Molecular Tumor Board</h1>
+      <div className="gl-row gl-center gl-between gl-wrap">
+        <div className="gl-page-title">
+          <BeakerIcon size={22} />
+          <h1>Molecular Tumor Board</h1>
+        </div>
+        <button className="gl-button gl-button-confirm" onClick={() => navigate("/upload")}>
+          <UploadIcon size={14} /> New analysis
+        </button>
       </div>
       <p className="gl-page-desc">
         Shared worklist across teams — clinical context, molecular profiling, and supporting

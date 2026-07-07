@@ -21,7 +21,186 @@
       "Platinum-doublet chemotherapy"
     ],
     "ecog": 1,
-    "note": "Molecular profiling on the TSO500 · 1.28 Mb panel returned 8 clinically annotated alterations (479 variants of unknown significance filtered); TMB 5.5 mut/Mb, MSS, HRD-Negative."
+    "note": "Molecular profiling on the TSO500 · 1.28 Mb panel returned 8 clinically annotated alterations (479 variants of unknown significance filtered); TMB 5.5 mut/Mb, MSS, HRD-Negative.",
+    "consultNote": {
+      "fromTeam": "Thoracic Oncology",
+      "toTeam": "Molecular Tumor Board",
+      "date": "2026-05-30",
+      "history": "66-year-old male with stage IV Non-small cell lung cancer. Platinum-doublet chemotherapy. ECOG 1.",
+      "purpose": "Advanced NSCLC — driver mutation and TKI eligibility review.",
+      "opinion": "EGFR L833V is a Tier I actionable target — Datopotamab Deruxtecan indicated. Recommend review of matched options at MTB."
+    },
+    "chemo": [
+      {
+        "regimen": "Pemetrexed + Cisplatin",
+        "cycleNo": "5",
+        "beginDate": "2026-04-02",
+        "status": "Completed"
+      },
+      {
+        "regimen": "Pemetrexed + Cisplatin",
+        "cycleNo": "6",
+        "beginDate": "2026-04-23",
+        "status": "Completed"
+      },
+      {
+        "regimen": "Maintenance — pending MTB",
+        "cycleNo": "—",
+        "beginDate": "2026-06-06",
+        "status": "Planned"
+      }
+    ],
+    "labs": [
+      {
+        "key": "WBC",
+        "label": "WBC",
+        "value": "7",
+        "unit": "10³/µL",
+        "abnormal": null
+      },
+      {
+        "key": "ANC",
+        "label": "ANC",
+        "value": "5660",
+        "unit": "/µL",
+        "abnormal": null
+      },
+      {
+        "key": "Hb",
+        "label": "Hemoglobin",
+        "value": "15.3",
+        "unit": "g/dL",
+        "abnormal": null
+      },
+      {
+        "key": "PLT",
+        "label": "Platelets",
+        "value": "401",
+        "unit": "10³/µL",
+        "abnormal": "high"
+      },
+      {
+        "key": "Creatinine",
+        "label": "Creatinine",
+        "value": "1.3",
+        "unit": "mg/dL",
+        "abnormal": "high"
+      },
+      {
+        "key": "AST",
+        "label": "AST",
+        "value": "0",
+        "unit": "U/L",
+        "abnormal": null
+      },
+      {
+        "key": "ALT",
+        "label": "ALT",
+        "value": "6",
+        "unit": "U/L",
+        "abnormal": null
+      },
+      {
+        "key": "BUN",
+        "label": "BUN",
+        "value": "11.3",
+        "unit": "mg/dL",
+        "abnormal": null
+      }
+    ],
+    "journal": [
+      {
+        "date": "2026-06-02",
+        "kind": "signoff",
+        "title": "Report reviewed and signed off",
+        "actor": "Dr. Y. Kuo",
+        "detail": "Dr. Y. Kuo"
+      },
+      {
+        "date": "2026-05-30",
+        "kind": "consult",
+        "title": "MTB consult — Thoracic Oncology → Molecular Tumor Board",
+        "actor": "Dr. Y. Kuo",
+        "detail": "Advanced NSCLC — driver mutation and TKI eligibility review."
+      },
+      {
+        "date": "2026-05-25",
+        "kind": "draft",
+        "title": "Molecular report drafted",
+        "actor": "Dr. Y. Kuo",
+        "detail": "Ready for MTB discussion"
+      },
+      {
+        "date": "2026-05-23",
+        "kind": "literature",
+        "title": "Literature retrieval — 10 PubMed records",
+        "actor": "Dr. Y. Kuo",
+        "detail": "Retrieved for annotated alterations"
+      },
+      {
+        "date": "2026-05-22",
+        "kind": "annotation",
+        "title": "OncoKB / ESCAT annotation",
+        "actor": "Dr. Y. Kuo",
+        "detail": "Top finding: EGFR L833V (I)"
+      },
+      {
+        "date": "2026-05-20",
+        "kind": "biomarker",
+        "title": "Biomarkers computed",
+        "actor": "Dr. Y. Kuo",
+        "detail": "TMB 5.5 mut/Mb · MSS · HRD-Negative"
+      },
+      {
+        "date": "2026-05-18",
+        "kind": "variants",
+        "title": "Variant calling — 7 small variants",
+        "actor": "Dr. Y. Kuo",
+        "detail": "8 clinically annotated after filtering"
+      },
+      {
+        "date": "2026-05-16",
+        "kind": "qc",
+        "title": "Sequencing complete · QC passed",
+        "actor": "Dr. Y. Kuo",
+        "detail": "Coverage and tumour fraction within spec"
+      },
+      {
+        "date": "2026-05-12",
+        "kind": "sequencing",
+        "title": "Library prep & TSO500 sequencing",
+        "actor": "Dr. Y. Kuo",
+        "detail": "1.28 Mb panel"
+      },
+      {
+        "date": "2026-05-09",
+        "kind": "specimen",
+        "title": "Specimen accessioned for sequencing",
+        "actor": "Dr. Y. Kuo",
+        "detail": "M25-1684R · FFPE tumour block"
+      },
+      {
+        "date": "2026-05-06",
+        "kind": "review",
+        "title": "Referred to Molecular Tumor Board",
+        "actor": "Dr. Y. Kuo",
+        "detail": "Advanced NSCLC — driver mutation and TKI eligibility review."
+      },
+      {
+        "date": "2026-04-23",
+        "kind": "chemo",
+        "title": "Chemotherapy — Pemetrexed + Cisplatin, cycle 6 completed",
+        "actor": "Dr. Y. Kuo",
+        "detail": "Restaging planned"
+      },
+      {
+        "date": "2026-04-02",
+        "kind": "chemo",
+        "title": "Chemotherapy — Pemetrexed + Cisplatin, cycle 5",
+        "actor": "Dr. Y. Kuo",
+        "detail": "Thoracic Oncology"
+      }
+    ]
   },
   "biomarkers": {
     "tmb": 5.5,
@@ -320,6 +499,254 @@
       "year": "2025",
       "gene": "TMB",
       "alteration": ""
+    }
+  ],
+  "appraisals": [
+    {
+      "id": "99662170-ap1",
+      "linkedGene": "EGFR",
+      "linkedAlteration": "L833V",
+      "escat": "I",
+      "provenance": "systematic-review",
+      "grade": "High",
+      "verdict": "Supported — routine clinical use",
+      "pico": {
+        "population": "Non-small cell lung cancer harbouring EGFR L833V",
+        "intervention": "Datopotamab Deruxtecan",
+        "comparator": "Standard of care",
+        "outcome": "Progression-free survival, objective response",
+        "question": "In Non-small cell lung cancer with EGFR L833V, does Datopotamab Deruxtecan improve progression-free survival versus standard of care?"
+      },
+      "prisma": {
+        "totalFound": 97,
+        "afterDedup": 87,
+        "afterYearFilter": 83,
+        "afterQuality": 12,
+        "afterValidation": 8,
+        "included": 8,
+        "excludedByQuality": 71
+      },
+      "includedStudies": [
+        {
+          "citationKey": "TMB2026A",
+          "title": "Genomic characterization of DNA damage response pathway mutations reveals their adverse impact on EGFR-TKI efficacy in non-small cell lung cancer.",
+          "authors": "Yang L, Cheng J, Guo X, Xiao H, Kuang X, Yang Y, Zhang L, Zhang Q, Wang D, Xu Y, Li M",
+          "journal": "Respiratory research",
+          "year": "2026",
+          "pmid": "42092972",
+          "quartile": "Q1",
+          "citationCount": 17,
+          "verified": true,
+          "openAccess": true
+        },
+        {
+          "citationKey": "TMB2026B",
+          "title": "Immunotherapy Response and Survival Outcome by Immunophenotypic Signature in Non-Small Cell Lung Cancer.",
+          "authors": "Bansal D, Ponvilawan B, Grachev D, Kushnarev V, Tarasov A, Valiev I, Danilov K, Butusova A, Turova P, Bagaev A, Kotlov N, Al-Obaidi A, Ward C, Subramanian J",
+          "journal": "JCO precision oncology",
+          "year": "2026",
+          "pmid": "42090630",
+          "quartile": "Q1",
+          "citationCount": 30,
+          "verified": true,
+          "openAccess": false
+        },
+        {
+          "citationKey": "TMB2026C",
+          "title": "Epidemiology and Real-World Outcomes in Patients with Human Epidermal Growth Factor Receptor 2 (HER2)-Mutant Non-small Cell Lung Cancer by Region: A Targeted Literature Review.",
+          "authors": "Goto K, Hayashi H, Maruti SS, Zettl H, Mittal L, Pathak S, Le X",
+          "journal": "Targeted oncology",
+          "year": "2026",
+          "pmid": "42090048",
+          "quartile": "Q1",
+          "citationCount": 43,
+          "verified": true,
+          "openAccess": true
+        },
+        {
+          "citationKey": "TMB2026D",
+          "title": "The application and challenges of immune checkpoint inhibitors in lung cancer therapy.",
+          "authors": "Li B, Ren Y, Zhang X",
+          "journal": "Frontiers in immunology",
+          "year": "2026",
+          "pmid": "42088497",
+          "quartile": "Q1",
+          "citationCount": 56,
+          "verified": true,
+          "openAccess": false
+        },
+        {
+          "citationKey": "TMB2026E",
+          "title": "Serum Carcinoembryonic Antigen Levels Across Molecular Subtypes and Their Clinical and Prognostic Implications in Metastatic Non-Small Cell Lung Cancer.",
+          "authors": "Aytac A, Demir B, Gulmez MD, Arvas H, Tuzcu TU, Erul E, Tunbekici S, Yerlikaya T, Tunc S, Ellez HI, Camadan YA, Canaslan K, Colak R, Urakci Z, Koksoy EB, Yazici O, Alkan A, Tanriverdi O, Goker E, Demirkazik A",
+          "journal": "Medicina (Kaunas, Lithuania)",
+          "year": "2026",
+          "pmid": "42075590",
+          "quartile": "Q1",
+          "citationCount": 29,
+          "verified": true,
+          "openAccess": true
+        },
+        {
+          "citationKey": "TMB2026F",
+          "title": "Advances in Multi-Modal Biomarkers for Immunotherapy Response in Non-Small Cell Lung Cancer: ctDNA, Microbiome, and Radiomics.",
+          "authors": "Chakrabarti T, Lee M",
+          "journal": "Cancers",
+          "year": "2026",
+          "pmid": "42073604",
+          "quartile": "Q1",
+          "citationCount": 42,
+          "verified": true,
+          "openAccess": false
+        },
+        {
+          "citationKey": "TMB2026G",
+          "title": "Analysis of Somatic Mutations and Immunotherapy Biomarkers in Chinese Patients With Non-Small Cell Lung Cancer During 2019-2024: A Retrospective Study.",
+          "authors": "Liu X, Chen W, Xin C, Wang Z, Yi K, Wang L, Liu J",
+          "journal": "Health science reports",
+          "year": "2026",
+          "pmid": "42063689",
+          "quartile": "Q2",
+          "citationCount": 55,
+          "verified": true,
+          "openAccess": true
+        },
+        {
+          "citationKey": "TMB2026H",
+          "title": "A Systematic Review and Meta-Analysis of the Impact of Tumour Mutation Burden on Survival Outcomes in Solid Tumours.",
+          "authors": "Meng A, Yuile A, Sim HW, Thavaneswaran S, Noor H, Yeung J, Mehta A, Powell J, Zaman A",
+          "journal": "Cancer medicine",
+          "year": "2026",
+          "pmid": "42041198",
+          "quartile": "Q2",
+          "citationCount": 28,
+          "verified": true,
+          "openAccess": false
+        }
+      ]
+    },
+    {
+      "id": "99662170-ap2",
+      "linkedGene": "EGFR",
+      "linkedAlteration": "L858R",
+      "escat": "I",
+      "provenance": "systematic-review",
+      "grade": "High",
+      "verdict": "Supported — routine clinical use",
+      "pico": {
+        "population": "Non-small cell lung cancer harbouring EGFR L858R",
+        "intervention": "Afatinib / Amivantamab + Chemotherapy",
+        "comparator": "Standard of care",
+        "outcome": "Progression-free survival, objective response",
+        "question": "In Non-small cell lung cancer with EGFR L858R, does Afatinib improve progression-free survival versus standard of care?"
+      },
+      "prisma": {
+        "totalFound": 97,
+        "afterDedup": 87,
+        "afterYearFilter": 83,
+        "afterQuality": 12,
+        "afterValidation": 8,
+        "included": 8,
+        "excludedByQuality": 71
+      },
+      "includedStudies": [
+        {
+          "citationKey": "TMB2026A",
+          "title": "Genomic characterization of DNA damage response pathway mutations reveals their adverse impact on EGFR-TKI efficacy in non-small cell lung cancer.",
+          "authors": "Yang L, Cheng J, Guo X, Xiao H, Kuang X, Yang Y, Zhang L, Zhang Q, Wang D, Xu Y, Li M",
+          "journal": "Respiratory research",
+          "year": "2026",
+          "pmid": "42092972",
+          "quartile": "Q1",
+          "citationCount": 17,
+          "verified": true,
+          "openAccess": true
+        },
+        {
+          "citationKey": "TMB2026B",
+          "title": "Immunotherapy Response and Survival Outcome by Immunophenotypic Signature in Non-Small Cell Lung Cancer.",
+          "authors": "Bansal D, Ponvilawan B, Grachev D, Kushnarev V, Tarasov A, Valiev I, Danilov K, Butusova A, Turova P, Bagaev A, Kotlov N, Al-Obaidi A, Ward C, Subramanian J",
+          "journal": "JCO precision oncology",
+          "year": "2026",
+          "pmid": "42090630",
+          "quartile": "Q1",
+          "citationCount": 30,
+          "verified": true,
+          "openAccess": false
+        },
+        {
+          "citationKey": "TMB2026C",
+          "title": "Epidemiology and Real-World Outcomes in Patients with Human Epidermal Growth Factor Receptor 2 (HER2)-Mutant Non-small Cell Lung Cancer by Region: A Targeted Literature Review.",
+          "authors": "Goto K, Hayashi H, Maruti SS, Zettl H, Mittal L, Pathak S, Le X",
+          "journal": "Targeted oncology",
+          "year": "2026",
+          "pmid": "42090048",
+          "quartile": "Q1",
+          "citationCount": 43,
+          "verified": true,
+          "openAccess": true
+        },
+        {
+          "citationKey": "TMB2026D",
+          "title": "The application and challenges of immune checkpoint inhibitors in lung cancer therapy.",
+          "authors": "Li B, Ren Y, Zhang X",
+          "journal": "Frontiers in immunology",
+          "year": "2026",
+          "pmid": "42088497",
+          "quartile": "Q1",
+          "citationCount": 56,
+          "verified": true,
+          "openAccess": false
+        },
+        {
+          "citationKey": "TMB2026E",
+          "title": "Serum Carcinoembryonic Antigen Levels Across Molecular Subtypes and Their Clinical and Prognostic Implications in Metastatic Non-Small Cell Lung Cancer.",
+          "authors": "Aytac A, Demir B, Gulmez MD, Arvas H, Tuzcu TU, Erul E, Tunbekici S, Yerlikaya T, Tunc S, Ellez HI, Camadan YA, Canaslan K, Colak R, Urakci Z, Koksoy EB, Yazici O, Alkan A, Tanriverdi O, Goker E, Demirkazik A",
+          "journal": "Medicina (Kaunas, Lithuania)",
+          "year": "2026",
+          "pmid": "42075590",
+          "quartile": "Q1",
+          "citationCount": 29,
+          "verified": true,
+          "openAccess": true
+        },
+        {
+          "citationKey": "TMB2026F",
+          "title": "Advances in Multi-Modal Biomarkers for Immunotherapy Response in Non-Small Cell Lung Cancer: ctDNA, Microbiome, and Radiomics.",
+          "authors": "Chakrabarti T, Lee M",
+          "journal": "Cancers",
+          "year": "2026",
+          "pmid": "42073604",
+          "quartile": "Q1",
+          "citationCount": 42,
+          "verified": true,
+          "openAccess": false
+        },
+        {
+          "citationKey": "TMB2026G",
+          "title": "Analysis of Somatic Mutations and Immunotherapy Biomarkers in Chinese Patients With Non-Small Cell Lung Cancer During 2019-2024: A Retrospective Study.",
+          "authors": "Liu X, Chen W, Xin C, Wang Z, Yi K, Wang L, Liu J",
+          "journal": "Health science reports",
+          "year": "2026",
+          "pmid": "42063689",
+          "quartile": "Q2",
+          "citationCount": 55,
+          "verified": true,
+          "openAccess": true
+        },
+        {
+          "citationKey": "TMB2026H",
+          "title": "A Systematic Review and Meta-Analysis of the Impact of Tumour Mutation Burden on Survival Outcomes in Solid Tumours.",
+          "authors": "Meng A, Yuile A, Sim HW, Thavaneswaran S, Noor H, Yeung J, Mehta A, Powell J, Zaman A",
+          "journal": "Cancer medicine",
+          "year": "2026",
+          "pmid": "42041198",
+          "quartile": "Q2",
+          "citationCount": 28,
+          "verified": true,
+          "openAccess": false
+        }
+      ]
     }
   ],
   "droppedVus": 479

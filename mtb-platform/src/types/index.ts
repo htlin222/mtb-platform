@@ -88,6 +88,56 @@ export interface LiteratureHit {
   alteration: string;
 }
 
+// ── Systematic-review appraisal (robust-lit-review contract) ───────────────
+
+export type GradeLevel = "High" | "Moderate" | "Low" | "Very Low";
+
+export interface Pico {
+  population: string;
+  intervention: string;
+  comparator: string;
+  outcome: string;
+  question: string;
+}
+
+/** PRISMA 2020 flow counts, as emitted by robust-lit-review. */
+export interface Prisma {
+  totalFound: number;
+  afterDedup: number;
+  afterYearFilter: number;
+  afterQuality: number; // Q1 filter
+  afterValidation: number;
+  included: number;
+  excludedByQuality: number;
+}
+
+export interface IncludedStudy {
+  citationKey: string;
+  title: string;
+  authors: string;
+  journal: string;
+  year: string;
+  pmid: string;
+  quartile: "Q1" | "Q2" | "Q3" | "Q4";
+  citationCount: number;
+  verified: boolean; // CrossRef / PubMed verified
+  openAccess: boolean;
+}
+
+/** A completed or rapid systematic-review appraisal of one actionable finding. */
+export interface Appraisal {
+  id: string;
+  linkedGene: string;
+  linkedAlteration: string;
+  escat: EscatTier;
+  provenance: "systematic-review" | "rapid-review";
+  grade: GradeLevel;
+  verdict: string; // one-line judgement
+  pico: Pico;
+  prisma: Prisma;
+  includedStudies: IncludedStudy[];
+}
+
 // ── Patient identity / clinical context (mocked per sample) ────────────────
 
 export type Sex = "M" | "F";
@@ -110,12 +160,52 @@ export interface Patient {
   panel: string; // sequencing panel
 }
 
+export interface ConsultNote {
+  fromTeam: string;
+  toTeam: string;
+  date: string;
+  history: string;
+  purpose: string;
+  opinion: string;
+}
+
+export interface ChemoCourse {
+  regimen: string;
+  cycleNo: string;
+  beginDate: string;
+  status: string; // Completed | Planned | In progress
+}
+
+export interface LabValue {
+  key: string;
+  label: string;
+  value: string;
+  unit?: string;
+  abnormal?: "high" | "low" | null;
+}
+
+/** One entry in the VCF / patient course journal. */
+export interface JournalEvent {
+  date: string; // ISO
+  kind:
+    | "chemo" | "specimen" | "sequencing" | "qc" | "variants"
+    | "biomarker" | "annotation" | "literature" | "draft"
+    | "consult" | "review" | "signoff" | "lab";
+  title: string;
+  actor: string;
+  detail?: string;
+}
+
 /** Mocked clinical context that frames the molecular report. */
 export interface ClinicalContext {
   consultReason: string;
   priorTherapy: string[];
   ecog: number;
   note: string;
+  consultNote: ConsultNote;
+  chemo: ChemoCourse[];
+  labs: LabValue[];
+  journal: JournalEvent[];
 }
 
 // ── Integrated report (platform's core artifact) ───────────────────────────
@@ -128,6 +218,7 @@ export interface Report {
   cnv: Cnv[];
   fusions: Fusion[];
   literature: LiteratureHit[];
+  appraisals: Appraisal[]; // robust-lit-review systematic appraisals
   droppedVus: number; // count of Tier-X VUS filtered from the report
 }
 

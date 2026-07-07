@@ -1,388 +1,929 @@
 {
-  "patient": {
-    "chartNo": "99508213",
-    "name": "Grace Huang",
-    "sex": "F",
-    "age": 63,
-    "birthday": "1962-01-30",
-    "cancerType": "Breast carcinoma",
-    "cancerCode": "BRCA",
-    "stage": "IIIB",
-    "team": "Breast Oncology",
-    "attending": "Dr. C. Chiu",
-    "status": "reviewed",
-    "reportDate": "2026-06-12",
-    "sampleId": "M25-1292R",
-    "panel": "TSO500 · 1.21 Mb"
-  },
-  "clinical": {
-    "consultReason": "HER2-mutant breast cancer — targeted therapy eligibility.",
-    "priorTherapy": [
-      "Anthracycline-based adjuvant chemotherapy"
-    ],
-    "ecog": 0,
-    "note": "Molecular profiling on the TSO500 · 1.21 Mb panel returned 11 clinically annotated alterations (524 variants of unknown significance filtered); TMB 8.3 mut/Mb, MSS, HRD-Negative."
-  },
-  "biomarkers": {
-    "tmb": 8.3,
-    "tmbClass": "TMB-Intermediate",
-    "variantCount": 10,
-    "panelSizeMb": 1.21,
-    "msi": "MSS",
-    "msiScore": 0,
-    "unstableSites": 0,
-    "totalSites": 69,
-    "hrd": 9,
-    "hrdStatus": "HRD-Negative",
-    "loh": null,
-    "tai": null,
-    "lst": null,
-    "hrdReliable": true
-  },
-  "variants": [
-    {
-      "gene": "PIK3CA",
-      "alteration": "P104del",
-      "kind": "mutation",
-      "oncogenicity": "Likely Oncogenic",
-      "mutationEffect": "Likely Gain-of-function",
-      "escat": "I",
-      "escatDescription": "Target ready for implementation in routine clinical decisions",
-      "oncokbLevel": "LEVEL_1",
-      "resistanceLevel": null,
-      "treatments": [
-        {
-          "drugs": "Inavolisib + Palbociclib + Fulvestrant",
-          "level": "LEVEL_1",
-          "fdaApproved": true,
-          "description": "Inavolisib is an orally available, small molecule PI3Kα inhibitor that is FDA-approved in combination with palbociclib and fulvestrant for the treatment of adults with endocrine-resistant, PIK3CA-mutated, HR-positive, HER2-negative, locally advanced or metastatic breast cancer, as detected by an FDA-approved test following recurrence on or after completing adjuvant endocrine therapy. PIK3CA oncogenic mutations for treatment with inavolisib plus palbociclib and fulvestrant were detected by the FoundationOne Liquid CDx. FDA approval was based on the results of the Phase III INAVO120 (NCT04191499) trial of inavolisib plus palbociclib and fulvestrant versus palbociclib plus fulvestrant in 325 patients with PIK3CA-mutated, HR+/HER2- breast cancer. In the Phase III INAVO120 (NCT04191499) trial, the inavolisib cohort (n=161) demonstrated an overall response rate (ORR) of 58.4%, with seven complete responses (CR) and 87 partial responses (PR), a median progression-free survival (PFS) of 15.0 months (95% CI=11.3-20.5), median overall survival (OS) was not evaluable (95% CI=0.43-0.97) and a median duration of response (DOR) of 18.4 months (95% CI=10.4-22.2) (PMID: 39476340). In contrast, the palbociclib plus fulvestrant only cohort (n=164) demonstrated an ORR of 25.0%, with one CR and 40 PRs, a median PFS of 7.3 months (95% CI=5.6-9.3) (HR=0.43 [95% CI=0.32-0.59]; p<0.0001), a median OS of 31.1 months (95% CI=22.3-NE) (HR=0.64 [95% CI=0.43-0.97]; p=0.0338) and a median DOR of 9.6 months (95% CI=7.4-16.6) (PMID: 39476340)."
-        },
-        {
-          "drugs": "Alpelisib + Fulvestrant",
-          "level": "LEVEL_2",
-          "fdaApproved": true,
-          "description": "Alpelisib is an orally available, small molecule PI3Kα inhibitor that is FDA-approved with fulvestrant for the treatment of postmenopausal patients with ER+, HER2-, PIK3CA-mutated, advanced or metastatic breast cancer, as detected by an FDA-approved test, following progression on or after an endocrine-based regimen. PIK3CA mutation status was identified through the QIAGEN therascreen PIK3CA RGQ PCR Kit. The NCCN-compendium lists alpelisib plus fulvestrant for patients with ER+/HER2- metastatic breast harboring PIK3CA activating mutations based on the results of the Phase III SOLAR-1 (NCT02437318) trial of alpelisib plus fulvestrant versus placebo plus fulvestrant in 341 patients with ER+, HER2-, PIK3CA-mutated, advanced or metastatic breast cancer whose disease had progressed or on or after receiving an aromatase inhibitor. In the Phase III SOLAR-1 (NCT02437318) trial, the alpelisib plus fulvestrant treated cohort (n=169) demonstrated a median progression-free survival (PFS) of 11.0 months (95% CI=7.5-14.5) and an overall response rate (ORR) of 35.7% (95% CI=27.4-44.7) compared to the placebo plus fulvestrant treated cohort (n=172) that demonstrated a median PFS of 5.7 months (95% CI=3.7-7.4) (HR=0.65 [95% CI=0.50-0.85]; p=0.0013) and an ORR of 16.2% (95% CI=10.4-23.5) (PMID: 31091374)."
-        },
-        {
-          "drugs": "Capivasertib + Fulvestrant",
-          "level": "LEVEL_2",
-          "fdaApproved": true,
-          "description": "Capivasertib is an orally available, ATP-competitive pan-AKT small molecule inhibitor that is FDA-approved with fulvestrant for adult patients with ER+/HER2- locally advanced or metastatic breast cancer with one or more PIK3CA/AKT1/PTEN-alterations, as detected by an FDA-approved test, following progression on at least one endocrine-based regimen in the metastatic setting or recurrence on or within twelve months of completing adjuvant therapy. Eligible PIK3CA/AKT1/PTEN-alterations (PIK3CA R88Q, N345K, C420R, E542K, E545A, E545D, E545Q, E545K, E545G, Q546E, Q546K, Q546R, Q546P, M1043V, M1043I, H1047Y, H1047R, H1047L and G1049R; AKT1 E17K; all PTEN oncogenic mutations) for treatment with capivasertib plus fulvestrant were detected by the FoundationOne CDx assay. The NCCN-compendium lists capivasertib plus fulvestrant for patients with ER+/HER2- metastatic breast harboring PIK3CA/AKT1/PTEN activating mutations based on the results from the Phase III CAPItello-291 (NCT04305496) trial of capivasertib plus fulvestrant versus placebo plus fulvestrant in 708 adult patients with ER+/HER2- locally advanced or metastatic breast cancer (n=289, patients with eligible PIK3CA/AKT1/PTEN alterations). In the Phase III CAPItello-291 (NCT04305496) trial, the capivasertib plus fulvestrant cohort with PIK3CA/AKT1/PTEN-altered tumors (n=155) demonstrated an objective response rate (ORR) of 26% (95% CI=19-34), with a 2.3% complete response (CR) rate, 23% partial response (PR) rate, and a median progression-free survival (PFS) of 7.3 months (95% CI=5.5-9.0)(PMID: 37256976). The placebo plus fulvestrant cohort with PIK3CA/AKT1/PTEN-altered tumors (n=134) demonstrated an ORR of 8% (95% CI=4-14), with an 8% PR rate and a median PFS of 3.1 months (95% CI=2.0-3.7) (HR=0.50 [95% CI=0.38-0.65]; p<0.0001) (PMID: 37256976)."
-        },
-        {
-          "drugs": "RLY-2608",
-          "level": "LEVEL_4",
-          "fdaApproved": false,
-          "description": "RLY-2608 is an orally available, small-molecule, allosteric PI3Kα inhibitor. There are promising laboratory and anecdotal clinical data to support use of RLY-2608 in patients with PIK3CA-mutated solid tumors. In the Phase I ReDiscover (NCT05216432) trial of RLY-2608, one patient with HER2-low breast cancer harboring PIK3CA H1047R and E453K was treated with RLY-2608 and one patient with HER2-negative breast cancer harboring PIK3CA E542K was treated with RLY-2608 plus fulvestrant and both patients demonstrated partial responses (PMID: 37916956). Biochemical assays have demonstrated that RLY-2608 inhibits PI3Kα activity in kinase and helical domain mutants with high isoform selectivity (Abstract: Pazolli et al. Abstract# P251, TARG 2021. https://aacrjournals.org/mct/article/20/12_Supplement/P251/676005/Abstract-P251-Discovery-and-characterization-of). In vivo xenograft models harboring PIK3CA E545K and H1047R mutations demonstrated sensitivity to RLY-2608 as measured by dose-dependent tumor regression and anti-tumor activity (Abstract: Pazolli et al. Abstract# P5-16-10, SABCS 2021. https://aacrjournals.org/cancerres/article/82/4_Supplement/P5-16-10/681459). In vitro studies with MCF10A cells expressing PIK3CA E545K or H1047R demonstrate sensitivity to RLY-2608 as measured by inhibition of cellular signaling and proliferation (PMID: 37916956)."
-        },
-        {
-          "drugs": "RLY-2608 + Fulvestrant",
-          "level": "LEVEL_4",
-          "fdaApproved": false,
-          "description": "RLY-2608 is an orally available, small-molecule, allosteric PI3Kα inhibitor, and fulvestrant is an FDA-approved estrogen receptor antagonist indicated for the treatment of patients with hormone receptor (HR)-positive, HER2-negative metastatic breast cancer. There are promising laboratory and anecdotal clinical data to support use of RLY-2608 plus fulvestrant in patients with PIK3CA-mutated breast cancer. In the Phase I ReDiscover (NCT05216432) trial of RLY-2608, one patient with HER2-low breast cancer harboring PIK3CA H1047R and E453K was treated with RLY-2608 and one patient with HER2-negative breast cancer harboring PIK3CA E542K was treated with RLY-2608 plus fulvestrant and both patients demonstrated partial responses (PMID: 37916956). In vitro studies with HR+ PI3Kα mutant cell lines demonstrated synergistic sensitivity to treatment with RLY-2608 in combination with fulvestrant (Abstract: Pazolli et al. Abstract# P5-16-10, SABCS 2021. https://aacrjournals.org/cancerres/article/82/4_Supplement/P5-16-10/681459). In vivo cell-derived xenograft models harboring the PIK3CA E545K mutation demonstrated sensitivity to RLY-2608 + fulvestrant treatment as measured by dose-dependent tumor regression (Abstract: Pazolli et al. Abstract# P5-16-10, SABCS 2021. https://aacrjournals.org/cancerres/article/82/4_Supplement/P5-16-10/681459). In vitro studies with MCF10A cells expressing PIK3CA E545K or H1047R demonstrate sensitivity to RLY-2608 as measured by inhibition of cellular signaling and proliferation (PMID: 37916956)."
-        }
-      ]
-    },
-    {
-      "gene": "ERBB2",
-      "alteration": "S310F",
-      "kind": "mutation",
-      "oncogenicity": "Oncogenic",
-      "mutationEffect": "Gain-of-function",
-      "escat": "I",
-      "escatDescription": "Target ready for implementation in routine clinical decisions",
-      "oncokbLevel": "LEVEL_2",
-      "resistanceLevel": null,
-      "treatments": [
-        {
-          "drugs": "Neratinib + Trastuzumab + Fulvestrant",
-          "level": "LEVEL_2",
-          "fdaApproved": true,
-          "description": "Neratinib is an orally available, small-molecule pan-HER targeted inhibitor that is FDA-approved as a single agent for the extended adjuvant treatment of adult patients with early-stage HER2-positive breast cancer following adjuvant trastuzumab-based therapy. The NCCN Breast Cancer Guidelines (V3.2025) lists neratinib under \"Emerging Biomarkers And Novel Therapies For Patients With Stage IV (M1) Disease\" for patients with HER2 activating mutations. NCCN recommendation was based on the results of the Phase I SUMMIT (NCT05372614) basket study of neratinib plus trastuzumab and fulvestrant in patients with HR+/HER2-negative metastatic breast cancer with activating HER2 mutation(s) and prior CDK4/6i therapy.\nIn the Phase I SUMMIT (NCT05372614) trial, patients with HER2 mutant breast cancer (n=48) demonstrated an overall response rate (ORR) of 42% (n=20), with one patient (n=1, multiple ERBB2 mutations) achieving complete response (CR) and 21 patients (n=4, L755S; n=5, exon 20 insertion; n=3, other kinase domain missense; n=5, V777L; n=1, S310F; n=3, multiple ERBB2 mutations) achieving partial response (PR), and a median progression-free survival (PFS) of 10.2 months (95% CI=6.1-18.6) (PMID: 37597578)."
-        },
-        {
-          "drugs": "Neratinib",
-          "level": "LEVEL_3A",
-          "fdaApproved": false,
-          "description": "Neratinib is a small molecule inhibitor of the ERBB2 and EGFR kinases that is FDA-approved for HER2-positive breast cancer previously treated with adjuvant trastuzumab and is a category 2B NCCN recommendation for patients with HER2-mutant breast cancer. In a Phase II basket trial of patients across multiple tumor types with ERBB2 activating mutations, the overall response rate at eight weeks in patients with HER2 non-amplified breast cancer (N=25) was 32% [95% CI= 15-54%]. ERBB2 mutations associated with a response in breast cancer included the HER2 hotspot extracellular domain mutation S310, HER2 kinase domain hotspot mutations, exon 20 insertions, and the non-hotspot complex insertion/substitution L755_E757delinsS. Responses were observed in patients with estrogen receptor (ER)+ (30%, 6/20) and ER- (40%, 2/5) tumors (PMID: 29420467). In vitro studies of cells engineered to express ERBB2 activating mutations have demonstrated that these mutations are sensitive to neratinib as measured by a decrease in colony formation in soft agar and a decrease in tumor volume in xenograft models (PMID: 23220880, 17311002)."
-        },
-        {
-          "drugs": "Ado-Trastuzumab Emtansine",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Ado-trastuzumab emtansine (T-DM1) is an antibody-drug conjugate in which an ERBB2-directed monoclonal antibody is conjugated to DM1, a microtubule-inhibitory agent. The NCCN lists ado-trastuzumab emtansine as another recommended therapy for patients with NSCLC harboring ERBB2 mutations. In the lung cancer cohort of a Phase II basket trial of T-DM1 in patients with ERBB2-mutant solid tumors, 44% (95% CI=22%-69%) of eighteen patients had a partial response, with a median progression-free survival of five months (95% CI=3-9) (PMID: 29989854). Of the eight patients who had a partial response, four had been treated with prior anti-HER2 therapy, and all eight had one of the following ERBB2 mutations: A775_G776insYVMA, G778_P780dup, G776_V777insVCV, V659E or S310F (PMID: 29989854). Responses to T-DM1 have also been seen in patients with ERBB2-amplified non-small cell lung cancer (NSCLC) (PMID: 30206164). The addition of poziotinib may enhance the response of patients with NSCLC to T-DM1 (PMID: 31588020)."
-        },
-        {
-          "drugs": "Sevabertinib",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Sevabertinib is an orally available, reversible dual EGFR/HER2-selective tyrosine kinase inhibitor that is FDA-approved for the treatment of adult patients with locally advanced or metastatic non-squamous non-small cell lung cancer (NSCLC) whose tumors have ERBB2 tyrosine kinase domain (TKD) activating mutations, as detected by an FDA-approved test, and who have received a prior systemic therapy. There are promising clinical data that support the use of sevabertinib in patients with ERBB2 non-TKD-mutant NSCLC. \nIn the Phase I/II SOHO-01 (NCT05099172) trial, cohort D (previously treated patients who had not received ERBB2-targeted therapy) (n=81 [n=73, ERBB2 TKD mutations; n=7, ERBB2 non-TKD mutations; n=1, not applicable]) demonstrated an overall response rate (ORR) of 64% (95% CI=53-75), with a 2% (n=2) complete response (CR) rate, 62% (n=50) partial response (PR) rate and 25% (n=20) stable disease (SD) rate, a median duration of response (DOR) of 9.2 months (95% CI=6.3-13.5) and a median progression-free survival of 8.3 months (95% CI=6.9-12.3) (PMID: 41104928). \nCohort E (patients who had previously received ERBB2-directed antibody drug conjugate treatment) (n=55 [n=52, ERBB2 TKD mutations; n=3, ERBB2 non-TKD mutations]) demonstrated an ORR of 38% (95% CI=25-52), with a 5% (n=3) CR rate, 33% (n=18) PR rate and 42% (n=23) SD rate, a median DOR of 8.5 months (95% CI=5.6-16.4) and a median PFS of 5.5 months (95% CI=4.3-8.3) (PMID: 41104928). \nCohort F (patients who had not previously received treatment) (n=73 [n=71, ERBB2 TKD mutations; n=2, ERBB2 non-TKD mutations]) demonstrated an ORR of 71% (95% CI=59-81), with a 2% (n=2) CR rate, 62% (n=50) PR rate and 25% (n=20) SD rate, a median DOR of 11.0 months (95% CI=8.1-NE) and a median PFS that was not evaluable (95% CI=9.6-NE) (PMID: 41104928)."
-        },
-        {
-          "drugs": "Trastuzumab Deruxtecan",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Trastuzumab Deruxtecan is a HER2-directed antibody and topoisomerase inhibitor conjugate that is FDA-approved for patients with HER2-mutant non-small cell lung cancer (NSCLC). FDA approval was based on the data from the Phase II dose optimization DESTINY-Lung02 study of trastuzumab deruxtecan in 52 patients with HER2-mutant NSCLC in which the confirmed overall response rate was 57.7% (95% CI= 43.2-71.3), with one of 54 patients having a complete response, 29 of 54 patients having a partial response, and with a median duration of response of 8.7 months (95% CI= 7.1-NE). FDA approval was supported by the Phase II DESTINY-Lung01 trial of trastuzumab deruxtecan in 91 patients with HER2-mutant NSCLC in which the overall response rate was 55% (95% CI=44-65), the median duration of response was 9.3 months (95% CI=5.7-14.7), the median progression-free survival was 8.2 months (95% CI=6.0-11.9), and the median overall survival was 17.8 months (95% CI=13.8-22.1) (PMID: 34534430)."
-        },
-        {
-          "drugs": "Trastuzumab + Pertuzumab + Docetaxel",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Trastuzumab and pertuzumab are both monoclonal antibodies against ERBB2/HER2 and docetaxel is an antineoplastic agent that acts by disrupting the microtubular network in cells that is essential for mitotic and interphase cellular functions. The triple combination of these therapeutic agents is FDA-approved for the treatment of patients with HER2-positive metastatic breast cancer who have not received prior anti-HER2 therapy or chemotherapy for metastatic disease. In a multicenter, nonrandomized phase II study (FCT 1703-R2D2, NCT03845270) of trastuzumab, pertuzumab and docetaxel in 45 patients with ERBB2-mutated, advanced non-small cell lung cancer who progressed after at least one platinum-based treatment, the objective response rate was 29% (n = 13/45) in which 58% of patients had stable disease (n = 26/45) and the median progression-free survival was 6.8 months (95% CI=4.0 to 8.5) (PMID: 35073148). Preclinical studies in HER2-overexpressing breast cancer cell lines and HER2-positive breast and non–small cell lung cancer xenograft models have shown that combining trastuzumab and pertuzumab resulted in greater antitumor activity compared to treatment with either antibody alone due to more comprehensive signaling blockade provided by the antibodies binding to different HER2 epitopes (PMID: 15059883, 19934333). In a separate preclinical study, treatment of a HER2-positive mouse xenograft model of breast cancer with trastuzumab, pertuzumab, and docetaxel resulted in enhanced apoptosis, infiltration of mononuclear cells, a strong reduction in the phosphorylation of HER2, EGFR, HER3, ERK, and AKT, as well as a slower tumor growth rate compared to controls (PMID: 28959366)."
-        },
-        {
-          "drugs": "Zongertinib",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Zongertinib is an orally available, HER2-selective tyrosine kinase inhibitor. Zongertinib is recommended in the NCCN Non-Small Cell Lung Cancer (NSCLC) Guidelines (V8.2025) as a \"Molecular and Biomarker-Directed Therapy for Advanced or Metastatic Disease: Subsequent Therapy\" treatment option for patients with ERBB2 (HER2) mutations who received prior systemic therapy. NCCN recommendation is based on the results of the Phase I Beamion LUNG-1 (NCT04886804) trial of zongertinib in patients with previously treated ERBB2-mutant NSCLC.\nIn the Phase I Beamion LUNG-1 (NCT04886804), patients with previously treated NSCLC with an ERBB2 mutation in the tyrosine kinase domain (n=75 [ERBB2 mutations include: A775_G776insYVMA (43), P780_Y781insGSP (8), A775_G776insYVMA+other (5), G776>VC (3), L755P (2), G776V (2), other (12)]) demonstrated an overall response rate (ORR) of 71% (95% CI=60-80), with a 7% (n=5) complete response (CR) rate and 64% (n=48) partial response (PR) rate, and a disease control rate (DCR) of 96% (95% CI=89-99) (PMID: 40293180). Of patients who were previously treated with a HER2-directed antibody drug conjugate (ADC) (n=31 [ERBB2 mutations include: A775_G776insYVMA (18), P780_Y781insGSP (3), G776>VC (3), other (7)]), the ORR was 48% (95% CI=32-65), with a 3% (n=1) CR rate and 45% (n=14) PR rate, and the DCR was 97% (95% CI=84-99) (PMID: 40293180). Patients with previously treated NSCLC with an ERBB2 mutation not in the tyrosine kinase domain (n=20 [ERBB2 mutations include: S310F (6), V659E (6), S310Y (4), P1199S (1), D277Y (1), S113F (1), G660D (1)]) demonstrated an ORR of 30% (95% CI=15-52), with a 30% (n=5 [S310F (3), V659E (3)]) PR rate, and a DCR of 65% (95% CI=43-82) (PMID: 40293180)."
-        }
-      ]
-    },
-    {
-      "gene": "ERBB2",
-      "alteration": "G776V",
-      "kind": "mutation",
-      "oncogenicity": "Oncogenic",
-      "mutationEffect": "Gain-of-function",
-      "escat": "I",
-      "escatDescription": "Target ready for implementation in routine clinical decisions",
-      "oncokbLevel": "LEVEL_2",
-      "resistanceLevel": null,
-      "treatments": [
-        {
-          "drugs": "Neratinib + Trastuzumab + Fulvestrant",
-          "level": "LEVEL_2",
-          "fdaApproved": true,
-          "description": "Neratinib is an orally available, small-molecule pan-HER targeted inhibitor that is FDA-approved as a single agent for the extended adjuvant treatment of adult patients with early-stage HER2-positive breast cancer following adjuvant trastuzumab-based therapy. The NCCN Breast Cancer Guidelines (V3.2025) lists neratinib under \"Emerging Biomarkers And Novel Therapies For Patients With Stage IV (M1) Disease\" for patients with HER2 activating mutations. NCCN recommendation was based on the results of the Phase I SUMMIT (NCT05372614) basket study of neratinib plus trastuzumab and fulvestrant in patients with HR+/HER2-negative metastatic breast cancer with activating HER2 mutation(s) and prior CDK4/6i therapy.\nIn the Phase I SUMMIT (NCT05372614) trial, patients with HER2 mutant breast cancer (n=48) demonstrated an overall response rate (ORR) of 42% (n=20), with one patient (n=1, multiple ERBB2 mutations) achieving complete response (CR) and 21 patients (n=4, L755S; n=5, exon 20 insertion; n=3, other kinase domain missense; n=5, V777L; n=1, S310F; n=3, multiple ERBB2 mutations) achieving partial response (PR), and a median progression-free survival (PFS) of 10.2 months (95% CI=6.1-18.6) (PMID: 37597578)."
-        },
-        {
-          "drugs": "Neratinib",
-          "level": "LEVEL_3A",
-          "fdaApproved": false,
-          "description": "Neratinib is a small molecule inhibitor of the ERBB2 and EGFR kinases that is FDA-approved for HER2-positive breast cancer previously treated with adjuvant trastuzumab and is a category 2B NCCN recommendation for patients with HER2-mutant breast cancer. In a Phase II basket trial of patients across multiple tumor types with ERBB2 activating mutations, the overall response rate at eight weeks in patients with HER2 non-amplified breast cancer (N=25) was 32% [95% CI= 15-54%]. ERBB2 mutations associated with a response in breast cancer included the HER2 hotspot extracellular domain mutation S310, HER2 kinase domain hotspot mutations, exon 20 insertions, and the non-hotspot complex insertion/substitution L755_E757delinsS. Responses were observed in patients with estrogen receptor (ER)+ (30%, 6/20) and ER- (40%, 2/5) tumors (PMID: 29420467). In vitro studies of cells engineered to express ERBB2 activating mutations have demonstrated that these mutations are sensitive to neratinib as measured by a decrease in colony formation in soft agar and a decrease in tumor volume in xenograft models (PMID: 23220880, 17311002)."
-        },
-        {
-          "drugs": "Ado-Trastuzumab Emtansine",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Ado-trastuzumab emtansine (T-DM1) is an antibody-drug conjugate in which an ERBB2-directed monoclonal antibody is conjugated to DM1, a microtubule-inhibitory agent. The NCCN lists ado-trastuzumab emtansine as another recommended therapy for patients with NSCLC harboring ERBB2 mutations. In the lung cancer cohort of a Phase II basket trial of T-DM1 in patients with ERBB2-mutant solid tumors, 44% (95% CI=22%-69%) of eighteen patients had a partial response, with a median progression-free survival of five months (95% CI=3-9) (PMID: 29989854). Of the eight patients who had a partial response, four had been treated with prior anti-HER2 therapy, and all eight had one of the following ERBB2 mutations: A775_G776insYVMA, G778_P780dup, G776_V777insVCV, V659E or S310F (PMID: 29989854). Responses to T-DM1 have also been seen in patients with ERBB2-amplified non-small cell lung cancer (NSCLC) (PMID: 30206164). The addition of poziotinib may enhance the response of patients with NSCLC to T-DM1 (PMID: 31588020)."
-        },
-        {
-          "drugs": "Sevabertinib",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Sevabertinib is an orally available, reversible dual EGFR/HER2-selective tyrosine kinase inhibitor that is FDA approved for the treatment of adult patients with locally advanced or metastatic non-squamous non-small cell lung cancer (NSCLC) whose tumors have ERBB2 tyrosine kinase domain (TKD) activating mutations, as detected by an FDA-approved test, and who have received a prior systemic therapy. ERBB2 TKD mutations are defined as activating single-nucleotide variants in exons 18 through 21 within the TKD and exon 20 insertion mutations and are detected by the Oncomine Dx Target Test. FDA approval was based on the results of the Phase I/II SOHO-01 (NCT05099172) trial of sevabertinib in patients with locally advanced or metastatic ERBB2-mutant NSCLC.\nIn the Phase I/II SOHO-01 (NCT05099172) trial, cohort D (previously treated patients who had not received ERBB2-targeted therapy) (n=81 [n=73, ERBB2 TKD mutations: Y772_A775dupYVMA (49); G776delinsVC (8); G778_P780dup (5); G776delinsLC (4); V659E (3); S310F (2); D769Y, S310Y (1); G776S (1); G778_S779insCPG (1); L755P (1); L755S (1); M774_A775insM (1); S310P (1); S310Y (1); V777L (1); NA (1)]) demonstrated an overall response rate (ORR) of 64% (95% CI=53-75), with a 2% (n=2) complete response (CR) rate, 62% (n=50) partial response (PR) rate and 25% (n=20) stable disease (SD) rate, a median duration of response (DOR) of 9.2 months (95% CI=6.3-13.5) and a median progression-free survival of 8.3 months (95% CI=6.9-12.3) (PMID: 41104928). \nCohort E (patients who had previously received ERBB2-directed antibody drug conjugate treatment) (n=55 [n=52, ERBB2 TKD mutations: Y772_A775dupYVMA (40); G776delinsVC (4); G778_P780dup (2); G776delinsLC (1); V659E (2); L755P (1); A775_G776insSVMA (1); G776delinsVV (1); I654_I655delinsVV (1); R970W (1); T862A (1)]) demonstrated an ORR of 38% (95% CI=25-52), with a 5% (n=3) CR rate, 33% (n=18) PR rate and 42% (n=23) SD rate, a median DOR of 8.5 months (95% CI=5.6-16.4) and a median PFS of 5.5 months (95% CI=4.3-8.3) (PMID: 41104928). \nCohort F (patients who had not previously received treatment) (n=73 [n=71, ERBB2 TKD mutations: Y772_A775dupYVMA (58); G778_P780dup (7); L755P (1); A775_G776insSVMA (1); E698_P699insLE (1); G776_V777delinsVCD (1); G776_V777insL (1); G776delinsSV (1); V659_G660delinsER (1); NA (1)]) demonstrated an ORR of 71% (95% CI=59-81), with a 2% (n=2) CR rate, 62% (n=50) PR rate and 25% (n=20) SD rate, a median DOR of 11.0 months (95% CI=8.1-NE) and a median PFS that was not evaluable (95% CI=9.6-NE) (PMID: 41104928)."
-        },
-        {
-          "drugs": "Trastuzumab Deruxtecan",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Trastuzumab Deruxtecan is a HER2-directed antibody and topoisomerase inhibitor conjugate that is FDA-approved for patients with HER2-mutant non-small cell lung cancer (NSCLC). FDA approval was based on the data from the Phase II dose optimization DESTINY-Lung02 study of trastuzumab deruxtecan in 52 patients with HER2-mutant NSCLC in which the confirmed overall response rate was 57.7% (95% CI= 43.2-71.3), with one of 54 patients having a complete response, 29 of 54 patients having a partial response, and with a median duration of response of 8.7 months (95% CI= 7.1-NE). FDA approval was supported by the Phase II DESTINY-Lung01 trial of trastuzumab deruxtecan in 91 patients with HER2-mutant NSCLC in which the overall response rate was 55% (95% CI=44-65), the median duration of response was 9.3 months (95% CI=5.7-14.7), the median progression-free survival was 8.2 months (95% CI=6.0-11.9), and the median overall survival was 17.8 months (95% CI=13.8-22.1) (PMID: 34534430)."
-        },
-        {
-          "drugs": "Trastuzumab + Pertuzumab + Docetaxel",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Trastuzumab and pertuzumab are both monoclonal antibodies against ERBB2/HER2 and docetaxel is an antineoplastic agent that acts by disrupting the microtubular network in cells that is essential for mitotic and interphase cellular functions. The triple combination of these therapeutic agents is FDA-approved for the treatment of patients with HER2-positive metastatic breast cancer who have not received prior anti-HER2 therapy or chemotherapy for metastatic disease. In a multicenter, nonrandomized phase II study (FCT 1703-R2D2, NCT03845270) of trastuzumab, pertuzumab and docetaxel in 45 patients with ERBB2-mutated, advanced non-small cell lung cancer who progressed after at least one platinum-based treatment, the objective response rate was 29% (n = 13/45) in which 58% of patients had stable disease (n = 26/45) and the median progression-free survival was 6.8 months (95% CI=4.0 to 8.5) (PMID: 35073148). Preclinical studies in HER2-overexpressing breast cancer cell lines and HER2-positive breast and non–small cell lung cancer xenograft models have shown that combining trastuzumab and pertuzumab resulted in greater antitumor activity compared to treatment with either antibody alone due to more comprehensive signaling blockade provided by the antibodies binding to different HER2 epitopes (PMID: 15059883, 19934333). In a separate preclinical study, treatment of a HER2-positive mouse xenograft model of breast cancer with trastuzumab, pertuzumab, and docetaxel resulted in enhanced apoptosis, infiltration of mononuclear cells, a strong reduction in the phosphorylation of HER2, EGFR, HER3, ERK, and AKT, as well as a slower tumor growth rate compared to controls (PMID: 28959366)."
-        },
-        {
-          "drugs": "Zongertinib",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Zongertinib is an orally available, HER2-selective tyrosine kinase inhibitor that is FDA-approved for the treatment of adult patients with unresectable or metastatic non-squamous non-small cell lung cancer (NSCLC) whose tumors have HER2 (ERBB2) tyrosine kinase domain (TKD) activating mutations, as detected by an FDA-approved test. ERBB2 TKD mutations are defined as activating single-nucleotide variants in exons 18 through 21 within the TKD and exon 20 insertion mutations, and are detected by the Oncomine Dx Target Test. FDA approval was based on the results of the Phase I Beamion LUNG-1 (NCT04886804) trial of zongertinib in patients with NSCLC with ERBB2 activating TKD mutations.\nIn the Phase I Beamion LUNG-1 (NCT04886804) trial, patients with previously treated NSCLC with an ERBB2 mutation in the TKD (n=75 [ERBB2 mutations include: A775_G776insYVMA (43), P780_Y781insGSP (8), A775_G776insYVMA+other (5), G776>VC (3), L755P (2), G776V (2), other (12)]) demonstrated an overall response rate (ORR) of 71% (95% CI=60-80), with a 7% (n=5) complete response (CR) rate and 64% (n=48) partial response (PR) rate, and a disease control rate (DCR) of 96% (95% CI=89-99) (PMID: 40293180). Of patients who were previously treated with a HER2-directed antibody drug conjugate (ADC) (n=31 [ERBB2 mutations include: A775_G776insYVMA (18), P780_Y781insGSP (3), G776>VC (3), other (7)]), the ORR was 48% (95% CI=32-65), with a 3% (n=1) CR rate and 45% (n=14) PR rate, and the DCR was 97% (95% CI=84-99) (PMID: 40293180). Patients with previously treated NSCLC with an ERBB2 mutation not in the TKD (n=20 [ERBB2 mutations include: S310F (6), V659E (6), S310Y (4), P1199S (1), D277Y (1), S113F (1), G660D (1)]) demonstrated an ORR of 30% (95% CI=15-52), with a 30% (n=5 [S310F (3), V659E (3)]) PR rate, and a DCR of 65% (95% CI=43-82) (PMID: 40293180).\nIn the Phase Ib Beamion LUNG-1 (NCT04886804) single arm for patients who had not received systemic therapy for advanced disease (n=72), the ORR was 77% (95% CI=66-85), with an 8% (n=6) CR rate, 69% (n=51) PR rate and 19% (n=14) stable disease (SD) rate (Abstract: Popat et al. Abstract #LBA74, ESMO 2025. https://www.annalsofoncology.org/article/S0923-7534(25)04858-6/fulltext)."
-        }
-      ]
-    },
-    {
-      "gene": "KDR",
-      "alteration": "Q472H",
-      "kind": "mutation",
-      "oncogenicity": "Likely Oncogenic",
-      "mutationEffect": "Likely Gain-of-function",
-      "escat": "X",
-      "escatDescription": "No evidence for actionability or lack of data",
-      "oncokbLevel": null,
-      "resistanceLevel": null,
-      "treatments": []
-    },
-    {
-      "gene": "TET2",
-      "alteration": "S890*",
-      "kind": "mutation",
-      "oncogenicity": "Likely Oncogenic",
-      "mutationEffect": "Likely Loss-of-function",
-      "escat": "X",
-      "escatDescription": "No evidence for actionability or lack of data",
-      "oncokbLevel": null,
-      "resistanceLevel": null,
-      "treatments": []
-    },
-    {
-      "gene": "MAP3K1",
-      "alteration": "S810*",
-      "kind": "mutation",
-      "oncogenicity": "Likely Oncogenic",
-      "mutationEffect": "Likely Loss-of-function",
-      "escat": "X",
-      "escatDescription": "No evidence for actionability or lack of data",
-      "oncokbLevel": null,
-      "resistanceLevel": null,
-      "treatments": []
-    },
-    {
-      "gene": "MAP3K1",
-      "alteration": "P1206Lfs*39",
-      "kind": "mutation",
-      "oncogenicity": "Likely Oncogenic",
-      "mutationEffect": "Likely Loss-of-function",
-      "escat": "X",
-      "escatDescription": "No evidence for actionability or lack of data",
-      "oncokbLevel": null,
-      "resistanceLevel": null,
-      "treatments": []
-    },
-    {
-      "gene": "FOXA1",
-      "alteration": "K264Efs*29",
-      "kind": "mutation",
-      "oncogenicity": "Likely Oncogenic",
-      "mutationEffect": "Likely Loss-of-function",
-      "escat": "X",
-      "escatDescription": "No evidence for actionability or lack of data",
-      "oncokbLevel": null,
-      "resistanceLevel": null,
-      "treatments": []
-    },
-    {
-      "gene": "FOXA1",
-      "alteration": "C258_Q263delinsAR",
-      "kind": "mutation",
-      "oncogenicity": "Likely Oncogenic",
-      "mutationEffect": "Unknown",
-      "escat": "X",
-      "escatDescription": "No evidence for actionability or lack of data",
-      "oncokbLevel": null,
-      "resistanceLevel": null,
-      "treatments": []
-    },
-    {
-      "gene": "FOXA1",
-      "alteration": "C258Afs*59",
-      "kind": "mutation",
-      "oncogenicity": "Likely Oncogenic",
-      "mutationEffect": "Likely Loss-of-function",
-      "escat": "X",
-      "escatDescription": "No evidence for actionability or lack of data",
-      "oncokbLevel": null,
-      "resistanceLevel": null,
-      "treatments": []
-    },
-    {
-      "gene": "AURKA",
-      "alteration": "F31I",
-      "kind": "mutation",
-      "oncogenicity": "Likely Oncogenic",
-      "mutationEffect": "Likely Gain-of-function",
-      "escat": "X",
-      "escatDescription": "No evidence for actionability or lack of data",
-      "oncokbLevel": null,
-      "resistanceLevel": null,
-      "treatments": []
-    }
-  ],
-  "cnv": [],
-  "fusions": [],
-  "literature": [
-    {
-      "pmid": "42099744",
-      "title": "Immunotherapy innovations in triple-negative breast cancer: targeting checkpoints, combinations, and biomarkers.",
-      "authors": "Wang ZX, Chu JH, Wang YR, Huang LY, Qian MP",
-      "journal": "Oncology reviews",
-      "year": "2026",
-      "gene": "TMB",
-      "alteration": ""
-    },
-    {
-      "pmid": "42083571",
-      "title": "Multi-Omics Characterization of ABHD12 Across Pan-Cancer and Validation of Its Role in Promoting Proliferation and Metastasis in Breast Cancer.",
-      "authors": "Zhao J, Gou Y, Wang Y, Li Y, Ma H, Xing Y, Peng H, Guo C",
-      "journal": "Breast cancer (Dove Medical Press)",
-      "year": "2026",
-      "gene": "TMB",
-      "alteration": ""
-    },
-    {
-      "pmid": "42034009",
-      "title": "Pathway-level somatic mutation burden reflects diffuse genomic accumulation rather than selective transcriptional disruption in ovarian serous carcinoma: Evidence from bulk, spatial, and multi-region genomic analyses.",
-      "authors": "Çağdaş EK",
-      "journal": "Gynecologic oncology",
-      "year": "2026",
-      "gene": "TMB",
-      "alteration": ""
-    },
-    {
-      "pmid": "42013747",
-      "title": "Whole genome sequencing of locally advanced and metastatic breast carcinoma unravels relevant molecular signatures and novel events.",
-      "authors": "Kozan EN, Delgado-de la Mora J, Al Assaad M, Ginter P, Gundem G, Levine MF, Gorski K, Phan A, Beg S, Sigaras A, LaPolla D, Semaan A, Wilkes DC, Greco N, Sigouros M, Manohar J, Medina-Martínez JS, Sboner A, Elemento O, Hoda S, Saxena A, Andreopoulou E, Boyraz B, Mosquera JM",
-      "journal": "Pathology, research and practice",
-      "year": "2026",
-      "gene": "TMB",
-      "alteration": ""
-    },
-    {
-      "pmid": "41969500",
-      "title": "Pan-cancer analysis reveals FOLH1 as a prognostic biomarker and immune modulator in human tumors.",
-      "authors": "Fan W, Guo X, Wang Y, He S, Zhang P",
-      "journal": "Translational cancer research",
-      "year": "2026",
-      "gene": "TMB",
-      "alteration": ""
-    },
-    {
-      "pmid": "41969462",
-      "title": "Development and validation of a cuproptosis-related lncRNA signature for predicting prognosis and immunotherapy response in breast cancer: a retrospective analysis of TCGA data.",
-      "authors": "Hu P, Ye J, Han X, Ding H, Wang C, Song D",
-      "journal": "Translational cancer research",
-      "year": "2026",
-      "gene": "TMB",
-      "alteration": ""
-    },
-    {
-      "pmid": "41935348",
-      "title": "Comparative Analysis of Homologous Recombination Repair Status Across Gynecologic and Breast Cancers in Chinese Populations.",
-      "authors": "Huang Y, Shao J, Yin X, Jiang Y, Luo J, Huang J, Zhao J, Fu S, Liao J",
-      "journal": "Current cancer drug targets",
-      "year": "2026",
-      "gene": "TMB",
-      "alteration": ""
-    },
-    {
-      "pmid": "41877589",
-      "title": "Silencing RPL9 promotes malignant proliferation in breast cancer cells.",
-      "authors": "Zhu T, Dai J, Li W, Zhang H, Song Y, Zhang D, Liu R, Wang X, Shi Z, Tang H, Zhu X, Liu Y",
-      "journal": "International journal of immunopathology and pharmacology",
-      "year": "2026",
-      "gene": "TMB",
-      "alteration": ""
-    },
-    {
-      "pmid": "41871940",
-      "title": "Homologous recombination deficiency and genomic alterations in advanced prostate cancer: insights for precision therapy.",
-      "authors": "Mercinelli C, Pavlick D, Agarwal N, Spiess PE, Li R, Kamat AM, Grivas P, Gupta S, Maiorano BA, Tateo V, Cigliola A, Piacentini M, Jacob JM, Bratslavsky G, Basnet A, Ross JS, Necchi A",
-      "journal": "The oncologist",
-      "year": "2026",
-      "gene": "TMB",
-      "alteration": ""
-    },
-    {
-      "pmid": "41866616",
-      "title": "A cancer neuroscience-related gene model for prognosis prediction and immunotherapy response evaluation in breast cancer.",
-      "authors": "Wei Y, Li J, Li M, Qiu C",
-      "journal": "Discover oncology",
-      "year": "2026",
-      "gene": "TMB",
-      "alteration": ""
-    }
-  ],
-  "droppedVus": 524
+	"patient": {
+		"chartNo": "99508213",
+		"name": "Grace Huang",
+		"sex": "F",
+		"age": 63,
+		"birthday": "1962-01-30",
+		"cancerType": "Breast carcinoma",
+		"cancerCode": "BRCA",
+		"stage": "IIIB",
+		"team": "Breast Oncology",
+		"attending": "Dr. C. Chiu",
+		"status": "reviewed",
+		"reportDate": "2026-06-12",
+		"sampleId": "M25-1292R",
+		"panel": "TSO500 · 1.21 Mb"
+	},
+	"clinical": {
+		"consultReason": "HER2-mutant breast cancer — targeted therapy eligibility.",
+		"priorTherapy": ["Anthracycline-based adjuvant chemotherapy"],
+		"ecog": 0,
+		"note": "Molecular profiling on the TSO500 · 1.21 Mb panel returned 11 clinically annotated alterations (524 variants of unknown significance filtered); TMB 8.3 mut/Mb, MSS, HRD-Negative.",
+		"consultNote": {
+			"fromTeam": "Breast Oncology",
+			"toTeam": "Molecular Tumor Board",
+			"date": "2026-06-12",
+			"history": "63-year-old female with stage IIIB Breast carcinoma. Anthracycline-based adjuvant chemotherapy. ECOG 0.",
+			"purpose": "HER2-mutant breast cancer — targeted therapy eligibility.",
+			"opinion": "PIK3CA P104del is a Tier I actionable target — Inavolisib + Palbociclib + Fulvestrant / Alpelisib + Fulvestrant indicated. Recommend review of matched options at MTB."
+		},
+		"chemo": [
+			{
+				"regimen": "Doxorubicin + Cyclophosphamide",
+				"cycleNo": "5",
+				"beginDate": "2026-04-15",
+				"status": "Completed"
+			},
+			{
+				"regimen": "Doxorubicin + Cyclophosphamide",
+				"cycleNo": "6",
+				"beginDate": "2026-05-06",
+				"status": "Completed"
+			},
+			{
+				"regimen": "Maintenance — pending MTB",
+				"cycleNo": "—",
+				"beginDate": "2026-06-19",
+				"status": "Planned"
+			}
+		],
+		"labs": [
+			{
+				"key": "WBC",
+				"label": "WBC",
+				"value": "10",
+				"unit": "10³/µL",
+				"abnormal": null
+			},
+			{
+				"key": "ANC",
+				"label": "ANC",
+				"value": "9027",
+				"unit": "/µL",
+				"abnormal": "high"
+			},
+			{
+				"key": "Hb",
+				"label": "Hemoglobin",
+				"value": "11.8",
+				"unit": "g/dL",
+				"abnormal": "low"
+			},
+			{
+				"key": "PLT",
+				"label": "Platelets",
+				"value": "181",
+				"unit": "10³/µL",
+				"abnormal": null
+			},
+			{
+				"key": "Creatinine",
+				"label": "Creatinine",
+				"value": "0.8",
+				"unit": "mg/dL",
+				"abnormal": null
+			},
+			{
+				"key": "AST",
+				"label": "AST",
+				"value": "19.4",
+				"unit": "U/L",
+				"abnormal": null
+			},
+			{
+				"key": "ALT",
+				"label": "ALT",
+				"value": "26.7",
+				"unit": "U/L",
+				"abnormal": null
+			},
+			{
+				"key": "BUN",
+				"label": "BUN",
+				"value": "18",
+				"unit": "mg/dL",
+				"abnormal": null
+			}
+		],
+		"journal": [
+			{
+				"date": "2026-06-12",
+				"kind": "consult",
+				"title": "MTB consult — Breast Oncology → Molecular Tumor Board",
+				"actor": "Dr. C. Chiu",
+				"detail": "HER2-mutant breast cancer — targeted therapy eligibility."
+			},
+			{
+				"date": "2026-06-07",
+				"kind": "draft",
+				"title": "Molecular report drafted",
+				"actor": "Dr. C. Chiu",
+				"detail": "Ready for MTB discussion"
+			},
+			{
+				"date": "2026-06-05",
+				"kind": "literature",
+				"title": "Literature retrieval — 10 PubMed records",
+				"actor": "Dr. C. Chiu",
+				"detail": "Retrieved for annotated alterations"
+			},
+			{
+				"date": "2026-06-04",
+				"kind": "annotation",
+				"title": "OncoKB / ESCAT annotation",
+				"actor": "Dr. C. Chiu",
+				"detail": "Top finding: PIK3CA P104del (I)"
+			},
+			{
+				"date": "2026-06-02",
+				"kind": "biomarker",
+				"title": "Biomarkers computed",
+				"actor": "Dr. C. Chiu",
+				"detail": "TMB 8.3 mut/Mb · MSS · HRD-Negative"
+			},
+			{
+				"date": "2026-05-31",
+				"kind": "variants",
+				"title": "Variant calling — 10 small variants",
+				"actor": "Dr. C. Chiu",
+				"detail": "11 clinically annotated after filtering"
+			},
+			{
+				"date": "2026-05-29",
+				"kind": "qc",
+				"title": "Sequencing complete · QC passed",
+				"actor": "Dr. C. Chiu",
+				"detail": "Coverage and tumour fraction within spec"
+			},
+			{
+				"date": "2026-05-25",
+				"kind": "sequencing",
+				"title": "Library prep & TSO500 sequencing",
+				"actor": "Dr. C. Chiu",
+				"detail": "1.21 Mb panel"
+			},
+			{
+				"date": "2026-05-22",
+				"kind": "specimen",
+				"title": "Specimen accessioned for sequencing",
+				"actor": "Dr. C. Chiu",
+				"detail": "M25-1292R · FFPE tumour block"
+			},
+			{
+				"date": "2026-05-19",
+				"kind": "review",
+				"title": "Referred to Molecular Tumor Board",
+				"actor": "Dr. C. Chiu",
+				"detail": "HER2-mutant breast cancer — targeted therapy eligibility."
+			},
+			{
+				"date": "2026-05-06",
+				"kind": "chemo",
+				"title": "Chemotherapy — Doxorubicin + Cyclophosphamide, cycle 6 completed",
+				"actor": "Dr. C. Chiu",
+				"detail": "Restaging planned"
+			},
+			{
+				"date": "2026-04-15",
+				"kind": "chemo",
+				"title": "Chemotherapy — Doxorubicin + Cyclophosphamide, cycle 5",
+				"actor": "Dr. C. Chiu",
+				"detail": "Breast Oncology"
+			}
+		]
+	},
+	"biomarkers": {
+		"tmb": 8.3,
+		"tmbClass": "TMB-Intermediate",
+		"variantCount": 10,
+		"panelSizeMb": 1.21,
+		"msi": "MSS",
+		"msiScore": 0,
+		"unstableSites": 0,
+		"totalSites": 69,
+		"hrd": 9,
+		"hrdStatus": "HRD-Negative",
+		"loh": null,
+		"tai": null,
+		"lst": null,
+		"hrdReliable": true
+	},
+	"variants": [
+		{
+			"gene": "PIK3CA",
+			"alteration": "P104del",
+			"kind": "mutation",
+			"oncogenicity": "Likely Oncogenic",
+			"mutationEffect": "Likely Gain-of-function",
+			"escat": "I",
+			"escatDescription": "Target ready for implementation in routine clinical decisions",
+			"oncokbLevel": "LEVEL_1",
+			"resistanceLevel": null,
+			"treatments": [
+				{
+					"drugs": "Inavolisib + Palbociclib + Fulvestrant",
+					"level": "LEVEL_1",
+					"fdaApproved": true,
+					"description": "Inavolisib is an orally available, small molecule PI3Kα inhibitor that is FDA-approved in combination with palbociclib and fulvestrant for the treatment of adults with endocrine-resistant, PIK3CA-mutated, HR-positive, HER2-negative, locally advanced or metastatic breast cancer, as detected by an FDA-approved test following recurrence on or after completing adjuvant endocrine therapy. PIK3CA oncogenic mutations for treatment with inavolisib plus palbociclib and fulvestrant were detected by the FoundationOne Liquid CDx. FDA approval was based on the results of the Phase III INAVO120 (NCT04191499) trial of inavolisib plus palbociclib and fulvestrant versus palbociclib plus fulvestrant in 325 patients with PIK3CA-mutated, HR+/HER2- breast cancer. In the Phase III INAVO120 (NCT04191499) trial, the inavolisib cohort (n=161) demonstrated an overall response rate (ORR) of 58.4%, with seven complete responses (CR) and 87 partial responses (PR), a median progression-free survival (PFS) of 15.0 months (95% CI=11.3-20.5), median overall survival (OS) was not evaluable (95% CI=0.43-0.97) and a median duration of response (DOR) of 18.4 months (95% CI=10.4-22.2) (PMID: 39476340). In contrast, the palbociclib plus fulvestrant only cohort (n=164) demonstrated an ORR of 25.0%, with one CR and 40 PRs, a median PFS of 7.3 months (95% CI=5.6-9.3) (HR=0.43 [95% CI=0.32-0.59]; p<0.0001), a median OS of 31.1 months (95% CI=22.3-NE) (HR=0.64 [95% CI=0.43-0.97]; p=0.0338) and a median DOR of 9.6 months (95% CI=7.4-16.6) (PMID: 39476340)."
+				},
+				{
+					"drugs": "Alpelisib + Fulvestrant",
+					"level": "LEVEL_2",
+					"fdaApproved": true,
+					"description": "Alpelisib is an orally available, small molecule PI3Kα inhibitor that is FDA-approved with fulvestrant for the treatment of postmenopausal patients with ER+, HER2-, PIK3CA-mutated, advanced or metastatic breast cancer, as detected by an FDA-approved test, following progression on or after an endocrine-based regimen. PIK3CA mutation status was identified through the QIAGEN therascreen PIK3CA RGQ PCR Kit. The NCCN-compendium lists alpelisib plus fulvestrant for patients with ER+/HER2- metastatic breast harboring PIK3CA activating mutations based on the results of the Phase III SOLAR-1 (NCT02437318) trial of alpelisib plus fulvestrant versus placebo plus fulvestrant in 341 patients with ER+, HER2-, PIK3CA-mutated, advanced or metastatic breast cancer whose disease had progressed or on or after receiving an aromatase inhibitor. In the Phase III SOLAR-1 (NCT02437318) trial, the alpelisib plus fulvestrant treated cohort (n=169) demonstrated a median progression-free survival (PFS) of 11.0 months (95% CI=7.5-14.5) and an overall response rate (ORR) of 35.7% (95% CI=27.4-44.7) compared to the placebo plus fulvestrant treated cohort (n=172) that demonstrated a median PFS of 5.7 months (95% CI=3.7-7.4) (HR=0.65 [95% CI=0.50-0.85]; p=0.0013) and an ORR of 16.2% (95% CI=10.4-23.5) (PMID: 31091374)."
+				},
+				{
+					"drugs": "Capivasertib + Fulvestrant",
+					"level": "LEVEL_2",
+					"fdaApproved": true,
+					"description": "Capivasertib is an orally available, ATP-competitive pan-AKT small molecule inhibitor that is FDA-approved with fulvestrant for adult patients with ER+/HER2- locally advanced or metastatic breast cancer with one or more PIK3CA/AKT1/PTEN-alterations, as detected by an FDA-approved test, following progression on at least one endocrine-based regimen in the metastatic setting or recurrence on or within twelve months of completing adjuvant therapy. Eligible PIK3CA/AKT1/PTEN-alterations (PIK3CA R88Q, N345K, C420R, E542K, E545A, E545D, E545Q, E545K, E545G, Q546E, Q546K, Q546R, Q546P, M1043V, M1043I, H1047Y, H1047R, H1047L and G1049R; AKT1 E17K; all PTEN oncogenic mutations) for treatment with capivasertib plus fulvestrant were detected by the FoundationOne CDx assay. The NCCN-compendium lists capivasertib plus fulvestrant for patients with ER+/HER2- metastatic breast harboring PIK3CA/AKT1/PTEN activating mutations based on the results from the Phase III CAPItello-291 (NCT04305496) trial of capivasertib plus fulvestrant versus placebo plus fulvestrant in 708 adult patients with ER+/HER2- locally advanced or metastatic breast cancer (n=289, patients with eligible PIK3CA/AKT1/PTEN alterations). In the Phase III CAPItello-291 (NCT04305496) trial, the capivasertib plus fulvestrant cohort with PIK3CA/AKT1/PTEN-altered tumors (n=155) demonstrated an objective response rate (ORR) of 26% (95% CI=19-34), with a 2.3% complete response (CR) rate, 23% partial response (PR) rate, and a median progression-free survival (PFS) of 7.3 months (95% CI=5.5-9.0)(PMID: 37256976). The placebo plus fulvestrant cohort with PIK3CA/AKT1/PTEN-altered tumors (n=134) demonstrated an ORR of 8% (95% CI=4-14), with an 8% PR rate and a median PFS of 3.1 months (95% CI=2.0-3.7) (HR=0.50 [95% CI=0.38-0.65]; p<0.0001) (PMID: 37256976)."
+				},
+				{
+					"drugs": "RLY-2608",
+					"level": "LEVEL_4",
+					"fdaApproved": false,
+					"description": "RLY-2608 is an orally available, small-molecule, allosteric PI3Kα inhibitor. There are promising laboratory and anecdotal clinical data to support use of RLY-2608 in patients with PIK3CA-mutated solid tumors. In the Phase I ReDiscover (NCT05216432) trial of RLY-2608, one patient with HER2-low breast cancer harboring PIK3CA H1047R and E453K was treated with RLY-2608 and one patient with HER2-negative breast cancer harboring PIK3CA E542K was treated with RLY-2608 plus fulvestrant and both patients demonstrated partial responses (PMID: 37916956). Biochemical assays have demonstrated that RLY-2608 inhibits PI3Kα activity in kinase and helical domain mutants with high isoform selectivity (Abstract: Pazolli et al. Abstract# P251, TARG 2021. https://aacrjournals.org/mct/article/20/12_Supplement/P251/676005/Abstract-P251-Discovery-and-characterization-of). In vivo xenograft models harboring PIK3CA E545K and H1047R mutations demonstrated sensitivity to RLY-2608 as measured by dose-dependent tumor regression and anti-tumor activity (Abstract: Pazolli et al. Abstract# P5-16-10, SABCS 2021. https://aacrjournals.org/cancerres/article/82/4_Supplement/P5-16-10/681459). In vitro studies with MCF10A cells expressing PIK3CA E545K or H1047R demonstrate sensitivity to RLY-2608 as measured by inhibition of cellular signaling and proliferation (PMID: 37916956)."
+				},
+				{
+					"drugs": "RLY-2608 + Fulvestrant",
+					"level": "LEVEL_4",
+					"fdaApproved": false,
+					"description": "RLY-2608 is an orally available, small-molecule, allosteric PI3Kα inhibitor, and fulvestrant is an FDA-approved estrogen receptor antagonist indicated for the treatment of patients with hormone receptor (HR)-positive, HER2-negative metastatic breast cancer. There are promising laboratory and anecdotal clinical data to support use of RLY-2608 plus fulvestrant in patients with PIK3CA-mutated breast cancer. In the Phase I ReDiscover (NCT05216432) trial of RLY-2608, one patient with HER2-low breast cancer harboring PIK3CA H1047R and E453K was treated with RLY-2608 and one patient with HER2-negative breast cancer harboring PIK3CA E542K was treated with RLY-2608 plus fulvestrant and both patients demonstrated partial responses (PMID: 37916956). In vitro studies with HR+ PI3Kα mutant cell lines demonstrated synergistic sensitivity to treatment with RLY-2608 in combination with fulvestrant (Abstract: Pazolli et al. Abstract# P5-16-10, SABCS 2021. https://aacrjournals.org/cancerres/article/82/4_Supplement/P5-16-10/681459). In vivo cell-derived xenograft models harboring the PIK3CA E545K mutation demonstrated sensitivity to RLY-2608 + fulvestrant treatment as measured by dose-dependent tumor regression (Abstract: Pazolli et al. Abstract# P5-16-10, SABCS 2021. https://aacrjournals.org/cancerres/article/82/4_Supplement/P5-16-10/681459). In vitro studies with MCF10A cells expressing PIK3CA E545K or H1047R demonstrate sensitivity to RLY-2608 as measured by inhibition of cellular signaling and proliferation (PMID: 37916956)."
+				}
+			]
+		},
+		{
+			"gene": "ERBB2",
+			"alteration": "S310F",
+			"kind": "mutation",
+			"oncogenicity": "Oncogenic",
+			"mutationEffect": "Gain-of-function",
+			"escat": "I",
+			"escatDescription": "Target ready for implementation in routine clinical decisions",
+			"oncokbLevel": "LEVEL_2",
+			"resistanceLevel": null,
+			"treatments": [
+				{
+					"drugs": "Neratinib + Trastuzumab + Fulvestrant",
+					"level": "LEVEL_2",
+					"fdaApproved": true,
+					"description": "Neratinib is an orally available, small-molecule pan-HER targeted inhibitor that is FDA-approved as a single agent for the extended adjuvant treatment of adult patients with early-stage HER2-positive breast cancer following adjuvant trastuzumab-based therapy. The NCCN Breast Cancer Guidelines (V3.2025) lists neratinib under \"Emerging Biomarkers And Novel Therapies For Patients With Stage IV (M1) Disease\" for patients with HER2 activating mutations. NCCN recommendation was based on the results of the Phase I SUMMIT (NCT05372614) basket study of neratinib plus trastuzumab and fulvestrant in patients with HR+/HER2-negative metastatic breast cancer with activating HER2 mutation(s) and prior CDK4/6i therapy.\nIn the Phase I SUMMIT (NCT05372614) trial, patients with HER2 mutant breast cancer (n=48) demonstrated an overall response rate (ORR) of 42% (n=20), with one patient (n=1, multiple ERBB2 mutations) achieving complete response (CR) and 21 patients (n=4, L755S; n=5, exon 20 insertion; n=3, other kinase domain missense; n=5, V777L; n=1, S310F; n=3, multiple ERBB2 mutations) achieving partial response (PR), and a median progression-free survival (PFS) of 10.2 months (95% CI=6.1-18.6) (PMID: 37597578)."
+				},
+				{
+					"drugs": "Neratinib",
+					"level": "LEVEL_3A",
+					"fdaApproved": false,
+					"description": "Neratinib is a small molecule inhibitor of the ERBB2 and EGFR kinases that is FDA-approved for HER2-positive breast cancer previously treated with adjuvant trastuzumab and is a category 2B NCCN recommendation for patients with HER2-mutant breast cancer. In a Phase II basket trial of patients across multiple tumor types with ERBB2 activating mutations, the overall response rate at eight weeks in patients with HER2 non-amplified breast cancer (N=25) was 32% [95% CI= 15-54%]. ERBB2 mutations associated with a response in breast cancer included the HER2 hotspot extracellular domain mutation S310, HER2 kinase domain hotspot mutations, exon 20 insertions, and the non-hotspot complex insertion/substitution L755_E757delinsS. Responses were observed in patients with estrogen receptor (ER)+ (30%, 6/20) and ER- (40%, 2/5) tumors (PMID: 29420467). In vitro studies of cells engineered to express ERBB2 activating mutations have demonstrated that these mutations are sensitive to neratinib as measured by a decrease in colony formation in soft agar and a decrease in tumor volume in xenograft models (PMID: 23220880, 17311002)."
+				},
+				{
+					"drugs": "Ado-Trastuzumab Emtansine",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Ado-trastuzumab emtansine (T-DM1) is an antibody-drug conjugate in which an ERBB2-directed monoclonal antibody is conjugated to DM1, a microtubule-inhibitory agent. The NCCN lists ado-trastuzumab emtansine as another recommended therapy for patients with NSCLC harboring ERBB2 mutations. In the lung cancer cohort of a Phase II basket trial of T-DM1 in patients with ERBB2-mutant solid tumors, 44% (95% CI=22%-69%) of eighteen patients had a partial response, with a median progression-free survival of five months (95% CI=3-9) (PMID: 29989854). Of the eight patients who had a partial response, four had been treated with prior anti-HER2 therapy, and all eight had one of the following ERBB2 mutations: A775_G776insYVMA, G778_P780dup, G776_V777insVCV, V659E or S310F (PMID: 29989854). Responses to T-DM1 have also been seen in patients with ERBB2-amplified non-small cell lung cancer (NSCLC) (PMID: 30206164). The addition of poziotinib may enhance the response of patients with NSCLC to T-DM1 (PMID: 31588020)."
+				},
+				{
+					"drugs": "Sevabertinib",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Sevabertinib is an orally available, reversible dual EGFR/HER2-selective tyrosine kinase inhibitor that is FDA-approved for the treatment of adult patients with locally advanced or metastatic non-squamous non-small cell lung cancer (NSCLC) whose tumors have ERBB2 tyrosine kinase domain (TKD) activating mutations, as detected by an FDA-approved test, and who have received a prior systemic therapy. There are promising clinical data that support the use of sevabertinib in patients with ERBB2 non-TKD-mutant NSCLC. \nIn the Phase I/II SOHO-01 (NCT05099172) trial, cohort D (previously treated patients who had not received ERBB2-targeted therapy) (n=81 [n=73, ERBB2 TKD mutations; n=7, ERBB2 non-TKD mutations; n=1, not applicable]) demonstrated an overall response rate (ORR) of 64% (95% CI=53-75), with a 2% (n=2) complete response (CR) rate, 62% (n=50) partial response (PR) rate and 25% (n=20) stable disease (SD) rate, a median duration of response (DOR) of 9.2 months (95% CI=6.3-13.5) and a median progression-free survival of 8.3 months (95% CI=6.9-12.3) (PMID: 41104928). \nCohort E (patients who had previously received ERBB2-directed antibody drug conjugate treatment) (n=55 [n=52, ERBB2 TKD mutations; n=3, ERBB2 non-TKD mutations]) demonstrated an ORR of 38% (95% CI=25-52), with a 5% (n=3) CR rate, 33% (n=18) PR rate and 42% (n=23) SD rate, a median DOR of 8.5 months (95% CI=5.6-16.4) and a median PFS of 5.5 months (95% CI=4.3-8.3) (PMID: 41104928). \nCohort F (patients who had not previously received treatment) (n=73 [n=71, ERBB2 TKD mutations; n=2, ERBB2 non-TKD mutations]) demonstrated an ORR of 71% (95% CI=59-81), with a 2% (n=2) CR rate, 62% (n=50) PR rate and 25% (n=20) SD rate, a median DOR of 11.0 months (95% CI=8.1-NE) and a median PFS that was not evaluable (95% CI=9.6-NE) (PMID: 41104928)."
+				},
+				{
+					"drugs": "Trastuzumab Deruxtecan",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Trastuzumab Deruxtecan is a HER2-directed antibody and topoisomerase inhibitor conjugate that is FDA-approved for patients with HER2-mutant non-small cell lung cancer (NSCLC). FDA approval was based on the data from the Phase II dose optimization DESTINY-Lung02 study of trastuzumab deruxtecan in 52 patients with HER2-mutant NSCLC in which the confirmed overall response rate was 57.7% (95% CI= 43.2-71.3), with one of 54 patients having a complete response, 29 of 54 patients having a partial response, and with a median duration of response of 8.7 months (95% CI= 7.1-NE). FDA approval was supported by the Phase II DESTINY-Lung01 trial of trastuzumab deruxtecan in 91 patients with HER2-mutant NSCLC in which the overall response rate was 55% (95% CI=44-65), the median duration of response was 9.3 months (95% CI=5.7-14.7), the median progression-free survival was 8.2 months (95% CI=6.0-11.9), and the median overall survival was 17.8 months (95% CI=13.8-22.1) (PMID: 34534430)."
+				},
+				{
+					"drugs": "Trastuzumab + Pertuzumab + Docetaxel",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Trastuzumab and pertuzumab are both monoclonal antibodies against ERBB2/HER2 and docetaxel is an antineoplastic agent that acts by disrupting the microtubular network in cells that is essential for mitotic and interphase cellular functions. The triple combination of these therapeutic agents is FDA-approved for the treatment of patients with HER2-positive metastatic breast cancer who have not received prior anti-HER2 therapy or chemotherapy for metastatic disease. In a multicenter, nonrandomized phase II study (FCT 1703-R2D2, NCT03845270) of trastuzumab, pertuzumab and docetaxel in 45 patients with ERBB2-mutated, advanced non-small cell lung cancer who progressed after at least one platinum-based treatment, the objective response rate was 29% (n = 13/45) in which 58% of patients had stable disease (n = 26/45) and the median progression-free survival was 6.8 months (95% CI=4.0 to 8.5) (PMID: 35073148). Preclinical studies in HER2-overexpressing breast cancer cell lines and HER2-positive breast and non–small cell lung cancer xenograft models have shown that combining trastuzumab and pertuzumab resulted in greater antitumor activity compared to treatment with either antibody alone due to more comprehensive signaling blockade provided by the antibodies binding to different HER2 epitopes (PMID: 15059883, 19934333). In a separate preclinical study, treatment of a HER2-positive mouse xenograft model of breast cancer with trastuzumab, pertuzumab, and docetaxel resulted in enhanced apoptosis, infiltration of mononuclear cells, a strong reduction in the phosphorylation of HER2, EGFR, HER3, ERK, and AKT, as well as a slower tumor growth rate compared to controls (PMID: 28959366)."
+				},
+				{
+					"drugs": "Zongertinib",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Zongertinib is an orally available, HER2-selective tyrosine kinase inhibitor. Zongertinib is recommended in the NCCN Non-Small Cell Lung Cancer (NSCLC) Guidelines (V8.2025) as a \"Molecular and Biomarker-Directed Therapy for Advanced or Metastatic Disease: Subsequent Therapy\" treatment option for patients with ERBB2 (HER2) mutations who received prior systemic therapy. NCCN recommendation is based on the results of the Phase I Beamion LUNG-1 (NCT04886804) trial of zongertinib in patients with previously treated ERBB2-mutant NSCLC.\nIn the Phase I Beamion LUNG-1 (NCT04886804), patients with previously treated NSCLC with an ERBB2 mutation in the tyrosine kinase domain (n=75 [ERBB2 mutations include: A775_G776insYVMA (43), P780_Y781insGSP (8), A775_G776insYVMA+other (5), G776>VC (3), L755P (2), G776V (2), other (12)]) demonstrated an overall response rate (ORR) of 71% (95% CI=60-80), with a 7% (n=5) complete response (CR) rate and 64% (n=48) partial response (PR) rate, and a disease control rate (DCR) of 96% (95% CI=89-99) (PMID: 40293180). Of patients who were previously treated with a HER2-directed antibody drug conjugate (ADC) (n=31 [ERBB2 mutations include: A775_G776insYVMA (18), P780_Y781insGSP (3), G776>VC (3), other (7)]), the ORR was 48% (95% CI=32-65), with a 3% (n=1) CR rate and 45% (n=14) PR rate, and the DCR was 97% (95% CI=84-99) (PMID: 40293180). Patients with previously treated NSCLC with an ERBB2 mutation not in the tyrosine kinase domain (n=20 [ERBB2 mutations include: S310F (6), V659E (6), S310Y (4), P1199S (1), D277Y (1), S113F (1), G660D (1)]) demonstrated an ORR of 30% (95% CI=15-52), with a 30% (n=5 [S310F (3), V659E (3)]) PR rate, and a DCR of 65% (95% CI=43-82) (PMID: 40293180)."
+				}
+			]
+		},
+		{
+			"gene": "ERBB2",
+			"alteration": "G776V",
+			"kind": "mutation",
+			"oncogenicity": "Oncogenic",
+			"mutationEffect": "Gain-of-function",
+			"escat": "I",
+			"escatDescription": "Target ready for implementation in routine clinical decisions",
+			"oncokbLevel": "LEVEL_2",
+			"resistanceLevel": null,
+			"treatments": [
+				{
+					"drugs": "Neratinib + Trastuzumab + Fulvestrant",
+					"level": "LEVEL_2",
+					"fdaApproved": true,
+					"description": "Neratinib is an orally available, small-molecule pan-HER targeted inhibitor that is FDA-approved as a single agent for the extended adjuvant treatment of adult patients with early-stage HER2-positive breast cancer following adjuvant trastuzumab-based therapy. The NCCN Breast Cancer Guidelines (V3.2025) lists neratinib under \"Emerging Biomarkers And Novel Therapies For Patients With Stage IV (M1) Disease\" for patients with HER2 activating mutations. NCCN recommendation was based on the results of the Phase I SUMMIT (NCT05372614) basket study of neratinib plus trastuzumab and fulvestrant in patients with HR+/HER2-negative metastatic breast cancer with activating HER2 mutation(s) and prior CDK4/6i therapy.\nIn the Phase I SUMMIT (NCT05372614) trial, patients with HER2 mutant breast cancer (n=48) demonstrated an overall response rate (ORR) of 42% (n=20), with one patient (n=1, multiple ERBB2 mutations) achieving complete response (CR) and 21 patients (n=4, L755S; n=5, exon 20 insertion; n=3, other kinase domain missense; n=5, V777L; n=1, S310F; n=3, multiple ERBB2 mutations) achieving partial response (PR), and a median progression-free survival (PFS) of 10.2 months (95% CI=6.1-18.6) (PMID: 37597578)."
+				},
+				{
+					"drugs": "Neratinib",
+					"level": "LEVEL_3A",
+					"fdaApproved": false,
+					"description": "Neratinib is a small molecule inhibitor of the ERBB2 and EGFR kinases that is FDA-approved for HER2-positive breast cancer previously treated with adjuvant trastuzumab and is a category 2B NCCN recommendation for patients with HER2-mutant breast cancer. In a Phase II basket trial of patients across multiple tumor types with ERBB2 activating mutations, the overall response rate at eight weeks in patients with HER2 non-amplified breast cancer (N=25) was 32% [95% CI= 15-54%]. ERBB2 mutations associated with a response in breast cancer included the HER2 hotspot extracellular domain mutation S310, HER2 kinase domain hotspot mutations, exon 20 insertions, and the non-hotspot complex insertion/substitution L755_E757delinsS. Responses were observed in patients with estrogen receptor (ER)+ (30%, 6/20) and ER- (40%, 2/5) tumors (PMID: 29420467). In vitro studies of cells engineered to express ERBB2 activating mutations have demonstrated that these mutations are sensitive to neratinib as measured by a decrease in colony formation in soft agar and a decrease in tumor volume in xenograft models (PMID: 23220880, 17311002)."
+				},
+				{
+					"drugs": "Ado-Trastuzumab Emtansine",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Ado-trastuzumab emtansine (T-DM1) is an antibody-drug conjugate in which an ERBB2-directed monoclonal antibody is conjugated to DM1, a microtubule-inhibitory agent. The NCCN lists ado-trastuzumab emtansine as another recommended therapy for patients with NSCLC harboring ERBB2 mutations. In the lung cancer cohort of a Phase II basket trial of T-DM1 in patients with ERBB2-mutant solid tumors, 44% (95% CI=22%-69%) of eighteen patients had a partial response, with a median progression-free survival of five months (95% CI=3-9) (PMID: 29989854). Of the eight patients who had a partial response, four had been treated with prior anti-HER2 therapy, and all eight had one of the following ERBB2 mutations: A775_G776insYVMA, G778_P780dup, G776_V777insVCV, V659E or S310F (PMID: 29989854). Responses to T-DM1 have also been seen in patients with ERBB2-amplified non-small cell lung cancer (NSCLC) (PMID: 30206164). The addition of poziotinib may enhance the response of patients with NSCLC to T-DM1 (PMID: 31588020)."
+				},
+				{
+					"drugs": "Sevabertinib",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Sevabertinib is an orally available, reversible dual EGFR/HER2-selective tyrosine kinase inhibitor that is FDA approved for the treatment of adult patients with locally advanced or metastatic non-squamous non-small cell lung cancer (NSCLC) whose tumors have ERBB2 tyrosine kinase domain (TKD) activating mutations, as detected by an FDA-approved test, and who have received a prior systemic therapy. ERBB2 TKD mutations are defined as activating single-nucleotide variants in exons 18 through 21 within the TKD and exon 20 insertion mutations and are detected by the Oncomine Dx Target Test. FDA approval was based on the results of the Phase I/II SOHO-01 (NCT05099172) trial of sevabertinib in patients with locally advanced or metastatic ERBB2-mutant NSCLC.\nIn the Phase I/II SOHO-01 (NCT05099172) trial, cohort D (previously treated patients who had not received ERBB2-targeted therapy) (n=81 [n=73, ERBB2 TKD mutations: Y772_A775dupYVMA (49); G776delinsVC (8); G778_P780dup (5); G776delinsLC (4); V659E (3); S310F (2); D769Y, S310Y (1); G776S (1); G778_S779insCPG (1); L755P (1); L755S (1); M774_A775insM (1); S310P (1); S310Y (1); V777L (1); NA (1)]) demonstrated an overall response rate (ORR) of 64% (95% CI=53-75), with a 2% (n=2) complete response (CR) rate, 62% (n=50) partial response (PR) rate and 25% (n=20) stable disease (SD) rate, a median duration of response (DOR) of 9.2 months (95% CI=6.3-13.5) and a median progression-free survival of 8.3 months (95% CI=6.9-12.3) (PMID: 41104928). \nCohort E (patients who had previously received ERBB2-directed antibody drug conjugate treatment) (n=55 [n=52, ERBB2 TKD mutations: Y772_A775dupYVMA (40); G776delinsVC (4); G778_P780dup (2); G776delinsLC (1); V659E (2); L755P (1); A775_G776insSVMA (1); G776delinsVV (1); I654_I655delinsVV (1); R970W (1); T862A (1)]) demonstrated an ORR of 38% (95% CI=25-52), with a 5% (n=3) CR rate, 33% (n=18) PR rate and 42% (n=23) SD rate, a median DOR of 8.5 months (95% CI=5.6-16.4) and a median PFS of 5.5 months (95% CI=4.3-8.3) (PMID: 41104928). \nCohort F (patients who had not previously received treatment) (n=73 [n=71, ERBB2 TKD mutations: Y772_A775dupYVMA (58); G778_P780dup (7); L755P (1); A775_G776insSVMA (1); E698_P699insLE (1); G776_V777delinsVCD (1); G776_V777insL (1); G776delinsSV (1); V659_G660delinsER (1); NA (1)]) demonstrated an ORR of 71% (95% CI=59-81), with a 2% (n=2) CR rate, 62% (n=50) PR rate and 25% (n=20) SD rate, a median DOR of 11.0 months (95% CI=8.1-NE) and a median PFS that was not evaluable (95% CI=9.6-NE) (PMID: 41104928)."
+				},
+				{
+					"drugs": "Trastuzumab Deruxtecan",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Trastuzumab Deruxtecan is a HER2-directed antibody and topoisomerase inhibitor conjugate that is FDA-approved for patients with HER2-mutant non-small cell lung cancer (NSCLC). FDA approval was based on the data from the Phase II dose optimization DESTINY-Lung02 study of trastuzumab deruxtecan in 52 patients with HER2-mutant NSCLC in which the confirmed overall response rate was 57.7% (95% CI= 43.2-71.3), with one of 54 patients having a complete response, 29 of 54 patients having a partial response, and with a median duration of response of 8.7 months (95% CI= 7.1-NE). FDA approval was supported by the Phase II DESTINY-Lung01 trial of trastuzumab deruxtecan in 91 patients with HER2-mutant NSCLC in which the overall response rate was 55% (95% CI=44-65), the median duration of response was 9.3 months (95% CI=5.7-14.7), the median progression-free survival was 8.2 months (95% CI=6.0-11.9), and the median overall survival was 17.8 months (95% CI=13.8-22.1) (PMID: 34534430)."
+				},
+				{
+					"drugs": "Trastuzumab + Pertuzumab + Docetaxel",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Trastuzumab and pertuzumab are both monoclonal antibodies against ERBB2/HER2 and docetaxel is an antineoplastic agent that acts by disrupting the microtubular network in cells that is essential for mitotic and interphase cellular functions. The triple combination of these therapeutic agents is FDA-approved for the treatment of patients with HER2-positive metastatic breast cancer who have not received prior anti-HER2 therapy or chemotherapy for metastatic disease. In a multicenter, nonrandomized phase II study (FCT 1703-R2D2, NCT03845270) of trastuzumab, pertuzumab and docetaxel in 45 patients with ERBB2-mutated, advanced non-small cell lung cancer who progressed after at least one platinum-based treatment, the objective response rate was 29% (n = 13/45) in which 58% of patients had stable disease (n = 26/45) and the median progression-free survival was 6.8 months (95% CI=4.0 to 8.5) (PMID: 35073148). Preclinical studies in HER2-overexpressing breast cancer cell lines and HER2-positive breast and non–small cell lung cancer xenograft models have shown that combining trastuzumab and pertuzumab resulted in greater antitumor activity compared to treatment with either antibody alone due to more comprehensive signaling blockade provided by the antibodies binding to different HER2 epitopes (PMID: 15059883, 19934333). In a separate preclinical study, treatment of a HER2-positive mouse xenograft model of breast cancer with trastuzumab, pertuzumab, and docetaxel resulted in enhanced apoptosis, infiltration of mononuclear cells, a strong reduction in the phosphorylation of HER2, EGFR, HER3, ERK, and AKT, as well as a slower tumor growth rate compared to controls (PMID: 28959366)."
+				},
+				{
+					"drugs": "Zongertinib",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Zongertinib is an orally available, HER2-selective tyrosine kinase inhibitor that is FDA-approved for the treatment of adult patients with unresectable or metastatic non-squamous non-small cell lung cancer (NSCLC) whose tumors have HER2 (ERBB2) tyrosine kinase domain (TKD) activating mutations, as detected by an FDA-approved test. ERBB2 TKD mutations are defined as activating single-nucleotide variants in exons 18 through 21 within the TKD and exon 20 insertion mutations, and are detected by the Oncomine Dx Target Test. FDA approval was based on the results of the Phase I Beamion LUNG-1 (NCT04886804) trial of zongertinib in patients with NSCLC with ERBB2 activating TKD mutations.\nIn the Phase I Beamion LUNG-1 (NCT04886804) trial, patients with previously treated NSCLC with an ERBB2 mutation in the TKD (n=75 [ERBB2 mutations include: A775_G776insYVMA (43), P780_Y781insGSP (8), A775_G776insYVMA+other (5), G776>VC (3), L755P (2), G776V (2), other (12)]) demonstrated an overall response rate (ORR) of 71% (95% CI=60-80), with a 7% (n=5) complete response (CR) rate and 64% (n=48) partial response (PR) rate, and a disease control rate (DCR) of 96% (95% CI=89-99) (PMID: 40293180). Of patients who were previously treated with a HER2-directed antibody drug conjugate (ADC) (n=31 [ERBB2 mutations include: A775_G776insYVMA (18), P780_Y781insGSP (3), G776>VC (3), other (7)]), the ORR was 48% (95% CI=32-65), with a 3% (n=1) CR rate and 45% (n=14) PR rate, and the DCR was 97% (95% CI=84-99) (PMID: 40293180). Patients with previously treated NSCLC with an ERBB2 mutation not in the TKD (n=20 [ERBB2 mutations include: S310F (6), V659E (6), S310Y (4), P1199S (1), D277Y (1), S113F (1), G660D (1)]) demonstrated an ORR of 30% (95% CI=15-52), with a 30% (n=5 [S310F (3), V659E (3)]) PR rate, and a DCR of 65% (95% CI=43-82) (PMID: 40293180).\nIn the Phase Ib Beamion LUNG-1 (NCT04886804) single arm for patients who had not received systemic therapy for advanced disease (n=72), the ORR was 77% (95% CI=66-85), with an 8% (n=6) CR rate, 69% (n=51) PR rate and 19% (n=14) stable disease (SD) rate (Abstract: Popat et al. Abstract #LBA74, ESMO 2025. https://www.annalsofoncology.org/article/S0923-7534(25)04858-6/fulltext)."
+				}
+			]
+		},
+		{
+			"gene": "KDR",
+			"alteration": "Q472H",
+			"kind": "mutation",
+			"oncogenicity": "Likely Oncogenic",
+			"mutationEffect": "Likely Gain-of-function",
+			"escat": "X",
+			"escatDescription": "No evidence for actionability or lack of data",
+			"oncokbLevel": null,
+			"resistanceLevel": null,
+			"treatments": []
+		},
+		{
+			"gene": "TET2",
+			"alteration": "S890*",
+			"kind": "mutation",
+			"oncogenicity": "Likely Oncogenic",
+			"mutationEffect": "Likely Loss-of-function",
+			"escat": "X",
+			"escatDescription": "No evidence for actionability or lack of data",
+			"oncokbLevel": null,
+			"resistanceLevel": null,
+			"treatments": []
+		},
+		{
+			"gene": "MAP3K1",
+			"alteration": "S810*",
+			"kind": "mutation",
+			"oncogenicity": "Likely Oncogenic",
+			"mutationEffect": "Likely Loss-of-function",
+			"escat": "X",
+			"escatDescription": "No evidence for actionability or lack of data",
+			"oncokbLevel": null,
+			"resistanceLevel": null,
+			"treatments": []
+		},
+		{
+			"gene": "MAP3K1",
+			"alteration": "P1206Lfs*39",
+			"kind": "mutation",
+			"oncogenicity": "Likely Oncogenic",
+			"mutationEffect": "Likely Loss-of-function",
+			"escat": "X",
+			"escatDescription": "No evidence for actionability or lack of data",
+			"oncokbLevel": null,
+			"resistanceLevel": null,
+			"treatments": []
+		},
+		{
+			"gene": "FOXA1",
+			"alteration": "K264Efs*29",
+			"kind": "mutation",
+			"oncogenicity": "Likely Oncogenic",
+			"mutationEffect": "Likely Loss-of-function",
+			"escat": "X",
+			"escatDescription": "No evidence for actionability or lack of data",
+			"oncokbLevel": null,
+			"resistanceLevel": null,
+			"treatments": []
+		},
+		{
+			"gene": "FOXA1",
+			"alteration": "C258_Q263delinsAR",
+			"kind": "mutation",
+			"oncogenicity": "Likely Oncogenic",
+			"mutationEffect": "Unknown",
+			"escat": "X",
+			"escatDescription": "No evidence for actionability or lack of data",
+			"oncokbLevel": null,
+			"resistanceLevel": null,
+			"treatments": []
+		},
+		{
+			"gene": "FOXA1",
+			"alteration": "C258Afs*59",
+			"kind": "mutation",
+			"oncogenicity": "Likely Oncogenic",
+			"mutationEffect": "Likely Loss-of-function",
+			"escat": "X",
+			"escatDescription": "No evidence for actionability or lack of data",
+			"oncokbLevel": null,
+			"resistanceLevel": null,
+			"treatments": []
+		},
+		{
+			"gene": "AURKA",
+			"alteration": "F31I",
+			"kind": "mutation",
+			"oncogenicity": "Likely Oncogenic",
+			"mutationEffect": "Likely Gain-of-function",
+			"escat": "X",
+			"escatDescription": "No evidence for actionability or lack of data",
+			"oncokbLevel": null,
+			"resistanceLevel": null,
+			"treatments": []
+		}
+	],
+	"cnv": [],
+	"fusions": [],
+	"literature": [
+		{
+			"pmid": "42099744",
+			"title": "Immunotherapy innovations in triple-negative breast cancer: targeting checkpoints, combinations, and biomarkers.",
+			"authors": "Wang ZX, Chu JH, Wang YR, Huang LY, Qian MP",
+			"journal": "Oncology reviews",
+			"year": "2026",
+			"gene": "TMB",
+			"alteration": ""
+		},
+		{
+			"pmid": "42083571",
+			"title": "Multi-Omics Characterization of ABHD12 Across Pan-Cancer and Validation of Its Role in Promoting Proliferation and Metastasis in Breast Cancer.",
+			"authors": "Zhao J, Gou Y, Wang Y, Li Y, Ma H, Xing Y, Peng H, Guo C",
+			"journal": "Breast cancer (Dove Medical Press)",
+			"year": "2026",
+			"gene": "TMB",
+			"alteration": ""
+		},
+		{
+			"pmid": "42034009",
+			"title": "Pathway-level somatic mutation burden reflects diffuse genomic accumulation rather than selective transcriptional disruption in ovarian serous carcinoma: Evidence from bulk, spatial, and multi-region genomic analyses.",
+			"authors": "Çağdaş EK",
+			"journal": "Gynecologic oncology",
+			"year": "2026",
+			"gene": "TMB",
+			"alteration": ""
+		},
+		{
+			"pmid": "42013747",
+			"title": "Whole genome sequencing of locally advanced and metastatic breast carcinoma unravels relevant molecular signatures and novel events.",
+			"authors": "Kozan EN, Delgado-de la Mora J, Al Assaad M, Ginter P, Gundem G, Levine MF, Gorski K, Phan A, Beg S, Sigaras A, LaPolla D, Semaan A, Wilkes DC, Greco N, Sigouros M, Manohar J, Medina-Martínez JS, Sboner A, Elemento O, Hoda S, Saxena A, Andreopoulou E, Boyraz B, Mosquera JM",
+			"journal": "Pathology, research and practice",
+			"year": "2026",
+			"gene": "TMB",
+			"alteration": ""
+		},
+		{
+			"pmid": "41969500",
+			"title": "Pan-cancer analysis reveals FOLH1 as a prognostic biomarker and immune modulator in human tumors.",
+			"authors": "Fan W, Guo X, Wang Y, He S, Zhang P",
+			"journal": "Translational cancer research",
+			"year": "2026",
+			"gene": "TMB",
+			"alteration": ""
+		},
+		{
+			"pmid": "41969462",
+			"title": "Development and validation of a cuproptosis-related lncRNA signature for predicting prognosis and immunotherapy response in breast cancer: a retrospective analysis of TCGA data.",
+			"authors": "Hu P, Ye J, Han X, Ding H, Wang C, Song D",
+			"journal": "Translational cancer research",
+			"year": "2026",
+			"gene": "TMB",
+			"alteration": ""
+		},
+		{
+			"pmid": "41935348",
+			"title": "Comparative Analysis of Homologous Recombination Repair Status Across Gynecologic and Breast Cancers in Chinese Populations.",
+			"authors": "Huang Y, Shao J, Yin X, Jiang Y, Luo J, Huang J, Zhao J, Fu S, Liao J",
+			"journal": "Current cancer drug targets",
+			"year": "2026",
+			"gene": "TMB",
+			"alteration": ""
+		},
+		{
+			"pmid": "41877589",
+			"title": "Silencing RPL9 promotes malignant proliferation in breast cancer cells.",
+			"authors": "Zhu T, Dai J, Li W, Zhang H, Song Y, Zhang D, Liu R, Wang X, Shi Z, Tang H, Zhu X, Liu Y",
+			"journal": "International journal of immunopathology and pharmacology",
+			"year": "2026",
+			"gene": "TMB",
+			"alteration": ""
+		},
+		{
+			"pmid": "41871940",
+			"title": "Homologous recombination deficiency and genomic alterations in advanced prostate cancer: insights for precision therapy.",
+			"authors": "Mercinelli C, Pavlick D, Agarwal N, Spiess PE, Li R, Kamat AM, Grivas P, Gupta S, Maiorano BA, Tateo V, Cigliola A, Piacentini M, Jacob JM, Bratslavsky G, Basnet A, Ross JS, Necchi A",
+			"journal": "The oncologist",
+			"year": "2026",
+			"gene": "TMB",
+			"alteration": ""
+		},
+		{
+			"pmid": "41866616",
+			"title": "A cancer neuroscience-related gene model for prognosis prediction and immunotherapy response evaluation in breast cancer.",
+			"authors": "Wei Y, Li J, Li M, Qiu C",
+			"journal": "Discover oncology",
+			"year": "2026",
+			"gene": "TMB",
+			"alteration": ""
+		}
+	],
+	"appraisals": [
+		{
+			"id": "99508213-ap1",
+			"linkedGene": "PIK3CA",
+			"linkedAlteration": "P104del",
+			"escat": "I",
+			"provenance": "systematic-review",
+			"grade": "High",
+			"verdict": "Supported — routine clinical use",
+			"pico": {
+				"population": "Breast carcinoma harbouring PIK3CA P104del",
+				"intervention": "Inavolisib + Palbociclib + Fulvestrant / Alpelisib + Fulvestrant",
+				"comparator": "Standard of care",
+				"outcome": "Progression-free survival, objective response",
+				"question": "In Breast carcinoma with PIK3CA P104del, does Inavolisib + Palbociclib + Fulvestrant improve progression-free survival versus standard of care?"
+			},
+			"prisma": {
+				"totalFound": 97,
+				"afterDedup": 87,
+				"afterYearFilter": 83,
+				"afterQuality": 12,
+				"afterValidation": 8,
+				"included": 8,
+				"excludedByQuality": 71
+			},
+			"includedStudies": [
+				{
+					"citationKey": "TMB2026A",
+					"title": "Immunotherapy innovations in triple-negative breast cancer: targeting checkpoints, combinations, and biomarkers.",
+					"authors": "Wang ZX, Chu JH, Wang YR, Huang LY, Qian MP",
+					"journal": "Oncology reviews",
+					"year": "2026",
+					"pmid": "42099744",
+					"quartile": "Q1",
+					"citationCount": 17,
+					"verified": true,
+					"openAccess": true
+				},
+				{
+					"citationKey": "TMB2026B",
+					"title": "Multi-Omics Characterization of ABHD12 Across Pan-Cancer and Validation of Its Role in Promoting Proliferation and Metastasis in Breast Cancer.",
+					"authors": "Zhao J, Gou Y, Wang Y, Li Y, Ma H, Xing Y, Peng H, Guo C",
+					"journal": "Breast cancer (Dove Medical Press)",
+					"year": "2026",
+					"pmid": "42083571",
+					"quartile": "Q1",
+					"citationCount": 30,
+					"verified": true,
+					"openAccess": false
+				},
+				{
+					"citationKey": "TMB2026C",
+					"title": "Pathway-level somatic mutation burden reflects diffuse genomic accumulation rather than selective transcriptional disruption in ovarian serous carcinoma: Evidence from bulk, spatial, and multi-region genomic analyses.",
+					"authors": "Çağdaş EK",
+					"journal": "Gynecologic oncology",
+					"year": "2026",
+					"pmid": "42034009",
+					"quartile": "Q1",
+					"citationCount": 43,
+					"verified": true,
+					"openAccess": true
+				},
+				{
+					"citationKey": "TMB2026D",
+					"title": "Whole genome sequencing of locally advanced and metastatic breast carcinoma unravels relevant molecular signatures and novel events.",
+					"authors": "Kozan EN, Delgado-de la Mora J, Al Assaad M, Ginter P, Gundem G, Levine MF, Gorski K, Phan A, Beg S, Sigaras A, LaPolla D, Semaan A, Wilkes DC, Greco N, Sigouros M, Manohar J, Medina-Martínez JS, Sboner A, Elemento O, Hoda S, Saxena A, Andreopoulou E, Boyraz B, Mosquera JM",
+					"journal": "Pathology, research and practice",
+					"year": "2026",
+					"pmid": "42013747",
+					"quartile": "Q1",
+					"citationCount": 56,
+					"verified": true,
+					"openAccess": false
+				},
+				{
+					"citationKey": "TMB2026E",
+					"title": "Pan-cancer analysis reveals FOLH1 as a prognostic biomarker and immune modulator in human tumors.",
+					"authors": "Fan W, Guo X, Wang Y, He S, Zhang P",
+					"journal": "Translational cancer research",
+					"year": "2026",
+					"pmid": "41969500",
+					"quartile": "Q1",
+					"citationCount": 29,
+					"verified": true,
+					"openAccess": true
+				},
+				{
+					"citationKey": "TMB2026F",
+					"title": "Development and validation of a cuproptosis-related lncRNA signature for predicting prognosis and immunotherapy response in breast cancer: a retrospective analysis of TCGA data.",
+					"authors": "Hu P, Ye J, Han X, Ding H, Wang C, Song D",
+					"journal": "Translational cancer research",
+					"year": "2026",
+					"pmid": "41969462",
+					"quartile": "Q1",
+					"citationCount": 42,
+					"verified": true,
+					"openAccess": false
+				},
+				{
+					"citationKey": "TMB2026G",
+					"title": "Comparative Analysis of Homologous Recombination Repair Status Across Gynecologic and Breast Cancers in Chinese Populations.",
+					"authors": "Huang Y, Shao J, Yin X, Jiang Y, Luo J, Huang J, Zhao J, Fu S, Liao J",
+					"journal": "Current cancer drug targets",
+					"year": "2026",
+					"pmid": "41935348",
+					"quartile": "Q2",
+					"citationCount": 55,
+					"verified": true,
+					"openAccess": true
+				},
+				{
+					"citationKey": "TMB2026H",
+					"title": "Silencing RPL9 promotes malignant proliferation in breast cancer cells.",
+					"authors": "Zhu T, Dai J, Li W, Zhang H, Song Y, Zhang D, Liu R, Wang X, Shi Z, Tang H, Zhu X, Liu Y",
+					"journal": "International journal of immunopathology and pharmacology",
+					"year": "2026",
+					"pmid": "41877589",
+					"quartile": "Q2",
+					"citationCount": 28,
+					"verified": true,
+					"openAccess": false
+				}
+			]
+		},
+		{
+			"id": "99508213-ap2",
+			"linkedGene": "ERBB2",
+			"linkedAlteration": "S310F",
+			"escat": "I",
+			"provenance": "systematic-review",
+			"grade": "High",
+			"verdict": "Supported — routine clinical use",
+			"pico": {
+				"population": "Breast carcinoma harbouring ERBB2 S310F",
+				"intervention": "Neratinib + Trastuzumab + Fulvestrant / Neratinib",
+				"comparator": "Standard of care",
+				"outcome": "Progression-free survival, objective response",
+				"question": "In Breast carcinoma with ERBB2 S310F, does Neratinib + Trastuzumab + Fulvestrant improve progression-free survival versus standard of care?"
+			},
+			"prisma": {
+				"totalFound": 97,
+				"afterDedup": 87,
+				"afterYearFilter": 83,
+				"afterQuality": 12,
+				"afterValidation": 8,
+				"included": 8,
+				"excludedByQuality": 71
+			},
+			"includedStudies": [
+				{
+					"citationKey": "TMB2026A",
+					"title": "Immunotherapy innovations in triple-negative breast cancer: targeting checkpoints, combinations, and biomarkers.",
+					"authors": "Wang ZX, Chu JH, Wang YR, Huang LY, Qian MP",
+					"journal": "Oncology reviews",
+					"year": "2026",
+					"pmid": "42099744",
+					"quartile": "Q1",
+					"citationCount": 17,
+					"verified": true,
+					"openAccess": true
+				},
+				{
+					"citationKey": "TMB2026B",
+					"title": "Multi-Omics Characterization of ABHD12 Across Pan-Cancer and Validation of Its Role in Promoting Proliferation and Metastasis in Breast Cancer.",
+					"authors": "Zhao J, Gou Y, Wang Y, Li Y, Ma H, Xing Y, Peng H, Guo C",
+					"journal": "Breast cancer (Dove Medical Press)",
+					"year": "2026",
+					"pmid": "42083571",
+					"quartile": "Q1",
+					"citationCount": 30,
+					"verified": true,
+					"openAccess": false
+				},
+				{
+					"citationKey": "TMB2026C",
+					"title": "Pathway-level somatic mutation burden reflects diffuse genomic accumulation rather than selective transcriptional disruption in ovarian serous carcinoma: Evidence from bulk, spatial, and multi-region genomic analyses.",
+					"authors": "Çağdaş EK",
+					"journal": "Gynecologic oncology",
+					"year": "2026",
+					"pmid": "42034009",
+					"quartile": "Q1",
+					"citationCount": 43,
+					"verified": true,
+					"openAccess": true
+				},
+				{
+					"citationKey": "TMB2026D",
+					"title": "Whole genome sequencing of locally advanced and metastatic breast carcinoma unravels relevant molecular signatures and novel events.",
+					"authors": "Kozan EN, Delgado-de la Mora J, Al Assaad M, Ginter P, Gundem G, Levine MF, Gorski K, Phan A, Beg S, Sigaras A, LaPolla D, Semaan A, Wilkes DC, Greco N, Sigouros M, Manohar J, Medina-Martínez JS, Sboner A, Elemento O, Hoda S, Saxena A, Andreopoulou E, Boyraz B, Mosquera JM",
+					"journal": "Pathology, research and practice",
+					"year": "2026",
+					"pmid": "42013747",
+					"quartile": "Q1",
+					"citationCount": 56,
+					"verified": true,
+					"openAccess": false
+				},
+				{
+					"citationKey": "TMB2026E",
+					"title": "Pan-cancer analysis reveals FOLH1 as a prognostic biomarker and immune modulator in human tumors.",
+					"authors": "Fan W, Guo X, Wang Y, He S, Zhang P",
+					"journal": "Translational cancer research",
+					"year": "2026",
+					"pmid": "41969500",
+					"quartile": "Q1",
+					"citationCount": 29,
+					"verified": true,
+					"openAccess": true
+				},
+				{
+					"citationKey": "TMB2026F",
+					"title": "Development and validation of a cuproptosis-related lncRNA signature for predicting prognosis and immunotherapy response in breast cancer: a retrospective analysis of TCGA data.",
+					"authors": "Hu P, Ye J, Han X, Ding H, Wang C, Song D",
+					"journal": "Translational cancer research",
+					"year": "2026",
+					"pmid": "41969462",
+					"quartile": "Q1",
+					"citationCount": 42,
+					"verified": true,
+					"openAccess": false
+				},
+				{
+					"citationKey": "TMB2026G",
+					"title": "Comparative Analysis of Homologous Recombination Repair Status Across Gynecologic and Breast Cancers in Chinese Populations.",
+					"authors": "Huang Y, Shao J, Yin X, Jiang Y, Luo J, Huang J, Zhao J, Fu S, Liao J",
+					"journal": "Current cancer drug targets",
+					"year": "2026",
+					"pmid": "41935348",
+					"quartile": "Q2",
+					"citationCount": 55,
+					"verified": true,
+					"openAccess": true
+				},
+				{
+					"citationKey": "TMB2026H",
+					"title": "Silencing RPL9 promotes malignant proliferation in breast cancer cells.",
+					"authors": "Zhu T, Dai J, Li W, Zhang H, Song Y, Zhang D, Liu R, Wang X, Shi Z, Tang H, Zhu X, Liu Y",
+					"journal": "International journal of immunopathology and pharmacology",
+					"year": "2026",
+					"pmid": "41877589",
+					"quartile": "Q2",
+					"citationCount": 28,
+					"verified": true,
+					"openAccess": false
+				}
+			]
+		},
+		{
+			"id": "99508213-ap3",
+			"linkedGene": "ERBB2",
+			"linkedAlteration": "G776V",
+			"escat": "I",
+			"provenance": "systematic-review",
+			"grade": "High",
+			"verdict": "Supported — routine clinical use",
+			"pico": {
+				"population": "Breast carcinoma harbouring ERBB2 G776V",
+				"intervention": "Neratinib + Trastuzumab + Fulvestrant / Neratinib",
+				"comparator": "Standard of care",
+				"outcome": "Progression-free survival, objective response",
+				"question": "In Breast carcinoma with ERBB2 G776V, does Neratinib + Trastuzumab + Fulvestrant improve progression-free survival versus standard of care?"
+			},
+			"prisma": {
+				"totalFound": 97,
+				"afterDedup": 87,
+				"afterYearFilter": 83,
+				"afterQuality": 12,
+				"afterValidation": 8,
+				"included": 8,
+				"excludedByQuality": 71
+			},
+			"includedStudies": [
+				{
+					"citationKey": "TMB2026A",
+					"title": "Immunotherapy innovations in triple-negative breast cancer: targeting checkpoints, combinations, and biomarkers.",
+					"authors": "Wang ZX, Chu JH, Wang YR, Huang LY, Qian MP",
+					"journal": "Oncology reviews",
+					"year": "2026",
+					"pmid": "42099744",
+					"quartile": "Q1",
+					"citationCount": 17,
+					"verified": true,
+					"openAccess": true
+				},
+				{
+					"citationKey": "TMB2026B",
+					"title": "Multi-Omics Characterization of ABHD12 Across Pan-Cancer and Validation of Its Role in Promoting Proliferation and Metastasis in Breast Cancer.",
+					"authors": "Zhao J, Gou Y, Wang Y, Li Y, Ma H, Xing Y, Peng H, Guo C",
+					"journal": "Breast cancer (Dove Medical Press)",
+					"year": "2026",
+					"pmid": "42083571",
+					"quartile": "Q1",
+					"citationCount": 30,
+					"verified": true,
+					"openAccess": false
+				},
+				{
+					"citationKey": "TMB2026C",
+					"title": "Pathway-level somatic mutation burden reflects diffuse genomic accumulation rather than selective transcriptional disruption in ovarian serous carcinoma: Evidence from bulk, spatial, and multi-region genomic analyses.",
+					"authors": "Çağdaş EK",
+					"journal": "Gynecologic oncology",
+					"year": "2026",
+					"pmid": "42034009",
+					"quartile": "Q1",
+					"citationCount": 43,
+					"verified": true,
+					"openAccess": true
+				},
+				{
+					"citationKey": "TMB2026D",
+					"title": "Whole genome sequencing of locally advanced and metastatic breast carcinoma unravels relevant molecular signatures and novel events.",
+					"authors": "Kozan EN, Delgado-de la Mora J, Al Assaad M, Ginter P, Gundem G, Levine MF, Gorski K, Phan A, Beg S, Sigaras A, LaPolla D, Semaan A, Wilkes DC, Greco N, Sigouros M, Manohar J, Medina-Martínez JS, Sboner A, Elemento O, Hoda S, Saxena A, Andreopoulou E, Boyraz B, Mosquera JM",
+					"journal": "Pathology, research and practice",
+					"year": "2026",
+					"pmid": "42013747",
+					"quartile": "Q1",
+					"citationCount": 56,
+					"verified": true,
+					"openAccess": false
+				},
+				{
+					"citationKey": "TMB2026E",
+					"title": "Pan-cancer analysis reveals FOLH1 as a prognostic biomarker and immune modulator in human tumors.",
+					"authors": "Fan W, Guo X, Wang Y, He S, Zhang P",
+					"journal": "Translational cancer research",
+					"year": "2026",
+					"pmid": "41969500",
+					"quartile": "Q1",
+					"citationCount": 29,
+					"verified": true,
+					"openAccess": true
+				},
+				{
+					"citationKey": "TMB2026F",
+					"title": "Development and validation of a cuproptosis-related lncRNA signature for predicting prognosis and immunotherapy response in breast cancer: a retrospective analysis of TCGA data.",
+					"authors": "Hu P, Ye J, Han X, Ding H, Wang C, Song D",
+					"journal": "Translational cancer research",
+					"year": "2026",
+					"pmid": "41969462",
+					"quartile": "Q1",
+					"citationCount": 42,
+					"verified": true,
+					"openAccess": false
+				},
+				{
+					"citationKey": "TMB2026G",
+					"title": "Comparative Analysis of Homologous Recombination Repair Status Across Gynecologic and Breast Cancers in Chinese Populations.",
+					"authors": "Huang Y, Shao J, Yin X, Jiang Y, Luo J, Huang J, Zhao J, Fu S, Liao J",
+					"journal": "Current cancer drug targets",
+					"year": "2026",
+					"pmid": "41935348",
+					"quartile": "Q2",
+					"citationCount": 55,
+					"verified": true,
+					"openAccess": true
+				},
+				{
+					"citationKey": "TMB2026H",
+					"title": "Silencing RPL9 promotes malignant proliferation in breast cancer cells.",
+					"authors": "Zhu T, Dai J, Li W, Zhang H, Song Y, Zhang D, Liu R, Wang X, Shi Z, Tang H, Zhu X, Liu Y",
+					"journal": "International journal of immunopathology and pharmacology",
+					"year": "2026",
+					"pmid": "41877589",
+					"quartile": "Q2",
+					"citationCount": 28,
+					"verified": true,
+					"openAccess": false
+				}
+			]
+		}
+	],
+	"droppedVus": 524
 }

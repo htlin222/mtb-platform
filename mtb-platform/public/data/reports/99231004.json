@@ -1,676 +1,1183 @@
 {
-  "patient": {
-    "chartNo": "99231004",
-    "name": "Amelia Chen",
-    "sex": "F",
-    "age": 58,
-    "birthday": "1967-03-12",
-    "cancerType": "High-grade serous ovarian carcinoma",
-    "cancerCode": "HGSOC",
-    "stage": "IIIC",
-    "team": "Gynecologic Oncology",
-    "attending": "Dr. H. Lee",
-    "status": "pending-review",
-    "reportDate": "2026-06-18",
-    "sampleId": "EGA_OV_TSO500_001",
-    "panel": "TSO500 · 1.94 Mb"
-  },
-  "clinical": {
-    "consultReason": "Newly sequenced HGSOC — MTB review for maintenance strategy.",
-    "priorTherapy": [
-      "Carboplatin + Paclitaxel ×6",
-      "Interval debulking surgery"
-    ],
-    "ecog": 1,
-    "note": "Molecular profiling on the TSO500 · 1.94 Mb panel returned 13 clinically annotated alterations (1 variants of unknown significance filtered); TMB 4.6 mut/Mb, MSS, HRD-positive."
-  },
-  "biomarkers": {
-    "tmb": 4.6,
-    "tmbClass": "TMB-Low",
-    "variantCount": 9,
-    "panelSizeMb": 1.94,
-    "msi": "MSS",
-    "msiScore": 5.2,
-    "unstableSites": 2,
-    "totalSites": 38,
-    "hrd": 58,
-    "hrdStatus": "HRD-positive",
-    "loh": 22,
-    "tai": 18,
-    "lst": 18,
-    "hrdReliable": false
-  },
-  "variants": [
-    {
-      "gene": "BRCA1",
-      "alteration": "E1836fs",
-      "kind": "mutation",
-      "oncogenicity": "Likely Oncogenic",
-      "mutationEffect": "Likely Loss-of-function",
-      "escat": "I",
-      "escatDescription": "Target ready for implementation in routine clinical decisions",
-      "oncokbLevel": "LEVEL_1",
-      "resistanceLevel": null,
-      "treatments": [
-        {
-          "drugs": "Niraparib",
-          "level": "LEVEL_1",
-          "fdaApproved": true,
-          "description": "Niraparib, a small molecule PARP inhibitor, is FDA-approved as maintenance therapy for the treatment of adult patients with advanced ovarian, fallopian tube, or primary peritoneal cancer who have been treated with three or more prior chemotherapy regimens and whose cancer is associated with homologous recombination deficiency (HRD) positive status such as by harboring a deleterious or suspected deleterious BRCA mutation. FDA approval was based on the Phase III NOVA trial of niraparib versus placebo in patients with platinum-sensitive, recurrent ovarian cancer with or without BRCA1/2 mutations in which patients in the germline BRCA mutant cohort (n=203) experienced significantly longer progression-free survival with niraparib than those in the placebo group (21.0 vs. 5.5 months; HR=0.27; 95% CI = 0.17-0.41) (PMID: 27717299). FDA approval of niraparib in the non-germline BRCA mutant patient cohort (n=350) was based on the results of improved progression-free survival with niraparib versus placebo as maintenance therapy (9.3 months vs. 3.9 months; HR=0.45; 95% CI= 0.34-0.61) in the overall non-germline BRCA cohort. However, the overall non-germline BRCA cohort included patients with somatic BRCA mutation (PMID: 27717299). Further studies have shown the efficacy of niraparib in patients with homologous-recombination-deficient, platinum-sensitive ovarian cancer, including patients with BRCA mutation (PMID: 30948273, 31562799). The NCCN v5.2022 lists niraparib as a maintenance therapy for patients with BRCA1/2-mutant ovarian cancer."
-        },
-        {
-          "drugs": "Olaparib",
-          "level": "LEVEL_1",
-          "fdaApproved": true,
-          "description": "Olaparib, a small molecule PARP inhibitor, is FDA-approved with or without bevacizumab for the treatment of patients with advanced ovarian cancer who have deleterious germline BRCA mutations and have been treated with three or more lines of chemotherapy, or as maintenance therapy for patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are having partial or complete responses to platinum-based chemotherapy. This drug is considered standard-of-care for the treatment of patients with somatic BRCA1/2 mutations. Initial FDA approval was based on Phase I and Phase II clinical trials evaluating patients with ovarian cancer harboring known BRCA1 or BRCA2 germline mutations, in which treatment with olaparib demonstrated a clear clinical benefit. Specifically, in a Phase II trial evaluating olaparib in patients with platinum-resistant ovarian cancer and a confirmed germline BRCA1 or BRCA2 mutation (n=193), the tumor response rate was 31% (95% CI=24.6 to 38.1), and stable disease (around 8 weeks) was seen in 40% of patients (95% CI=33.4 to 47.7) (PMID: 25366685). More recent FDA approval was based on a planned retrospective analysis of Phase II trial data in which patients with deleterious BRCA mutations had significantly longer progression-free survival with olaparib maintenance therapy than patients given placebo (11.2 months vs 4.3 months; HR=0.18; p<0·0001)(PMID: 24882434). In the seven-year follow-up of the Phase III SOLO1/GOG-3004 trial of maintenance olaparib versus placebo in patients with newly diagnosed, advanced ovarian cancer harboring a BRCA mutation, the seven-year median overall survival rates were 67% in the olaparib arm and 46.5% in the placebo arm, and the median duration of treatment was 24.6 months with olaparib and 13.9 months with placebo (PMID: 36082969)."
-        },
-        {
-          "drugs": "Rucaparib",
-          "level": "LEVEL_1",
-          "fdaApproved": true,
-          "description": "Rucaparib is an orally available, small molecule PARP inhibitor that is FDA-approved for the maintenance treatment of adult patients with a deleterious BRCA mutation (germline and/or somatic)- associated recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are in a complete or partial response to platinum-based chemotherapy. BRCA1 mutations for maintenance treatment with rucaparib were detected by the BRACAnalysis CDx or the FoundationFocus CDxBRCA Assay. FDA approval was based on the results of the Phase III EMBRACA (NCT01945775) study of rucaparib versus chemotherapy in 431 patients (n=408, patients with centrally confirmed deleterious or suspected deleterious BRCA mutation) with BRCA-mutated HER2-negative locally advanced or metastatic breast cancer. \nIn the Phase III EMBRACA (NCT01945775) study, the rucaparib cohort (n=287) demonstrated an overall response rate (ORR) of 50.2% (95% CI=43.4-57.0), a median duration of response (DOR) of 6.4 months (95% CI=5.4-9.5), a median progression-free survival (PFS) of 8.6 months (95% CI=7.2-9.3) and a median overall survival (OS) of 19.3 months (95% CI=16.6-22.5) (PMID: 30110579, 32828825). In the chemotherapy cohort (n=144), the ORR was 18.4% (95% CI=11.8-26.8), the median DOR was 3.9 months (95% CI=3.0-7.6), the median PFS was 5.6 months (95% CI=4.2-6.7) (HR=0.54 [95% CI=0.41-0.71]; p<0.0001) and the median OS was 19.5 months (95% CI=17.4-22.4) (HR=0.85 [95% CI=0.67-1.07]; p=0.1693) (PMID: 30110579, 32828825)."
-        },
-        {
-          "drugs": "Olaparib + Bevacizumab",
-          "level": "LEVEL_1",
-          "fdaApproved": true,
-          "description": "Olaparib, a small molecule PARP inhibitor, is FDA-approved with or without bevacizumab for the treatment of patients with advanced ovarian cancer who have deleterious germline BRCA mutations and have been treated with three or more lines of chemotherapy, or as maintenance therapy for patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are having partial or complete responses to platinum-based chemotherapy. This drug is considered standard-of-care for the treatment of patients with somatic BRCA1/2 mutations. Initial FDA approval was based on Phase I and Phase II clinical trials evaluating patients with ovarian cancer harboring known BRCA1 or BRCA2 germline mutations, in which treatment with olaparib demonstrated a clear clinical benefit. Specifically, in a Phase II trial evaluating olaparib in patients with platinum-resistant ovarian cancer and a confirmed germline BRCA1 or BRCA2 mutation (n=193), the tumor response rate was 31% (95% CI=24.6 to 38.1), and stable disease (around 8 weeks) was seen in 40% of patients (95% CI=33.4 to 47.7) (PMID: 25366685). More recent FDA approval was based on a planned retrospective analysis of Phase II trial data in which patients with deleterious BRCA mutations had significantly longer progression-free survival with olaparib maintenance therapy than patients given placebo (11.2 months vs 4.3 months; HR=0.18; p<0·0001)(PMID: 24882434). In the seven-year follow-up of the Phase III SOLO1/GOG-3004 trial of maintenance olaparib versus placebo in patients with newly diagnosed, advanced ovarian cancer harboring a BRCA mutation, the seven-year median overall survival rates were 67% in the olaparib arm and 46.5% in the placebo arm, and the median duration of treatment was 24.6 months with olaparib and 13.9 months with placebo (PMID: 36082969)."
-        },
-        {
-          "drugs": "Olaparib + Abiraterone + Prednisone",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Olaparib, a small molecule PARP inhibitor, is FDA-approved in combination with abiraterone and prednisone/prednisolone for the treatment of patients with deleterious or suspected deleterious BRCA-mutated metastatic castration-resistant prostate cancer (mCRPC). FDA approval was based on the results of the Phase III PROpel trial of olaparib plus abiraterone and prednisone/prednisolone in adult patients with mCRPC undergoing first-line treatment after failure of primary androgen deprivation therapy. Of patients with BRCA1/2 mutations (n=85), the radiological progression-free survival in the olaparib plus abiraterone and prednisone/prednisolone group (n=47) was not reached (95% CI=NR, NR) compared to eight months (95% CI=6, 15) in the placebo plus abiraterone and prednisone/prednisolone group (n=38) (HR=0.24; 95% CI=0.12, 0.45), with a median overall survival of not reached (95% CI=NR, NR) versus 23 months (95% CI=18, 34) months (HR=0.30; 95% CI=0.15 0.59), respectively (Abstract: Clarke et al. Abstract# LBA16, ASCO GUCS 2023. https://ascopubs.org/doi/abs/10.1200/JCO.2023.41.6_suppl.LBA16)."
-        },
-        {
-          "drugs": "Talazoparib",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Talazoparib, a small molecule PARP inhibitor, is FDA-approved for patients with deleterious or suspected deleterious germline BRCA-mutated, HER2-negative locally advanced or metastatic breast cancer. FDA approval was based on the results from the Phase III EMBRACA trial of talazoparib (1 mg once daily) versus standard single-agent chemotherapy (2:1) in 431 patients with advanced, BRCA1/2 germline-mutated breast cancer in which the median progression-free survival (PFS) was 8.6 months in the talazoparib group versus 5.6 months in the chemotherapy group (HR= 0.54; 95%CI=0.41 to 0.71; p<0.001) and the objective response rate was 62.6% in the talazoparib group versus 27.2% in the chemotherapy group (p<0.001) (PMID: 30110579). In the Phase II study of talazoparib in patients with germline BRCA-mutant breast cancer who had a prior response to platinum agents, the overall response rate was 21-37% (depending on cohort) (PMID: 30563931). In a Phase I study of talazoparib plus carboplatin in patients with and without DNA repair mutations, three patients with somatic BRCA mutations had stable disease beyond four months (Abstract: Dhawan et al. Abstract# 2527, ASCO 2017. https://ascopubs.org/doi/abs/10.1200/JCO.2017.35.15_suppl.2527). In the Phase IIb tumor-agnostic JAVELIN BRCA/ATM trial of combination talazoparib and avelumab in 159 patients with BRCA1/2-altered solid tumors, the objective response was observed in 42 patients (26.4%, 95% CI = 19.7%–34.0%) and the median duration of response was 10.9 months (95% CI = 6.2 months to not estimable) (PMID: 36394867). In a retrospective study for 24 patients with BRCA1/2 somatic-mutated HER2-negative metastatic breast cancer treated with PARP inhibitors, the median real-world PFS was 4.6 months (95% CI=3.0 to 8.1) and the median real-world overall survival was 21.2 months (95% CI=13.8 to NR) while patients harboring BRCA1/2 germline mutations (n=71) demonstrated a median real-world PFS of 6.0 months (95% CI=4.6 to 8.2) and a median real-world overall survival of 21.2 months (95% CI=14.2 to NR) (PMID: 37992259)."
-        },
-        {
-          "drugs": "Talazoparib + Enzalutamide",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Talazoparib is an orally available, small-molecule PARP inhibitor that is FDA-approved in combination with enzalutamide for the treatment of adult patients with homologous recombination repair (HRR) gene-mutated metastatic castration-resistant prostate cancer (mCRPC). FDA approval was based on the results of the Phase III TALAPRO-2 (NCT03395197) trial of talazoparib plus enzalutamide in 399 adult patients with asymptomatic or mildly symptomatic mCRPC harboring HRR gene alterations receiving ongoing androgen deprivation therapy. \nIn the Phase III TALAPRO-2 (NCT03395197) trial, the talazoparib plus enzalutamide cohort (n=200) demonstrated a radiographic progression-free survival (rPFS) that was not evaluable (95% CI=21.9-NE) versus 13.8 months (95% CI=11.0-16.7) in the placebo plus enzalutamide cohort (n=199) (HR=0.45 [95% CI=0.33-0.61]; p<0.0001) (PMID: 37285865). Of patients with BRCA1/2 mutations (n=155), the talazoparib plus enzalutamide cohort (n=71) demonstrated a rPFS that was not evaluable (95% CI=NE-NE) versus 11.0 months (95% CI=16.4-NE) in the placebo plus enzalutamide group (n=84) (HR=0.20 [95% CI=0.11-0.36]) (PMID: 37285865). Of patients harboring only BRCA1 mutations (n=17), the talazoparib plus enzalutamide cohort (n=8) demonstrated an rPFS of 20.0 months versus 11.7 months in the placebo plus enzalutamide cohort (n=9) (HR=0.17 [95% CI=0.02-1.51]; p=0.074) (PMID: 37285865)."
-        }
-      ],
-      "narrative": "*BRCA1* E1836fs is classified as **Likely Oncogenic** in high-grade serous ovarian carcinoma. **Recommended treatment:** Based on OncoKB Level LEVEL_1 evidence, Niraparib or Olaparib or Rucaparib or Olaparib + Bevacizumab is/are indicated as standard-of-care targeted therapy for patients with this alteration. These agents have demonstrated clinical benefit in prospective trials and are FDA-approved for this indication. **Investigational options:** Olaparib + Abiraterone + Prednisone, Talazoparib, Talazoparib + Enzalutamide (Evidence Level: LEVEL_3B, LEVEL_3B, LEVEL_3B) represent investigational strategies with emerging evidence. Enrollment in clinical trials targeting this alteration should be considered. Treatment decisions should integrate this molecular finding with clinical context, prior therapy lines, and patient performance status."
-    },
-    {
-      "gene": "BRCA1",
-      "alteration": "DELETION",
-      "kind": "cna",
-      "oncogenicity": "Likely Oncogenic",
-      "escat": "I",
-      "escatDescription": "Target ready for implementation in routine clinical decisions",
-      "oncokbLevel": "LEVEL_1",
-      "resistanceLevel": null,
-      "treatments": [
-        {
-          "drugs": "Niraparib",
-          "level": "LEVEL_1",
-          "fdaApproved": true,
-          "description": "Niraparib, a small molecule PARP inhibitor, is FDA-approved as maintenance therapy for the treatment of adult patients with advanced ovarian, fallopian tube, or primary peritoneal cancer who have been treated with three or more prior chemotherapy regimens and whose cancer is associated with homologous recombination deficiency (HRD) positive status such as by harboring a deleterious or suspected deleterious BRCA mutation. FDA approval was based on the Phase III NOVA trial of niraparib versus placebo in patients with platinum-sensitive, recurrent ovarian cancer with or without BRCA1/2 mutations in which patients in the germline BRCA mutant cohort (n=203) experienced significantly longer progression-free survival with niraparib than those in the placebo group (21.0 vs. 5.5 months; HR=0.27; 95% CI = 0.17-0.41) (PMID: 27717299). FDA approval of niraparib in the non-germline BRCA mutant patient cohort (n=350) was based on the results of improved progression-free survival with niraparib versus placebo as maintenance therapy (9.3 months vs. 3.9 months; HR=0.45; 95% CI= 0.34-0.61) in the overall non-germline BRCA cohort. However, the overall non-germline BRCA cohort included patients with somatic BRCA mutation (PMID: 27717299). Further studies have shown the efficacy of niraparib in patients with homologous-recombination-deficient, platinum-sensitive ovarian cancer, including patients with BRCA mutation (PMID: 30948273, 31562799). The NCCN v5.2022 lists niraparib as a maintenance therapy for patients with BRCA1/2-mutant ovarian cancer."
-        },
-        {
-          "drugs": "Olaparib",
-          "level": "LEVEL_1",
-          "fdaApproved": true,
-          "description": "Olaparib, a small molecule PARP inhibitor, is FDA-approved with or without bevacizumab for the treatment of patients with advanced ovarian cancer who have deleterious germline BRCA mutations and have been treated with three or more lines of chemotherapy, or as maintenance therapy for patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are having partial or complete responses to platinum-based chemotherapy. This drug is considered standard-of-care for the treatment of patients with somatic BRCA1/2 mutations. Initial FDA approval was based on Phase I and Phase II clinical trials evaluating patients with ovarian cancer harboring known BRCA1 or BRCA2 germline mutations, in which treatment with olaparib demonstrated a clear clinical benefit. Specifically, in a Phase II trial evaluating olaparib in patients with platinum-resistant ovarian cancer and a confirmed germline BRCA1 or BRCA2 mutation (n=193), the tumor response rate was 31% (95% CI=24.6 to 38.1), and stable disease (around 8 weeks) was seen in 40% of patients (95% CI=33.4 to 47.7) (PMID: 25366685). More recent FDA approval was based on a planned retrospective analysis of Phase II trial data in which patients with deleterious BRCA mutations had significantly longer progression-free survival with olaparib maintenance therapy than patients given placebo (11.2 months vs 4.3 months; HR=0.18; p<0·0001)(PMID: 24882434). In the seven-year follow-up of the Phase III SOLO1/GOG-3004 trial of maintenance olaparib versus placebo in patients with newly diagnosed, advanced ovarian cancer harboring a BRCA mutation, the seven-year median overall survival rates were 67% in the olaparib arm and 46.5% in the placebo arm, and the median duration of treatment was 24.6 months with olaparib and 13.9 months with placebo (PMID: 36082969)."
-        },
-        {
-          "drugs": "Rucaparib",
-          "level": "LEVEL_1",
-          "fdaApproved": true,
-          "description": "Rucaparib is an orally available, small molecule PARP inhibitor that is FDA-approved for the maintenance treatment of adult patients with a deleterious BRCA mutation (germline and/or somatic)- associated recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are in a complete or partial response to platinum-based chemotherapy. BRCA1 mutations for maintenance treatment with rucaparib were detected by the BRACAnalysis CDx or the FoundationFocus CDxBRCA Assay. FDA approval was based on the results of the Phase III EMBRACA (NCT01945775) study of rucaparib versus chemotherapy in 431 patients (n=408, patients with centrally confirmed deleterious or suspected deleterious BRCA mutation) with BRCA-mutated HER2-negative locally advanced or metastatic breast cancer. \nIn the Phase III EMBRACA (NCT01945775) study, the rucaparib cohort (n=287) demonstrated an overall response rate (ORR) of 50.2% (95% CI=43.4-57.0), a median duration of response (DOR) of 6.4 months (95% CI=5.4-9.5), a median progression-free survival (PFS) of 8.6 months (95% CI=7.2-9.3) and a median overall survival (OS) of 19.3 months (95% CI=16.6-22.5) (PMID: 30110579, 32828825). In the chemotherapy cohort (n=144), the ORR was 18.4% (95% CI=11.8-26.8), the median DOR was 3.9 months (95% CI=3.0-7.6), the median PFS was 5.6 months (95% CI=4.2-6.7) (HR=0.54 [95% CI=0.41-0.71]; p<0.0001) and the median OS was 19.5 months (95% CI=17.4-22.4) (HR=0.85 [95% CI=0.67-1.07]; p=0.1693) (PMID: 30110579, 32828825)."
-        },
-        {
-          "drugs": "Olaparib + Bevacizumab",
-          "level": "LEVEL_1",
-          "fdaApproved": true,
-          "description": "Olaparib, a small molecule PARP inhibitor, is FDA-approved with or without bevacizumab for the treatment of patients with advanced ovarian cancer who have deleterious germline BRCA mutations and have been treated with three or more lines of chemotherapy, or as maintenance therapy for patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are having partial or complete responses to platinum-based chemotherapy. This drug is considered standard-of-care for the treatment of patients with somatic BRCA1/2 mutations. Initial FDA approval was based on Phase I and Phase II clinical trials evaluating patients with ovarian cancer harboring known BRCA1 or BRCA2 germline mutations, in which treatment with olaparib demonstrated a clear clinical benefit. Specifically, in a Phase II trial evaluating olaparib in patients with platinum-resistant ovarian cancer and a confirmed germline BRCA1 or BRCA2 mutation (n=193), the tumor response rate was 31% (95% CI=24.6 to 38.1), and stable disease (around 8 weeks) was seen in 40% of patients (95% CI=33.4 to 47.7) (PMID: 25366685). More recent FDA approval was based on a planned retrospective analysis of Phase II trial data in which patients with deleterious BRCA mutations had significantly longer progression-free survival with olaparib maintenance therapy than patients given placebo (11.2 months vs 4.3 months; HR=0.18; p<0·0001)(PMID: 24882434). In the seven-year follow-up of the Phase III SOLO1/GOG-3004 trial of maintenance olaparib versus placebo in patients with newly diagnosed, advanced ovarian cancer harboring a BRCA mutation, the seven-year median overall survival rates were 67% in the olaparib arm and 46.5% in the placebo arm, and the median duration of treatment was 24.6 months with olaparib and 13.9 months with placebo (PMID: 36082969)."
-        },
-        {
-          "drugs": "Olaparib + Abiraterone + Prednisone",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Olaparib, a small molecule PARP inhibitor, is FDA-approved in combination with abiraterone and prednisone/prednisolone for the treatment of patients with deleterious or suspected deleterious BRCA-mutated metastatic castration-resistant prostate cancer (mCRPC). FDA approval was based on the results of the Phase III PROpel trial of olaparib plus abiraterone and prednisone/prednisolone in adult patients with mCRPC undergoing first-line treatment after failure of primary androgen deprivation therapy. Of patients with BRCA1/2 mutations (n=85), the radiological progression-free survival in the olaparib plus abiraterone and prednisone/prednisolone group (n=47) was not reached (95% CI=NR, NR) compared to eight months (95% CI=6, 15) in the placebo plus abiraterone and prednisone/prednisolone group (n=38) (HR=0.24; 95% CI=0.12, 0.45), with a median overall survival of not reached (95% CI=NR, NR) versus 23 months (95% CI=18, 34) months (HR=0.30; 95% CI=0.15 0.59), respectively (Abstract: Clarke et al. Abstract# LBA16, ASCO GUCS 2023. https://ascopubs.org/doi/abs/10.1200/JCO.2023.41.6_suppl.LBA16)."
-        },
-        {
-          "drugs": "Talazoparib",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Talazoparib, a small molecule PARP inhibitor, is FDA-approved for patients with deleterious or suspected deleterious germline BRCA-mutated, HER2-negative locally advanced or metastatic breast cancer. FDA approval was based on the results from the Phase III EMBRACA trial of talazoparib (1 mg once daily) versus standard single-agent chemotherapy (2:1) in 431 patients with advanced, BRCA1/2 germline-mutated breast cancer in which the median progression-free survival (PFS) was 8.6 months in the talazoparib group versus 5.6 months in the chemotherapy group (HR= 0.54; 95%CI=0.41 to 0.71; p<0.001) and the objective response rate was 62.6% in the talazoparib group versus 27.2% in the chemotherapy group (p<0.001) (PMID: 30110579). In the Phase II study of talazoparib in patients with germline BRCA-mutant breast cancer who had a prior response to platinum agents, the overall response rate was 21-37% (depending on cohort) (PMID: 30563931). In a Phase I study of talazoparib plus carboplatin in patients with and without DNA repair mutations, three patients with somatic BRCA mutations had stable disease beyond four months (Abstract: Dhawan et al. Abstract# 2527, ASCO 2017. https://ascopubs.org/doi/abs/10.1200/JCO.2017.35.15_suppl.2527). In the Phase IIb tumor-agnostic JAVELIN BRCA/ATM trial of combination talazoparib and avelumab in 159 patients with BRCA1/2-altered solid tumors, the objective response was observed in 42 patients (26.4%, 95% CI = 19.7%–34.0%) and the median duration of response was 10.9 months (95% CI = 6.2 months to not estimable) (PMID: 36394867). In a retrospective study for 24 patients with BRCA1/2 somatic-mutated HER2-negative metastatic breast cancer treated with PARP inhibitors, the median real-world PFS was 4.6 months (95% CI=3.0 to 8.1) and the median real-world overall survival was 21.2 months (95% CI=13.8 to NR) while patients harboring BRCA1/2 germline mutations (n=71) demonstrated a median real-world PFS of 6.0 months (95% CI=4.6 to 8.2) and a median real-world overall survival of 21.2 months (95% CI=14.2 to NR) (PMID: 37992259)."
-        },
-        {
-          "drugs": "Talazoparib + Enzalutamide",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Talazoparib is an orally available, small-molecule PARP inhibitor that is FDA-approved in combination with enzalutamide for the treatment of adult patients with homologous recombination repair (HRR) gene-mutated metastatic castration-resistant prostate cancer (mCRPC). FDA approval was based on the results of the Phase III TALAPRO-2 (NCT03395197) trial of talazoparib plus enzalutamide in 399 adult patients with asymptomatic or mildly symptomatic mCRPC harboring HRR gene alterations receiving ongoing androgen deprivation therapy. \nIn the Phase III TALAPRO-2 (NCT03395197) trial, the talazoparib plus enzalutamide cohort (n=200) demonstrated a radiographic progression-free survival (rPFS) that was not evaluable (95% CI=21.9-NE) versus 13.8 months (95% CI=11.0-16.7) in the placebo plus enzalutamide cohort (n=199) (HR=0.45 [95% CI=0.33-0.61]; p<0.0001) (PMID: 37285865). Of patients with BRCA1/2 mutations (n=155), the talazoparib plus enzalutamide cohort (n=71) demonstrated a rPFS that was not evaluable (95% CI=NE-NE) versus 11.0 months (95% CI=16.4-NE) in the placebo plus enzalutamide group (n=84) (HR=0.20 [95% CI=0.11-0.36]) (PMID: 37285865). Of patients harboring only BRCA1 mutations (n=17), the talazoparib plus enzalutamide cohort (n=8) demonstrated an rPFS of 20.0 months versus 11.7 months in the placebo plus enzalutamide cohort (n=9) (HR=0.17 [95% CI=0.02-1.51]; p=0.074) (PMID: 37285865)."
-        }
-      ]
-    },
-    {
-      "gene": "CCNE1",
-      "alteration": "AMPLIFICATION",
-      "kind": "cna",
-      "oncogenicity": "Oncogenic",
-      "escat": "II",
-      "escatDescription": "Investigational target with strong evidence; enables clinical trial enrollment",
-      "oncokbLevel": "LEVEL_3A",
-      "resistanceLevel": null,
-      "treatments": [
-        {
-          "drugs": "Lunresertib + Camonsertib",
-          "level": "LEVEL_3A",
-          "fdaApproved": false,
-          "description": "Lunresertib is an orally available, small molecule PKMYT1 inhibitor and camonsertib is an orally available, small molecule ATR inhibitor. There are promising clinical data of response to lunresertib plus camonsertib in patients with CCNE1-amplified gynecologic cancers. In the Phase I MYTHIC (NCT04855656) trial of lunresertib plus camonsertib in patients with advanced tumors harboring CCNE1 amplifications, FBXW7 deleterious mutations or PPP2R1A deleterious mutations, the lunresertib plus camonsertib cohort (n=59 [n=17, endometrial; n=13, colorectal; n=11, ovarian; n=3, breast; n=3, lung; n=12, other]) demonstrated an overall response rate of 23.6% in all evaluable patients across tumor types, with a 33.3% response rate in patients with CCNE1-amplified tumors and a 38.5% response rate in patients with gynecologic cancers across all dosages (Abstract: Yap, T. et al., Abstract# 35396. AACR-NCI-EORTC 2023. https://ir.reparerx.com/static-files/c46f541b-554a-4690-90de-e63fa7dea852). Preclinical studies with ovarian and endometrial cancer cell lines and xenograft models expressing CCNE1 amplification demonstrate sensitivity to lunresertib plus camonsertib as measured by tumor regression and decreased cellular viability (PMID: 38410486) (Abstract: Gallo, D. et al., Abstract# B057, AACR 2023. https://aacrjournals.org/mct/article/22/12_Supplement/B057/730329/Abstract-B057-Preclinical-development-of-PKMYT1)(Abstract: Yap, T. et al., Abstract# B156, AACR-NCI-EORTC 2023. https://www.reparerx.com/wp-content/uploads/2023/10/ANE_B156_MYTHIC-clinical_poster.pdf)."
-        },
-        {
-          "drugs": "BLU-222",
-          "level": "LEVEL_4",
-          "fdaApproved": false,
-          "description": "BLU-222 is an inhibitor of CDK2, the cyclin E1 binding partner. Inhibition of cyclin E1 function is an attractive therapeutic avenue in tumors overexpressing cyclin E1. Preclinical studies of BLU-222 demonstrated in vitro and in vivo sensitivity of cyclin E1-amplified ovarian cancer cell lines to CDK2 inhibition, with tumor regression noted in xenograft tumor models when combined with carboplatin versus carboplatin alone (Abstract: Brown, et al. Abstract# 2306, AACR 2022. https://aacrjournals.org/cancerres/article/82/12_Supplement/2306/703534)."
-        },
-        {
-          "drugs": "Lunresertib",
-          "level": "LEVEL_4",
-          "fdaApproved": false,
-          "description": "Lunresertib is an inhibitor of the cyclin E1 inhibitory kinase PKMYT1. Inhibition of cyclin E1 function is an attractive therapeutic avenue in tumors overexpressing cyclin E1. Preclinical studies of lunresertib in cell line-derived and patient-derived xenograft models of cyclin E1-amplified tumor cells demonstrated that PKMYT1 inhibition leads to tumor regression in various tumor models compared to cells with normal cyclin E1 expression (PMID: 35444283). In the Phase I MYTHIC (NCT04855656) trial of lunresertib alone or in combination with the ATR inhibitor camonsertib in 108 patients with solid tumors harboring CCNE1 amplification or deleterious alterations in FBXW7 or PPP2R1A (uterine [31.5%], colorectal [20.4%], ovarian [16.7%], others [31.5%]), a patient with CCNE1-amplified bile duct cancer and two patients with CCNE1-amplified ovarian cancer were treated with lunresertib and camonsertib, resulting in a confirmed clinical response and CA-125 responses, respectively (Abstract: Yap et al. Abstract# PR008, AACR 2023. https://aacrjournals.org/mct/article/22/12_Supplement/PR008/730843/Abstract-PR008-MYTHIC-First-in-human-FIH-biomarker)."
-        }
-      ]
-    },
-    {
-      "gene": "PIK3CA",
-      "alteration": "H1047R",
-      "kind": "mutation",
-      "oncogenicity": "Oncogenic",
-      "mutationEffect": "Gain-of-function",
-      "escat": "III",
-      "escatDescription": "Clinical benefit demonstrated in other tumor types or similar molecular alterations",
-      "oncokbLevel": "LEVEL_3B",
-      "resistanceLevel": null,
-      "treatments": [
-        {
-          "drugs": "Alpelisib + Fulvestrant",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Alpelisib is a selective inhibitor of the alpha form of PI3K (PI3Kα) that is FDA-approved in combination with the selective estrogen receptor (ER) degrader fulvestrant for the treatment of postmenopausal patients with ER+ HER2- PIK3CA-mutated, advanced or metastatic breast cancer. FDA approval is based on data from the Phase III randomized, double-blind, placebo-controlled SOLAR-1 trial of alpelisib plus fulvestrant versus placebo plus fulvestrant in 572 patients with breast cancer in which the progression-free survival in patients with PIK3CA mutation (n=341) was eleven months (95% CI= 7.5-14.5) with alpelisib plus fulvestrant versus 5.7 months (95% CI= 3.7-7.4) with placebo plus fulvestrant (HR= 0.65; 95% CI= 0.5-0.85; p= 0.0013) compared to PIK3CA-wildtype patients in which the hazard ratio was 0.85 (95% CI= 0.58-1.25) (PMID: 31091374). Overall response in the PIK3CA-mutant population was 35.7 months (95% CI= 27.4-44.7; n=126) with alpelisib plus fulvestrant versus 16.2 months (95% CI= 10.4-23.5; n=136) with placebo plus fulvestrant (PMID: 31091374). Previous studies, including in vivo xenograft studies and a phase I trial, also demonstrated that treatment of ER+ PIK3CA-mutant breast cancer with the combination of fulvestrant and alpelisib results in greater tumor shrinkage than either drug alone, with fulvestrant inhibiting the induction of ER-dependent gene transcription resulting from PI3Kα inhibition with alpelisib (PMID: 25877889, 30543347)."
-        },
-        {
-          "drugs": "Capivasertib + Fulvestrant",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Capivasertib is an orally available, ATP-competitive pan-AKT small molecule inhibitor that is FDA-approved with fulvestrant for adult patients with ER+/HER2- locally advanced or metastatic breast cancer with one or more PIK3CA/AKT1/PTEN-alterations, as detected by an FDA-approved test, following progression on at least one endocrine-based regimen in the metastatic setting or recurrence on or within twelve months of completing adjuvant therapy. Eligible PIK3CA/AKT1/PTEN-alterations (PIK3CA R88Q, N345K, C420R, E542K, E545A, E545D, E545Q, E545K, E545G, Q546E, Q546K, Q546R, Q546P, M1043V, M1043I, H1047Y, H1047R, H1047L and G1049R; AKT1 E17K; all PTEN oncogenic mutations) for treatment with capivasertib plus fulvestrant were detected by the FoundationOne CDx assay. FDA approval was based on the results from the Phase III CAPItello-291 (NCT04305496) trial of capivasertib plus fulvestrant versus placebo plus fulvestrant in 708 adult patients with ER+/HER2- locally advanced or metastatic breast cancer (n=289, patients with eligible PIK3CA/AKT1/PTEN alterations). In the Phase III CAPItello-291 (NCT04305496) trial, the capivasertib plus fulvestrant cohort with PIK3CA/AKT1/PTEN-altered tumors (n=155) demonstrated an objective response rate (ORR) of 26% (95% CI=19-34), with a 2.3% complete response (CR) rate, 23% partial response (PR) rate, and a median progression-free survival (PFS) of 7.3 months (95% CI=5.5-9.0)(PMID: 37256976). The placebo plus fulvestrant cohort with PIK3CA/AKT1/PTEN-altered tumors (n=134) demonstrated an ORR of 8% (95% CI=4-14), with an 8% PR rate and a median PFS of 3.1 months (95% CI=2.0-3.7) (HR=0.50 [95% CI=0.38-0.65]; p<0.0001) (PMID: 37256976)."
-        },
-        {
-          "drugs": "Inavolisib + Palbociclib + Fulvestrant",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Inavolisib is an orally available, small molecule PI3Kα inhibitor that is FDA-approved in combination with palbociclib and fulvestrant for the treatment of adults with endocrine-resistant, PIK3CA-mutated, HR-positive, HER2-negative, locally advanced or metastatic breast cancer, as detected by an FDA-approved test following recurrence on or after completing adjuvant endocrine therapy. PIK3CA oncogenic mutations for treatment with inavolisib plus palbociclib and fulvestrant were detected by the FoundationOne Liquid CDx. FDA approval was based on the results of the Phase III INAVO120 (NCT04191499) trial of inavolisib plus palbociclib and fulvestrant versus palbociclib plus fulvestrant in 325 patients with PIK3CA-mutated, HR+/HER2- breast cancer. In the Phase III INAVO120 (NCT04191499) trial, the inavolisib cohort (n=161) demonstrated an overall response rate (ORR) of 58.4%, with seven complete responses (CR) and 87 partial responses (PR), a median progression-free survival (PFS) of 15.0 months (95% CI=11.3-20.5), median overall survival (OS) was not evaluable (95% CI=0.43-0.97) and a median duration of response (DOR) of 18.4 months (95% CI=10.4-22.2) (PMID: 39476340). In contrast, the palbociclib plus fulvestrant only cohort (n=164) demonstrated an ORR of 25.0%, with one CR and 40 PRs, a median PFS of 7.3 months (95% CI=5.6-9.3) (HR=0.43 [95% CI=0.32-0.59]; p<0.0001), a median OS of 31.1 months (95% CI=22.3-NE) (HR=0.64 [95% CI=0.43-0.97]; p=0.0338) and a median DOR of 9.6 months (95% CI=7.4-16.6) (PMID: 39476340)."
-        },
-        {
-          "drugs": "RLY-2608",
-          "level": "LEVEL_4",
-          "fdaApproved": false,
-          "description": "RLY-2608 is an orally available, small-molecule, allosteric PI3Kα inhibitor. There are promising laboratory and anecdotal clinical data to support use of RLY-2608 in patients with PIK3CA-mutated solid tumors. In the Phase I ReDiscover (NCT05216432) trial of RLY-2608, one patient with HER2-low breast cancer harboring PIK3CA H1047R and E453K was treated with RLY-2608 and one patient with HER2-negative breast cancer harboring PIK3CA E542K was treated with RLY-2608 plus fulvestrant and both patients demonstrated partial responses (PMID: 37916956). Biochemical assays have demonstrated that RLY-2608 inhibits PI3Kα activity in kinase and helical domain mutants with high isoform selectivity (Abstract: Pazolli et al. Abstract# P251, TARG 2021. https://aacrjournals.org/mct/article/20/12_Supplement/P251/676005/Abstract-P251-Discovery-and-characterization-of). In vivo xenograft models harboring PIK3CA E545K and H1047R mutations demonstrated sensitivity to RLY-2608 as measured by dose-dependent tumor regression and anti-tumor activity (Abstract: Pazolli et al. Abstract# P5-16-10, SABCS 2021. https://aacrjournals.org/cancerres/article/82/4_Supplement/P5-16-10/681459). In vitro studies with MCF10A cells expressing PIK3CA E545K or H1047R demonstrate sensitivity to RLY-2608 as measured by inhibition of cellular signaling and proliferation (PMID: 37916956)."
-        }
-      ],
-      "narrative": "*PIK3CA* H1047R is classified as **Oncogenic** in high-grade serous ovarian carcinoma. **Investigational options:** Alpelisib + Fulvestrant, Capivasertib + Fulvestrant, Inavolisib + Palbociclib + Fulvestrant, RLY-2608 (Evidence Level: LEVEL_3B, LEVEL_3B, LEVEL_3B, LEVEL_4) represent investigational strategies with emerging evidence. Enrollment in clinical trials targeting this alteration should be considered. Treatment decisions should integrate this molecular finding with clinical context, prior therapy lines, and patient performance status.\n\n**References:** 1. Passarelli A et al. Alpelisib for PIK3CA-mutated advanced gynecological cancers: First clues of clinical activity.. *Gynecologic oncology*. 2024. PMID: 38518529 2. Kashofer K, Reich O, Regauer S. Acquisition of Genetic Aberrations During the Progression of High-Grade Intraepithelial Lesions/Micro-Invasive Squamous Cancers to Widely Invasive Cervical Squamous Cell Cancer.. *Archives of pathology & laboratory medicine*. 2023. PMID: 36800542 3. Zundell JA et al. Targeting the IRE1α/XBP1 Endoplasmic Reticulum Stress Response Pathway in ARID1A-Mutant Ovarian Cancers.. *Cancer research*. 2021. PMID: 34548333"
-    },
-    {
-      "gene": "NF1",
-      "alteration": "R1534*",
-      "kind": "mutation",
-      "oncogenicity": "Likely Oncogenic",
-      "mutationEffect": "Likely Loss-of-function",
-      "escat": "III",
-      "escatDescription": "Clinical benefit demonstrated in other tumor types or similar molecular alterations",
-      "oncokbLevel": "LEVEL_3B",
-      "resistanceLevel": null,
-      "treatments": [
-        {
-          "drugs": "Mirdametinib",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Mirdametinib is an orally available, small molecule MEK1/2 inhibitor that is FDA-approved for the treatment of adult and pediatric patients 2 years of age and older with neurofibromatosis type 1 (NF1) who have symptomatic plexiform neurofibromas (PN) not amenable to complete resection. FDA approval was based on the results of the Phase IIb ReNeu (NCT03962543) trial of mirdametinib in adult and pediatric patients with symptomatic NF1-associated plexiform neurofibroma.\n\nIn the Phase IIb ReNeu (NCT03962543) trial, the adult cohort (n=58 [age range=18-69 years old; median age=34 years old]) demonstrated an overall response rate (ORR) of 41% (95% CI=29-55) (p<0.001), with 24 patients demonstrating partial responses (PR) and 26 patients demonstrating stable disease (SD) (PMID: 39514826). In the pediatric cohort (n=56 [age range=2-17 years old; median age=10 years old]), the ORR was 52% (95% CI=38-65) (p<0.001), with 29 patients demonstrating PR and 22 patients demonstrating SD (PMID: 39514826)."
-        },
-        {
-          "drugs": "Trametinib",
-          "level": "LEVEL_4",
-          "fdaApproved": false,
-          "description": "Trametinib and cobimetinib are small molecule inhibitors of MEK1 and MEK2. Several clinial reports have documented patients with NF1-mutant solid tumors who have responded to treatment with MEK inhibitors. In a case report, a single patient with treatment-refractory neurofibromatosis-associated glioblastoma experienced clinical and radiological benefit from treatment with trametinib (PMID: 26936308). In a retrospective analysis of patients with neurofibromatosis Type I-associated astrocytoma, two of two patients who were treated with trametinib had clinical benefit and partial tumor regression (Abstract: Romo et al. Abstract# e13562, ASCO 2019. https://ascopubs.org/doi/abs/10.1200/JCO.2019.37.15_suppl.e13562). Other MEK inhibitors, such as selumetinib, have demonstrated efficacy in NF1-associated gliomas, including in a phase II clinical trial in which ten of 25 patients (40% [95% CI:21-61%]) had a sustained partial response to treatment with MEK inhibitors (PMID: 31151904). Additionally, in vitro studies have demonstrated that loss of NF1 results in sensitivity to MEK inhibitors as measured by downstream MAPK pathway signaling and cell proliferation (PMID: 24535670, 24576830)."
-        },
-        {
-          "drugs": "Cobimetinib",
-          "level": "LEVEL_4",
-          "fdaApproved": false,
-          "description": "Trametinib and cobimetinib are small molecule inhibitors of MEK1 and MEK2. Several clinial reports have documented patients with NF1-mutant solid tumors who have responded to treatment with MEK inhibitors. In a case report, a single patient with treatment-refractory neurofibromatosis-associated glioblastoma experienced clinical and radiological benefit from treatment with trametinib (PMID: 26936308). In a retrospective analysis of patients with neurofibromatosis Type I-associated astrocytoma, two of two patients who were treated with trametinib had clinical benefit and partial tumor regression (Abstract: Romo et al. Abstract# e13562, ASCO 2019. https://ascopubs.org/doi/abs/10.1200/JCO.2019.37.15_suppl.e13562). Other MEK inhibitors, such as selumetinib, have demonstrated efficacy in NF1-associated gliomas, including in a phase II clinical trial in which ten of 25 patients (40% [95% CI:21-61%]) had a sustained partial response to treatment with MEK inhibitors (PMID: 31151904). Additionally, in vitro studies have demonstrated that loss of NF1 results in sensitivity to MEK inhibitors as measured by downstream MAPK pathway signaling and cell proliferation (PMID: 24535670, 24576830)."
-        }
-      ]
-    },
-    {
-      "gene": "CDK12",
-      "alteration": "K765fs",
-      "kind": "mutation",
-      "oncogenicity": "Likely Oncogenic",
-      "mutationEffect": "Likely Loss-of-function",
-      "escat": "III",
-      "escatDescription": "Clinical benefit demonstrated in other tumor types or similar molecular alterations",
-      "oncokbLevel": "LEVEL_3B",
-      "resistanceLevel": null,
-      "treatments": [
-        {
-          "drugs": "Olaparib",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Olaparib, a small-molecule PARP inhibitor, is FDA-approved for patients with deleterious or suspected deleterious germline or somatic homologous recombination repair (HRR) gene-mutated metastatic castration-resistant prostate cancer (mCRPC), who have progressed following prior treatment with enzalutamide or abiraterone. FDA approval was based on the results of the Phase III PROfound trial of olaparib in adult patients with metastatic castration-resistant prostate cancer who had disease progression while receiving a new hormonal agent and who had a deleterious or suspected deleterious mutation in a homologous recombination repair (HRR) gene. Of patients with a qualifying alteration in CDK12 (n=89), the progression-free survival in the olaparib group was 5.1 months compared to 2.2 months in the placebo group (HR=0.74; 95% CI=0.44 to 1.31), with a median overall survival of 14.2 months versus 11.5 months (0.65; 95% CI=0.35 to 1.25), respectively (PMID: 32343890). While the FDA approval includes those with CDK12 mutations, there is limited clinical data in patients with this biomarker (n=89)(PMID: 32343890)."
-        },
-        {
-          "drugs": "Talazoparib + Enzalutamide",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Talazoparib, a small molecule PARP inhibitor, is FDA-approved in combination with enzalutamide for the treatment of select patients with CDK12-mutant metastatic castration-resistant prostate cancer (mCRPC). FDA approval was based on the results of the Phase III TALAPRO-2 trial of talazoparib plus enzalutamide in adult patients with asymptomatic or mildly symptomatic mCRPC harboring homologous recombination repair (HRR) gene alterations receiving ongoing androgen deprivation therapy. Of patients with HRR gene mutations (n=399), the radiographic progression-free survival in the talazoparib plus enzalutamide group (n=200) was not evaluable (95% CI=21.9, NE) compared to 13.8 months (95% CI=11.0, 16.7) in the placebo plus enzalutamide group (n=199) (HR=0.45; 95% CI=0.33, 0.61), with a 2-sided p-value of <0.0001 (PMID: 37285865). Patients with CDK12 mutations (n=71) demonstrated a radiographic progression-free survival of 21.9 months in the talazoparib plus enzalutamide group (n=35) and 13.8 months in the placebo plus enzalutamide group (n=36) (HR=0.38; 95% CI=0.19, 0.76), with a 2-sided p-value of 0.0045 (PMID: 37285865). Patients harboring only CDK12 mutations (n=58) demonstrated a radiographic progression-free survival of 21.9 months in the talazoparib plus enzalutamide group (n=28) and 13.8 months in the placebo plus enzalutamide group (n=30) (HR=0.49; 95% CI=0.23, 1.02), with a 2-sided p-value of 0.055 (PMID: 37285865)."
-        },
-        {
-          "drugs": "Pembrolizumab",
-          "level": "LEVEL_4",
-          "fdaApproved": false,
-          "description": "Cemiplimab, pembrolizumab, and nivolumab are monoclonal antibodies that target the Programmed Cell Death Protein 1 (PD-1) and are FDA-approved as immunotherapy in various cancers. In a retrospective analyses of four patients with CDK12-mutant, metastatic, castration-resistant prostate cancer who were treated with anti-PD1 monotherapy, two of four patients had decline in prostate specific antigen (PSA) after immunotherapy treatment, suggesting that this patient population may have a higher likelihood of response to immunotherapy (PMID: 29906450). Preclinical studies in CDK12-mutant prostate cancer tumors have showed that these tumors have high T-cell infiltration and are likely ideal candidates for immune checkpoint inhibition (PMID: 29906450)."
-        },
-        {
-          "drugs": "Nivolumab",
-          "level": "LEVEL_4",
-          "fdaApproved": false,
-          "description": "Cemiplimab, pembrolizumab, and nivolumab are monoclonal antibodies that target the Programmed Cell Death Protein 1 (PD-1) and are FDA-approved as immunotherapy in various cancers. In a retrospective analyses of four patients with CDK12-mutant, metastatic, castration-resistant prostate cancer who were treated with anti-PD1 monotherapy, two of four patients had decline in prostate specific antigen (PSA) after immunotherapy treatment, suggesting that this patient population may have a higher likelihood of response to immunotherapy (PMID: 29906450). Preclinical studies in CDK12-mutant prostate cancer tumors have showed that these tumors have high T-cell infiltration and are likely ideal candidates for immune checkpoint inhibition (PMID: 29906450)."
-        },
-        {
-          "drugs": "Cemiplimab",
-          "level": "LEVEL_4",
-          "fdaApproved": false,
-          "description": "Cemiplimab, pembrolizumab, and nivolumab are monoclonal antibodies that target the Programmed Cell Death Protein 1 (PD-1) and are FDA-approved as immunotherapy in various cancers. In a retrospective analyses of four patients with CDK12-mutant, metastatic, castration-resistant prostate cancer who were treated with anti-PD1 monotherapy, two of four patients had decline in prostate specific antigen (PSA) after immunotherapy treatment, suggesting that this patient population may have a higher likelihood of response to immunotherapy (PMID: 29906450). Preclinical studies in CDK12-mutant prostate cancer tumors have showed that these tumors have high T-cell infiltration and are likely ideal candidates for immune checkpoint inhibition (PMID: 29906450)."
-        }
-      ]
-    },
-    {
-      "gene": "PTEN",
-      "alteration": "R130*",
-      "kind": "mutation",
-      "oncogenicity": "Oncogenic",
-      "mutationEffect": "Loss-of-function",
-      "escat": "III",
-      "escatDescription": "Clinical benefit demonstrated in other tumor types or similar molecular alterations",
-      "oncokbLevel": "LEVEL_3B",
-      "resistanceLevel": null,
-      "treatments": [
-        {
-          "drugs": "Capivasertib + Fulvestrant",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Capivasertib, an orally available, ATP-competitive pan-AKT inhibitor, is FDA-approved with fulvestrant for the treatment of patients with PTEN-mutant ER+/HER2- metastatic breast cancer. FDA approval was based on the results of the Phase III CAPItello-291 trial of capivasertib plus fulvestrant in adult patients with or without AKT pathway-altered (PIK3CA, AKT1 or PTEN) ER+/HER2- advanced breast cancer. Of the patients with only PIK3CA, AKT1 or PTEN-mutant tumors (n=289), the capivasertib plus fulvestrant group (n=155) demonstrated an objective response rate of 26% (95% CI=19, 34), with a 2.3% complete response rate and 23% partial response rate, and a median progression-free survival of 7.3 months (95% CI=5.5, 9.0) whereas the placebo plus fulvestrant group (n=134) demonstrated an objective response rate of 8% (95% CI=4, 14), with a 8% partial response rate, and a median progression-free survival of 3.1 months (95% CI=2.0, 3.7) (HR=0.50 [95% CI=0.38, 0.65]; P<0.0001) (PMID: 37256976). Of all patients, including patients with wildtype tumors and patients with PIK3CA, AKT1 or PTEN-mutant tumors (n=708), the capivasertib plus fulvestrant group (n=355) demonstrated a median progression-free survival of 7.2 months (95% CI=5.5, 7.4) whereas the placebo plus fulvestrant group (n=353) demonstrated a median progression-free survival of 3.6 months (95% CI=2.8, 3.7) (HR=0.60 [95% CI=0.51, 0.71]; P<0.001) (PMID: 37256976)."
-        },
-        {
-          "drugs": "GSK2636771",
-          "level": "LEVEL_4",
-          "fdaApproved": false,
-          "description": "GSK2636771 and AZD8186 are ATP-competitive small molecule inhibitors of PI3Kβ. In a phase I clinical trial of GSK2636771 in PTEN-deficient advanced solid tumors, 11 (17%) of 65 patients experienced durable clinical benefit (>24 weeks), with 1 patient with castration-resistant prostate cancer having a partial response for over one year (PMID: 28645941). In a different Phase I trial of GSK2636771 plus enzalutamide in 36 patients with PTEN-deficient metastatic castration-resistant prostate cancer, the 12-week non-progressive disease rate was 50% (95% CI: 28.2–71.8, n = 22) in patients receiving 200mg of GSK2636771 daily, with 1 (3%) patient achieving a radiographic partial response lasting 36 weeks (PMID: 34281912). In a Phase I clinical trial of AZD8186 in 87 patients with advanced solid tumors, partial responses were seen in one patient with castration-resistant prostate cancer who was also treated in combination with vistusertib, a dual mTORC1/2 inhibitor, and in another patient with PTEN-deficient colorectal cancer (Abstract: Hansen et al. Abstract# 2570, ASCO 2017. http://ascopubs.org/doi/abs/10.1200/JCO.2017.35.15_suppl.2570)."
-        },
-        {
-          "drugs": "AZD8186",
-          "level": "LEVEL_4",
-          "fdaApproved": false,
-          "description": "GSK2636771 and AZD8186 are ATP-competitive small molecule inhibitors of PI3Kβ. In a phase I clinical trial of GSK2636771 in PTEN-deficient advanced solid tumors, 11 (17%) of 65 patients experienced durable clinical benefit (>24 weeks), with 1 patient with castration-resistant prostate cancer having a partial response for over one year (PMID: 28645941). In a different Phase I trial of GSK2636771 plus enzalutamide in 36 patients with PTEN-deficient metastatic castration-resistant prostate cancer, the 12-week non-progressive disease rate was 50% (95% CI: 28.2–71.8, n = 22) in patients receiving 200mg of GSK2636771 daily, with 1 (3%) patient achieving a radiographic partial response lasting 36 weeks (PMID: 34281912). In a Phase I clinical trial of AZD8186 in 87 patients with advanced solid tumors, partial responses were seen in one patient with castration-resistant prostate cancer who was also treated in combination with vistusertib, a dual mTORC1/2 inhibitor, and in another patient with PTEN-deficient colorectal cancer (Abstract: Hansen et al. Abstract# 2570, ASCO 2017. http://ascopubs.org/doi/abs/10.1200/JCO.2017.35.15_suppl.2570)."
-        }
-      ]
-    },
-    {
-      "gene": "KRAS",
-      "alteration": "G12V",
-      "kind": "mutation",
-      "oncogenicity": "Oncogenic",
-      "mutationEffect": "Gain-of-function",
-      "escat": "III",
-      "escatDescription": "Clinical benefit demonstrated in other tumor types or similar molecular alterations",
-      "oncokbLevel": "LEVEL_3B",
-      "resistanceLevel": null,
-      "treatments": [
-        {
-          "drugs": "Avutometinib + Defactinib",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Avutometinib, a RAF/MEK clamp inhibitor, and defactinib, a FAK inhibitor, are FDA-approved in combination for the treatment of adult patients with KRAS-mutated recurrent low-grade serous ovarian cancer (LGSOC) who have received prior systemic therapy. FDA approval was based on the results of the Phase II RAMP-201 (NCT04625270) trial of avutometinib plus defactinib in 109 patients with recurrent LGSOC.\nIn the Phase II RAMP-201 (NCT04625270) trial, patients with KRAS-mutated LGSOC (n=57) demonstrated an overall response rate (ORR) of 44% (n=25), with a 2% (n=2) complete response (CR) rate, 40% (n=23) partial response (PR) rate and 49% (n=28) stable disease (SD) rate, a median duration of response (DOR) of 31.0 months (95% CI=14.8-31.1) and a median progression-free survival (PFS) of 22.0 months (95% CI=11.1-36.6) (PMID: 40644648). Responders included patients with the following KRAS mutations: KRAS A146V, G12D, G12R, G12V and Q61H (PMID: 40644648). Of patients with KRAS wildtype LGSOC (n=52), the cohort demonstrated an ORR of 17% (n=9), with a 17% (n=9) PR rate and 65% (n=34) SD rate, and a median PFS of 9.2 months (95% CI=5.5-NE) (PMID: 40644648)."
-        },
-        {
-          "drugs": "Daraxonrasib",
-          "level": "LEVEL_4",
-          "fdaApproved": false,
-          "description": "Daraxonrasib is an orally available, small-molecular inhibitor of RAS. In vitro studies in human RAS-addicted cancer cell lines demonstrated sensitivity to daraxonrasib as measured by decreased ERK phosphorylation, decreased cell growth and induced apoptosis (Abstract: Koltun et al. Abstract# 3597, AACR 2022. https://aacrjournals.org/cancerres/article/82/12_Supplement/3597/702320). In vitro studies with KRAS position 12 (G12X) mutated RAS-addicted cell lines demonstrated increased sensitivity to daraxonrasib as measured by increased inhibition of cellular proliferation compared to other RAS-mutated cell lines (Abstract: Singh et al. Abstract # 3597, AACR 2022. https://s3.us-west-2.amazonaws.com/rvmdpubs.revmed.com/2022/AACR_2022_Singh.pdf). In vivo human xenograft models with KRAS G12X mutant tumors demonstrated sensitivity to daraxonrasib as measured by dose-dependent tumor regression, anti-tumor immunity and RAS pathway inhibition (Abstract: Koltun et al. Abstract# 3597, AACR 2022. https://aacrjournals.org/cancerres/article/82/12_Supplement/3597/702320). In a mouse clinical trial of daraxonrasib with KRAS G12X-mutant models of non-small cell lung cancer (n=15), pancreatic ductal adenocarcinoma (n=18) and colorectal cancer (n=18), the objective response rate was 53% (8/15), 61% (11/18) and 44% (8/18), respectively (Abstract: Singh et al. Abstract # 3597, AACR 2022. https://s3.us-west-2.amazonaws.com/rvmdpubs.revmed.com/2022/AACR_2022_Singh.pdf)."
-        },
-        {
-          "drugs": "Trametinib",
-          "level": "LEVEL_4",
-          "fdaApproved": false,
-          "description": "Trametinib, cobimetinib, and binimetinib are MEK1/2 kinase inhibitors that are NCCN-listed and FDA-approved for patients with unresectable or metastatic melanoma with BRAF V600E or V600K mutations. In a multicenter, single-arm, open-label, phase IB trial (NCT02964689) of binimetinib in combination with cisplatin and pemetrexed in fourteen evaluable patients with stage III-IV NSCLC with KRAS (codon 12, 13 or 61) mutations, the overall response rate was 33% (95% CI=7–70) among the nine patients that received binimetinib, where three of nine patients had a partial response, two of nine had stable disease, three of nine had progressive disease, and one of nine was not assessable for response (PMID: 33933896). On average, in vitro studies have shown that trametinib inhibits the proliferation of KRAS mutant cancer cell lines (n = 50) with lower IC50s than other MEK inhibitors, including selumetinib (PMID: 24746704). Cobimetinib, which inhibits the kinase activity of MEK but allows the induction of RAF-dependent feedback phosphorylation of MEK, was demonstrated to be less effective in KRAS-mutant tumors than in BRAF-mutant tumors (PMID: 25435214, 23934108)."
-        },
-        {
-          "drugs": "Cobimetinib",
-          "level": "LEVEL_4",
-          "fdaApproved": false,
-          "description": "Trametinib, cobimetinib, and binimetinib are MEK1/2 kinase inhibitors that are NCCN-listed and FDA-approved for patients with unresectable or metastatic melanoma with BRAF V600E or V600K mutations. In a multicenter, single-arm, open-label, phase IB trial (NCT02964689) of binimetinib in combination with cisplatin and pemetrexed in fourteen evaluable patients with stage III-IV NSCLC with KRAS (codon 12, 13 or 61) mutations, the overall response rate was 33% (95% CI=7–70) among the nine patients that received binimetinib, where three of nine patients had a partial response, two of nine had stable disease, three of nine had progressive disease, and one of nine was not assessable for response (PMID: 33933896). On average, in vitro studies have shown that trametinib inhibits the proliferation of KRAS mutant cancer cell lines (n = 50) with lower IC50s than other MEK inhibitors, including selumetinib (PMID: 24746704). Cobimetinib, which inhibits the kinase activity of MEK but allows the induction of RAF-dependent feedback phosphorylation of MEK, was demonstrated to be less effective in KRAS-mutant tumors than in BRAF-mutant tumors (PMID: 25435214, 23934108)."
-        },
-        {
-          "drugs": "Binimetinib",
-          "level": "LEVEL_4",
-          "fdaApproved": false,
-          "description": "Trametinib, cobimetinib, and binimetinib are MEK1/2 kinase inhibitors that are NCCN-listed and FDA-approved for patients with unresectable or metastatic melanoma with BRAF V600E or V600K mutations. In a multicenter, single-arm, open-label, phase IB trial (NCT02964689) of binimetinib in combination with cisplatin and pemetrexed in fourteen evaluable patients with stage III-IV NSCLC with KRAS (codon 12, 13 or 61) mutations, the overall response rate was 33% (95% CI=7–70) among the nine patients that received binimetinib, where three of nine patients had a partial response, two of nine had stable disease, three of nine had progressive disease, and one of nine was not assessable for response (PMID: 33933896). On average, in vitro studies have shown that trametinib inhibits the proliferation of KRAS mutant cancer cell lines (n = 50) with lower IC50s than other MEK inhibitors, including selumetinib (PMID: 24746704). Cobimetinib, which inhibits the kinase activity of MEK but allows the induction of RAF-dependent feedback phosphorylation of MEK, was demonstrated to be less effective in KRAS-mutant tumors than in BRAF-mutant tumors (PMID: 25435214, 23934108)."
-        }
-      ]
-    },
-    {
-      "gene": "PTEN",
-      "alteration": "DELETION",
-      "kind": "cna",
-      "oncogenicity": "Oncogenic",
-      "escat": "III",
-      "escatDescription": "Clinical benefit demonstrated in other tumor types or similar molecular alterations",
-      "oncokbLevel": "LEVEL_3B",
-      "resistanceLevel": null,
-      "treatments": [
-        {
-          "drugs": "Capivasertib + Fulvestrant",
-          "level": "LEVEL_3B",
-          "fdaApproved": false,
-          "description": "Capivasertib, an orally available, ATP-competitive pan-AKT inhibitor, is FDA-approved with fulvestrant for the treatment of patients with PTEN-mutant ER+/HER2- metastatic breast cancer. FDA approval was based on the results of the Phase III CAPItello-291 trial of capivasertib plus fulvestrant in adult patients with or without AKT pathway-altered (PIK3CA, AKT1 or PTEN) ER+/HER2- advanced breast cancer. Of the patients with only PIK3CA, AKT1 or PTEN-mutant tumors (n=289), the capivasertib plus fulvestrant group (n=155) demonstrated an objective response rate of 26% (95% CI=19, 34), with a 2.3% complete response rate and 23% partial response rate, and a median progression-free survival of 7.3 months (95% CI=5.5, 9.0) whereas the placebo plus fulvestrant group (n=134) demonstrated an objective response rate of 8% (95% CI=4, 14), with a 8% partial response rate, and a median progression-free survival of 3.1 months (95% CI=2.0, 3.7) (HR=0.50 [95% CI=0.38, 0.65]; P<0.0001) (PMID: 37256976). Of all patients, including patients with wildtype tumors and patients with PIK3CA, AKT1 or PTEN-mutant tumors (n=708), the capivasertib plus fulvestrant group (n=355) demonstrated a median progression-free survival of 7.2 months (95% CI=5.5, 7.4) whereas the placebo plus fulvestrant group (n=353) demonstrated a median progression-free survival of 3.6 months (95% CI=2.8, 3.7) (HR=0.60 [95% CI=0.51, 0.71]; P<0.001) (PMID: 37256976)."
-        },
-        {
-          "drugs": "GSK2636771",
-          "level": "LEVEL_4",
-          "fdaApproved": false,
-          "description": "GSK2636771 and AZD8186 are ATP-competitive small molecule inhibitors of PI3Kβ. In a phase I clinical trial of GSK2636771 in PTEN-deficient advanced solid tumors, 11 (17%) of 65 patients experienced durable clinical benefit (>24 weeks), with 1 patient with castration-resistant prostate cancer having a partial response for over one year (PMID: 28645941). In a different Phase I trial of GSK2636771 plus enzalutamide in 36 patients with PTEN-deficient metastatic castration-resistant prostate cancer, the 12-week non-progressive disease rate was 50% (95% CI: 28.2–71.8, n = 22) in patients receiving 200mg of GSK2636771 daily, with 1 (3%) patient achieving a radiographic partial response lasting 36 weeks (PMID: 34281912). In a Phase I clinical trial of AZD8186 in 87 patients with advanced solid tumors, partial responses were seen in one patient with castration-resistant prostate cancer who was also treated in combination with vistusertib, a dual mTORC1/2 inhibitor, and in another patient with PTEN-deficient colorectal cancer (Abstract: Hansen et al. Abstract# 2570, ASCO 2017. http://ascopubs.org/doi/abs/10.1200/JCO.2017.35.15_suppl.2570)."
-        },
-        {
-          "drugs": "AZD8186",
-          "level": "LEVEL_4",
-          "fdaApproved": false,
-          "description": "GSK2636771 and AZD8186 are ATP-competitive small molecule inhibitors of PI3Kβ. In a phase I clinical trial of GSK2636771 in PTEN-deficient advanced solid tumors, 11 (17%) of 65 patients experienced durable clinical benefit (>24 weeks), with 1 patient with castration-resistant prostate cancer having a partial response for over one year (PMID: 28645941). In a different Phase I trial of GSK2636771 plus enzalutamide in 36 patients with PTEN-deficient metastatic castration-resistant prostate cancer, the 12-week non-progressive disease rate was 50% (95% CI: 28.2–71.8, n = 22) in patients receiving 200mg of GSK2636771 daily, with 1 (3%) patient achieving a radiographic partial response lasting 36 weeks (PMID: 34281912). In a Phase I clinical trial of AZD8186 in 87 patients with advanced solid tumors, partial responses were seen in one patient with castration-resistant prostate cancer who was also treated in combination with vistusertib, a dual mTORC1/2 inhibitor, and in another patient with PTEN-deficient colorectal cancer (Abstract: Hansen et al. Abstract# 2570, ASCO 2017. http://ascopubs.org/doi/abs/10.1200/JCO.2017.35.15_suppl.2570)."
-        }
-      ]
-    },
-    {
-      "gene": "ARID1A",
-      "alteration": "Q1334*",
-      "kind": "mutation",
-      "oncogenicity": "Likely Oncogenic",
-      "mutationEffect": "Likely Loss-of-function",
-      "escat": "IV",
-      "escatDescription": "Preclinical evidence of actionability",
-      "oncokbLevel": "LEVEL_4",
-      "resistanceLevel": null,
-      "treatments": [
-        {
-          "drugs": "OPN-2853 ",
-          "level": "LEVEL_4",
-          "fdaApproved": false,
-          "description": "PLX2853 is an inhibitor of the bromodomain-containing protein 4 (BRD4) that binds to the acetylated lysine recognition motifs in the bromodomains of the BRD4 protein, thereby preventing the binding of BRD4 to acetylated lysines on histones. Small molecule inhibitors of the BET family of proteins have been shown to specifically inhibit proliferation of ARID1A-mutated cell lines, both in vitro and in ovarian clear cell cancer xenografts and patient-derived xenograft models (PMID: 29760405). Similarly, loss of ARID1A has been shown to sensitize breast cancer cells to BET inhibition with various BET inhibitors including JQ1, OTX015, and IBET762 (PMID: 31913353). In an open-label Phase II clinical study of PLX2853 in patients with advanced gynecologic malignancies harboring an ARID1A mutation (n=14), partial response was achieved in one patient (7.1%), stable disease was achieved in five patients (35.7%) and progressive disease was observed in eight patients (57.1%) (PMID: 37797273)."
-        },
-        {
-          "drugs": "Tazemetostat",
-          "level": "LEVEL_4",
-          "fdaApproved": false,
-          "description": "Tazemetostat is a small molecule methyltransferase inhibitor of EZH2 indicated for the treatment of adult and pediatric patients with metastatic or locally advanced epithelioid sarcoma ineligible for complete resection as well as adults with relapsed or refractory follicular lymphoma whose tumors are positive for an EZH2 mutation. In vitro studies showed that other small molecule inhibitors of EZH2 methyltransferase activity, including GSK126, GSK343, and EPZ005687, selectively suppressed the growth of ARID1A mutated ovarian and gastric cancer cell lines compared to controls (PMID: 25686104, 32506298)."
-        }
-      ]
-    },
-    {
-      "gene": "TP53",
-      "alteration": "R248W",
-      "kind": "mutation",
-      "oncogenicity": "Likely Oncogenic",
-      "mutationEffect": "Loss-of-function",
-      "escat": "X",
-      "escatDescription": "No evidence for actionability or lack of data",
-      "oncokbLevel": null,
-      "resistanceLevel": null,
-      "treatments": [],
-      "narrative": "*TP53* R248W is classified as **Likely Oncogenic** in high-grade serous ovarian carcinoma. No directly targeted therapies are currently approved for this specific alteration in ovarian cancer. However, this alteration may inform prognosis and response to standard platinum-based chemotherapy. Consider enrollment in basket trials or molecular tumor boards for emerging therapeutic strategies.\n\n**References:** 1. Elayapillai S et al. Potential and mechanism of mebendazole for treatment and maintenance of ovarian cancer.. *Gynecologic oncology*. 2021. PMID: 33131904 2. De Souza C et al. The P72R Polymorphism in R248Q/W p53 Mutants Modifies the Mutant Effect on Epithelial to Mesenchymal Transition Phenotype and Cell Invasion via CXCL1 Expression.. *International journal of molecular sciences*. 2020. PMID: 33126568 3. Gao F et al. A pedigree-based prediction model identifies carriers of deleterious de novo mutations in families with Li-Fraumeni syndrome.. *Genome research*. 2020. PMID: 32817165"
-    },
-    {
-      "gene": "RB1",
-      "alteration": "E137*",
-      "kind": "mutation",
-      "oncogenicity": "Likely Oncogenic",
-      "mutationEffect": "Likely Loss-of-function",
-      "escat": "X",
-      "escatDescription": "No evidence for actionability or lack of data",
-      "oncokbLevel": null,
-      "resistanceLevel": null,
-      "treatments": []
-    },
-    {
-      "gene": "MYC",
-      "alteration": "AMPLIFICATION",
-      "kind": "cna",
-      "oncogenicity": "Oncogenic",
-      "escat": "X",
-      "escatDescription": "No evidence for actionability or lack of data",
-      "oncokbLevel": null,
-      "resistanceLevel": null,
-      "treatments": []
-    }
-  ],
-  "cnv": [
-    {
-      "gene": "CCNE1",
-      "chromosome": "chr19",
-      "copyNumber": 12,
-      "log2": 2.8,
-      "type": "AMPLIFICATION"
-    },
-    {
-      "gene": "PTEN",
-      "chromosome": "chr10",
-      "copyNumber": 0,
-      "log2": -2.1,
-      "type": "DELETION"
-    },
-    {
-      "gene": "BRCA1",
-      "chromosome": "chr17",
-      "copyNumber": 1,
-      "log2": -1.5,
-      "type": "DELETION"
-    },
-    {
-      "gene": "MYC",
-      "chromosome": "chr8",
-      "copyNumber": 8,
-      "log2": 1.9,
-      "type": "AMPLIFICATION"
-    }
-  ],
-  "fusions": [
-    {
-      "geneA": "EWSR1",
-      "geneB": "FLI1",
-      "name": "EWSR1::FLI1",
-      "fusionType": "in-frame",
-      "supportingReads": 45,
-      "known": true
-    }
-  ],
-  "literature": [
-    {
-      "pmid": "33131904",
-      "title": "Potential and mechanism of mebendazole for treatment and maintenance of ovarian cancer.",
-      "authors": "Elayapillai S, Ramraj S, Benbrook DM, Bieniasz M, Wang L, Pathuri G, Isingizwe ZR, Kennedy AL, Zhao YD, Lightfoot S, Hunsucker LA, Gunderson CC",
-      "journal": "Gynecologic oncology",
-      "year": "2021",
-      "gene": "TP53",
-      "alteration": "R248W"
-    },
-    {
-      "pmid": "33126568",
-      "title": "The P72R Polymorphism in R248Q/W p53 Mutants Modifies the Mutant Effect on Epithelial to Mesenchymal Transition Phenotype and Cell Invasion via CXCL1 Expression.",
-      "authors": "De Souza C, Madden JA, Minn D, Kumar VE, Montoya DJ, Nambiar R, Zhu Z, Xiao WW, Tahmassebi N, Kathi H, Nelson N, Karnezis AN, Chien J",
-      "journal": "International journal of molecular sciences",
-      "year": "2020",
-      "gene": "TP53",
-      "alteration": "R248W"
-    },
-    {
-      "pmid": "32817165",
-      "title": "A pedigree-based prediction model identifies carriers of deleterious de novo mutations in families with Li-Fraumeni syndrome.",
-      "authors": "Gao F, Pan X, Dodd-Eaton EB, Recio CV, Montierth MD, Bojadzieva J, Mai PL, Zelley K, Johnson VE, Braun D, Nichols KE, Garber JE, Savage SA, Strong LC, Wang W",
-      "journal": "Genome research",
-      "year": "2020",
-      "gene": "TP53",
-      "alteration": "R248W"
-    },
-    {
-      "pmid": "11733960",
-      "title": "Dominant-negative mutation of p53 tumor suppressor gene in endometrial carcinoma.",
-      "authors": "Sakuragi N, Hirai A, Tada M, Yamada H, Yamamoto R, Fujimoto S, Moriuchi T",
-      "journal": "Gynecologic oncology",
-      "year": "2001",
-      "gene": "TP53",
-      "alteration": "R248W"
-    },
-    {
-      "pmid": "38518529",
-      "title": "Alpelisib for PIK3CA-mutated advanced gynecological cancers: First clues of clinical activity.",
-      "authors": "Passarelli A, Carbone V, Pignata S, Mazzeo R, Lorusso D, Scambia G, Canova S, Di Palma T, Tasca G, Mantiero M, Naglieri E, Andreetta C, Rauso M, Brunetti AE, Laera L, Abeni C, Scandurra G, Gambaro AR, Pastore A, Bengala C, Gunnellini M, Farolfi A, Spinello M, Bartoletti M",
-      "journal": "Gynecologic oncology",
-      "year": "2024",
-      "gene": "PIK3CA",
-      "alteration": "H1047R"
-    },
-    {
-      "pmid": "36800542",
-      "title": "Acquisition of Genetic Aberrations During the Progression of High-Grade Intraepithelial Lesions/Micro-Invasive Squamous Cancers to Widely Invasive Cervical Squamous Cell Cancer.",
-      "authors": "Kashofer K, Reich O, Regauer S",
-      "journal": "Archives of pathology & laboratory medicine",
-      "year": "2023",
-      "gene": "PIK3CA",
-      "alteration": "H1047R"
-    },
-    {
-      "pmid": "34548333",
-      "title": "Targeting the IRE1α/XBP1 Endoplasmic Reticulum Stress Response Pathway in ARID1A-Mutant Ovarian Cancers.",
-      "authors": "Zundell JA, Fukumoto T, Lin J, Fatkhudinov N, Nacarelli T, Kossenkov AV, Liu Q, Cassel J, Hu CA, Wu S, Zhang R",
-      "journal": "Cancer research",
-      "year": "2021",
-      "gene": "PIK3CA",
-      "alteration": "H1047R"
-    },
-    {
-      "pmid": "34172890",
-      "title": "Frequent PIK3CA mutations in eutopic endometrium of patients with ovarian clear cell carcinoma.",
-      "authors": "Murakami K, Kanto A, Sakai K, Miyagawa C, Takaya H, Nakai H, Kotani Y, Nishio K, Matsumura N",
-      "journal": "Modern pathology : an official journal of the United States and Canadian Academy of Pathology, Inc",
-      "year": "2021",
-      "gene": "PIK3CA",
-      "alteration": "H1047R"
-    },
-    {
-      "pmid": "33723724",
-      "title": "Phase 2 study of TAS-117, an allosteric akt inhibitor in advanced solid tumors harboring phosphatidylinositol 3-kinase/v-akt murine thymoma viral oncogene homolog gene mutations.",
-      "authors": "Lee JB, Jung M, Beom SH, Kim GM, Kim HR, Choi HJ, Sohn JH, Ahn JB, Rha SY, Chung HC",
-      "journal": "Investigational new drugs",
-      "year": "2021",
-      "gene": "PIK3CA",
-      "alteration": "H1047R"
-    },
-    {
-      "pmid": "41533997",
-      "title": "Early Clinical and Molecular Biomarkers in Patients With Advanced Ovarian Cancer Undergoing Neoadjuvant Chemotherapy: CHIVA Phase II GINECO Trial.",
-      "authors": "Blanc-Durand F, You B, Adnani Y, De Rauglaudre G, Ray-Coquard I, Combe P, Abdeddaim C, Joly F, Ferron G, Deldycke C, Colomban O, Kaminsky MC, Meunier J, Alexandre J, Lebreton C, Venat L, Favier L, Louvet C, Abadie-Lacourtoisie S, Lauraine EP, Chardin L, Genestie C, Just PA, Rouleau E, Leary A",
-      "journal": "JCO precision oncology",
-      "year": "2026",
-      "gene": "CCNE1",
-      "alteration": "amplification"
-    },
-    {
-      "pmid": "41415416",
-      "title": "Targeting ALC1 can safely expand the therapeutic utility of PARP inhibitors across high-grade serous ovarian cancers.",
-      "authors": "Aubuchon LN, Wong DH, Ramakrishnan NM, Reddy R, Compadre A, Lomonosova E, Jackson KE, Kemper D, Mehta V, Zoberi K, Khabele D, Christie EL, Mullen MM, Verma P",
-      "journal": "bioRxiv : the preprint server for biology",
-      "year": "2025",
-      "gene": "CCNE1",
-      "alteration": "amplification"
-    },
-    {
-      "pmid": "41411622",
-      "title": "Integrated Spatial Analysis Reveals the Molecular Landscape of Ovarian Precancerous Lesions.",
-      "authors": "Chang TY, Chien YW, Chen SH, Sokolow A, Wang Y, Wang BG, Numan TA, Chui MH, Stone RL, Pisanic TR, Papadopoulos N, Wang TL, Douville C, Cope L, Shih IM",
-      "journal": "Cancer research",
-      "year": "2025",
-      "gene": "CCNE1",
-      "alteration": "amplification"
-    },
-    {
-      "pmid": "41380866",
-      "title": "Cyclin E1 as a driver of oncogenesis; high grade serous ovarian cancer as an exemplar.",
-      "authors": "Taylor SJ, Gourley C",
-      "journal": "Critical reviews in oncology/hematology",
-      "year": "2026",
-      "gene": "CCNE1",
-      "alteration": "amplification"
-    },
-    {
-      "pmid": "41367952",
-      "title": "Genomics of ovarian cancers and the potential of precision medicine.",
-      "authors": "Jarratt A, Polidano J, Scott CL, Barker HE",
-      "journal": "Therapeutic advances in medical oncology",
-      "year": "2025",
-      "gene": "CCNE1",
-      "alteration": "amplification"
-    },
-    {
-      "pmid": "41777659",
-      "title": "Genomic landscape of pediatric germ cell tumors reveals oncogenic mutations and copy number alterations.",
-      "authors": "Galvão JMS, Bezerra AFSP, Garcia FAO, Santarosa Vieira AG, Albino da Silva EC, van Helvoort Lengert A, Reis RM, Lopes LF, Evangelista AF, Pinto MT",
-      "journal": "Frontiers in oncology",
-      "year": "2026",
-      "gene": "PTEN",
-      "alteration": "deletion"
-    },
-    {
-      "pmid": "41595239",
-      "title": "Oncological Outcomes and Genomic Features of Gastric-Type Endocervical Adenocarcinoma, the Most Aggressive and Common HPV-Independent Cervical Cancer.",
-      "authors": "Du M, Zheng Z, Lu P, Wang W, Cao D, Yang J, Wu M, Pan L, Xue X, Wang W, Jiang F, Xiang Y",
-      "journal": "Cancers",
-      "year": "2026",
-      "gene": "PTEN",
-      "alteration": "deletion"
-    },
-    {
-      "pmid": "41466059",
-      "title": "EPI-SauriCas9-based mouse ovarian cancer models recapitulating pten deletion in patients.",
-      "authors": "Chen W, He P, Ding L, Lou W, Wang Y, Shi W, Fan Z, Sheng Y, Luo J, Tan Z, Wang Y, Di W, Ke X, Yu B",
-      "journal": "Communications biology",
-      "year": "2025",
-      "gene": "PTEN",
-      "alteration": "deletion"
-    },
-    {
-      "pmid": "41436846",
-      "title": "A Deeper Dive into POLE -Mutated Endometrial Carcinomas : The Contributions and Consequences of Tumor Mutational Burden.",
-      "authors": "Vemuri A, Tjota MY, Wanjari P, Fleming GF, Wang P, Bennett JA",
-      "journal": "The American journal of surgical pathology",
-      "year": "2026",
-      "gene": "PTEN",
-      "alteration": "deletion"
-    },
-    {
-      "pmid": "41152971",
-      "title": "Clinicopathological Diagnosis and Prognosis of Endometrioid Borderline Ovarian Tumors: Dual Case Reports and Literature Review.",
-      "authors": "Yang F, Chen D, Sun Q, Yu J, Wang X",
-      "journal": "Cancer reports (Hoboken, N.J.)",
-      "year": "2025",
-      "gene": "PTEN",
-      "alteration": "deletion"
-    }
-  ],
-  "droppedVus": 1
+	"patient": {
+		"chartNo": "99231004",
+		"name": "Amelia Chen",
+		"sex": "F",
+		"age": 58,
+		"birthday": "1967-03-12",
+		"cancerType": "High-grade serous ovarian carcinoma",
+		"cancerCode": "HGSOC",
+		"stage": "IIIC",
+		"team": "Gynecologic Oncology",
+		"attending": "Dr. H. Lee",
+		"status": "pending-review",
+		"reportDate": "2026-06-18",
+		"sampleId": "EGA_OV_TSO500_001",
+		"panel": "TSO500 · 1.94 Mb"
+	},
+	"clinical": {
+		"consultReason": "Newly sequenced HGSOC — MTB review for maintenance strategy.",
+		"priorTherapy": [
+			"Carboplatin + Paclitaxel ×6",
+			"Interval debulking surgery"
+		],
+		"ecog": 1,
+		"note": "Molecular profiling on the TSO500 · 1.94 Mb panel returned 13 clinically annotated alterations (1 variants of unknown significance filtered); TMB 4.6 mut/Mb, MSS, HRD-positive.",
+		"consultNote": {
+			"fromTeam": "Gynecologic Oncology",
+			"toTeam": "Molecular Tumor Board",
+			"date": "2026-06-18",
+			"history": "58-year-old female with stage IIIC High-grade serous ovarian carcinoma. Carboplatin + Paclitaxel ×6; Interval debulking surgery. ECOG 1.",
+			"purpose": "Newly sequenced HGSOC — MTB review for maintenance strategy.",
+			"opinion": "BRCA1 E1836fs is a Tier I actionable target — Niraparib / Olaparib indicated. HRD-positive supports PARP-inhibitor maintenance. Recommend review of matched options at MTB."
+		},
+		"chemo": [
+			{
+				"regimen": "Carboplatin + Paclitaxel",
+				"cycleNo": "5",
+				"beginDate": "2026-04-21",
+				"status": "Completed"
+			},
+			{
+				"regimen": "Carboplatin + Paclitaxel",
+				"cycleNo": "6",
+				"beginDate": "2026-05-12",
+				"status": "Completed"
+			},
+			{
+				"regimen": "Maintenance — pending MTB",
+				"cycleNo": "—",
+				"beginDate": "2026-06-25",
+				"status": "Planned"
+			}
+		],
+		"labs": [
+			{
+				"key": "WBC",
+				"label": "WBC",
+				"value": "6",
+				"unit": "10³/µL",
+				"abnormal": null
+			},
+			{
+				"key": "ANC",
+				"label": "ANC",
+				"value": "5205",
+				"unit": "/µL",
+				"abnormal": null
+			},
+			{
+				"key": "Hb",
+				"label": "Hemoglobin",
+				"value": "15",
+				"unit": "g/dL",
+				"abnormal": null
+			},
+			{
+				"key": "PLT",
+				"label": "Platelets",
+				"value": "384",
+				"unit": "10³/µL",
+				"abnormal": null
+			},
+			{
+				"key": "Creatinine",
+				"label": "Creatinine",
+				"value": "1.3",
+				"unit": "mg/dL",
+				"abnormal": "high"
+			},
+			{
+				"key": "AST",
+				"label": "AST",
+				"value": "0",
+				"unit": "U/L",
+				"abnormal": null
+			},
+			{
+				"key": "ALT",
+				"label": "ALT",
+				"value": "3.2",
+				"unit": "U/L",
+				"abnormal": null
+			},
+			{
+				"key": "BUN",
+				"label": "BUN",
+				"value": "10.4",
+				"unit": "mg/dL",
+				"abnormal": null
+			}
+		],
+		"journal": [
+			{
+				"date": "2026-06-18",
+				"kind": "consult",
+				"title": "MTB consult — Gynecologic Oncology → Molecular Tumor Board",
+				"actor": "Dr. H. Lee",
+				"detail": "Newly sequenced HGSOC — MTB review for maintenance strategy."
+			},
+			{
+				"date": "2026-06-13",
+				"kind": "draft",
+				"title": "Molecular report drafted",
+				"actor": "Dr. H. Lee",
+				"detail": "Ready for MTB discussion"
+			},
+			{
+				"date": "2026-06-11",
+				"kind": "literature",
+				"title": "Literature retrieval — 19 PubMed records",
+				"actor": "Dr. H. Lee",
+				"detail": "Retrieved for annotated alterations"
+			},
+			{
+				"date": "2026-06-10",
+				"kind": "annotation",
+				"title": "OncoKB / ESCAT annotation",
+				"actor": "Dr. H. Lee",
+				"detail": "Top finding: BRCA1 E1836fs (I)"
+			},
+			{
+				"date": "2026-06-08",
+				"kind": "biomarker",
+				"title": "Biomarkers computed",
+				"actor": "Dr. H. Lee",
+				"detail": "TMB 4.6 mut/Mb · MSS · HRD-positive"
+			},
+			{
+				"date": "2026-06-06",
+				"kind": "variants",
+				"title": "Variant calling — 9 small variants",
+				"actor": "Dr. H. Lee",
+				"detail": "13 clinically annotated after filtering"
+			},
+			{
+				"date": "2026-06-04",
+				"kind": "qc",
+				"title": "Sequencing complete · QC passed",
+				"actor": "Dr. H. Lee",
+				"detail": "Coverage and tumour fraction within spec"
+			},
+			{
+				"date": "2026-05-31",
+				"kind": "sequencing",
+				"title": "Library prep & TSO500 sequencing",
+				"actor": "Dr. H. Lee",
+				"detail": "1.94 Mb panel"
+			},
+			{
+				"date": "2026-05-28",
+				"kind": "specimen",
+				"title": "Specimen accessioned for sequencing",
+				"actor": "Dr. H. Lee",
+				"detail": "EGA_OV_TSO500_001 · FFPE tumour block"
+			},
+			{
+				"date": "2026-05-25",
+				"kind": "review",
+				"title": "Referred to Molecular Tumor Board",
+				"actor": "Dr. H. Lee",
+				"detail": "Newly sequenced HGSOC — MTB review for maintenance strategy."
+			},
+			{
+				"date": "2026-05-12",
+				"kind": "chemo",
+				"title": "Chemotherapy — Carboplatin + Paclitaxel, cycle 6 completed",
+				"actor": "Dr. H. Lee",
+				"detail": "Restaging planned"
+			},
+			{
+				"date": "2026-04-21",
+				"kind": "chemo",
+				"title": "Chemotherapy — Carboplatin + Paclitaxel, cycle 5",
+				"actor": "Dr. H. Lee",
+				"detail": "Gynecologic Oncology"
+			}
+		]
+	},
+	"biomarkers": {
+		"tmb": 4.6,
+		"tmbClass": "TMB-Low",
+		"variantCount": 9,
+		"panelSizeMb": 1.94,
+		"msi": "MSS",
+		"msiScore": 5.2,
+		"unstableSites": 2,
+		"totalSites": 38,
+		"hrd": 58,
+		"hrdStatus": "HRD-positive",
+		"loh": 22,
+		"tai": 18,
+		"lst": 18,
+		"hrdReliable": false
+	},
+	"variants": [
+		{
+			"gene": "BRCA1",
+			"alteration": "E1836fs",
+			"kind": "mutation",
+			"oncogenicity": "Likely Oncogenic",
+			"mutationEffect": "Likely Loss-of-function",
+			"escat": "I",
+			"escatDescription": "Target ready for implementation in routine clinical decisions",
+			"oncokbLevel": "LEVEL_1",
+			"resistanceLevel": null,
+			"treatments": [
+				{
+					"drugs": "Niraparib",
+					"level": "LEVEL_1",
+					"fdaApproved": true,
+					"description": "Niraparib, a small molecule PARP inhibitor, is FDA-approved as maintenance therapy for the treatment of adult patients with advanced ovarian, fallopian tube, or primary peritoneal cancer who have been treated with three or more prior chemotherapy regimens and whose cancer is associated with homologous recombination deficiency (HRD) positive status such as by harboring a deleterious or suspected deleterious BRCA mutation. FDA approval was based on the Phase III NOVA trial of niraparib versus placebo in patients with platinum-sensitive, recurrent ovarian cancer with or without BRCA1/2 mutations in which patients in the germline BRCA mutant cohort (n=203) experienced significantly longer progression-free survival with niraparib than those in the placebo group (21.0 vs. 5.5 months; HR=0.27; 95% CI = 0.17-0.41) (PMID: 27717299). FDA approval of niraparib in the non-germline BRCA mutant patient cohort (n=350) was based on the results of improved progression-free survival with niraparib versus placebo as maintenance therapy (9.3 months vs. 3.9 months; HR=0.45; 95% CI= 0.34-0.61) in the overall non-germline BRCA cohort. However, the overall non-germline BRCA cohort included patients with somatic BRCA mutation (PMID: 27717299). Further studies have shown the efficacy of niraparib in patients with homologous-recombination-deficient, platinum-sensitive ovarian cancer, including patients with BRCA mutation (PMID: 30948273, 31562799). The NCCN v5.2022 lists niraparib as a maintenance therapy for patients with BRCA1/2-mutant ovarian cancer."
+				},
+				{
+					"drugs": "Olaparib",
+					"level": "LEVEL_1",
+					"fdaApproved": true,
+					"description": "Olaparib, a small molecule PARP inhibitor, is FDA-approved with or without bevacizumab for the treatment of patients with advanced ovarian cancer who have deleterious germline BRCA mutations and have been treated with three or more lines of chemotherapy, or as maintenance therapy for patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are having partial or complete responses to platinum-based chemotherapy. This drug is considered standard-of-care for the treatment of patients with somatic BRCA1/2 mutations. Initial FDA approval was based on Phase I and Phase II clinical trials evaluating patients with ovarian cancer harboring known BRCA1 or BRCA2 germline mutations, in which treatment with olaparib demonstrated a clear clinical benefit. Specifically, in a Phase II trial evaluating olaparib in patients with platinum-resistant ovarian cancer and a confirmed germline BRCA1 or BRCA2 mutation (n=193), the tumor response rate was 31% (95% CI=24.6 to 38.1), and stable disease (around 8 weeks) was seen in 40% of patients (95% CI=33.4 to 47.7) (PMID: 25366685). More recent FDA approval was based on a planned retrospective analysis of Phase II trial data in which patients with deleterious BRCA mutations had significantly longer progression-free survival with olaparib maintenance therapy than patients given placebo (11.2 months vs 4.3 months; HR=0.18; p<0·0001)(PMID: 24882434). In the seven-year follow-up of the Phase III SOLO1/GOG-3004 trial of maintenance olaparib versus placebo in patients with newly diagnosed, advanced ovarian cancer harboring a BRCA mutation, the seven-year median overall survival rates were 67% in the olaparib arm and 46.5% in the placebo arm, and the median duration of treatment was 24.6 months with olaparib and 13.9 months with placebo (PMID: 36082969)."
+				},
+				{
+					"drugs": "Rucaparib",
+					"level": "LEVEL_1",
+					"fdaApproved": true,
+					"description": "Rucaparib is an orally available, small molecule PARP inhibitor that is FDA-approved for the maintenance treatment of adult patients with a deleterious BRCA mutation (germline and/or somatic)- associated recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are in a complete or partial response to platinum-based chemotherapy. BRCA1 mutations for maintenance treatment with rucaparib were detected by the BRACAnalysis CDx or the FoundationFocus CDxBRCA Assay. FDA approval was based on the results of the Phase III EMBRACA (NCT01945775) study of rucaparib versus chemotherapy in 431 patients (n=408, patients with centrally confirmed deleterious or suspected deleterious BRCA mutation) with BRCA-mutated HER2-negative locally advanced or metastatic breast cancer. \nIn the Phase III EMBRACA (NCT01945775) study, the rucaparib cohort (n=287) demonstrated an overall response rate (ORR) of 50.2% (95% CI=43.4-57.0), a median duration of response (DOR) of 6.4 months (95% CI=5.4-9.5), a median progression-free survival (PFS) of 8.6 months (95% CI=7.2-9.3) and a median overall survival (OS) of 19.3 months (95% CI=16.6-22.5) (PMID: 30110579, 32828825). In the chemotherapy cohort (n=144), the ORR was 18.4% (95% CI=11.8-26.8), the median DOR was 3.9 months (95% CI=3.0-7.6), the median PFS was 5.6 months (95% CI=4.2-6.7) (HR=0.54 [95% CI=0.41-0.71]; p<0.0001) and the median OS was 19.5 months (95% CI=17.4-22.4) (HR=0.85 [95% CI=0.67-1.07]; p=0.1693) (PMID: 30110579, 32828825)."
+				},
+				{
+					"drugs": "Olaparib + Bevacizumab",
+					"level": "LEVEL_1",
+					"fdaApproved": true,
+					"description": "Olaparib, a small molecule PARP inhibitor, is FDA-approved with or without bevacizumab for the treatment of patients with advanced ovarian cancer who have deleterious germline BRCA mutations and have been treated with three or more lines of chemotherapy, or as maintenance therapy for patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are having partial or complete responses to platinum-based chemotherapy. This drug is considered standard-of-care for the treatment of patients with somatic BRCA1/2 mutations. Initial FDA approval was based on Phase I and Phase II clinical trials evaluating patients with ovarian cancer harboring known BRCA1 or BRCA2 germline mutations, in which treatment with olaparib demonstrated a clear clinical benefit. Specifically, in a Phase II trial evaluating olaparib in patients with platinum-resistant ovarian cancer and a confirmed germline BRCA1 or BRCA2 mutation (n=193), the tumor response rate was 31% (95% CI=24.6 to 38.1), and stable disease (around 8 weeks) was seen in 40% of patients (95% CI=33.4 to 47.7) (PMID: 25366685). More recent FDA approval was based on a planned retrospective analysis of Phase II trial data in which patients with deleterious BRCA mutations had significantly longer progression-free survival with olaparib maintenance therapy than patients given placebo (11.2 months vs 4.3 months; HR=0.18; p<0·0001)(PMID: 24882434). In the seven-year follow-up of the Phase III SOLO1/GOG-3004 trial of maintenance olaparib versus placebo in patients with newly diagnosed, advanced ovarian cancer harboring a BRCA mutation, the seven-year median overall survival rates were 67% in the olaparib arm and 46.5% in the placebo arm, and the median duration of treatment was 24.6 months with olaparib and 13.9 months with placebo (PMID: 36082969)."
+				},
+				{
+					"drugs": "Olaparib + Abiraterone + Prednisone",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Olaparib, a small molecule PARP inhibitor, is FDA-approved in combination with abiraterone and prednisone/prednisolone for the treatment of patients with deleterious or suspected deleterious BRCA-mutated metastatic castration-resistant prostate cancer (mCRPC). FDA approval was based on the results of the Phase III PROpel trial of olaparib plus abiraterone and prednisone/prednisolone in adult patients with mCRPC undergoing first-line treatment after failure of primary androgen deprivation therapy. Of patients with BRCA1/2 mutations (n=85), the radiological progression-free survival in the olaparib plus abiraterone and prednisone/prednisolone group (n=47) was not reached (95% CI=NR, NR) compared to eight months (95% CI=6, 15) in the placebo plus abiraterone and prednisone/prednisolone group (n=38) (HR=0.24; 95% CI=0.12, 0.45), with a median overall survival of not reached (95% CI=NR, NR) versus 23 months (95% CI=18, 34) months (HR=0.30; 95% CI=0.15 0.59), respectively (Abstract: Clarke et al. Abstract# LBA16, ASCO GUCS 2023. https://ascopubs.org/doi/abs/10.1200/JCO.2023.41.6_suppl.LBA16)."
+				},
+				{
+					"drugs": "Talazoparib",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Talazoparib, a small molecule PARP inhibitor, is FDA-approved for patients with deleterious or suspected deleterious germline BRCA-mutated, HER2-negative locally advanced or metastatic breast cancer. FDA approval was based on the results from the Phase III EMBRACA trial of talazoparib (1 mg once daily) versus standard single-agent chemotherapy (2:1) in 431 patients with advanced, BRCA1/2 germline-mutated breast cancer in which the median progression-free survival (PFS) was 8.6 months in the talazoparib group versus 5.6 months in the chemotherapy group (HR= 0.54; 95%CI=0.41 to 0.71; p<0.001) and the objective response rate was 62.6% in the talazoparib group versus 27.2% in the chemotherapy group (p<0.001) (PMID: 30110579). In the Phase II study of talazoparib in patients with germline BRCA-mutant breast cancer who had a prior response to platinum agents, the overall response rate was 21-37% (depending on cohort) (PMID: 30563931). In a Phase I study of talazoparib plus carboplatin in patients with and without DNA repair mutations, three patients with somatic BRCA mutations had stable disease beyond four months (Abstract: Dhawan et al. Abstract# 2527, ASCO 2017. https://ascopubs.org/doi/abs/10.1200/JCO.2017.35.15_suppl.2527). In the Phase IIb tumor-agnostic JAVELIN BRCA/ATM trial of combination talazoparib and avelumab in 159 patients with BRCA1/2-altered solid tumors, the objective response was observed in 42 patients (26.4%, 95% CI = 19.7%–34.0%) and the median duration of response was 10.9 months (95% CI = 6.2 months to not estimable) (PMID: 36394867). In a retrospective study for 24 patients with BRCA1/2 somatic-mutated HER2-negative metastatic breast cancer treated with PARP inhibitors, the median real-world PFS was 4.6 months (95% CI=3.0 to 8.1) and the median real-world overall survival was 21.2 months (95% CI=13.8 to NR) while patients harboring BRCA1/2 germline mutations (n=71) demonstrated a median real-world PFS of 6.0 months (95% CI=4.6 to 8.2) and a median real-world overall survival of 21.2 months (95% CI=14.2 to NR) (PMID: 37992259)."
+				},
+				{
+					"drugs": "Talazoparib + Enzalutamide",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Talazoparib is an orally available, small-molecule PARP inhibitor that is FDA-approved in combination with enzalutamide for the treatment of adult patients with homologous recombination repair (HRR) gene-mutated metastatic castration-resistant prostate cancer (mCRPC). FDA approval was based on the results of the Phase III TALAPRO-2 (NCT03395197) trial of talazoparib plus enzalutamide in 399 adult patients with asymptomatic or mildly symptomatic mCRPC harboring HRR gene alterations receiving ongoing androgen deprivation therapy. \nIn the Phase III TALAPRO-2 (NCT03395197) trial, the talazoparib plus enzalutamide cohort (n=200) demonstrated a radiographic progression-free survival (rPFS) that was not evaluable (95% CI=21.9-NE) versus 13.8 months (95% CI=11.0-16.7) in the placebo plus enzalutamide cohort (n=199) (HR=0.45 [95% CI=0.33-0.61]; p<0.0001) (PMID: 37285865). Of patients with BRCA1/2 mutations (n=155), the talazoparib plus enzalutamide cohort (n=71) demonstrated a rPFS that was not evaluable (95% CI=NE-NE) versus 11.0 months (95% CI=16.4-NE) in the placebo plus enzalutamide group (n=84) (HR=0.20 [95% CI=0.11-0.36]) (PMID: 37285865). Of patients harboring only BRCA1 mutations (n=17), the talazoparib plus enzalutamide cohort (n=8) demonstrated an rPFS of 20.0 months versus 11.7 months in the placebo plus enzalutamide cohort (n=9) (HR=0.17 [95% CI=0.02-1.51]; p=0.074) (PMID: 37285865)."
+				}
+			],
+			"narrative": "*BRCA1* E1836fs is classified as **Likely Oncogenic** in high-grade serous ovarian carcinoma. **Recommended treatment:** Based on OncoKB Level LEVEL_1 evidence, Niraparib or Olaparib or Rucaparib or Olaparib + Bevacizumab is/are indicated as standard-of-care targeted therapy for patients with this alteration. These agents have demonstrated clinical benefit in prospective trials and are FDA-approved for this indication. **Investigational options:** Olaparib + Abiraterone + Prednisone, Talazoparib, Talazoparib + Enzalutamide (Evidence Level: LEVEL_3B, LEVEL_3B, LEVEL_3B) represent investigational strategies with emerging evidence. Enrollment in clinical trials targeting this alteration should be considered. Treatment decisions should integrate this molecular finding with clinical context, prior therapy lines, and patient performance status."
+		},
+		{
+			"gene": "BRCA1",
+			"alteration": "DELETION",
+			"kind": "cna",
+			"oncogenicity": "Likely Oncogenic",
+			"escat": "I",
+			"escatDescription": "Target ready for implementation in routine clinical decisions",
+			"oncokbLevel": "LEVEL_1",
+			"resistanceLevel": null,
+			"treatments": [
+				{
+					"drugs": "Niraparib",
+					"level": "LEVEL_1",
+					"fdaApproved": true,
+					"description": "Niraparib, a small molecule PARP inhibitor, is FDA-approved as maintenance therapy for the treatment of adult patients with advanced ovarian, fallopian tube, or primary peritoneal cancer who have been treated with three or more prior chemotherapy regimens and whose cancer is associated with homologous recombination deficiency (HRD) positive status such as by harboring a deleterious or suspected deleterious BRCA mutation. FDA approval was based on the Phase III NOVA trial of niraparib versus placebo in patients with platinum-sensitive, recurrent ovarian cancer with or without BRCA1/2 mutations in which patients in the germline BRCA mutant cohort (n=203) experienced significantly longer progression-free survival with niraparib than those in the placebo group (21.0 vs. 5.5 months; HR=0.27; 95% CI = 0.17-0.41) (PMID: 27717299). FDA approval of niraparib in the non-germline BRCA mutant patient cohort (n=350) was based on the results of improved progression-free survival with niraparib versus placebo as maintenance therapy (9.3 months vs. 3.9 months; HR=0.45; 95% CI= 0.34-0.61) in the overall non-germline BRCA cohort. However, the overall non-germline BRCA cohort included patients with somatic BRCA mutation (PMID: 27717299). Further studies have shown the efficacy of niraparib in patients with homologous-recombination-deficient, platinum-sensitive ovarian cancer, including patients with BRCA mutation (PMID: 30948273, 31562799). The NCCN v5.2022 lists niraparib as a maintenance therapy for patients with BRCA1/2-mutant ovarian cancer."
+				},
+				{
+					"drugs": "Olaparib",
+					"level": "LEVEL_1",
+					"fdaApproved": true,
+					"description": "Olaparib, a small molecule PARP inhibitor, is FDA-approved with or without bevacizumab for the treatment of patients with advanced ovarian cancer who have deleterious germline BRCA mutations and have been treated with three or more lines of chemotherapy, or as maintenance therapy for patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are having partial or complete responses to platinum-based chemotherapy. This drug is considered standard-of-care for the treatment of patients with somatic BRCA1/2 mutations. Initial FDA approval was based on Phase I and Phase II clinical trials evaluating patients with ovarian cancer harboring known BRCA1 or BRCA2 germline mutations, in which treatment with olaparib demonstrated a clear clinical benefit. Specifically, in a Phase II trial evaluating olaparib in patients with platinum-resistant ovarian cancer and a confirmed germline BRCA1 or BRCA2 mutation (n=193), the tumor response rate was 31% (95% CI=24.6 to 38.1), and stable disease (around 8 weeks) was seen in 40% of patients (95% CI=33.4 to 47.7) (PMID: 25366685). More recent FDA approval was based on a planned retrospective analysis of Phase II trial data in which patients with deleterious BRCA mutations had significantly longer progression-free survival with olaparib maintenance therapy than patients given placebo (11.2 months vs 4.3 months; HR=0.18; p<0·0001)(PMID: 24882434). In the seven-year follow-up of the Phase III SOLO1/GOG-3004 trial of maintenance olaparib versus placebo in patients with newly diagnosed, advanced ovarian cancer harboring a BRCA mutation, the seven-year median overall survival rates were 67% in the olaparib arm and 46.5% in the placebo arm, and the median duration of treatment was 24.6 months with olaparib and 13.9 months with placebo (PMID: 36082969)."
+				},
+				{
+					"drugs": "Rucaparib",
+					"level": "LEVEL_1",
+					"fdaApproved": true,
+					"description": "Rucaparib is an orally available, small molecule PARP inhibitor that is FDA-approved for the maintenance treatment of adult patients with a deleterious BRCA mutation (germline and/or somatic)- associated recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are in a complete or partial response to platinum-based chemotherapy. BRCA1 mutations for maintenance treatment with rucaparib were detected by the BRACAnalysis CDx or the FoundationFocus CDxBRCA Assay. FDA approval was based on the results of the Phase III EMBRACA (NCT01945775) study of rucaparib versus chemotherapy in 431 patients (n=408, patients with centrally confirmed deleterious or suspected deleterious BRCA mutation) with BRCA-mutated HER2-negative locally advanced or metastatic breast cancer. \nIn the Phase III EMBRACA (NCT01945775) study, the rucaparib cohort (n=287) demonstrated an overall response rate (ORR) of 50.2% (95% CI=43.4-57.0), a median duration of response (DOR) of 6.4 months (95% CI=5.4-9.5), a median progression-free survival (PFS) of 8.6 months (95% CI=7.2-9.3) and a median overall survival (OS) of 19.3 months (95% CI=16.6-22.5) (PMID: 30110579, 32828825). In the chemotherapy cohort (n=144), the ORR was 18.4% (95% CI=11.8-26.8), the median DOR was 3.9 months (95% CI=3.0-7.6), the median PFS was 5.6 months (95% CI=4.2-6.7) (HR=0.54 [95% CI=0.41-0.71]; p<0.0001) and the median OS was 19.5 months (95% CI=17.4-22.4) (HR=0.85 [95% CI=0.67-1.07]; p=0.1693) (PMID: 30110579, 32828825)."
+				},
+				{
+					"drugs": "Olaparib + Bevacizumab",
+					"level": "LEVEL_1",
+					"fdaApproved": true,
+					"description": "Olaparib, a small molecule PARP inhibitor, is FDA-approved with or without bevacizumab for the treatment of patients with advanced ovarian cancer who have deleterious germline BRCA mutations and have been treated with three or more lines of chemotherapy, or as maintenance therapy for patients with recurrent epithelial ovarian, fallopian tube, or primary peritoneal cancer who are having partial or complete responses to platinum-based chemotherapy. This drug is considered standard-of-care for the treatment of patients with somatic BRCA1/2 mutations. Initial FDA approval was based on Phase I and Phase II clinical trials evaluating patients with ovarian cancer harboring known BRCA1 or BRCA2 germline mutations, in which treatment with olaparib demonstrated a clear clinical benefit. Specifically, in a Phase II trial evaluating olaparib in patients with platinum-resistant ovarian cancer and a confirmed germline BRCA1 or BRCA2 mutation (n=193), the tumor response rate was 31% (95% CI=24.6 to 38.1), and stable disease (around 8 weeks) was seen in 40% of patients (95% CI=33.4 to 47.7) (PMID: 25366685). More recent FDA approval was based on a planned retrospective analysis of Phase II trial data in which patients with deleterious BRCA mutations had significantly longer progression-free survival with olaparib maintenance therapy than patients given placebo (11.2 months vs 4.3 months; HR=0.18; p<0·0001)(PMID: 24882434). In the seven-year follow-up of the Phase III SOLO1/GOG-3004 trial of maintenance olaparib versus placebo in patients with newly diagnosed, advanced ovarian cancer harboring a BRCA mutation, the seven-year median overall survival rates were 67% in the olaparib arm and 46.5% in the placebo arm, and the median duration of treatment was 24.6 months with olaparib and 13.9 months with placebo (PMID: 36082969)."
+				},
+				{
+					"drugs": "Olaparib + Abiraterone + Prednisone",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Olaparib, a small molecule PARP inhibitor, is FDA-approved in combination with abiraterone and prednisone/prednisolone for the treatment of patients with deleterious or suspected deleterious BRCA-mutated metastatic castration-resistant prostate cancer (mCRPC). FDA approval was based on the results of the Phase III PROpel trial of olaparib plus abiraterone and prednisone/prednisolone in adult patients with mCRPC undergoing first-line treatment after failure of primary androgen deprivation therapy. Of patients with BRCA1/2 mutations (n=85), the radiological progression-free survival in the olaparib plus abiraterone and prednisone/prednisolone group (n=47) was not reached (95% CI=NR, NR) compared to eight months (95% CI=6, 15) in the placebo plus abiraterone and prednisone/prednisolone group (n=38) (HR=0.24; 95% CI=0.12, 0.45), with a median overall survival of not reached (95% CI=NR, NR) versus 23 months (95% CI=18, 34) months (HR=0.30; 95% CI=0.15 0.59), respectively (Abstract: Clarke et al. Abstract# LBA16, ASCO GUCS 2023. https://ascopubs.org/doi/abs/10.1200/JCO.2023.41.6_suppl.LBA16)."
+				},
+				{
+					"drugs": "Talazoparib",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Talazoparib, a small molecule PARP inhibitor, is FDA-approved for patients with deleterious or suspected deleterious germline BRCA-mutated, HER2-negative locally advanced or metastatic breast cancer. FDA approval was based on the results from the Phase III EMBRACA trial of talazoparib (1 mg once daily) versus standard single-agent chemotherapy (2:1) in 431 patients with advanced, BRCA1/2 germline-mutated breast cancer in which the median progression-free survival (PFS) was 8.6 months in the talazoparib group versus 5.6 months in the chemotherapy group (HR= 0.54; 95%CI=0.41 to 0.71; p<0.001) and the objective response rate was 62.6% in the talazoparib group versus 27.2% in the chemotherapy group (p<0.001) (PMID: 30110579). In the Phase II study of talazoparib in patients with germline BRCA-mutant breast cancer who had a prior response to platinum agents, the overall response rate was 21-37% (depending on cohort) (PMID: 30563931). In a Phase I study of talazoparib plus carboplatin in patients with and without DNA repair mutations, three patients with somatic BRCA mutations had stable disease beyond four months (Abstract: Dhawan et al. Abstract# 2527, ASCO 2017. https://ascopubs.org/doi/abs/10.1200/JCO.2017.35.15_suppl.2527). In the Phase IIb tumor-agnostic JAVELIN BRCA/ATM trial of combination talazoparib and avelumab in 159 patients with BRCA1/2-altered solid tumors, the objective response was observed in 42 patients (26.4%, 95% CI = 19.7%–34.0%) and the median duration of response was 10.9 months (95% CI = 6.2 months to not estimable) (PMID: 36394867). In a retrospective study for 24 patients with BRCA1/2 somatic-mutated HER2-negative metastatic breast cancer treated with PARP inhibitors, the median real-world PFS was 4.6 months (95% CI=3.0 to 8.1) and the median real-world overall survival was 21.2 months (95% CI=13.8 to NR) while patients harboring BRCA1/2 germline mutations (n=71) demonstrated a median real-world PFS of 6.0 months (95% CI=4.6 to 8.2) and a median real-world overall survival of 21.2 months (95% CI=14.2 to NR) (PMID: 37992259)."
+				},
+				{
+					"drugs": "Talazoparib + Enzalutamide",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Talazoparib is an orally available, small-molecule PARP inhibitor that is FDA-approved in combination with enzalutamide for the treatment of adult patients with homologous recombination repair (HRR) gene-mutated metastatic castration-resistant prostate cancer (mCRPC). FDA approval was based on the results of the Phase III TALAPRO-2 (NCT03395197) trial of talazoparib plus enzalutamide in 399 adult patients with asymptomatic or mildly symptomatic mCRPC harboring HRR gene alterations receiving ongoing androgen deprivation therapy. \nIn the Phase III TALAPRO-2 (NCT03395197) trial, the talazoparib plus enzalutamide cohort (n=200) demonstrated a radiographic progression-free survival (rPFS) that was not evaluable (95% CI=21.9-NE) versus 13.8 months (95% CI=11.0-16.7) in the placebo plus enzalutamide cohort (n=199) (HR=0.45 [95% CI=0.33-0.61]; p<0.0001) (PMID: 37285865). Of patients with BRCA1/2 mutations (n=155), the talazoparib plus enzalutamide cohort (n=71) demonstrated a rPFS that was not evaluable (95% CI=NE-NE) versus 11.0 months (95% CI=16.4-NE) in the placebo plus enzalutamide group (n=84) (HR=0.20 [95% CI=0.11-0.36]) (PMID: 37285865). Of patients harboring only BRCA1 mutations (n=17), the talazoparib plus enzalutamide cohort (n=8) demonstrated an rPFS of 20.0 months versus 11.7 months in the placebo plus enzalutamide cohort (n=9) (HR=0.17 [95% CI=0.02-1.51]; p=0.074) (PMID: 37285865)."
+				}
+			]
+		},
+		{
+			"gene": "CCNE1",
+			"alteration": "AMPLIFICATION",
+			"kind": "cna",
+			"oncogenicity": "Oncogenic",
+			"escat": "II",
+			"escatDescription": "Investigational target with strong evidence; enables clinical trial enrollment",
+			"oncokbLevel": "LEVEL_3A",
+			"resistanceLevel": null,
+			"treatments": [
+				{
+					"drugs": "Lunresertib + Camonsertib",
+					"level": "LEVEL_3A",
+					"fdaApproved": false,
+					"description": "Lunresertib is an orally available, small molecule PKMYT1 inhibitor and camonsertib is an orally available, small molecule ATR inhibitor. There are promising clinical data of response to lunresertib plus camonsertib in patients with CCNE1-amplified gynecologic cancers. In the Phase I MYTHIC (NCT04855656) trial of lunresertib plus camonsertib in patients with advanced tumors harboring CCNE1 amplifications, FBXW7 deleterious mutations or PPP2R1A deleterious mutations, the lunresertib plus camonsertib cohort (n=59 [n=17, endometrial; n=13, colorectal; n=11, ovarian; n=3, breast; n=3, lung; n=12, other]) demonstrated an overall response rate of 23.6% in all evaluable patients across tumor types, with a 33.3% response rate in patients with CCNE1-amplified tumors and a 38.5% response rate in patients with gynecologic cancers across all dosages (Abstract: Yap, T. et al., Abstract# 35396. AACR-NCI-EORTC 2023. https://ir.reparerx.com/static-files/c46f541b-554a-4690-90de-e63fa7dea852). Preclinical studies with ovarian and endometrial cancer cell lines and xenograft models expressing CCNE1 amplification demonstrate sensitivity to lunresertib plus camonsertib as measured by tumor regression and decreased cellular viability (PMID: 38410486) (Abstract: Gallo, D. et al., Abstract# B057, AACR 2023. https://aacrjournals.org/mct/article/22/12_Supplement/B057/730329/Abstract-B057-Preclinical-development-of-PKMYT1)(Abstract: Yap, T. et al., Abstract# B156, AACR-NCI-EORTC 2023. https://www.reparerx.com/wp-content/uploads/2023/10/ANE_B156_MYTHIC-clinical_poster.pdf)."
+				},
+				{
+					"drugs": "BLU-222",
+					"level": "LEVEL_4",
+					"fdaApproved": false,
+					"description": "BLU-222 is an inhibitor of CDK2, the cyclin E1 binding partner. Inhibition of cyclin E1 function is an attractive therapeutic avenue in tumors overexpressing cyclin E1. Preclinical studies of BLU-222 demonstrated in vitro and in vivo sensitivity of cyclin E1-amplified ovarian cancer cell lines to CDK2 inhibition, with tumor regression noted in xenograft tumor models when combined with carboplatin versus carboplatin alone (Abstract: Brown, et al. Abstract# 2306, AACR 2022. https://aacrjournals.org/cancerres/article/82/12_Supplement/2306/703534)."
+				},
+				{
+					"drugs": "Lunresertib",
+					"level": "LEVEL_4",
+					"fdaApproved": false,
+					"description": "Lunresertib is an inhibitor of the cyclin E1 inhibitory kinase PKMYT1. Inhibition of cyclin E1 function is an attractive therapeutic avenue in tumors overexpressing cyclin E1. Preclinical studies of lunresertib in cell line-derived and patient-derived xenograft models of cyclin E1-amplified tumor cells demonstrated that PKMYT1 inhibition leads to tumor regression in various tumor models compared to cells with normal cyclin E1 expression (PMID: 35444283). In the Phase I MYTHIC (NCT04855656) trial of lunresertib alone or in combination with the ATR inhibitor camonsertib in 108 patients with solid tumors harboring CCNE1 amplification or deleterious alterations in FBXW7 or PPP2R1A (uterine [31.5%], colorectal [20.4%], ovarian [16.7%], others [31.5%]), a patient with CCNE1-amplified bile duct cancer and two patients with CCNE1-amplified ovarian cancer were treated with lunresertib and camonsertib, resulting in a confirmed clinical response and CA-125 responses, respectively (Abstract: Yap et al. Abstract# PR008, AACR 2023. https://aacrjournals.org/mct/article/22/12_Supplement/PR008/730843/Abstract-PR008-MYTHIC-First-in-human-FIH-biomarker)."
+				}
+			]
+		},
+		{
+			"gene": "PIK3CA",
+			"alteration": "H1047R",
+			"kind": "mutation",
+			"oncogenicity": "Oncogenic",
+			"mutationEffect": "Gain-of-function",
+			"escat": "III",
+			"escatDescription": "Clinical benefit demonstrated in other tumor types or similar molecular alterations",
+			"oncokbLevel": "LEVEL_3B",
+			"resistanceLevel": null,
+			"treatments": [
+				{
+					"drugs": "Alpelisib + Fulvestrant",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Alpelisib is a selective inhibitor of the alpha form of PI3K (PI3Kα) that is FDA-approved in combination with the selective estrogen receptor (ER) degrader fulvestrant for the treatment of postmenopausal patients with ER+ HER2- PIK3CA-mutated, advanced or metastatic breast cancer. FDA approval is based on data from the Phase III randomized, double-blind, placebo-controlled SOLAR-1 trial of alpelisib plus fulvestrant versus placebo plus fulvestrant in 572 patients with breast cancer in which the progression-free survival in patients with PIK3CA mutation (n=341) was eleven months (95% CI= 7.5-14.5) with alpelisib plus fulvestrant versus 5.7 months (95% CI= 3.7-7.4) with placebo plus fulvestrant (HR= 0.65; 95% CI= 0.5-0.85; p= 0.0013) compared to PIK3CA-wildtype patients in which the hazard ratio was 0.85 (95% CI= 0.58-1.25) (PMID: 31091374). Overall response in the PIK3CA-mutant population was 35.7 months (95% CI= 27.4-44.7; n=126) with alpelisib plus fulvestrant versus 16.2 months (95% CI= 10.4-23.5; n=136) with placebo plus fulvestrant (PMID: 31091374). Previous studies, including in vivo xenograft studies and a phase I trial, also demonstrated that treatment of ER+ PIK3CA-mutant breast cancer with the combination of fulvestrant and alpelisib results in greater tumor shrinkage than either drug alone, with fulvestrant inhibiting the induction of ER-dependent gene transcription resulting from PI3Kα inhibition with alpelisib (PMID: 25877889, 30543347)."
+				},
+				{
+					"drugs": "Capivasertib + Fulvestrant",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Capivasertib is an orally available, ATP-competitive pan-AKT small molecule inhibitor that is FDA-approved with fulvestrant for adult patients with ER+/HER2- locally advanced or metastatic breast cancer with one or more PIK3CA/AKT1/PTEN-alterations, as detected by an FDA-approved test, following progression on at least one endocrine-based regimen in the metastatic setting or recurrence on or within twelve months of completing adjuvant therapy. Eligible PIK3CA/AKT1/PTEN-alterations (PIK3CA R88Q, N345K, C420R, E542K, E545A, E545D, E545Q, E545K, E545G, Q546E, Q546K, Q546R, Q546P, M1043V, M1043I, H1047Y, H1047R, H1047L and G1049R; AKT1 E17K; all PTEN oncogenic mutations) for treatment with capivasertib plus fulvestrant were detected by the FoundationOne CDx assay. FDA approval was based on the results from the Phase III CAPItello-291 (NCT04305496) trial of capivasertib plus fulvestrant versus placebo plus fulvestrant in 708 adult patients with ER+/HER2- locally advanced or metastatic breast cancer (n=289, patients with eligible PIK3CA/AKT1/PTEN alterations). In the Phase III CAPItello-291 (NCT04305496) trial, the capivasertib plus fulvestrant cohort with PIK3CA/AKT1/PTEN-altered tumors (n=155) demonstrated an objective response rate (ORR) of 26% (95% CI=19-34), with a 2.3% complete response (CR) rate, 23% partial response (PR) rate, and a median progression-free survival (PFS) of 7.3 months (95% CI=5.5-9.0)(PMID: 37256976). The placebo plus fulvestrant cohort with PIK3CA/AKT1/PTEN-altered tumors (n=134) demonstrated an ORR of 8% (95% CI=4-14), with an 8% PR rate and a median PFS of 3.1 months (95% CI=2.0-3.7) (HR=0.50 [95% CI=0.38-0.65]; p<0.0001) (PMID: 37256976)."
+				},
+				{
+					"drugs": "Inavolisib + Palbociclib + Fulvestrant",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Inavolisib is an orally available, small molecule PI3Kα inhibitor that is FDA-approved in combination with palbociclib and fulvestrant for the treatment of adults with endocrine-resistant, PIK3CA-mutated, HR-positive, HER2-negative, locally advanced or metastatic breast cancer, as detected by an FDA-approved test following recurrence on or after completing adjuvant endocrine therapy. PIK3CA oncogenic mutations for treatment with inavolisib plus palbociclib and fulvestrant were detected by the FoundationOne Liquid CDx. FDA approval was based on the results of the Phase III INAVO120 (NCT04191499) trial of inavolisib plus palbociclib and fulvestrant versus palbociclib plus fulvestrant in 325 patients with PIK3CA-mutated, HR+/HER2- breast cancer. In the Phase III INAVO120 (NCT04191499) trial, the inavolisib cohort (n=161) demonstrated an overall response rate (ORR) of 58.4%, with seven complete responses (CR) and 87 partial responses (PR), a median progression-free survival (PFS) of 15.0 months (95% CI=11.3-20.5), median overall survival (OS) was not evaluable (95% CI=0.43-0.97) and a median duration of response (DOR) of 18.4 months (95% CI=10.4-22.2) (PMID: 39476340). In contrast, the palbociclib plus fulvestrant only cohort (n=164) demonstrated an ORR of 25.0%, with one CR and 40 PRs, a median PFS of 7.3 months (95% CI=5.6-9.3) (HR=0.43 [95% CI=0.32-0.59]; p<0.0001), a median OS of 31.1 months (95% CI=22.3-NE) (HR=0.64 [95% CI=0.43-0.97]; p=0.0338) and a median DOR of 9.6 months (95% CI=7.4-16.6) (PMID: 39476340)."
+				},
+				{
+					"drugs": "RLY-2608",
+					"level": "LEVEL_4",
+					"fdaApproved": false,
+					"description": "RLY-2608 is an orally available, small-molecule, allosteric PI3Kα inhibitor. There are promising laboratory and anecdotal clinical data to support use of RLY-2608 in patients with PIK3CA-mutated solid tumors. In the Phase I ReDiscover (NCT05216432) trial of RLY-2608, one patient with HER2-low breast cancer harboring PIK3CA H1047R and E453K was treated with RLY-2608 and one patient with HER2-negative breast cancer harboring PIK3CA E542K was treated with RLY-2608 plus fulvestrant and both patients demonstrated partial responses (PMID: 37916956). Biochemical assays have demonstrated that RLY-2608 inhibits PI3Kα activity in kinase and helical domain mutants with high isoform selectivity (Abstract: Pazolli et al. Abstract# P251, TARG 2021. https://aacrjournals.org/mct/article/20/12_Supplement/P251/676005/Abstract-P251-Discovery-and-characterization-of). In vivo xenograft models harboring PIK3CA E545K and H1047R mutations demonstrated sensitivity to RLY-2608 as measured by dose-dependent tumor regression and anti-tumor activity (Abstract: Pazolli et al. Abstract# P5-16-10, SABCS 2021. https://aacrjournals.org/cancerres/article/82/4_Supplement/P5-16-10/681459). In vitro studies with MCF10A cells expressing PIK3CA E545K or H1047R demonstrate sensitivity to RLY-2608 as measured by inhibition of cellular signaling and proliferation (PMID: 37916956)."
+				}
+			],
+			"narrative": "*PIK3CA* H1047R is classified as **Oncogenic** in high-grade serous ovarian carcinoma. **Investigational options:** Alpelisib + Fulvestrant, Capivasertib + Fulvestrant, Inavolisib + Palbociclib + Fulvestrant, RLY-2608 (Evidence Level: LEVEL_3B, LEVEL_3B, LEVEL_3B, LEVEL_4) represent investigational strategies with emerging evidence. Enrollment in clinical trials targeting this alteration should be considered. Treatment decisions should integrate this molecular finding with clinical context, prior therapy lines, and patient performance status.\n\n**References:** 1. Passarelli A et al. Alpelisib for PIK3CA-mutated advanced gynecological cancers: First clues of clinical activity.. *Gynecologic oncology*. 2024. PMID: 38518529 2. Kashofer K, Reich O, Regauer S. Acquisition of Genetic Aberrations During the Progression of High-Grade Intraepithelial Lesions/Micro-Invasive Squamous Cancers to Widely Invasive Cervical Squamous Cell Cancer.. *Archives of pathology & laboratory medicine*. 2023. PMID: 36800542 3. Zundell JA et al. Targeting the IRE1α/XBP1 Endoplasmic Reticulum Stress Response Pathway in ARID1A-Mutant Ovarian Cancers.. *Cancer research*. 2021. PMID: 34548333"
+		},
+		{
+			"gene": "NF1",
+			"alteration": "R1534*",
+			"kind": "mutation",
+			"oncogenicity": "Likely Oncogenic",
+			"mutationEffect": "Likely Loss-of-function",
+			"escat": "III",
+			"escatDescription": "Clinical benefit demonstrated in other tumor types or similar molecular alterations",
+			"oncokbLevel": "LEVEL_3B",
+			"resistanceLevel": null,
+			"treatments": [
+				{
+					"drugs": "Mirdametinib",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Mirdametinib is an orally available, small molecule MEK1/2 inhibitor that is FDA-approved for the treatment of adult and pediatric patients 2 years of age and older with neurofibromatosis type 1 (NF1) who have symptomatic plexiform neurofibromas (PN) not amenable to complete resection. FDA approval was based on the results of the Phase IIb ReNeu (NCT03962543) trial of mirdametinib in adult and pediatric patients with symptomatic NF1-associated plexiform neurofibroma.\n\nIn the Phase IIb ReNeu (NCT03962543) trial, the adult cohort (n=58 [age range=18-69 years old; median age=34 years old]) demonstrated an overall response rate (ORR) of 41% (95% CI=29-55) (p<0.001), with 24 patients demonstrating partial responses (PR) and 26 patients demonstrating stable disease (SD) (PMID: 39514826). In the pediatric cohort (n=56 [age range=2-17 years old; median age=10 years old]), the ORR was 52% (95% CI=38-65) (p<0.001), with 29 patients demonstrating PR and 22 patients demonstrating SD (PMID: 39514826)."
+				},
+				{
+					"drugs": "Trametinib",
+					"level": "LEVEL_4",
+					"fdaApproved": false,
+					"description": "Trametinib and cobimetinib are small molecule inhibitors of MEK1 and MEK2. Several clinial reports have documented patients with NF1-mutant solid tumors who have responded to treatment with MEK inhibitors. In a case report, a single patient with treatment-refractory neurofibromatosis-associated glioblastoma experienced clinical and radiological benefit from treatment with trametinib (PMID: 26936308). In a retrospective analysis of patients with neurofibromatosis Type I-associated astrocytoma, two of two patients who were treated with trametinib had clinical benefit and partial tumor regression (Abstract: Romo et al. Abstract# e13562, ASCO 2019. https://ascopubs.org/doi/abs/10.1200/JCO.2019.37.15_suppl.e13562). Other MEK inhibitors, such as selumetinib, have demonstrated efficacy in NF1-associated gliomas, including in a phase II clinical trial in which ten of 25 patients (40% [95% CI:21-61%]) had a sustained partial response to treatment with MEK inhibitors (PMID: 31151904). Additionally, in vitro studies have demonstrated that loss of NF1 results in sensitivity to MEK inhibitors as measured by downstream MAPK pathway signaling and cell proliferation (PMID: 24535670, 24576830)."
+				},
+				{
+					"drugs": "Cobimetinib",
+					"level": "LEVEL_4",
+					"fdaApproved": false,
+					"description": "Trametinib and cobimetinib are small molecule inhibitors of MEK1 and MEK2. Several clinial reports have documented patients with NF1-mutant solid tumors who have responded to treatment with MEK inhibitors. In a case report, a single patient with treatment-refractory neurofibromatosis-associated glioblastoma experienced clinical and radiological benefit from treatment with trametinib (PMID: 26936308). In a retrospective analysis of patients with neurofibromatosis Type I-associated astrocytoma, two of two patients who were treated with trametinib had clinical benefit and partial tumor regression (Abstract: Romo et al. Abstract# e13562, ASCO 2019. https://ascopubs.org/doi/abs/10.1200/JCO.2019.37.15_suppl.e13562). Other MEK inhibitors, such as selumetinib, have demonstrated efficacy in NF1-associated gliomas, including in a phase II clinical trial in which ten of 25 patients (40% [95% CI:21-61%]) had a sustained partial response to treatment with MEK inhibitors (PMID: 31151904). Additionally, in vitro studies have demonstrated that loss of NF1 results in sensitivity to MEK inhibitors as measured by downstream MAPK pathway signaling and cell proliferation (PMID: 24535670, 24576830)."
+				}
+			]
+		},
+		{
+			"gene": "CDK12",
+			"alteration": "K765fs",
+			"kind": "mutation",
+			"oncogenicity": "Likely Oncogenic",
+			"mutationEffect": "Likely Loss-of-function",
+			"escat": "III",
+			"escatDescription": "Clinical benefit demonstrated in other tumor types or similar molecular alterations",
+			"oncokbLevel": "LEVEL_3B",
+			"resistanceLevel": null,
+			"treatments": [
+				{
+					"drugs": "Olaparib",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Olaparib, a small-molecule PARP inhibitor, is FDA-approved for patients with deleterious or suspected deleterious germline or somatic homologous recombination repair (HRR) gene-mutated metastatic castration-resistant prostate cancer (mCRPC), who have progressed following prior treatment with enzalutamide or abiraterone. FDA approval was based on the results of the Phase III PROfound trial of olaparib in adult patients with metastatic castration-resistant prostate cancer who had disease progression while receiving a new hormonal agent and who had a deleterious or suspected deleterious mutation in a homologous recombination repair (HRR) gene. Of patients with a qualifying alteration in CDK12 (n=89), the progression-free survival in the olaparib group was 5.1 months compared to 2.2 months in the placebo group (HR=0.74; 95% CI=0.44 to 1.31), with a median overall survival of 14.2 months versus 11.5 months (0.65; 95% CI=0.35 to 1.25), respectively (PMID: 32343890). While the FDA approval includes those with CDK12 mutations, there is limited clinical data in patients with this biomarker (n=89)(PMID: 32343890)."
+				},
+				{
+					"drugs": "Talazoparib + Enzalutamide",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Talazoparib, a small molecule PARP inhibitor, is FDA-approved in combination with enzalutamide for the treatment of select patients with CDK12-mutant metastatic castration-resistant prostate cancer (mCRPC). FDA approval was based on the results of the Phase III TALAPRO-2 trial of talazoparib plus enzalutamide in adult patients with asymptomatic or mildly symptomatic mCRPC harboring homologous recombination repair (HRR) gene alterations receiving ongoing androgen deprivation therapy. Of patients with HRR gene mutations (n=399), the radiographic progression-free survival in the talazoparib plus enzalutamide group (n=200) was not evaluable (95% CI=21.9, NE) compared to 13.8 months (95% CI=11.0, 16.7) in the placebo plus enzalutamide group (n=199) (HR=0.45; 95% CI=0.33, 0.61), with a 2-sided p-value of <0.0001 (PMID: 37285865). Patients with CDK12 mutations (n=71) demonstrated a radiographic progression-free survival of 21.9 months in the talazoparib plus enzalutamide group (n=35) and 13.8 months in the placebo plus enzalutamide group (n=36) (HR=0.38; 95% CI=0.19, 0.76), with a 2-sided p-value of 0.0045 (PMID: 37285865). Patients harboring only CDK12 mutations (n=58) demonstrated a radiographic progression-free survival of 21.9 months in the talazoparib plus enzalutamide group (n=28) and 13.8 months in the placebo plus enzalutamide group (n=30) (HR=0.49; 95% CI=0.23, 1.02), with a 2-sided p-value of 0.055 (PMID: 37285865)."
+				},
+				{
+					"drugs": "Pembrolizumab",
+					"level": "LEVEL_4",
+					"fdaApproved": false,
+					"description": "Cemiplimab, pembrolizumab, and nivolumab are monoclonal antibodies that target the Programmed Cell Death Protein 1 (PD-1) and are FDA-approved as immunotherapy in various cancers. In a retrospective analyses of four patients with CDK12-mutant, metastatic, castration-resistant prostate cancer who were treated with anti-PD1 monotherapy, two of four patients had decline in prostate specific antigen (PSA) after immunotherapy treatment, suggesting that this patient population may have a higher likelihood of response to immunotherapy (PMID: 29906450). Preclinical studies in CDK12-mutant prostate cancer tumors have showed that these tumors have high T-cell infiltration and are likely ideal candidates for immune checkpoint inhibition (PMID: 29906450)."
+				},
+				{
+					"drugs": "Nivolumab",
+					"level": "LEVEL_4",
+					"fdaApproved": false,
+					"description": "Cemiplimab, pembrolizumab, and nivolumab are monoclonal antibodies that target the Programmed Cell Death Protein 1 (PD-1) and are FDA-approved as immunotherapy in various cancers. In a retrospective analyses of four patients with CDK12-mutant, metastatic, castration-resistant prostate cancer who were treated with anti-PD1 monotherapy, two of four patients had decline in prostate specific antigen (PSA) after immunotherapy treatment, suggesting that this patient population may have a higher likelihood of response to immunotherapy (PMID: 29906450). Preclinical studies in CDK12-mutant prostate cancer tumors have showed that these tumors have high T-cell infiltration and are likely ideal candidates for immune checkpoint inhibition (PMID: 29906450)."
+				},
+				{
+					"drugs": "Cemiplimab",
+					"level": "LEVEL_4",
+					"fdaApproved": false,
+					"description": "Cemiplimab, pembrolizumab, and nivolumab are monoclonal antibodies that target the Programmed Cell Death Protein 1 (PD-1) and are FDA-approved as immunotherapy in various cancers. In a retrospective analyses of four patients with CDK12-mutant, metastatic, castration-resistant prostate cancer who were treated with anti-PD1 monotherapy, two of four patients had decline in prostate specific antigen (PSA) after immunotherapy treatment, suggesting that this patient population may have a higher likelihood of response to immunotherapy (PMID: 29906450). Preclinical studies in CDK12-mutant prostate cancer tumors have showed that these tumors have high T-cell infiltration and are likely ideal candidates for immune checkpoint inhibition (PMID: 29906450)."
+				}
+			]
+		},
+		{
+			"gene": "PTEN",
+			"alteration": "R130*",
+			"kind": "mutation",
+			"oncogenicity": "Oncogenic",
+			"mutationEffect": "Loss-of-function",
+			"escat": "III",
+			"escatDescription": "Clinical benefit demonstrated in other tumor types or similar molecular alterations",
+			"oncokbLevel": "LEVEL_3B",
+			"resistanceLevel": null,
+			"treatments": [
+				{
+					"drugs": "Capivasertib + Fulvestrant",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Capivasertib, an orally available, ATP-competitive pan-AKT inhibitor, is FDA-approved with fulvestrant for the treatment of patients with PTEN-mutant ER+/HER2- metastatic breast cancer. FDA approval was based on the results of the Phase III CAPItello-291 trial of capivasertib plus fulvestrant in adult patients with or without AKT pathway-altered (PIK3CA, AKT1 or PTEN) ER+/HER2- advanced breast cancer. Of the patients with only PIK3CA, AKT1 or PTEN-mutant tumors (n=289), the capivasertib plus fulvestrant group (n=155) demonstrated an objective response rate of 26% (95% CI=19, 34), with a 2.3% complete response rate and 23% partial response rate, and a median progression-free survival of 7.3 months (95% CI=5.5, 9.0) whereas the placebo plus fulvestrant group (n=134) demonstrated an objective response rate of 8% (95% CI=4, 14), with a 8% partial response rate, and a median progression-free survival of 3.1 months (95% CI=2.0, 3.7) (HR=0.50 [95% CI=0.38, 0.65]; P<0.0001) (PMID: 37256976). Of all patients, including patients with wildtype tumors and patients with PIK3CA, AKT1 or PTEN-mutant tumors (n=708), the capivasertib plus fulvestrant group (n=355) demonstrated a median progression-free survival of 7.2 months (95% CI=5.5, 7.4) whereas the placebo plus fulvestrant group (n=353) demonstrated a median progression-free survival of 3.6 months (95% CI=2.8, 3.7) (HR=0.60 [95% CI=0.51, 0.71]; P<0.001) (PMID: 37256976)."
+				},
+				{
+					"drugs": "GSK2636771",
+					"level": "LEVEL_4",
+					"fdaApproved": false,
+					"description": "GSK2636771 and AZD8186 are ATP-competitive small molecule inhibitors of PI3Kβ. In a phase I clinical trial of GSK2636771 in PTEN-deficient advanced solid tumors, 11 (17%) of 65 patients experienced durable clinical benefit (>24 weeks), with 1 patient with castration-resistant prostate cancer having a partial response for over one year (PMID: 28645941). In a different Phase I trial of GSK2636771 plus enzalutamide in 36 patients with PTEN-deficient metastatic castration-resistant prostate cancer, the 12-week non-progressive disease rate was 50% (95% CI: 28.2–71.8, n = 22) in patients receiving 200mg of GSK2636771 daily, with 1 (3%) patient achieving a radiographic partial response lasting 36 weeks (PMID: 34281912). In a Phase I clinical trial of AZD8186 in 87 patients with advanced solid tumors, partial responses were seen in one patient with castration-resistant prostate cancer who was also treated in combination with vistusertib, a dual mTORC1/2 inhibitor, and in another patient with PTEN-deficient colorectal cancer (Abstract: Hansen et al. Abstract# 2570, ASCO 2017. http://ascopubs.org/doi/abs/10.1200/JCO.2017.35.15_suppl.2570)."
+				},
+				{
+					"drugs": "AZD8186",
+					"level": "LEVEL_4",
+					"fdaApproved": false,
+					"description": "GSK2636771 and AZD8186 are ATP-competitive small molecule inhibitors of PI3Kβ. In a phase I clinical trial of GSK2636771 in PTEN-deficient advanced solid tumors, 11 (17%) of 65 patients experienced durable clinical benefit (>24 weeks), with 1 patient with castration-resistant prostate cancer having a partial response for over one year (PMID: 28645941). In a different Phase I trial of GSK2636771 plus enzalutamide in 36 patients with PTEN-deficient metastatic castration-resistant prostate cancer, the 12-week non-progressive disease rate was 50% (95% CI: 28.2–71.8, n = 22) in patients receiving 200mg of GSK2636771 daily, with 1 (3%) patient achieving a radiographic partial response lasting 36 weeks (PMID: 34281912). In a Phase I clinical trial of AZD8186 in 87 patients with advanced solid tumors, partial responses were seen in one patient with castration-resistant prostate cancer who was also treated in combination with vistusertib, a dual mTORC1/2 inhibitor, and in another patient with PTEN-deficient colorectal cancer (Abstract: Hansen et al. Abstract# 2570, ASCO 2017. http://ascopubs.org/doi/abs/10.1200/JCO.2017.35.15_suppl.2570)."
+				}
+			]
+		},
+		{
+			"gene": "KRAS",
+			"alteration": "G12V",
+			"kind": "mutation",
+			"oncogenicity": "Oncogenic",
+			"mutationEffect": "Gain-of-function",
+			"escat": "III",
+			"escatDescription": "Clinical benefit demonstrated in other tumor types or similar molecular alterations",
+			"oncokbLevel": "LEVEL_3B",
+			"resistanceLevel": null,
+			"treatments": [
+				{
+					"drugs": "Avutometinib + Defactinib",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Avutometinib, a RAF/MEK clamp inhibitor, and defactinib, a FAK inhibitor, are FDA-approved in combination for the treatment of adult patients with KRAS-mutated recurrent low-grade serous ovarian cancer (LGSOC) who have received prior systemic therapy. FDA approval was based on the results of the Phase II RAMP-201 (NCT04625270) trial of avutometinib plus defactinib in 109 patients with recurrent LGSOC.\nIn the Phase II RAMP-201 (NCT04625270) trial, patients with KRAS-mutated LGSOC (n=57) demonstrated an overall response rate (ORR) of 44% (n=25), with a 2% (n=2) complete response (CR) rate, 40% (n=23) partial response (PR) rate and 49% (n=28) stable disease (SD) rate, a median duration of response (DOR) of 31.0 months (95% CI=14.8-31.1) and a median progression-free survival (PFS) of 22.0 months (95% CI=11.1-36.6) (PMID: 40644648). Responders included patients with the following KRAS mutations: KRAS A146V, G12D, G12R, G12V and Q61H (PMID: 40644648). Of patients with KRAS wildtype LGSOC (n=52), the cohort demonstrated an ORR of 17% (n=9), with a 17% (n=9) PR rate and 65% (n=34) SD rate, and a median PFS of 9.2 months (95% CI=5.5-NE) (PMID: 40644648)."
+				},
+				{
+					"drugs": "Daraxonrasib",
+					"level": "LEVEL_4",
+					"fdaApproved": false,
+					"description": "Daraxonrasib is an orally available, small-molecular inhibitor of RAS. In vitro studies in human RAS-addicted cancer cell lines demonstrated sensitivity to daraxonrasib as measured by decreased ERK phosphorylation, decreased cell growth and induced apoptosis (Abstract: Koltun et al. Abstract# 3597, AACR 2022. https://aacrjournals.org/cancerres/article/82/12_Supplement/3597/702320). In vitro studies with KRAS position 12 (G12X) mutated RAS-addicted cell lines demonstrated increased sensitivity to daraxonrasib as measured by increased inhibition of cellular proliferation compared to other RAS-mutated cell lines (Abstract: Singh et al. Abstract # 3597, AACR 2022. https://s3.us-west-2.amazonaws.com/rvmdpubs.revmed.com/2022/AACR_2022_Singh.pdf). In vivo human xenograft models with KRAS G12X mutant tumors demonstrated sensitivity to daraxonrasib as measured by dose-dependent tumor regression, anti-tumor immunity and RAS pathway inhibition (Abstract: Koltun et al. Abstract# 3597, AACR 2022. https://aacrjournals.org/cancerres/article/82/12_Supplement/3597/702320). In a mouse clinical trial of daraxonrasib with KRAS G12X-mutant models of non-small cell lung cancer (n=15), pancreatic ductal adenocarcinoma (n=18) and colorectal cancer (n=18), the objective response rate was 53% (8/15), 61% (11/18) and 44% (8/18), respectively (Abstract: Singh et al. Abstract # 3597, AACR 2022. https://s3.us-west-2.amazonaws.com/rvmdpubs.revmed.com/2022/AACR_2022_Singh.pdf)."
+				},
+				{
+					"drugs": "Trametinib",
+					"level": "LEVEL_4",
+					"fdaApproved": false,
+					"description": "Trametinib, cobimetinib, and binimetinib are MEK1/2 kinase inhibitors that are NCCN-listed and FDA-approved for patients with unresectable or metastatic melanoma with BRAF V600E or V600K mutations. In a multicenter, single-arm, open-label, phase IB trial (NCT02964689) of binimetinib in combination with cisplatin and pemetrexed in fourteen evaluable patients with stage III-IV NSCLC with KRAS (codon 12, 13 or 61) mutations, the overall response rate was 33% (95% CI=7–70) among the nine patients that received binimetinib, where three of nine patients had a partial response, two of nine had stable disease, three of nine had progressive disease, and one of nine was not assessable for response (PMID: 33933896). On average, in vitro studies have shown that trametinib inhibits the proliferation of KRAS mutant cancer cell lines (n = 50) with lower IC50s than other MEK inhibitors, including selumetinib (PMID: 24746704). Cobimetinib, which inhibits the kinase activity of MEK but allows the induction of RAF-dependent feedback phosphorylation of MEK, was demonstrated to be less effective in KRAS-mutant tumors than in BRAF-mutant tumors (PMID: 25435214, 23934108)."
+				},
+				{
+					"drugs": "Cobimetinib",
+					"level": "LEVEL_4",
+					"fdaApproved": false,
+					"description": "Trametinib, cobimetinib, and binimetinib are MEK1/2 kinase inhibitors that are NCCN-listed and FDA-approved for patients with unresectable or metastatic melanoma with BRAF V600E or V600K mutations. In a multicenter, single-arm, open-label, phase IB trial (NCT02964689) of binimetinib in combination with cisplatin and pemetrexed in fourteen evaluable patients with stage III-IV NSCLC with KRAS (codon 12, 13 or 61) mutations, the overall response rate was 33% (95% CI=7–70) among the nine patients that received binimetinib, where three of nine patients had a partial response, two of nine had stable disease, three of nine had progressive disease, and one of nine was not assessable for response (PMID: 33933896). On average, in vitro studies have shown that trametinib inhibits the proliferation of KRAS mutant cancer cell lines (n = 50) with lower IC50s than other MEK inhibitors, including selumetinib (PMID: 24746704). Cobimetinib, which inhibits the kinase activity of MEK but allows the induction of RAF-dependent feedback phosphorylation of MEK, was demonstrated to be less effective in KRAS-mutant tumors than in BRAF-mutant tumors (PMID: 25435214, 23934108)."
+				},
+				{
+					"drugs": "Binimetinib",
+					"level": "LEVEL_4",
+					"fdaApproved": false,
+					"description": "Trametinib, cobimetinib, and binimetinib are MEK1/2 kinase inhibitors that are NCCN-listed and FDA-approved for patients with unresectable or metastatic melanoma with BRAF V600E or V600K mutations. In a multicenter, single-arm, open-label, phase IB trial (NCT02964689) of binimetinib in combination with cisplatin and pemetrexed in fourteen evaluable patients with stage III-IV NSCLC with KRAS (codon 12, 13 or 61) mutations, the overall response rate was 33% (95% CI=7–70) among the nine patients that received binimetinib, where three of nine patients had a partial response, two of nine had stable disease, three of nine had progressive disease, and one of nine was not assessable for response (PMID: 33933896). On average, in vitro studies have shown that trametinib inhibits the proliferation of KRAS mutant cancer cell lines (n = 50) with lower IC50s than other MEK inhibitors, including selumetinib (PMID: 24746704). Cobimetinib, which inhibits the kinase activity of MEK but allows the induction of RAF-dependent feedback phosphorylation of MEK, was demonstrated to be less effective in KRAS-mutant tumors than in BRAF-mutant tumors (PMID: 25435214, 23934108)."
+				}
+			]
+		},
+		{
+			"gene": "PTEN",
+			"alteration": "DELETION",
+			"kind": "cna",
+			"oncogenicity": "Oncogenic",
+			"escat": "III",
+			"escatDescription": "Clinical benefit demonstrated in other tumor types or similar molecular alterations",
+			"oncokbLevel": "LEVEL_3B",
+			"resistanceLevel": null,
+			"treatments": [
+				{
+					"drugs": "Capivasertib + Fulvestrant",
+					"level": "LEVEL_3B",
+					"fdaApproved": false,
+					"description": "Capivasertib, an orally available, ATP-competitive pan-AKT inhibitor, is FDA-approved with fulvestrant for the treatment of patients with PTEN-mutant ER+/HER2- metastatic breast cancer. FDA approval was based on the results of the Phase III CAPItello-291 trial of capivasertib plus fulvestrant in adult patients with or without AKT pathway-altered (PIK3CA, AKT1 or PTEN) ER+/HER2- advanced breast cancer. Of the patients with only PIK3CA, AKT1 or PTEN-mutant tumors (n=289), the capivasertib plus fulvestrant group (n=155) demonstrated an objective response rate of 26% (95% CI=19, 34), with a 2.3% complete response rate and 23% partial response rate, and a median progression-free survival of 7.3 months (95% CI=5.5, 9.0) whereas the placebo plus fulvestrant group (n=134) demonstrated an objective response rate of 8% (95% CI=4, 14), with a 8% partial response rate, and a median progression-free survival of 3.1 months (95% CI=2.0, 3.7) (HR=0.50 [95% CI=0.38, 0.65]; P<0.0001) (PMID: 37256976). Of all patients, including patients with wildtype tumors and patients with PIK3CA, AKT1 or PTEN-mutant tumors (n=708), the capivasertib plus fulvestrant group (n=355) demonstrated a median progression-free survival of 7.2 months (95% CI=5.5, 7.4) whereas the placebo plus fulvestrant group (n=353) demonstrated a median progression-free survival of 3.6 months (95% CI=2.8, 3.7) (HR=0.60 [95% CI=0.51, 0.71]; P<0.001) (PMID: 37256976)."
+				},
+				{
+					"drugs": "GSK2636771",
+					"level": "LEVEL_4",
+					"fdaApproved": false,
+					"description": "GSK2636771 and AZD8186 are ATP-competitive small molecule inhibitors of PI3Kβ. In a phase I clinical trial of GSK2636771 in PTEN-deficient advanced solid tumors, 11 (17%) of 65 patients experienced durable clinical benefit (>24 weeks), with 1 patient with castration-resistant prostate cancer having a partial response for over one year (PMID: 28645941). In a different Phase I trial of GSK2636771 plus enzalutamide in 36 patients with PTEN-deficient metastatic castration-resistant prostate cancer, the 12-week non-progressive disease rate was 50% (95% CI: 28.2–71.8, n = 22) in patients receiving 200mg of GSK2636771 daily, with 1 (3%) patient achieving a radiographic partial response lasting 36 weeks (PMID: 34281912). In a Phase I clinical trial of AZD8186 in 87 patients with advanced solid tumors, partial responses were seen in one patient with castration-resistant prostate cancer who was also treated in combination with vistusertib, a dual mTORC1/2 inhibitor, and in another patient with PTEN-deficient colorectal cancer (Abstract: Hansen et al. Abstract# 2570, ASCO 2017. http://ascopubs.org/doi/abs/10.1200/JCO.2017.35.15_suppl.2570)."
+				},
+				{
+					"drugs": "AZD8186",
+					"level": "LEVEL_4",
+					"fdaApproved": false,
+					"description": "GSK2636771 and AZD8186 are ATP-competitive small molecule inhibitors of PI3Kβ. In a phase I clinical trial of GSK2636771 in PTEN-deficient advanced solid tumors, 11 (17%) of 65 patients experienced durable clinical benefit (>24 weeks), with 1 patient with castration-resistant prostate cancer having a partial response for over one year (PMID: 28645941). In a different Phase I trial of GSK2636771 plus enzalutamide in 36 patients with PTEN-deficient metastatic castration-resistant prostate cancer, the 12-week non-progressive disease rate was 50% (95% CI: 28.2–71.8, n = 22) in patients receiving 200mg of GSK2636771 daily, with 1 (3%) patient achieving a radiographic partial response lasting 36 weeks (PMID: 34281912). In a Phase I clinical trial of AZD8186 in 87 patients with advanced solid tumors, partial responses were seen in one patient with castration-resistant prostate cancer who was also treated in combination with vistusertib, a dual mTORC1/2 inhibitor, and in another patient with PTEN-deficient colorectal cancer (Abstract: Hansen et al. Abstract# 2570, ASCO 2017. http://ascopubs.org/doi/abs/10.1200/JCO.2017.35.15_suppl.2570)."
+				}
+			]
+		},
+		{
+			"gene": "ARID1A",
+			"alteration": "Q1334*",
+			"kind": "mutation",
+			"oncogenicity": "Likely Oncogenic",
+			"mutationEffect": "Likely Loss-of-function",
+			"escat": "IV",
+			"escatDescription": "Preclinical evidence of actionability",
+			"oncokbLevel": "LEVEL_4",
+			"resistanceLevel": null,
+			"treatments": [
+				{
+					"drugs": "OPN-2853 ",
+					"level": "LEVEL_4",
+					"fdaApproved": false,
+					"description": "PLX2853 is an inhibitor of the bromodomain-containing protein 4 (BRD4) that binds to the acetylated lysine recognition motifs in the bromodomains of the BRD4 protein, thereby preventing the binding of BRD4 to acetylated lysines on histones. Small molecule inhibitors of the BET family of proteins have been shown to specifically inhibit proliferation of ARID1A-mutated cell lines, both in vitro and in ovarian clear cell cancer xenografts and patient-derived xenograft models (PMID: 29760405). Similarly, loss of ARID1A has been shown to sensitize breast cancer cells to BET inhibition with various BET inhibitors including JQ1, OTX015, and IBET762 (PMID: 31913353). In an open-label Phase II clinical study of PLX2853 in patients with advanced gynecologic malignancies harboring an ARID1A mutation (n=14), partial response was achieved in one patient (7.1%), stable disease was achieved in five patients (35.7%) and progressive disease was observed in eight patients (57.1%) (PMID: 37797273)."
+				},
+				{
+					"drugs": "Tazemetostat",
+					"level": "LEVEL_4",
+					"fdaApproved": false,
+					"description": "Tazemetostat is a small molecule methyltransferase inhibitor of EZH2 indicated for the treatment of adult and pediatric patients with metastatic or locally advanced epithelioid sarcoma ineligible for complete resection as well as adults with relapsed or refractory follicular lymphoma whose tumors are positive for an EZH2 mutation. In vitro studies showed that other small molecule inhibitors of EZH2 methyltransferase activity, including GSK126, GSK343, and EPZ005687, selectively suppressed the growth of ARID1A mutated ovarian and gastric cancer cell lines compared to controls (PMID: 25686104, 32506298)."
+				}
+			]
+		},
+		{
+			"gene": "TP53",
+			"alteration": "R248W",
+			"kind": "mutation",
+			"oncogenicity": "Likely Oncogenic",
+			"mutationEffect": "Loss-of-function",
+			"escat": "X",
+			"escatDescription": "No evidence for actionability or lack of data",
+			"oncokbLevel": null,
+			"resistanceLevel": null,
+			"treatments": [],
+			"narrative": "*TP53* R248W is classified as **Likely Oncogenic** in high-grade serous ovarian carcinoma. No directly targeted therapies are currently approved for this specific alteration in ovarian cancer. However, this alteration may inform prognosis and response to standard platinum-based chemotherapy. Consider enrollment in basket trials or molecular tumor boards for emerging therapeutic strategies.\n\n**References:** 1. Elayapillai S et al. Potential and mechanism of mebendazole for treatment and maintenance of ovarian cancer.. *Gynecologic oncology*. 2021. PMID: 33131904 2. De Souza C et al. The P72R Polymorphism in R248Q/W p53 Mutants Modifies the Mutant Effect on Epithelial to Mesenchymal Transition Phenotype and Cell Invasion via CXCL1 Expression.. *International journal of molecular sciences*. 2020. PMID: 33126568 3. Gao F et al. A pedigree-based prediction model identifies carriers of deleterious de novo mutations in families with Li-Fraumeni syndrome.. *Genome research*. 2020. PMID: 32817165"
+		},
+		{
+			"gene": "RB1",
+			"alteration": "E137*",
+			"kind": "mutation",
+			"oncogenicity": "Likely Oncogenic",
+			"mutationEffect": "Likely Loss-of-function",
+			"escat": "X",
+			"escatDescription": "No evidence for actionability or lack of data",
+			"oncokbLevel": null,
+			"resistanceLevel": null,
+			"treatments": []
+		},
+		{
+			"gene": "MYC",
+			"alteration": "AMPLIFICATION",
+			"kind": "cna",
+			"oncogenicity": "Oncogenic",
+			"escat": "X",
+			"escatDescription": "No evidence for actionability or lack of data",
+			"oncokbLevel": null,
+			"resistanceLevel": null,
+			"treatments": []
+		}
+	],
+	"cnv": [
+		{
+			"gene": "CCNE1",
+			"chromosome": "chr19",
+			"copyNumber": 12,
+			"log2": 2.8,
+			"type": "AMPLIFICATION"
+		},
+		{
+			"gene": "PTEN",
+			"chromosome": "chr10",
+			"copyNumber": 0,
+			"log2": -2.1,
+			"type": "DELETION"
+		},
+		{
+			"gene": "BRCA1",
+			"chromosome": "chr17",
+			"copyNumber": 1,
+			"log2": -1.5,
+			"type": "DELETION"
+		},
+		{
+			"gene": "MYC",
+			"chromosome": "chr8",
+			"copyNumber": 8,
+			"log2": 1.9,
+			"type": "AMPLIFICATION"
+		}
+	],
+	"fusions": [
+		{
+			"geneA": "EWSR1",
+			"geneB": "FLI1",
+			"name": "EWSR1::FLI1",
+			"fusionType": "in-frame",
+			"supportingReads": 45,
+			"known": true
+		}
+	],
+	"literature": [
+		{
+			"pmid": "33131904",
+			"title": "Potential and mechanism of mebendazole for treatment and maintenance of ovarian cancer.",
+			"authors": "Elayapillai S, Ramraj S, Benbrook DM, Bieniasz M, Wang L, Pathuri G, Isingizwe ZR, Kennedy AL, Zhao YD, Lightfoot S, Hunsucker LA, Gunderson CC",
+			"journal": "Gynecologic oncology",
+			"year": "2021",
+			"gene": "TP53",
+			"alteration": "R248W"
+		},
+		{
+			"pmid": "33126568",
+			"title": "The P72R Polymorphism in R248Q/W p53 Mutants Modifies the Mutant Effect on Epithelial to Mesenchymal Transition Phenotype and Cell Invasion via CXCL1 Expression.",
+			"authors": "De Souza C, Madden JA, Minn D, Kumar VE, Montoya DJ, Nambiar R, Zhu Z, Xiao WW, Tahmassebi N, Kathi H, Nelson N, Karnezis AN, Chien J",
+			"journal": "International journal of molecular sciences",
+			"year": "2020",
+			"gene": "TP53",
+			"alteration": "R248W"
+		},
+		{
+			"pmid": "32817165",
+			"title": "A pedigree-based prediction model identifies carriers of deleterious de novo mutations in families with Li-Fraumeni syndrome.",
+			"authors": "Gao F, Pan X, Dodd-Eaton EB, Recio CV, Montierth MD, Bojadzieva J, Mai PL, Zelley K, Johnson VE, Braun D, Nichols KE, Garber JE, Savage SA, Strong LC, Wang W",
+			"journal": "Genome research",
+			"year": "2020",
+			"gene": "TP53",
+			"alteration": "R248W"
+		},
+		{
+			"pmid": "11733960",
+			"title": "Dominant-negative mutation of p53 tumor suppressor gene in endometrial carcinoma.",
+			"authors": "Sakuragi N, Hirai A, Tada M, Yamada H, Yamamoto R, Fujimoto S, Moriuchi T",
+			"journal": "Gynecologic oncology",
+			"year": "2001",
+			"gene": "TP53",
+			"alteration": "R248W"
+		},
+		{
+			"pmid": "38518529",
+			"title": "Alpelisib for PIK3CA-mutated advanced gynecological cancers: First clues of clinical activity.",
+			"authors": "Passarelli A, Carbone V, Pignata S, Mazzeo R, Lorusso D, Scambia G, Canova S, Di Palma T, Tasca G, Mantiero M, Naglieri E, Andreetta C, Rauso M, Brunetti AE, Laera L, Abeni C, Scandurra G, Gambaro AR, Pastore A, Bengala C, Gunnellini M, Farolfi A, Spinello M, Bartoletti M",
+			"journal": "Gynecologic oncology",
+			"year": "2024",
+			"gene": "PIK3CA",
+			"alteration": "H1047R"
+		},
+		{
+			"pmid": "36800542",
+			"title": "Acquisition of Genetic Aberrations During the Progression of High-Grade Intraepithelial Lesions/Micro-Invasive Squamous Cancers to Widely Invasive Cervical Squamous Cell Cancer.",
+			"authors": "Kashofer K, Reich O, Regauer S",
+			"journal": "Archives of pathology & laboratory medicine",
+			"year": "2023",
+			"gene": "PIK3CA",
+			"alteration": "H1047R"
+		},
+		{
+			"pmid": "34548333",
+			"title": "Targeting the IRE1α/XBP1 Endoplasmic Reticulum Stress Response Pathway in ARID1A-Mutant Ovarian Cancers.",
+			"authors": "Zundell JA, Fukumoto T, Lin J, Fatkhudinov N, Nacarelli T, Kossenkov AV, Liu Q, Cassel J, Hu CA, Wu S, Zhang R",
+			"journal": "Cancer research",
+			"year": "2021",
+			"gene": "PIK3CA",
+			"alteration": "H1047R"
+		},
+		{
+			"pmid": "34172890",
+			"title": "Frequent PIK3CA mutations in eutopic endometrium of patients with ovarian clear cell carcinoma.",
+			"authors": "Murakami K, Kanto A, Sakai K, Miyagawa C, Takaya H, Nakai H, Kotani Y, Nishio K, Matsumura N",
+			"journal": "Modern pathology : an official journal of the United States and Canadian Academy of Pathology, Inc",
+			"year": "2021",
+			"gene": "PIK3CA",
+			"alteration": "H1047R"
+		},
+		{
+			"pmid": "33723724",
+			"title": "Phase 2 study of TAS-117, an allosteric akt inhibitor in advanced solid tumors harboring phosphatidylinositol 3-kinase/v-akt murine thymoma viral oncogene homolog gene mutations.",
+			"authors": "Lee JB, Jung M, Beom SH, Kim GM, Kim HR, Choi HJ, Sohn JH, Ahn JB, Rha SY, Chung HC",
+			"journal": "Investigational new drugs",
+			"year": "2021",
+			"gene": "PIK3CA",
+			"alteration": "H1047R"
+		},
+		{
+			"pmid": "41533997",
+			"title": "Early Clinical and Molecular Biomarkers in Patients With Advanced Ovarian Cancer Undergoing Neoadjuvant Chemotherapy: CHIVA Phase II GINECO Trial.",
+			"authors": "Blanc-Durand F, You B, Adnani Y, De Rauglaudre G, Ray-Coquard I, Combe P, Abdeddaim C, Joly F, Ferron G, Deldycke C, Colomban O, Kaminsky MC, Meunier J, Alexandre J, Lebreton C, Venat L, Favier L, Louvet C, Abadie-Lacourtoisie S, Lauraine EP, Chardin L, Genestie C, Just PA, Rouleau E, Leary A",
+			"journal": "JCO precision oncology",
+			"year": "2026",
+			"gene": "CCNE1",
+			"alteration": "amplification"
+		},
+		{
+			"pmid": "41415416",
+			"title": "Targeting ALC1 can safely expand the therapeutic utility of PARP inhibitors across high-grade serous ovarian cancers.",
+			"authors": "Aubuchon LN, Wong DH, Ramakrishnan NM, Reddy R, Compadre A, Lomonosova E, Jackson KE, Kemper D, Mehta V, Zoberi K, Khabele D, Christie EL, Mullen MM, Verma P",
+			"journal": "bioRxiv : the preprint server for biology",
+			"year": "2025",
+			"gene": "CCNE1",
+			"alteration": "amplification"
+		},
+		{
+			"pmid": "41411622",
+			"title": "Integrated Spatial Analysis Reveals the Molecular Landscape of Ovarian Precancerous Lesions.",
+			"authors": "Chang TY, Chien YW, Chen SH, Sokolow A, Wang Y, Wang BG, Numan TA, Chui MH, Stone RL, Pisanic TR, Papadopoulos N, Wang TL, Douville C, Cope L, Shih IM",
+			"journal": "Cancer research",
+			"year": "2025",
+			"gene": "CCNE1",
+			"alteration": "amplification"
+		},
+		{
+			"pmid": "41380866",
+			"title": "Cyclin E1 as a driver of oncogenesis; high grade serous ovarian cancer as an exemplar.",
+			"authors": "Taylor SJ, Gourley C",
+			"journal": "Critical reviews in oncology/hematology",
+			"year": "2026",
+			"gene": "CCNE1",
+			"alteration": "amplification"
+		},
+		{
+			"pmid": "41367952",
+			"title": "Genomics of ovarian cancers and the potential of precision medicine.",
+			"authors": "Jarratt A, Polidano J, Scott CL, Barker HE",
+			"journal": "Therapeutic advances in medical oncology",
+			"year": "2025",
+			"gene": "CCNE1",
+			"alteration": "amplification"
+		},
+		{
+			"pmid": "41777659",
+			"title": "Genomic landscape of pediatric germ cell tumors reveals oncogenic mutations and copy number alterations.",
+			"authors": "Galvão JMS, Bezerra AFSP, Garcia FAO, Santarosa Vieira AG, Albino da Silva EC, van Helvoort Lengert A, Reis RM, Lopes LF, Evangelista AF, Pinto MT",
+			"journal": "Frontiers in oncology",
+			"year": "2026",
+			"gene": "PTEN",
+			"alteration": "deletion"
+		},
+		{
+			"pmid": "41595239",
+			"title": "Oncological Outcomes and Genomic Features of Gastric-Type Endocervical Adenocarcinoma, the Most Aggressive and Common HPV-Independent Cervical Cancer.",
+			"authors": "Du M, Zheng Z, Lu P, Wang W, Cao D, Yang J, Wu M, Pan L, Xue X, Wang W, Jiang F, Xiang Y",
+			"journal": "Cancers",
+			"year": "2026",
+			"gene": "PTEN",
+			"alteration": "deletion"
+		},
+		{
+			"pmid": "41466059",
+			"title": "EPI-SauriCas9-based mouse ovarian cancer models recapitulating pten deletion in patients.",
+			"authors": "Chen W, He P, Ding L, Lou W, Wang Y, Shi W, Fan Z, Sheng Y, Luo J, Tan Z, Wang Y, Di W, Ke X, Yu B",
+			"journal": "Communications biology",
+			"year": "2025",
+			"gene": "PTEN",
+			"alteration": "deletion"
+		},
+		{
+			"pmid": "41436846",
+			"title": "A Deeper Dive into POLE -Mutated Endometrial Carcinomas : The Contributions and Consequences of Tumor Mutational Burden.",
+			"authors": "Vemuri A, Tjota MY, Wanjari P, Fleming GF, Wang P, Bennett JA",
+			"journal": "The American journal of surgical pathology",
+			"year": "2026",
+			"gene": "PTEN",
+			"alteration": "deletion"
+		},
+		{
+			"pmid": "41152971",
+			"title": "Clinicopathological Diagnosis and Prognosis of Endometrioid Borderline Ovarian Tumors: Dual Case Reports and Literature Review.",
+			"authors": "Yang F, Chen D, Sun Q, Yu J, Wang X",
+			"journal": "Cancer reports (Hoboken, N.J.)",
+			"year": "2025",
+			"gene": "PTEN",
+			"alteration": "deletion"
+		}
+	],
+	"appraisals": [
+		{
+			"id": "99231004-ap1",
+			"linkedGene": "BRCA1",
+			"linkedAlteration": "E1836fs",
+			"escat": "I",
+			"provenance": "systematic-review",
+			"grade": "High",
+			"verdict": "Supported — routine clinical use",
+			"pico": {
+				"population": "High-grade serous ovarian carcinoma harbouring BRCA1 E1836fs",
+				"intervention": "Niraparib / Olaparib",
+				"comparator": "Standard of care",
+				"outcome": "Progression-free survival, objective response",
+				"question": "In High-grade serous ovarian carcinoma with BRCA1 E1836fs, does Niraparib improve progression-free survival versus standard of care?"
+			},
+			"prisma": {
+				"totalFound": 97,
+				"afterDedup": 87,
+				"afterYearFilter": 83,
+				"afterQuality": 12,
+				"afterValidation": 8,
+				"included": 8,
+				"excludedByQuality": 71
+			},
+			"includedStudies": [
+				{
+					"citationKey": "TP532021A",
+					"title": "Potential and mechanism of mebendazole for treatment and maintenance of ovarian cancer.",
+					"authors": "Elayapillai S, Ramraj S, Benbrook DM, Bieniasz M, Wang L, Pathuri G, Isingizwe ZR, Kennedy AL, Zhao YD, Lightfoot S, Hunsucker LA, Gunderson CC",
+					"journal": "Gynecologic oncology",
+					"year": "2021",
+					"pmid": "33131904",
+					"quartile": "Q1",
+					"citationCount": 102,
+					"verified": true,
+					"openAccess": true
+				},
+				{
+					"citationKey": "TP532020B",
+					"title": "The P72R Polymorphism in R248Q/W p53 Mutants Modifies the Mutant Effect on Epithelial to Mesenchymal Transition Phenotype and Cell Invasion via CXCL1 Expression.",
+					"authors": "De Souza C, Madden JA, Minn D, Kumar VE, Montoya DJ, Nambiar R, Zhu Z, Xiao WW, Tahmassebi N, Kathi H, Nelson N, Karnezis AN, Chien J",
+					"journal": "International journal of molecular sciences",
+					"year": "2020",
+					"pmid": "33126568",
+					"quartile": "Q1",
+					"citationCount": 132,
+					"verified": true,
+					"openAccess": false
+				},
+				{
+					"citationKey": "TP532020C",
+					"title": "A pedigree-based prediction model identifies carriers of deleterious de novo mutations in families with Li-Fraumeni syndrome.",
+					"authors": "Gao F, Pan X, Dodd-Eaton EB, Recio CV, Montierth MD, Bojadzieva J, Mai PL, Zelley K, Johnson VE, Braun D, Nichols KE, Garber JE, Savage SA, Strong LC, Wang W",
+					"journal": "Genome research",
+					"year": "2020",
+					"pmid": "32817165",
+					"quartile": "Q1",
+					"citationCount": 145,
+					"verified": true,
+					"openAccess": true
+				},
+				{
+					"citationKey": "TP532001D",
+					"title": "Dominant-negative mutation of p53 tumor suppressor gene in endometrial carcinoma.",
+					"authors": "Sakuragi N, Hirai A, Tada M, Yamada H, Yamamoto R, Fujimoto S, Moriuchi T",
+					"journal": "Gynecologic oncology",
+					"year": "2001",
+					"pmid": "11733960",
+					"quartile": "Q1",
+					"citationCount": 481,
+					"verified": true,
+					"openAccess": false
+				},
+				{
+					"citationKey": "PIK3CA2024E",
+					"title": "Alpelisib for PIK3CA-mutated advanced gynecological cancers: First clues of clinical activity.",
+					"authors": "Passarelli A, Carbone V, Pignata S, Mazzeo R, Lorusso D, Scambia G, Canova S, Di Palma T, Tasca G, Mantiero M, Naglieri E, Andreetta C, Rauso M, Brunetti AE, Laera L, Abeni C, Scandurra G, Gambaro AR, Pastore A, Bengala C, Gunnellini M, Farolfi A, Spinello M, Bartoletti M",
+					"journal": "Gynecologic oncology",
+					"year": "2024",
+					"pmid": "38518529",
+					"quartile": "Q1",
+					"citationCount": 63,
+					"verified": true,
+					"openAccess": true
+				},
+				{
+					"citationKey": "PIK3CA2023F",
+					"title": "Acquisition of Genetic Aberrations During the Progression of High-Grade Intraepithelial Lesions/Micro-Invasive Squamous Cancers to Widely Invasive Cervical Squamous Cell Cancer.",
+					"authors": "Kashofer K, Reich O, Regauer S",
+					"journal": "Archives of pathology & laboratory medicine",
+					"year": "2023",
+					"pmid": "36800542",
+					"quartile": "Q1",
+					"citationCount": 93,
+					"verified": true,
+					"openAccess": false
+				},
+				{
+					"citationKey": "PIK3CA2021G",
+					"title": "Targeting the IRE1α/XBP1 Endoplasmic Reticulum Stress Response Pathway in ARID1A-Mutant Ovarian Cancers.",
+					"authors": "Zundell JA, Fukumoto T, Lin J, Fatkhudinov N, Nacarelli T, Kossenkov AV, Liu Q, Cassel J, Hu CA, Wu S, Zhang R",
+					"journal": "Cancer research",
+					"year": "2021",
+					"pmid": "34548333",
+					"quartile": "Q2",
+					"citationCount": 140,
+					"verified": true,
+					"openAccess": true
+				},
+				{
+					"citationKey": "PIK3CA2021H",
+					"title": "Frequent PIK3CA mutations in eutopic endometrium of patients with ovarian clear cell carcinoma.",
+					"authors": "Murakami K, Kanto A, Sakai K, Miyagawa C, Takaya H, Nakai H, Kotani Y, Nishio K, Matsumura N",
+					"journal": "Modern pathology : an official journal of the United States and Canadian Academy of Pathology, Inc",
+					"year": "2021",
+					"pmid": "34172890",
+					"quartile": "Q2",
+					"citationCount": 113,
+					"verified": true,
+					"openAccess": false
+				}
+			]
+		},
+		{
+			"id": "99231004-ap2",
+			"linkedGene": "BRCA1",
+			"linkedAlteration": "DELETION",
+			"escat": "I",
+			"provenance": "systematic-review",
+			"grade": "High",
+			"verdict": "Supported — routine clinical use",
+			"pico": {
+				"population": "High-grade serous ovarian carcinoma harbouring BRCA1 DELETION",
+				"intervention": "Niraparib / Olaparib",
+				"comparator": "Standard of care",
+				"outcome": "Progression-free survival, objective response",
+				"question": "In High-grade serous ovarian carcinoma with BRCA1 DELETION, does Niraparib improve progression-free survival versus standard of care?"
+			},
+			"prisma": {
+				"totalFound": 97,
+				"afterDedup": 87,
+				"afterYearFilter": 83,
+				"afterQuality": 12,
+				"afterValidation": 8,
+				"included": 8,
+				"excludedByQuality": 71
+			},
+			"includedStudies": [
+				{
+					"citationKey": "TP532021A",
+					"title": "Potential and mechanism of mebendazole for treatment and maintenance of ovarian cancer.",
+					"authors": "Elayapillai S, Ramraj S, Benbrook DM, Bieniasz M, Wang L, Pathuri G, Isingizwe ZR, Kennedy AL, Zhao YD, Lightfoot S, Hunsucker LA, Gunderson CC",
+					"journal": "Gynecologic oncology",
+					"year": "2021",
+					"pmid": "33131904",
+					"quartile": "Q1",
+					"citationCount": 102,
+					"verified": true,
+					"openAccess": true
+				},
+				{
+					"citationKey": "TP532020B",
+					"title": "The P72R Polymorphism in R248Q/W p53 Mutants Modifies the Mutant Effect on Epithelial to Mesenchymal Transition Phenotype and Cell Invasion via CXCL1 Expression.",
+					"authors": "De Souza C, Madden JA, Minn D, Kumar VE, Montoya DJ, Nambiar R, Zhu Z, Xiao WW, Tahmassebi N, Kathi H, Nelson N, Karnezis AN, Chien J",
+					"journal": "International journal of molecular sciences",
+					"year": "2020",
+					"pmid": "33126568",
+					"quartile": "Q1",
+					"citationCount": 132,
+					"verified": true,
+					"openAccess": false
+				},
+				{
+					"citationKey": "TP532020C",
+					"title": "A pedigree-based prediction model identifies carriers of deleterious de novo mutations in families with Li-Fraumeni syndrome.",
+					"authors": "Gao F, Pan X, Dodd-Eaton EB, Recio CV, Montierth MD, Bojadzieva J, Mai PL, Zelley K, Johnson VE, Braun D, Nichols KE, Garber JE, Savage SA, Strong LC, Wang W",
+					"journal": "Genome research",
+					"year": "2020",
+					"pmid": "32817165",
+					"quartile": "Q1",
+					"citationCount": 145,
+					"verified": true,
+					"openAccess": true
+				},
+				{
+					"citationKey": "TP532001D",
+					"title": "Dominant-negative mutation of p53 tumor suppressor gene in endometrial carcinoma.",
+					"authors": "Sakuragi N, Hirai A, Tada M, Yamada H, Yamamoto R, Fujimoto S, Moriuchi T",
+					"journal": "Gynecologic oncology",
+					"year": "2001",
+					"pmid": "11733960",
+					"quartile": "Q1",
+					"citationCount": 481,
+					"verified": true,
+					"openAccess": false
+				},
+				{
+					"citationKey": "PIK3CA2024E",
+					"title": "Alpelisib for PIK3CA-mutated advanced gynecological cancers: First clues of clinical activity.",
+					"authors": "Passarelli A, Carbone V, Pignata S, Mazzeo R, Lorusso D, Scambia G, Canova S, Di Palma T, Tasca G, Mantiero M, Naglieri E, Andreetta C, Rauso M, Brunetti AE, Laera L, Abeni C, Scandurra G, Gambaro AR, Pastore A, Bengala C, Gunnellini M, Farolfi A, Spinello M, Bartoletti M",
+					"journal": "Gynecologic oncology",
+					"year": "2024",
+					"pmid": "38518529",
+					"quartile": "Q1",
+					"citationCount": 63,
+					"verified": true,
+					"openAccess": true
+				},
+				{
+					"citationKey": "PIK3CA2023F",
+					"title": "Acquisition of Genetic Aberrations During the Progression of High-Grade Intraepithelial Lesions/Micro-Invasive Squamous Cancers to Widely Invasive Cervical Squamous Cell Cancer.",
+					"authors": "Kashofer K, Reich O, Regauer S",
+					"journal": "Archives of pathology & laboratory medicine",
+					"year": "2023",
+					"pmid": "36800542",
+					"quartile": "Q1",
+					"citationCount": 93,
+					"verified": true,
+					"openAccess": false
+				},
+				{
+					"citationKey": "PIK3CA2021G",
+					"title": "Targeting the IRE1α/XBP1 Endoplasmic Reticulum Stress Response Pathway in ARID1A-Mutant Ovarian Cancers.",
+					"authors": "Zundell JA, Fukumoto T, Lin J, Fatkhudinov N, Nacarelli T, Kossenkov AV, Liu Q, Cassel J, Hu CA, Wu S, Zhang R",
+					"journal": "Cancer research",
+					"year": "2021",
+					"pmid": "34548333",
+					"quartile": "Q2",
+					"citationCount": 140,
+					"verified": true,
+					"openAccess": true
+				},
+				{
+					"citationKey": "PIK3CA2021H",
+					"title": "Frequent PIK3CA mutations in eutopic endometrium of patients with ovarian clear cell carcinoma.",
+					"authors": "Murakami K, Kanto A, Sakai K, Miyagawa C, Takaya H, Nakai H, Kotani Y, Nishio K, Matsumura N",
+					"journal": "Modern pathology : an official journal of the United States and Canadian Academy of Pathology, Inc",
+					"year": "2021",
+					"pmid": "34172890",
+					"quartile": "Q2",
+					"citationCount": 113,
+					"verified": true,
+					"openAccess": false
+				}
+			]
+		},
+		{
+			"id": "99231004-ap3",
+			"linkedGene": "CCNE1",
+			"linkedAlteration": "AMPLIFICATION",
+			"escat": "II",
+			"provenance": "systematic-review",
+			"grade": "Moderate",
+			"verdict": "Supported — trial-enabling",
+			"pico": {
+				"population": "High-grade serous ovarian carcinoma harbouring CCNE1 AMPLIFICATION",
+				"intervention": "Lunresertib + Camonsertib / BLU-222",
+				"comparator": "Standard of care",
+				"outcome": "Progression-free survival, objective response",
+				"question": "In High-grade serous ovarian carcinoma with CCNE1 AMPLIFICATION, does Lunresertib + Camonsertib improve progression-free survival versus standard of care?"
+			},
+			"prisma": {
+				"totalFound": 83,
+				"afterDedup": 75,
+				"afterYearFilter": 71,
+				"afterQuality": 9,
+				"afterValidation": 5,
+				"included": 5,
+				"excludedByQuality": 62
+			},
+			"includedStudies": [
+				{
+					"citationKey": "CCNE12026A",
+					"title": "Early Clinical and Molecular Biomarkers in Patients With Advanced Ovarian Cancer Undergoing Neoadjuvant Chemotherapy: CHIVA Phase II GINECO Trial.",
+					"authors": "Blanc-Durand F, You B, Adnani Y, De Rauglaudre G, Ray-Coquard I, Combe P, Abdeddaim C, Joly F, Ferron G, Deldycke C, Colomban O, Kaminsky MC, Meunier J, Alexandre J, Lebreton C, Venat L, Favier L, Louvet C, Abadie-Lacourtoisie S, Lauraine EP, Chardin L, Genestie C, Just PA, Rouleau E, Leary A",
+					"journal": "JCO precision oncology",
+					"year": "2026",
+					"pmid": "41533997",
+					"quartile": "Q1",
+					"citationCount": 17,
+					"verified": true,
+					"openAccess": true
+				},
+				{
+					"citationKey": "CCNE12025B",
+					"title": "Targeting ALC1 can safely expand the therapeutic utility of PARP inhibitors across high-grade serous ovarian cancers.",
+					"authors": "Aubuchon LN, Wong DH, Ramakrishnan NM, Reddy R, Compadre A, Lomonosova E, Jackson KE, Kemper D, Mehta V, Zoberi K, Khabele D, Christie EL, Mullen MM, Verma P",
+					"journal": "bioRxiv : the preprint server for biology",
+					"year": "2025",
+					"pmid": "41415416",
+					"quartile": "Q1",
+					"citationCount": 47,
+					"verified": true,
+					"openAccess": false
+				},
+				{
+					"citationKey": "CCNE12025C",
+					"title": "Integrated Spatial Analysis Reveals the Molecular Landscape of Ovarian Precancerous Lesions.",
+					"authors": "Chang TY, Chien YW, Chen SH, Sokolow A, Wang Y, Wang BG, Numan TA, Chui MH, Stone RL, Pisanic TR, Papadopoulos N, Wang TL, Douville C, Cope L, Shih IM",
+					"journal": "Cancer research",
+					"year": "2025",
+					"pmid": "41411622",
+					"quartile": "Q1",
+					"citationCount": 60,
+					"verified": true,
+					"openAccess": true
+				},
+				{
+					"citationKey": "CCNE12026D",
+					"title": "Cyclin E1 as a driver of oncogenesis; high grade serous ovarian cancer as an exemplar.",
+					"authors": "Taylor SJ, Gourley C",
+					"journal": "Critical reviews in oncology/hematology",
+					"year": "2026",
+					"pmid": "41380866",
+					"quartile": "Q1",
+					"citationCount": 56,
+					"verified": true,
+					"openAccess": false
+				},
+				{
+					"citationKey": "CCNE12025E",
+					"title": "Genomics of ovarian cancers and the potential of precision medicine.",
+					"authors": "Jarratt A, Polidano J, Scott CL, Barker HE",
+					"journal": "Therapeutic advances in medical oncology",
+					"year": "2025",
+					"pmid": "41367952",
+					"quartile": "Q2",
+					"citationCount": 46,
+					"verified": true,
+					"openAccess": true
+				}
+			]
+		}
+	],
+	"droppedVus": 1
 }

@@ -285,6 +285,66 @@ a:hover { color: var(--link-hover); text-decoration: underline; }
 }
 @keyframes gl-spin { to { transform: rotate(360deg); } }
 
+/* ---- pipeline processing ------------------------------------------------ */
+.gl-progress { height: 8px; background: var(--gray-100); border-radius: var(--radius-pill); overflow: hidden; }
+.gl-progress-bar { height: 100%; background: var(--blue-500); border-radius: var(--radius-pill); transition: width 0.5s ease; }
+
+.gl-stage { display: flex; align-items: flex-start; gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--border); }
+.gl-stage:last-child { border-bottom: none; }
+.gl-stage-icon {
+  flex: 0 0 auto; width: 30px; height: 30px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--gray-50); color: var(--text-muted); border: 2px solid var(--border);
+}
+.gl-stage.running .gl-stage-icon { border-color: var(--blue-500); color: var(--blue-600); background: var(--blue-50); }
+.gl-stage.done .gl-stage-icon { border-color: var(--green-500); color: #fff; background: var(--green-500); }
+.gl-stage-body { flex: 1 1 auto; min-width: 0; }
+.gl-stage.pending { opacity: 0.5; }
+.gl-stage-title { font-weight: 600; font-size: 14px; display: flex; gap: 8px; align-items: baseline; }
+.gl-stage-tool { font-size: 12px; color: var(--text-muted); }
+.gl-stage-detail { font-size: 13px; color: var(--text-secondary); margin-top: 3px; }
+.gl-mini-spinner {
+  width: 15px; height: 15px; border: 2px solid var(--blue-100);
+  border-top-color: var(--blue-500); border-radius: 50%; animation: gl-spin 0.6s linear infinite;
+}
+.gl-fade-in { animation: gl-fade 0.35s ease; }
+@keyframes gl-fade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+
+/* ---- PRISMA funnel ------------------------------------------------------ */
+.gl-funnel { display: flex; flex-direction: column; gap: 6px; }
+.gl-funnel-row { display: flex; align-items: center; gap: 12px; }
+.gl-funnel-track { flex: 1 1 auto; height: 26px; background: var(--gray-50); border-radius: var(--radius-sm); overflow: hidden; }
+.gl-funnel-bar {
+  height: 100%; background: var(--blue-100); border-right: 2px solid var(--blue-500);
+  display: flex; align-items: center; padding-left: 8px;
+  font-size: 12px; font-weight: 600; color: var(--blue-900);
+  min-width: 40px; transition: width 0.4s ease;
+}
+.gl-funnel-bar.included { background: var(--green-100); border-right-color: var(--green-500); color: var(--green-900); }
+.gl-funnel-label { flex: 0 0 130px; font-size: 12px; color: var(--text-muted); }
+.gl-funnel-excl { flex: 0 0 auto; font-size: 11px; color: var(--red-700); }
+
+/* ---- timeline (activity feed / journal) --------------------------------- */
+.gl-timeline { list-style: none; margin: 0; padding: 0; position: relative; }
+.gl-timeline::before {
+  content: ""; position: absolute; left: 15px; top: 8px; bottom: 8px;
+  width: 2px; background: var(--border);
+}
+.gl-timeline-item { position: relative; display: flex; gap: 14px; padding: 0 0 20px 0; }
+.gl-timeline-item:last-child { padding-bottom: 0; }
+.gl-timeline-badge {
+  flex: 0 0 auto; width: 32px; height: 32px; border-radius: 50%;
+  background: var(--bg-surface); border: 2px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-muted); z-index: 1;
+}
+.gl-timeline-badge.accent { border-color: var(--blue-500); color: var(--blue-600); background: var(--blue-50); }
+.gl-timeline-badge.success { border-color: var(--green-500); color: var(--green-700); background: var(--green-50); }
+.gl-timeline-body { flex: 1 1 auto; min-width: 0; padding-top: 5px; }
+.gl-timeline-title { font-weight: 600; font-size: 14px; }
+.gl-timeline-meta { color: var(--text-muted); font-size: 12px; margin-top: 2px; }
+.gl-timeline-detail { color: var(--text-secondary); font-size: 13px; margin-top: 4px; }
+
 details.gl-disclosure > summary { list-style: none; cursor: pointer; }
 details.gl-disclosure > summary::-webkit-details-marker { display: none; }
 details.gl-disclosure[open] .gl-chevron { transform: rotate(90deg); }
