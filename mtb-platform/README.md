@@ -21,6 +21,8 @@ A single TypeScript interface styled with GitLab's
 | [![Molecular tumor board worklist showing per-patient NGS reports with ESCAT actionable-finding counts and review status](docs/screenshots/01-worklist.png)](docs/screenshots/01-worklist.png) | [![Per-patient molecular report with variant re-annotation alert and actionable-finding selection](docs/screenshots/02-report-overview.png)](docs/screenshots/02-report-overview.png) |
 | **Literature — per-gene PICO + PRISMA + GRADE** | **Case deck — blur-until-click PHI** |
 | [![Per-gene PICO evidence knowledge card with PRISMA 2020 selection funnel and GRADE certainty rating](docs/screenshots/03-literature-knowledge.png)](docs/screenshots/03-literature-knowledge.png) | [![Molecular tumor board case-presentation deck title slide with blurred patient name for PHI safety](docs/screenshots/04-deck-title.png)](docs/screenshots/04-deck-title.png) |
+| **Case deck — actionable findings** | **Cohort — biomarker & oncoprint dashboard** |
+| [![Case-presentation slide listing actionable ESCAT tier I and II findings with matched targeted therapies](docs/screenshots/05-deck-actionable.png)](docs/screenshots/05-deck-actionable.png) | [![Pan-cancer cohort dashboard with biomarker landscape, therapy-match rate, recurrent drivers, and sample-matrix oncoprint](docs/screenshots/06-cohort.png)](docs/screenshots/06-cohort.png) |
 
 ## What it does
 

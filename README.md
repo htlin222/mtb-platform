@@ -45,6 +45,10 @@ variant reported as a VUS today is flagged the day it becomes actionable.
 | Case deck — title slide (PHI blurred) | Case deck — actionable findings |
 | [![Molecular tumor board case-presentation deck title slide with blurred patient name for PHI safety](mtb-platform/docs/screenshots/04-deck-title.png)](mtb-platform/docs/screenshots/04-deck-title.png) | [![Case-presentation slide listing actionable ESCAT tier I and II findings with matched targeted therapies](mtb-platform/docs/screenshots/05-deck-actionable.png)](mtb-platform/docs/screenshots/05-deck-actionable.png) |
 
+**Cohort analytics** — pan-cancer biomarker landscape, therapy-match rate, recurrent oncogenic drivers, and an ASHOP-style sample-matrix oncoprint.
+
+[![Real-world pan-cancer cohort dashboard: biomarker landscape, OncoKB therapy-match rate, recurrent oncogenic drivers, and sample-matrix oncoprint](mtb-platform/docs/screenshots/06-cohort.png)](mtb-platform/docs/screenshots/06-cohort.png)
+
 ## How it works
 
 ```
