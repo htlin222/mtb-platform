@@ -136,11 +136,16 @@ export default function ReportPage() {
                       );
                     })}
                   </div>
-                  <button className="gl-button gl-button-confirm" disabled={selected.size === 0}
-                    style={selected.size === 0 ? { opacity: 0.5, cursor: "not-allowed" } : undefined}
-                    onClick={() => setSigned(true)}>
-                    <CheckIcon size={14} /> Sign off report
-                  </button>
+                  <div className="gl-row" style={{ gap: 8 }}>
+                    <button className="gl-button" onClick={() => navigate(`/board/${patient.chartNo}`)}>
+                      <CommentIcon size={14} /> Convene board
+                    </button>
+                    <button className="gl-button gl-button-confirm" disabled={selected.size === 0}
+                      style={selected.size === 0 ? { opacity: 0.5, cursor: "not-allowed" } : undefined}
+                      onClick={() => setSigned(true)}>
+                      <CheckIcon size={14} /> Sign off report
+                    </button>
+                  </div>
                 </div>
               </>
             )}

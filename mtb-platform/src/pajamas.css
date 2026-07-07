@@ -285,6 +285,73 @@ a:hover { color: var(--link-hover); text-decoration: underline; }
 }
 @keyframes gl-spin { to { transform: rotate(360deg); } }
 
+/* ---- avatars & board ----------------------------------------------------- */
+.gl-avatar {
+  flex: 0 0 auto; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;
+  font-weight: 600; color: #fff; background: var(--blue-600); font-size: 12px;
+  border: 2px solid var(--bg-surface);
+}
+.gl-avatar-stack { display: inline-flex; }
+.gl-avatar-stack .gl-avatar:not(:first-child) { margin-left: -8px; }
+.gl-avatar.vote-1 { background: var(--green-500); }
+.gl-avatar.vote--1 { background: var(--red-500); }
+.gl-avatar.vote-0 { background: var(--gray-400); }
+
+.gl-picker-card {
+  border: 1px solid var(--border-strong); border-radius: var(--radius); padding: 12px;
+  cursor: pointer; transition: all 0.1s; background: var(--bg-surface);
+}
+.gl-picker-card:hover { border-color: var(--blue-500); }
+.gl-picker-card.on { border-color: var(--blue-500); background: var(--blue-50); box-shadow: inset 0 0 0 1px var(--blue-500); }
+
+.gl-vote-btns { display: inline-flex; gap: 6px; }
+.gl-vote-btn {
+  font: inherit; font-size: 13px; cursor: pointer; padding: 5px 12px;
+  border: 1px solid var(--border-strong); border-radius: var(--radius-sm);
+  background: var(--bg-surface); color: var(--text-secondary); display: inline-flex; align-items: center; gap: 5px;
+}
+.gl-vote-btn:hover { background: var(--gray-50); }
+.gl-vote-btn.on-endorse { background: var(--green-50); border-color: var(--green-500); color: var(--green-700); }
+.gl-vote-btn.on-dissent { background: var(--red-50); border-color: var(--red-500); color: var(--red-700); }
+.gl-vote-btn.on-abstain { background: var(--gray-50); border-color: var(--border-strong); color: var(--text); }
+
+/* ---- chat (research topic development) ----------------------------------- */
+.gl-chat { display: flex; flex-direction: column; gap: 14px; padding: 4px; }
+.gl-msg { display: flex; gap: 10px; max-width: 90%; }
+.gl-msg.user { align-self: flex-end; flex-direction: row-reverse; }
+.gl-msg-avatar {
+  flex: 0 0 auto; width: 28px; height: 28px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600;
+}
+.gl-msg-avatar.assistant { background: var(--blue-50); color: var(--blue-700); }
+.gl-msg-avatar.user { background: var(--gray-100); color: var(--gray-700); }
+.gl-bubble {
+  padding: 10px 14px; border-radius: 12px; font-size: 14px; line-height: 1.5;
+  border: 1px solid var(--border);
+}
+.gl-msg.assistant .gl-bubble { background: var(--bg-surface); border-top-left-radius: 3px; }
+.gl-msg.user .gl-bubble { background: var(--blue-500); color: #fff; border: none; border-top-right-radius: 3px; }
+.gl-quickreplies { display: flex; flex-wrap: wrap; gap: 8px; margin: 2px 0 4px 38px; }
+.gl-chip {
+  font: inherit; font-size: 13px; cursor: pointer;
+  padding: 6px 12px; border-radius: var(--radius-pill);
+  border: 1px solid var(--blue-500); background: var(--bg-surface); color: var(--blue-700);
+  transition: background 0.1s;
+}
+.gl-chip:hover { background: var(--blue-50); }
+.gl-chip.on { background: var(--blue-500); color: #fff; }
+.gl-chat-input { display: flex; gap: 8px; margin-top: 14px; }
+.gl-chat-input input {
+  flex: 1 1 auto; font: inherit; padding: 8px 12px;
+  border: 1px solid var(--border-strong); border-radius: var(--radius-sm);
+}
+.gl-chat-input input:focus { outline: 2px solid var(--blue-500); outline-offset: -1px; }
+.gl-typing { display: inline-flex; gap: 3px; }
+.gl-typing span { width: 6px; height: 6px; border-radius: 50%; background: var(--gray-300); animation: gl-blink 1s infinite; }
+.gl-typing span:nth-child(2) { animation-delay: 0.2s; }
+.gl-typing span:nth-child(3) { animation-delay: 0.4s; }
+@keyframes gl-blink { 0%, 60%, 100% { opacity: 0.3; } 30% { opacity: 1; } }
+
 /* ---- pipeline processing ------------------------------------------------ */
 .gl-progress { height: 8px; background: var(--gray-100); border-radius: var(--radius-pill); overflow: hidden; }
 .gl-progress-bar { height: 100%; background: var(--blue-500); border-radius: var(--radius-pill); transition: width 0.5s ease; }
