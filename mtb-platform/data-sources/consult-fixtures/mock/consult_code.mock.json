@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "CODE": "sample_922",
+      "DESC1": "sample_486",
+      "DESC2": "sample_133",
+      "DESC3": "sample_87",
+      "ITEM": "sample_308",
+      "SORTSEQ": 79.02
+    },
+    {
+      "CODE": "sample_254",
+      "DESC1": "sample_854",
+      "DESC2": "sample_939",
+      "DESC3": "sample_264",
+      "ITEM": "sample_241",
+      "SORTSEQ": 96.84
+    }
+  ],
+  "status": "2",
+  "err": "sample_844"
+}

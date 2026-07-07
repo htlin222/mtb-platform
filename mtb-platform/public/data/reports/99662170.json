@@ -1,0 +1,326 @@
+{
+  "patient": {
+    "chartNo": "99662170",
+    "name": "Robert Chang",
+    "sex": "M",
+    "age": 66,
+    "birthday": "1959-11-02",
+    "cancerType": "Non-small cell lung cancer",
+    "cancerCode": "NSCLC",
+    "stage": "IV",
+    "team": "Thoracic Oncology",
+    "attending": "Dr. Y. Kuo",
+    "status": "signed",
+    "reportDate": "2026-05-30",
+    "sampleId": "M25-1684R",
+    "panel": "TSO500 · 1.28 Mb"
+  },
+  "clinical": {
+    "consultReason": "Advanced NSCLC — driver mutation and TKI eligibility review.",
+    "priorTherapy": [
+      "Platinum-doublet chemotherapy"
+    ],
+    "ecog": 1,
+    "note": "Molecular profiling on the TSO500 · 1.28 Mb panel returned 8 clinically annotated alterations (479 variants of unknown significance filtered); TMB 5.5 mut/Mb, MSS, HRD-Negative."
+  },
+  "biomarkers": {
+    "tmb": 5.5,
+    "tmbClass": "TMB-Low",
+    "variantCount": 7,
+    "panelSizeMb": 1.28,
+    "msi": "MSS",
+    "msiScore": 2.38,
+    "unstableSites": 3,
+    "totalSites": 126,
+    "hrd": 14,
+    "hrdStatus": "HRD-Negative",
+    "loh": null,
+    "tai": null,
+    "lst": null,
+    "hrdReliable": true
+  },
+  "variants": [
+    {
+      "gene": "EGFR",
+      "alteration": "L833V",
+      "kind": "mutation",
+      "oncogenicity": "Oncogenic",
+      "mutationEffect": "Gain-of-function",
+      "escat": "I",
+      "escatDescription": "Target ready for implementation in routine clinical decisions",
+      "oncokbLevel": "LEVEL_1",
+      "resistanceLevel": null,
+      "treatments": [
+        {
+          "drugs": "Datopotamab Deruxtecan",
+          "level": "LEVEL_1",
+          "fdaApproved": true,
+          "description": "Datopotamab deruxtecan (Dato-DXd) is an intravenously infused, TROP2-directed antibody drug conjugate that is FDA-approved for the treatment of patients with EGFR-mutated non-small cell lung cancer (NSCLC) who have received prior EGFR-directed therapy and platinum-based chemotherapy. FDA approval is based on the results of the Phase II TROPION-Lung05 (NCT04484142) and Phase III TROPION-Lung01 (NCT04656652) trials of Dato-DXd in patients with previously treated EGFR-mutated NSCLC.\nIn the Phase II TROPION-Lung05 (NCT04484142) trial of Dato-DXd in patients with NSCLC harboring actionable alterations progressing on or after targeted therapy and platinum-based chemotherapy, patients with EGFR-mutated NSCLC (n=78 [exon 19 deletion: 41 (29.9%); exon 20 T790M: 26 (19.0%); exon 21 L858R: 25 (18.2%); exon 18 G719: 5 (3.6%); exon 21 L861Q: 3 (2.2%); exon 20 insertion: 2 (1.5%)]) demonstrated an overall response rate (ORR) of 43.6% (95% CI=32.4-55.3), with a 5.1% (n=4) complete response (CR) rate, 38.5% (n=30) partial response (PR) rate and 34.6% (n=27) stable disease (SD) rate, a disease control rate (DCR) of 82.1% (95% CI=71.7-89.8), a median duration of response (DOR) of 7.0 months (95% CI=4.2-10.2) and a median progression-free survival (PFS) of 5.8 months (95% CI=5.4-8.3) (PMID: 39761483).\nIn the Phase III TROPION-Lung01 (NCT04656652) trial of Dato-DXd versus docetaxel in patients with pretreated NSCLC, patients treated with Dato-DXd (n=299 [EGFR mutations: 39 (13.0%)]) demonstrated an ORR of 26.4% (95% CI= 21.5-31.8), with a 1.3% (n=4) CR rate, 25.1% (n=75) PR rate and 49.8% (n=149) SD rate, a DCR of 77.3% (95% CI=72.1-81.9), a median DOR of 7.1 months (95% CI=5.6-10.9), a median PFS of 4.4 months (95% CI=4.2-5.6) and a median overall survival (OS) of 12.9 months (95% CI=11.0-13.9) (PMID: 39250535). Patients treated with docetaxel (n=305 [EGFR mutations: 45 (14.8%)]) demonstrated an ORR of 12.8% (95% CI=9.3-17.1), with a 12.8% (n=39) PR rate and 50.2% (n=153) SD rate, a DCR of 64.9% (95% CI=59.3-70.3), a median DOR of 5.6 months (95% CI=5.4-8.1), a median PFS of 3.7 months (95% CI=2.9-4.2) (HR=0.75 [95% CI=0.62-0.91]; p=.004) and a median OS of 11.8 months (95% CI=10.1-12.8) (HR=0.94 [95% CI=0.78-1.14]; p=0.530) (PMID: 39250535)."
+        }
+      ]
+    },
+    {
+      "gene": "EGFR",
+      "alteration": "L858R",
+      "kind": "mutation",
+      "oncogenicity": "Oncogenic",
+      "mutationEffect": "Gain-of-function",
+      "escat": "I",
+      "escatDescription": "Target ready for implementation in routine clinical decisions",
+      "oncokbLevel": "LEVEL_1",
+      "resistanceLevel": null,
+      "treatments": [
+        {
+          "drugs": "Afatinib",
+          "level": "LEVEL_1",
+          "fdaApproved": true,
+          "description": "Afatinib, a second-generation, irreversible tyrosine kinase inhibitor of EGFR, HER2, and HER4, is FDA-approved as first-line therapy in patients with non-small cell lung cancer (NSCLC) whose tumors harbor EGFR exon 19 deletion or L858R, L861Q, G719, and/or S768I substitution mutations. FDA approval was based on the Phase II LUX-Lung 2 trial, which demonstrated an objective response rate of 61% in patients with EGFR-mutant lung cancer treated with afatinib (PMID: 22452895). In the Phase III LUX-Lung 3 trial, afatinib significantly improved progression-free survival (PFS) in patients with EGFR-mutant lung cancer compared to patients treated with chemotherapy comprised of cisplatin plus pemetrexed (13.6 months versus 6.9 months; HR=0.47; p=0.001) (PMID: 23816960). In a pooled analysis of the LUX-Lung 3 and 6 trials comparing overall survival in patients with EGFR mutation who were treated with afatinib versus those treated with chemotherapy, first-line treatment with afatinib significantly improved overall survival specifically in patients harboring exon 19 deletions compared to those treated with chemotherapy (31.7 versus 20.7 months; HR = 0.59; p = 0.0001) (PMID: 25589191)."
+        },
+        {
+          "drugs": "Amivantamab + Chemotherapy",
+          "level": "LEVEL_1",
+          "fdaApproved": true,
+          "description": "Amivantamab is an intravenously infused, EGFR-MET bispecific monoclonal antibody that is FDA-approved for the treatment of adult patients in combination with carboplatin and pemetrexed for the treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, whose disease has progressed on or after treatment with an EGFR tyrosine kinase inhibitor. FDA approval is based on the results of the Phase III MARIPOSA-2 (NCT04988295) trial of amivantamab plus chemotherapy versus chemotherapy in 394 patients with NSCLC with EGFR L858R mutations or exon 19 deletions. \n\nIn the Phase III MARIPOSA-2 (NCT04988295) trial, the amivantamab plus chemotherapy cohort (n=131 [n=89, EGFR exon 19 deletions; n=42, EGFR L858R]) demonstrated an overall response rate (ORR) of 53% (95% CI=44-62), with a 0.8% complete response (CR) rate and 52% partial response (PR) rate (PMID: 37879444). In contrast, the chemotherapy cohort (n=263 [n=183, EGFR exon 19 deletions; n=79, EGFR L858R]) demonstrated an ORR of 29% (95% CI=23-35) (p<0.0001), with a 29% PR rate (PMID: 37879444). The amivantamab plus chemotherapy cohort demonstrated a median progression-free survival (PFS) of 6.3 months (95% CI=5.6-8.4) and a median duration of response (DOR) of 6.9 months (95% CI= 5.5–NE) while the chemotherapy cohort demonstrated a median PFS of 4.2 months (95% CI=4.0–4.4) (HR=0.48 [95% CI=0.36-0.64]; p<0.0001) and a median DOR of 5.6 months (95% CI=4.2–9.6) (PMID: 37879444)."
+        },
+        {
+          "drugs": "Amivantamab + Lazertinib",
+          "level": "LEVEL_1",
+          "fdaApproved": true,
+          "description": "Amivantamab, an intravenously infused, EGFR-MET bispecific monoclonal antibody, and lazertinib, a small molecule, third-generation EGFR tyrosine kinase inhibitor, are FDA-approved in combination for the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) with EGFR exon 19 deletions or exon 21 L858R substitution mutations, as detected by an FDA-approved test. FDA approval was based on the results of the Phase III MARIPOSA (NCT04487080) trial of amivantamab plus lazertinib versus osimertinib monotherapy in 1074 patients with NSCLC with an EGFR exon 19 deletion or L858R mutation. In the Phase III MARIPOSA (NCT04487080) trial, the amivantamab plus lazertinib cohort (n=429) demonstrated an overall response rate (ORR) of 86% (95% CI=83-89), a median progression-free survival (PFS) of 23.7 months (95% CI=19.1-27.7), a median duration of response (DOR) of 25.8 months (95% CI=20.1-NE) and a 24-month overall survival (OS) rate of 74% (95% CI=69-78) while the osimertinib cohort (n=429) demonstrated an ORR of 85% (95% CI=81-88), a median PFS of 16.6 months (95% CI=14.8–18.5) (HR=0.70 [95% CI=0.58-0.85]; p<0.001), a median DOR of 16.8 months (95% CI=14.8-18.5) and a 24-month OS rate of 69% (95% CI=64-74) (PMID: 38924756)."
+        },
+        {
+          "drugs": "Dacomitinib",
+          "level": "LEVEL_1",
+          "fdaApproved": true,
+          "description": "Dacomitinib is a small molecule inhibitor of EGFR that is FDA-approved for the first-line treatment of patients with metastatic non-small cell lung cancer (NSCLC) with epidermal growth factor receptor (EGFR) exon 19 deletion or exon 21 L858R substitution mutations as detected by an FDA-approved test. FDA approval was based on the Phase III ARCHER 1050 trial of dacomitinib versus gefitinib in 452 patients with advanced, EGFR-positive NSCLC in which the median progression-free survival (PFS) was 14.7 months for patients randomized to dacomitinib and 9.2 months for patients randomized to gefitinib (HR=0.59; 95% CI=0.47-0.74; p=0001) (PMID: 28958502). Overall survival was 34.1 months in the dacomitinib arm versus 26.8 months in the gefitinib arm (HR=0.760; 95% CI=0.582-0.993; P = .044) (PMID: 29864379)."
+        },
+        {
+          "drugs": "Datopotamab Deruxtecan",
+          "level": "LEVEL_1",
+          "fdaApproved": true,
+          "description": "Datopotamab deruxtecan (Dato-DXd) is an intravenously infused, TROP2-directed antibody drug conjugate that is FDA-approved for the treatment of patients with EGFR-mutated non-small cell lung cancer (NSCLC) who have received prior EGFR-directed therapy and platinum-based chemotherapy. FDA approval is based on the results of the Phase II TROPION-Lung05 (NCT04484142) and Phase III TROPION-Lung01 (NCT04656652) trials of Dato-DXd in patients with previously treated EGFR-mutated NSCLC.\nIn the Phase II TROPION-Lung05 (NCT04484142) trial of Dato-DXd in patients with NSCLC harboring actionable alterations progressing on or after targeted therapy and platinum-based chemotherapy, patients with EGFR-mutated NSCLC (n=78 [exon 19 deletion: 41 (29.9%); exon 20 T790M: 26 (19.0%); exon 21 L858R: 25 (18.2%); exon 18 G719: 5 (3.6%); exon 21 L861Q: 3 (2.2%); exon 20 insertion: 2 (1.5%)]) demonstrated an overall response rate (ORR) of 43.6% (95% CI=32.4-55.3), with a 5.1% (n=4) complete response (CR) rate, 38.5% (n=30) partial response (PR) rate and 34.6% (n=27) stable disease (SD) rate, a disease control rate (DCR) of 82.1% (95% CI=71.7-89.8), a median duration of response (DOR) of 7.0 months (95% CI=4.2-10.2) and a median progression-free survival (PFS) of 5.8 months (95% CI=5.4-8.3) (PMID: 39761483).\nIn the Phase III TROPION-Lung01 (NCT04656652) trial of Dato-DXd versus docetaxel in patients with pretreated NSCLC, patients treated with Dato-DXd (n=299 [EGFR mutations: 39 (13.0%)]) demonstrated an ORR of 26.4% (95% CI= 21.5-31.8), with a 1.3% (n=4) CR rate, 25.1% (n=75) PR rate and 49.8% (n=149) SD rate, a DCR of 77.3% (95% CI=72.1-81.9), a median DOR of 7.1 months (95% CI=5.6-10.9), a median PFS of 4.4 months (95% CI=4.2-5.6) and a median overall survival (OS) of 12.9 months (95% CI=11.0-13.9) (PMID: 39250535). Patients treated with docetaxel (n=305 [EGFR mutations: 45 (14.8%)]) demonstrated an ORR of 12.8% (95% CI=9.3-17.1), with a 12.8% (n=39) PR rate and 50.2% (n=153) SD rate, a DCR of 64.9% (95% CI=59.3-70.3), a median DOR of 5.6 months (95% CI=5.4-8.1), a median PFS of 3.7 months (95% CI=2.9-4.2) (HR=0.75 [95% CI=0.62-0.91]; p=.004) and a median OS of 11.8 months (95% CI=10.1-12.8) (HR=0.94 [95% CI=0.78-1.14]; p=0.530) (PMID: 39250535)."
+        },
+        {
+          "drugs": "Erlotinib",
+          "level": "LEVEL_1",
+          "fdaApproved": true,
+          "description": "Erlotinib, a first-generation EGFR tyrosine kinase inhibitor (TKI), is approved with or without ramucirumab for the treatment of non-small cell lung cancer (NSCLC) with EGFR exon 19 deletion or exon 21 (L858R) substitution mutations. Results of the Phase III EURTAC trial demonstrated that patients with NSCLC receiving erlotinib showed significant improvement in progression-free survival (PFS) (9.7 vs. 5.2 months; HR=0.37; p=0.0001) compared to those receiving platinum-based doublet chemotherapy (PMID: 22285168). The partial response rate with erlotinib was 56%, compared to 13% with chemotherapy, and was associated with a reduced toxicity profile (PMID: 22285168). The safety and efficacy of erlotinib have not been established in patients harboring EGFR mutations other than exon 19 deletion and exon 21 (L858R) substitution; however, the phase III IUNO trial demonstrated no difference in PFS between patients with NSCLC lacking EGFR exon 19 deletion or EGFR L858R mutation who were given erlotinib versus placebo as maintenance therapy (PMID: 27987585)."
+        },
+        {
+          "drugs": "Gefitinib",
+          "level": "LEVEL_1",
+          "fdaApproved": true,
+          "description": "Gefitinib, a first-generation EGFR tyrosine kinase inhibitor (TKI), is FDA-approved as first-line therapy in patients with non-small cell lung cancer (NSCLC) whose tumors harbor EGFR exon 19 deletion or exon 21 (L858R) substitution mutations. FDA approval is based on multiple clinical trials that demonstrated the efficacy of gefitinib in EGFR-mutant NSCLC and includes IPASS (PMID: 19692680, 21670455), NEJ002 (PMID: 20573926), WJTOG3405 (PMID: 20022809) and First-SIGNAL (PMID: 22370314). Response rates in EGFR-mutant lung cancers in these studies ranged from 55% to 85%, with median progression-free survival (PFS) of 8 to 10.8 months (PMID: 19692680, 21670455, 20573926, 20022809, 22370314). In one study comparing gefitinib with standard chemotherapy in pulmonary adenocarcinoma, the response rate with gefitinib in patients with EGFR mutations (47%) was nearly double that of patients who were EGFR wildtype (24%) (PMID: 19692680). Additionally, in the biomarker analysis and final overall survival (OS) analysis of the Phase III IPASS study, though OS was not different between the gefitinib and carboplatin/paclitaxel groups, 64.3% of patients assigned to chemotherapy had crossed over to treatment with EGFR TKIs; PFS in this study was significantly longer with gefitinib than chemotherapy in patients with EGFR mutation (HR=0.48) (PMID: 21670455). In a Phase II trial, the addition of carboplatin plus pemetrexed to gefitinib increased progression-free survival (20.9 months vs 11.9 months; HR = 0.490, P < .001) in patients with EGFR-mutant NSCLC compared to gefitinib alone (PMID: 31682542)."
+        },
+        {
+          "drugs": "Osimertinib",
+          "level": "LEVEL_1",
+          "fdaApproved": true,
+          "description": "Osimertinib is an orally available, small molecule third-generation EGFR T790M tyrosine kinase inhibitor (TKI) that is FDA-approved for adjuvant therapy after tumor resection in adult patients with non-small cell lung cancer (NSCLC) whose tumors have EGFR exon 19 deletions or exon 21 L858R mutations, the treatment of adult patients with locally advanced, unresectable (stage III) NSCLC whose disease has not progressed during or following concurrent or sequential platinum-based chemoradiation therapy and whose tumors have EGFR exon 19 deletions or exon 21 L858R mutations and the first-line treatment of adult patients with metastatic NSCLC whose tumors have EGFR exon 19 deletions or exon 21 L858R mutations, as detected by an FDA-approved test. EGFR exon 19 deletions and exon 21 L858R mutations for treatment with osimertinib were detected by the cobas EGFR Mutation Test v2, FoundationOne CDx, FoundationOne Liquid CDx or Guardant360 CDx. FDA approvals were based on the results of the Phase III ADAURA (NCT02511106) trial for adjuvant treatment, the Phase III LAURA (NCT03521154) trial for locally advanced, unresectable NSCLC treatment and the Phase III FLAURA (NCT02296125) trial for first-line monotherapy treatment. \n\nIn the Phase III ADAURA (NCT02511106) trial of osimertinib versus placebo in 682 patients with completely resected EGFR mutation-positive stage IB to IIIA NSCLC, 89% (95% CI=85-92) of patients in the osimertinib cohort (n=339 [55%, EGFR exon 19 deletion; 45%, EGFR L858R; 1%, EGFR T790M]) and 52% (95% CI=46-58) of patients in the placebo cohort (n=343 [55%, EGFR exon 19 deletion; 45%, EGFR L858R; 1%, EGFR T790M]) were alive and disease-free at 24 months (HR=0.20 [99.12% CI=0.14-0.30]; p<0.001) (PMID: 32955177). \n\nIn the Phase III LAURA (NCT03521154) trial of osimertinib versus placebo in 216 patients with unresectable EGFR mutation-positive stage III NSCLC without progression during or after chemoradiotherapy, the osimertinib cohort (n=143 [n=74, EGFR exon 19 deletion; n=68, EGFR L858R]) demonstrated an objective response rate (ORR) of 57% (95% CI=49-66), with a 2% (n=3) complete response (CR) rate, 55% (n=79) partial response (PR) rate and 31% (n=45) stable disease (SD) rate, a median progression-free survival (PFS) of 39.1 months (95% CI=31.5-NC) and a median duration of response (DOR) of 36.9 months (95% CI=30.1-NC). In contrast, the placebo cohort (n=73 [n=43, EGFR exon 19 deletion; n=30, EGFR L858R]) demonstrated an ORR of 33% (95% CI=22-45) (OR=2.77 [95% CI=1.54-5.08]), with a 1% (n=1) CR rate, 32% (n=23) PR rate and 47% (n=34) SD rate, a median PFS of 5.6 months (95% CI=3.7-7.4) (HR=0.16 [95% CI=0.10-0.24]; p<0.001) and a median DOR of 6.5 months (95% CI=3.6-8.3) (PMID: 38828946). \n\nIn the Phase III FLAURA (NCT02296125) trial of osimertinib versus standard EGFR TKI (gefitinib or erlotinib) in 556 patients with previously untreated, EGFR mutation-positive advanced NSCLC, the osimertinib cohort (n=279 [n=175, EGFR exon 19 deletion; n=104, EGFR L858R]) demonstrated an ORR of 80% (95% CI=75-85), with a 3% (n=7) CR rate, 77% (n=216) PR rate and 17% (n=47) SD rate, a median PFS of 18.9 months (95% CI=15.2-21.4), a median DOR of 17.2 months (95% CI=13.8-22.0) and a median overall survival (OS) could not be calculated (95% CI=NC-NC). In contrast, the standard EGFR TKI cohort (n=277 [n=174, EGFR exon 19 deletion; n=103, EGFR L858R]) demonstrated an ORR of 76% (95% CI=70-81), with a 1% (n=4) CR rate, 74% (n=206) PR rate and 17% (n=46) SD rate, a median PFS of 10.2 months (95% CI=9.6-11.1) (HR=0.46 [95% CI=0.37-0.57]; p<0.001), a median DOR of 8.5 months (95% CI=7.3-9.8) and a median OS that could not be calculated (95% CI=NC-NC) (HR=0.63 [95% CI=0.45-0.88]; p=0.007) (PMID: 29151359). In the final analysis of the OS in the Phase III FLAURA (NCT02296125) trial, the osimertinib cohort and standard EGFR TKI cohort demonstrated a median OS of 38.6 months (95% CI=34.5-41.8) and 31.8 months (95% CI=26.6-36.0), respectively (HR=0.80 [95.05% CI=0.64-1.00]; p=0.046) (PMID: 31751012)."
+        },
+        {
+          "drugs": "Osimertinib + Chemotherapy",
+          "level": "LEVEL_1",
+          "fdaApproved": true,
+          "description": "Osimertinib is an orally available, small molecule third-generation EGFR T790M tyrosine kinase inhibitor (TKI) that is FDA-approved in combination with pemetrexed and platinum-based chemotherapy, the first-line treatment of adult patients with locally advanced or metastatic non-small cell lung cancer (NSCLC) whose tumors have EGFR exon 19 deletions or exon 21 L858R mutations, as detected by an FDA-approved test. EGFR exon 19 deletions and exon 21 L858R mutations for treatment with osimertinib were detected by the cobas EGFR Mutation Test v2, FoundationOne CDx, FoundationOne Liquid CDx or Guardant360 CDx. \n\nFDA approval is based on the results of the Phase III FLAURA2 (NCT04035486) trial of osimertinib plus chemotherapy (pemetrexed plus cisplatin or carboplatin) versus single-agent osimertinib in 557 patients with previously untreated, EGFR mutation-positive advanced NSCLC. In the Phase III FLAURA2 (NCT04035486) trial, the osimertinib plus chemotherapy cohort (n=279 [n=169, EGFR exon 19 deletion; n=106, EGFR L858R; n=3, both; n=1, unknown]) demonstrated a median progression-free survival (PFS) of 25.5 months (95% CI=24.7-NC), a median duration of response (DOR) of 24.0 months (95% CI=20.9-27.8) and an objective response rate (ORR) of 83% (95% CI=78-87), with an 83% partial response (PR) rate and <1% complete response (CR) rate. The osimertinib monotherapy cohort (n=278 [n=168, EGFR exon 19 deletion; n=106, EGFR L858R; n=3, both; n=2, unknown]) demonstrated a median PFS of 16.7 months (95% CI=14.1-21.3) (HR=0.62 [95% CI=0.49–0.79]; p<0.001), a median DOR of 15.3 months (95% CI=12.7–-9.4) and an ORR of 76% (95% CI=70-80), with a 75% PR rate and 1% CR rate (PMID: 37937763)."
+        },
+        {
+          "drugs": "Erlotinib + Ramucirumab",
+          "level": "LEVEL_1",
+          "fdaApproved": true,
+          "description": "Erlotinib, a first-generation EGFR tyrosine kinase inhibitor (TKI), is approved with or without ramucirumab for the treatment of non-small cell lung cancer (NSCLC) with EGFR exon 19 deletion or exon 21 (L858R) substitution mutations. Results of the Phase III EURTAC trial demonstrated that patients with NSCLC receiving erlotinib showed significant improvement in progression-free survival (PFS) (9.7 vs. 5.2 months; HR=0.37; p=0.0001) compared to those receiving platinum-based doublet chemotherapy (PMID: 22285168). The partial response rate with erlotinib was 56%, compared to 13% with chemotherapy, and was associated with a reduced toxicity profile (PMID: 22285168). The safety and efficacy of erlotinib have not been established in patients harboring EGFR mutations other than exon 19 deletion and exon 21 (L858R) substitution; however, the phase III IUNO trial demonstrated no difference in PFS between patients with NSCLC lacking EGFR exon 19 deletion or EGFR L858R mutation who were given erlotinib versus placebo as maintenance therapy (PMID: 27987585)."
+        },
+        {
+          "drugs": "Patritumab Deruxtecan",
+          "level": "LEVEL_3A",
+          "fdaApproved": false,
+          "description": "Patritumab deruxtecan (HER3-DXd) is an antibody-drug conjugate consisting of a HER3 antibody attached to a topoisomerase I inhibitor payload via a tetrapeptide-based cleavable linker. HER3 is the preferred heterodimeric partner for EGFR (PMID: 34084213, 30057690). In a phase I dose-escalation/expansion study (NCT03260491) of HER3-DXd in 57 patients with locally advanced or metastatic EGFR-mutated non-small cell lung cancer (NSCLC) (n=33 with Exon 19 deletion), the objective response rate (ORR) was 39% (95% CI=26.0–52.4) and median progression-free survival (PFS) was 8.2 (95% CI=4.4–8.3) months (PMID: 34548309). In the phase II HERTHENA-Lung01 trial of HER3-DXd in 225 patients with previously treated EGFR-mutated NSCLC, the median PFS was 5.5 months (95% CI=5.1-5.9) and an objective response was observed in 67 patients (29.8%; 95% CI=23.9-36.2), with complete response observed in one patient (PMID: 37689979). In preclinical studies, in vitro and in vivo models containing HER3-expressing CM-3 cancer cells treated with U3-1402 (HER3-DXd) exhibited reduced cell viability and tumor volume, respectively (PMID: 31661465). In the Phase I U31402-A-U102 (NCT03260491) trial of HER3-DXd in 97 patients with EGFR-mutated NSCLC who had received prior EGFR tyrosine kinase inhibitor therapy and platinum-based chemotherapy (n=64, exon 19 deletion; n=29, L858R; n=4, G719A; n=2, L861Q; n=1, exon 19 insertion), the cohort demonstrated an ORR of 39.2% (n=38) (95% CI=29.4-49.6), with a 1% (n=1) confirmed response rate, 38.1% (n=37) partial response rate, 40.2% (n=39) stable disease rate and 12.4% (n=12) progressive disease rate, a median duration of response of 9.6 months (95% CI=6.9-15.4), a median PFS of 6.4 months (95% CI=4.9-8.3) and a median overall survival of 15.8 months (95% CI=10.8-21.5) (PMID: 38369013)."
+        }
+      ]
+    },
+    {
+      "gene": "CCNE1",
+      "alteration": "AMPLIFICATION",
+      "kind": "cna",
+      "oncogenicity": "Oncogenic",
+      "escat": "IV",
+      "escatDescription": "Preclinical evidence of actionability",
+      "oncokbLevel": "LEVEL_4",
+      "resistanceLevel": null,
+      "treatments": [
+        {
+          "drugs": "BLU-222",
+          "level": "LEVEL_4",
+          "fdaApproved": false,
+          "description": "BLU-222 is an inhibitor of CDK2, the cyclin E1 binding partner. Inhibition of cyclin E1 function is an attractive therapeutic avenue in tumors overexpressing cyclin E1. Preclinical studies of BLU-222 demonstrated in vitro and in vivo sensitivity of cyclin E1-amplified ovarian cancer cell lines to CDK2 inhibition, with tumor regression noted in xenograft tumor models when combined with carboplatin versus carboplatin alone (Abstract: Brown, et al. Abstract# 2306, AACR 2022. https://aacrjournals.org/cancerres/article/82/12_Supplement/2306/703534)."
+        },
+        {
+          "drugs": "Lunresertib",
+          "level": "LEVEL_4",
+          "fdaApproved": false,
+          "description": "Lunresertib is an inhibitor of the cyclin E1 inhibitory kinase PKMYT1. Inhibition of cyclin E1 function is an attractive therapeutic avenue in tumors overexpressing cyclin E1. Preclinical studies of lunresertib in cell line-derived and patient-derived xenograft models of cyclin E1-amplified tumor cells demonstrated that PKMYT1 inhibition leads to tumor regression in various tumor models compared to cells with normal cyclin E1 expression (PMID: 35444283). In the Phase I MYTHIC (NCT04855656) trial of lunresertib alone or in combination with the ATR inhibitor camonsertib in 108 patients with solid tumors harboring CCNE1 amplification or deleterious alterations in FBXW7 or PPP2R1A (uterine [31.5%], colorectal [20.4%], ovarian [16.7%], others [31.5%]), a patient with CCNE1-amplified bile duct cancer and two patients with CCNE1-amplified ovarian cancer were treated with lunresertib and camonsertib, resulting in a confirmed clinical response and CA-125 responses, respectively (Abstract: Yap et al. Abstract# PR008, AACR 2023. https://aacrjournals.org/mct/article/22/12_Supplement/PR008/730843/Abstract-PR008-MYTHIC-First-in-human-FIH-biomarker)."
+        },
+        {
+          "drugs": "Lunresertib + Camonsertib",
+          "level": "LEVEL_4",
+          "fdaApproved": false,
+          "description": "Lunresertib is an orally available, small molecule PKMYT1 inhibitor and camonsertib is an orally available, small molecule ATR inhibitor. There are promising laboratory and anecdotal clinical data to support use of lunresertib plus camonsertib in patients with CCNE1-amplified solid tumors. In the Phase I MYTHIC (NCT04855656) trial of lunresertib plus camonsertib in patients with advanced tumors harboring CCNE1 amplifications, FBXW7 deleterious mutations or PPP2R1A deleterious mutations, the lunresertib plus camonsertib cohort (n=59 [n=17, endometrial; n=13, colorectal; n=11, ovarian; n=3, breast; n=3, lung; n=12, other]) demonstrated an overall response rate of 23.6% in all evaluable patients across tumor types (n=55), with a 33.3% response rate in patients with CCNE1-amplified tumors (n=18) and a confirmed partial response in a patient with CCNE1-amplified bile duct cancer (Abstract: Yap, T. et al., Abstract# 35396. AACR-NCI-EORTC 2023. https://ir.reparerx.com/static-files/c46f541b-554a-4690-90de-e63fa7dea852). Preclinical studies with ovarian and endometrial cancer cell lines and xenograft models expressing CCNE1 amplification demonstrate sensitivity to lunresertib plus camonsertib as measured by tumor regression and decreased cellular viability (PMID: 38410486) (Abstract: Gallo, D. et al., Abstract# B057, AACR 2023. https://aacrjournals.org/mct/article/22/12_Supplement/B057/730329/Abstract-B057-Preclinical-development-of-PKMYT1)(Abstract: Yap, T. et al., Abstract# B156, AACR-NCI-EORTC 2023. https://www.reparerx.com/wp-content/uploads/2023/10/ANE_B156_MYTHIC-clinical_poster.pdf)."
+        }
+      ]
+    },
+    {
+      "gene": "MSH6",
+      "alteration": "K1358Dfs*2",
+      "kind": "mutation",
+      "oncogenicity": "Likely Oncogenic",
+      "mutationEffect": "Likely Loss-of-function",
+      "escat": "X",
+      "escatDescription": "No evidence for actionability or lack of data",
+      "oncokbLevel": null,
+      "resistanceLevel": null,
+      "treatments": []
+    },
+    {
+      "gene": "IRS2",
+      "alteration": "G1057D",
+      "kind": "mutation",
+      "oncogenicity": "Likely Oncogenic",
+      "mutationEffect": "Unknown",
+      "escat": "X",
+      "escatDescription": "No evidence for actionability or lack of data",
+      "oncokbLevel": null,
+      "resistanceLevel": null,
+      "treatments": []
+    },
+    {
+      "gene": "TP53",
+      "alteration": "S149Ffs*32",
+      "kind": "mutation",
+      "oncogenicity": "Likely Oncogenic",
+      "mutationEffect": "Likely Loss-of-function",
+      "escat": "X",
+      "escatDescription": "No evidence for actionability or lack of data",
+      "oncokbLevel": null,
+      "resistanceLevel": null,
+      "treatments": []
+    },
+    {
+      "gene": "AURKA",
+      "alteration": "F31I",
+      "kind": "mutation",
+      "oncogenicity": "Likely Oncogenic",
+      "mutationEffect": "Likely Gain-of-function",
+      "escat": "X",
+      "escatDescription": "No evidence for actionability or lack of data",
+      "oncokbLevel": null,
+      "resistanceLevel": null,
+      "treatments": []
+    },
+    {
+      "gene": "RB1",
+      "alteration": "DELETION",
+      "kind": "cna",
+      "oncogenicity": "Likely Oncogenic",
+      "escat": "X",
+      "escatDescription": "No evidence for actionability or lack of data",
+      "oncokbLevel": null,
+      "resistanceLevel": null,
+      "treatments": []
+    }
+  ],
+  "cnv": [],
+  "fusions": [],
+  "literature": [
+    {
+      "pmid": "42092972",
+      "title": "Genomic characterization of DNA damage response pathway mutations reveals their adverse impact on EGFR-TKI efficacy in non-small cell lung cancer.",
+      "authors": "Yang L, Cheng J, Guo X, Xiao H, Kuang X, Yang Y, Zhang L, Zhang Q, Wang D, Xu Y, Li M",
+      "journal": "Respiratory research",
+      "year": "2026",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "42090630",
+      "title": "Immunotherapy Response and Survival Outcome by Immunophenotypic Signature in Non-Small Cell Lung Cancer.",
+      "authors": "Bansal D, Ponvilawan B, Grachev D, Kushnarev V, Tarasov A, Valiev I, Danilov K, Butusova A, Turova P, Bagaev A, Kotlov N, Al-Obaidi A, Ward C, Subramanian J",
+      "journal": "JCO precision oncology",
+      "year": "2026",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "42090048",
+      "title": "Epidemiology and Real-World Outcomes in Patients with Human Epidermal Growth Factor Receptor 2 (HER2)-Mutant Non-small Cell Lung Cancer by Region: A Targeted Literature Review.",
+      "authors": "Goto K, Hayashi H, Maruti SS, Zettl H, Mittal L, Pathak S, Le X",
+      "journal": "Targeted oncology",
+      "year": "2026",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "42088497",
+      "title": "The application and challenges of immune checkpoint inhibitors in lung cancer therapy.",
+      "authors": "Li B, Ren Y, Zhang X",
+      "journal": "Frontiers in immunology",
+      "year": "2026",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "42075590",
+      "title": "Serum Carcinoembryonic Antigen Levels Across Molecular Subtypes and Their Clinical and Prognostic Implications in Metastatic Non-Small Cell Lung Cancer.",
+      "authors": "Aytac A, Demir B, Gulmez MD, Arvas H, Tuzcu TU, Erul E, Tunbekici S, Yerlikaya T, Tunc S, Ellez HI, Camadan YA, Canaslan K, Colak R, Urakci Z, Koksoy EB, Yazici O, Alkan A, Tanriverdi O, Goker E, Demirkazik A",
+      "journal": "Medicina (Kaunas, Lithuania)",
+      "year": "2026",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "42073604",
+      "title": "Advances in Multi-Modal Biomarkers for Immunotherapy Response in Non-Small Cell Lung Cancer: ctDNA, Microbiome, and Radiomics.",
+      "authors": "Chakrabarti T, Lee M",
+      "journal": "Cancers",
+      "year": "2026",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "42063689",
+      "title": "Analysis of Somatic Mutations and Immunotherapy Biomarkers in Chinese Patients With Non-Small Cell Lung Cancer During 2019-2024: A Retrospective Study.",
+      "authors": "Liu X, Chen W, Xin C, Wang Z, Yi K, Wang L, Liu J",
+      "journal": "Health science reports",
+      "year": "2026",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "42041198",
+      "title": "A Systematic Review and Meta-Analysis of the Impact of Tumour Mutation Burden on Survival Outcomes in Solid Tumours.",
+      "authors": "Meng A, Yuile A, Sim HW, Thavaneswaran S, Noor H, Yeung J, Mehta A, Powell J, Zaman A",
+      "journal": "Cancer medicine",
+      "year": "2026",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "42025696",
+      "title": "First-line integration of Local Ablative Therapy (LAT) with EGFR Tyrosine Kinase Inhibitors (TKIs) in advanced EGFR+ NSCLC: A Systematic Review and Meta-Analysis.",
+      "authors": "Brunetti L, Colella G, Di Fazio GR, La Cava G, Santo V, Pecci F, Rotow J, Bauman JR, Nassar AH, Adib E, Naqash AR, Tagliamento M, Ferrara R, Citarella F, Russano M, Ricciuti B, Faivre-Finn C, Hendriks LEL, Passaro A, Vincenzi B, Acker F, Derosa L, Planchard D, Aerts HJWL, Novello S, Passiglia F, Greco C, Ramella S, Cortellini A",
+      "journal": "Journal of thoracic oncology : official publication of the International Association for the Study of Lung Cancer",
+      "year": "2026",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "42032980",
+      "title": "Peripheral blood inflammatory markers as predictive and prognostic indicators in neoadjuvant immunotherapy for non-small cell lung cancer.",
+      "authors": "Peng Y, Zeng Y, Zhang Y, Fan D, Wang S, Deng C, Ma F, Qiu Z, Chen C, Hu Y, Hu C, Liu W, Wu F",
+      "journal": "Zhong nan da xue xue bao. Yi xue ban = Journal of Central South University. Medical sciences",
+      "year": "2025",
+      "gene": "TMB",
+      "alteration": ""
+    }
+  ],
+  "droppedVus": 479
+}

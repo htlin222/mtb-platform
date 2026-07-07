@@ -1,0 +1,291 @@
+/* ==========================================================================
+   Pajamas — GitLab design system tokens & components (light).
+   Values follow GitLab UI's documented design tokens (design.gitlab.com).
+   Hand-authored so the app carries no Vue dependency.
+   ========================================================================== */
+
+:root {
+  /* neutral scale */
+  --gray-10: #fbfafd;
+  --gray-50: #f0f0f3;
+  --gray-100: #dcdcde;
+  --gray-200: #bfbfc3;
+  --gray-300: #a4a3a8;
+  --gray-400: #89888d;
+  --gray-500: #737278;
+  --gray-600: #626168;
+  --gray-700: #535158;
+  --gray-800: #424149;
+  --gray-900: #333238;
+  --gray-950: #1f1e24;
+
+  /* blue (primary / info) */
+  --blue-50: #e9f3fc;
+  --blue-100: #cbe2f9;
+  --blue-500: #1f75cb;
+  --blue-600: #1068bf;
+  --blue-700: #0b5cad;
+  --blue-900: #033464;
+
+  /* green (success) */
+  --green-50: #ecf4ee;
+  --green-100: #c3e6cd;
+  --green-500: #108548;
+  --green-700: #24663b;
+  --green-900: #0a4020;
+
+  /* orange (warning) */
+  --orange-50: #fdf1dd;
+  --orange-100: #f5d9a8;
+  --orange-500: #c17d10;
+  --orange-700: #9e5400;
+  --orange-900: #5c2900;
+
+  /* red (danger) */
+  --red-50: #fdedeb;
+  --red-100: #fdd4cd;
+  --red-500: #dd2b0e;
+  --red-700: #ae1800;
+  --red-900: #8b2615;
+
+  /* purple (feature) */
+  --purple-100: #e1d8f9;
+  --purple-500: #6666c4;
+  --purple-700: #453894;
+
+  /* semantic */
+  --bg-page: var(--gray-10);
+  --bg-surface: #ffffff;
+  --bg-subtle: var(--gray-50);
+  --border: var(--gray-100);
+  --border-strong: var(--gray-200);
+  --text: var(--gray-900);
+  --text-secondary: var(--gray-700);
+  --text-muted: var(--gray-500);
+  --link: var(--blue-500);
+  --link-hover: var(--blue-700);
+
+  /* radii / spacing (8px grid) */
+  --radius-sm: 4px;
+  --radius: 8px;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 1px 2px rgba(31, 30, 36, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100vh;
+}
+
+body {
+  font-family: "GitLab Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg-page);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mono {
+  font-family: "GitLab Mono", ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas,
+    "Liberation Mono", monospace;
+  font-variant-ligatures: none;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.25;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+/* ---- layout ------------------------------------------------------------- */
+.gl-page {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px 20px 64px;
+}
+.gl-row { display: flex; gap: 16px; }
+.gl-col { display: flex; flex-direction: column; gap: 16px; }
+.gl-wrap { flex-wrap: wrap; }
+.gl-center { align-items: center; }
+.gl-between { justify-content: space-between; }
+.gl-grow { flex: 1 1 auto; min-width: 0; }
+
+/* ---- page header -------------------------------------------------------- */
+.gl-breadcrumb { font-size: 13px; color: var(--text-muted); margin-bottom: 12px; }
+.gl-breadcrumb a { color: var(--link); }
+.gl-breadcrumb .sep { margin: 0 6px; color: var(--gray-300); }
+
+.gl-page-title { display: flex; align-items: center; gap: 10px; }
+.gl-page-title h1 { font-size: 20px; }
+.gl-page-desc { color: var(--text-secondary); margin-top: 6px; font-size: 14px; }
+.gl-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; color: var(--text-muted); font-size: 13px; margin-top: 8px; }
+.gl-meta .dot { color: var(--gray-300); }
+
+/* ---- card --------------------------------------------------------------- */
+.gl-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+.gl-card-body { padding: 16px; }
+.gl-card-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  background: var(--gray-10);
+  border-radius: var(--radius) var(--radius) 0 0;
+  font-weight: 600;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.gl-section-title {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+/* ---- badge -------------------------------------------------------------- */
+.gl-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 1px 8px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+.gl-badge-neutral { background: var(--gray-50); color: var(--gray-700); }
+.gl-badge-muted   { background: var(--gray-50); color: var(--gray-500); }
+.gl-badge-info    { background: var(--blue-50); color: var(--blue-700); }
+.gl-badge-success { background: var(--green-50); color: var(--green-700); }
+.gl-badge-warning { background: var(--orange-50); color: var(--orange-700); }
+.gl-badge-danger  { background: var(--red-50); color: var(--red-700); }
+.gl-badge-tier    { background: var(--purple-100); color: var(--purple-700); }
+
+/* ---- count badge -------------------------------------------------------- */
+.gl-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: var(--radius-pill);
+  background: var(--gray-50);
+  color: var(--gray-700);
+}
+.gl-count-active { background: var(--blue-500); color: #fff; }
+
+/* ---- button ------------------------------------------------------------- */
+.gl-button {
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-strong);
+  background: var(--bg-surface);
+  color: var(--text);
+  padding: 6px 12px;
+  transition: background 0.1s, border-color 0.1s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.gl-button:hover { background: var(--gray-50); }
+.gl-button-confirm { background: var(--blue-500); border-color: var(--blue-600); color: #fff; }
+.gl-button-confirm:hover { background: var(--blue-600); }
+.gl-link-button {
+  font: inherit; cursor: pointer; background: none; border: none; padding: 0;
+  color: var(--link); font-weight: 500;
+}
+.gl-link-button:hover { text-decoration: underline; }
+
+/* ---- input -------------------------------------------------------------- */
+.gl-input {
+  font: inherit;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px 6px 32px;
+  background: var(--bg-surface) no-repeat 10px center;
+  color: var(--text);
+  min-width: 320px;
+}
+.gl-input:focus { outline: 2px solid var(--blue-500); outline-offset: -1px; border-color: var(--blue-500); }
+.gl-input-wrap { position: relative; display: inline-flex; align-items: center; }
+.gl-input-wrap svg { position: absolute; left: 9px; color: var(--text-muted); pointer-events: none; }
+
+/* ---- segmented / filter ------------------------------------------------- */
+.gl-segmented { display: inline-flex; border: 1px solid var(--border-strong); border-radius: var(--radius-sm); overflow: hidden; }
+.gl-segmented button {
+  font: inherit; cursor: pointer; background: var(--bg-surface); border: none;
+  border-right: 1px solid var(--border); padding: 6px 12px; color: var(--text-secondary);
+}
+.gl-segmented button:last-child { border-right: none; }
+.gl-segmented button:hover { background: var(--gray-50); }
+.gl-segmented button.active { background: var(--gray-50); color: var(--text); font-weight: 600; box-shadow: inset 0 -2px 0 var(--blue-500); }
+
+/* ---- tabs --------------------------------------------------------------- */
+.gl-tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--border); margin-bottom: 20px; }
+.gl-tab {
+  font: inherit; cursor: pointer; background: none; border: none;
+  padding: 10px 12px; color: var(--text-secondary);
+  border-bottom: 2px solid transparent; margin-bottom: -1px;
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.gl-tab:hover { color: var(--text); }
+.gl-tab.active { color: var(--text); font-weight: 600; border-bottom-color: var(--blue-500); }
+
+/* ---- table -------------------------------------------------------------- */
+.gl-table { width: 100%; border-collapse: collapse; background: var(--bg-surface); }
+.gl-table thead th {
+  text-align: left; font-size: 12px; font-weight: 600; color: var(--text-muted);
+  text-transform: uppercase; letter-spacing: 0.3px;
+  padding: 10px 12px; border-bottom: 1px solid var(--border-strong);
+}
+.gl-table tbody td { padding: 12px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+.gl-table tbody tr:last-child td { border-bottom: none; }
+.gl-table tbody tr:hover { background: var(--gray-10); }
+.gl-table-card { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); }
+
+/* ---- misc --------------------------------------------------------------- */
+.gl-text-muted { color: var(--text-muted); }
+.gl-text-secondary { color: var(--text-secondary); }
+.gl-text-sm { font-size: 13px; }
+.gl-text-xs { font-size: 12px; }
+.gl-strong { font-weight: 600; }
+.gl-divider { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+.gl-spinner {
+  width: 24px; height: 24px; border: 3px solid var(--gray-100);
+  border-top-color: var(--blue-500); border-radius: 50%;
+  animation: gl-spin 0.7s linear infinite; margin: 48px auto;
+}
+@keyframes gl-spin { to { transform: rotate(360deg); } }
+
+details.gl-disclosure > summary { list-style: none; cursor: pointer; }
+details.gl-disclosure > summary::-webkit-details-marker { display: none; }
+details.gl-disclosure[open] .gl-chevron { transform: rotate(90deg); }
+.gl-chevron { transition: transform 0.15s; color: var(--text-muted); display: inline-flex; }

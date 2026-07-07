@@ -1,0 +1,315 @@
+{
+  "patient": {
+    "chartNo": "99417882",
+    "name": "Sophia Lin",
+    "sex": "F",
+    "age": 49,
+    "birthday": "1976-08-25",
+    "cancerType": "Breast carcinoma",
+    "cancerCode": "BRCA",
+    "stage": "IV",
+    "team": "Breast Oncology",
+    "attending": "Dr. C. Chiu",
+    "status": "processing",
+    "reportDate": "2026-06-20",
+    "sampleId": "M25-1696R",
+    "panel": "TSO500 · 1.27 Mb"
+  },
+  "clinical": {
+    "consultReason": "Endocrine-resistant HR+ breast cancer — next-line options.",
+    "priorTherapy": [
+      "Letrozole",
+      "Palbociclib + Fulvestrant"
+    ],
+    "ecog": 1,
+    "note": "Molecular profiling on the TSO500 · 1.27 Mb panel returned 8 clinically annotated alterations (517 variants of unknown significance filtered); TMB 7.9 mut/Mb, MSS, HRD-Negative."
+  },
+  "biomarkers": {
+    "tmb": 7.9,
+    "tmbClass": "TMB-Intermediate",
+    "variantCount": 10,
+    "panelSizeMb": 1.27,
+    "msi": "MSS",
+    "msiScore": 1.75,
+    "unstableSites": 2,
+    "totalSites": 114,
+    "hrd": 20,
+    "hrdStatus": "HRD-Negative",
+    "loh": null,
+    "tai": null,
+    "lst": null,
+    "hrdReliable": true
+  },
+  "variants": [
+    {
+      "gene": "PIK3CA",
+      "alteration": "W11_P18del",
+      "kind": "mutation",
+      "oncogenicity": "Likely Oncogenic",
+      "mutationEffect": "Unknown",
+      "escat": "I",
+      "escatDescription": "Target ready for implementation in routine clinical decisions",
+      "oncokbLevel": "LEVEL_1",
+      "resistanceLevel": null,
+      "treatments": [
+        {
+          "drugs": "Inavolisib + Palbociclib + Fulvestrant",
+          "level": "LEVEL_1",
+          "fdaApproved": true,
+          "description": "Inavolisib is an orally available, small molecule PI3Kα inhibitor that is FDA-approved in combination with palbociclib and fulvestrant for the treatment of adults with endocrine-resistant, PIK3CA-mutated, HR-positive, HER2-negative, locally advanced or metastatic breast cancer, as detected by an FDA-approved test following recurrence on or after completing adjuvant endocrine therapy. PIK3CA oncogenic mutations for treatment with inavolisib plus palbociclib and fulvestrant were detected by the FoundationOne Liquid CDx. FDA approval was based on the results of the Phase III INAVO120 (NCT04191499) trial of inavolisib plus palbociclib and fulvestrant versus palbociclib plus fulvestrant in 325 patients with PIK3CA-mutated, HR+/HER2- breast cancer. In the Phase III INAVO120 (NCT04191499) trial, the inavolisib cohort (n=161) demonstrated an overall response rate (ORR) of 58.4%, with seven complete responses (CR) and 87 partial responses (PR), a median progression-free survival (PFS) of 15.0 months (95% CI=11.3-20.5), median overall survival (OS) was not evaluable (95% CI=0.43-0.97) and a median duration of response (DOR) of 18.4 months (95% CI=10.4-22.2) (PMID: 39476340). In contrast, the palbociclib plus fulvestrant only cohort (n=164) demonstrated an ORR of 25.0%, with one CR and 40 PRs, a median PFS of 7.3 months (95% CI=5.6-9.3) (HR=0.43 [95% CI=0.32-0.59]; p<0.0001), a median OS of 31.1 months (95% CI=22.3-NE) (HR=0.64 [95% CI=0.43-0.97]; p=0.0338) and a median DOR of 9.6 months (95% CI=7.4-16.6) (PMID: 39476340)."
+        },
+        {
+          "drugs": "Alpelisib + Fulvestrant",
+          "level": "LEVEL_2",
+          "fdaApproved": true,
+          "description": "Alpelisib is an orally available, small molecule PI3Kα inhibitor that is FDA-approved with fulvestrant for the treatment of postmenopausal patients with ER+, HER2-, PIK3CA-mutated, advanced or metastatic breast cancer, as detected by an FDA-approved test, following progression on or after an endocrine-based regimen. PIK3CA mutation status was identified through the QIAGEN therascreen PIK3CA RGQ PCR Kit. The NCCN-compendium lists alpelisib plus fulvestrant for patients with ER+/HER2- metastatic breast harboring PIK3CA activating mutations based on the results of the Phase III SOLAR-1 (NCT02437318) trial of alpelisib plus fulvestrant versus placebo plus fulvestrant in 341 patients with ER+, HER2-, PIK3CA-mutated, advanced or metastatic breast cancer whose disease had progressed or on or after receiving an aromatase inhibitor. In the Phase III SOLAR-1 (NCT02437318) trial, the alpelisib plus fulvestrant treated cohort (n=169) demonstrated a median progression-free survival (PFS) of 11.0 months (95% CI=7.5-14.5) and an overall response rate (ORR) of 35.7% (95% CI=27.4-44.7) compared to the placebo plus fulvestrant treated cohort (n=172) that demonstrated a median PFS of 5.7 months (95% CI=3.7-7.4) (HR=0.65 [95% CI=0.50-0.85]; p=0.0013) and an ORR of 16.2% (95% CI=10.4-23.5) (PMID: 31091374)."
+        },
+        {
+          "drugs": "Capivasertib + Fulvestrant",
+          "level": "LEVEL_2",
+          "fdaApproved": true,
+          "description": "Capivasertib is an orally available, ATP-competitive pan-AKT small molecule inhibitor that is FDA-approved with fulvestrant for adult patients with ER+/HER2- locally advanced or metastatic breast cancer with one or more PIK3CA/AKT1/PTEN-alterations, as detected by an FDA-approved test, following progression on at least one endocrine-based regimen in the metastatic setting or recurrence on or within twelve months of completing adjuvant therapy. Eligible PIK3CA/AKT1/PTEN-alterations (PIK3CA R88Q, N345K, C420R, E542K, E545A, E545D, E545Q, E545K, E545G, Q546E, Q546K, Q546R, Q546P, M1043V, M1043I, H1047Y, H1047R, H1047L and G1049R; AKT1 E17K; all PTEN oncogenic mutations) for treatment with capivasertib plus fulvestrant were detected by the FoundationOne CDx assay. The NCCN-compendium lists capivasertib plus fulvestrant for patients with ER+/HER2- metastatic breast harboring PIK3CA/AKT1/PTEN activating mutations based on the results from the Phase III CAPItello-291 (NCT04305496) trial of capivasertib plus fulvestrant versus placebo plus fulvestrant in 708 adult patients with ER+/HER2- locally advanced or metastatic breast cancer (n=289, patients with eligible PIK3CA/AKT1/PTEN alterations). In the Phase III CAPItello-291 (NCT04305496) trial, the capivasertib plus fulvestrant cohort with PIK3CA/AKT1/PTEN-altered tumors (n=155) demonstrated an objective response rate (ORR) of 26% (95% CI=19-34), with a 2.3% complete response (CR) rate, 23% partial response (PR) rate, and a median progression-free survival (PFS) of 7.3 months (95% CI=5.5-9.0)(PMID: 37256976). The placebo plus fulvestrant cohort with PIK3CA/AKT1/PTEN-altered tumors (n=134) demonstrated an ORR of 8% (95% CI=4-14), with an 8% PR rate and a median PFS of 3.1 months (95% CI=2.0-3.7) (HR=0.50 [95% CI=0.38-0.65]; p<0.0001) (PMID: 37256976)."
+        },
+        {
+          "drugs": "RLY-2608",
+          "level": "LEVEL_4",
+          "fdaApproved": false,
+          "description": "RLY-2608 is an orally available, small-molecule, allosteric PI3Kα inhibitor. There are promising laboratory and anecdotal clinical data to support use of RLY-2608 in patients with PIK3CA-mutated solid tumors. In the Phase I ReDiscover (NCT05216432) trial of RLY-2608, one patient with HER2-low breast cancer harboring PIK3CA H1047R and E453K was treated with RLY-2608 and one patient with HER2-negative breast cancer harboring PIK3CA E542K was treated with RLY-2608 plus fulvestrant and both patients demonstrated partial responses (PMID: 37916956). Biochemical assays have demonstrated that RLY-2608 inhibits PI3Kα activity in kinase and helical domain mutants with high isoform selectivity (Abstract: Pazolli et al. Abstract# P251, TARG 2021. https://aacrjournals.org/mct/article/20/12_Supplement/P251/676005/Abstract-P251-Discovery-and-characterization-of). In vivo xenograft models harboring PIK3CA E545K and H1047R mutations demonstrated sensitivity to RLY-2608 as measured by dose-dependent tumor regression and anti-tumor activity (Abstract: Pazolli et al. Abstract# P5-16-10, SABCS 2021. https://aacrjournals.org/cancerres/article/82/4_Supplement/P5-16-10/681459). In vitro studies with MCF10A cells expressing PIK3CA E545K or H1047R demonstrate sensitivity to RLY-2608 as measured by inhibition of cellular signaling and proliferation (PMID: 37916956)."
+        },
+        {
+          "drugs": "RLY-2608 + Fulvestrant",
+          "level": "LEVEL_4",
+          "fdaApproved": false,
+          "description": "RLY-2608 is an orally available, small-molecule, allosteric PI3Kα inhibitor, and fulvestrant is an FDA-approved estrogen receptor antagonist indicated for the treatment of patients with hormone receptor (HR)-positive, HER2-negative metastatic breast cancer. There are promising laboratory and anecdotal clinical data to support use of RLY-2608 plus fulvestrant in patients with PIK3CA-mutated breast cancer. In the Phase I ReDiscover (NCT05216432) trial of RLY-2608, one patient with HER2-low breast cancer harboring PIK3CA H1047R and E453K was treated with RLY-2608 and one patient with HER2-negative breast cancer harboring PIK3CA E542K was treated with RLY-2608 plus fulvestrant and both patients demonstrated partial responses (PMID: 37916956). In vitro studies with HR+ PI3Kα mutant cell lines demonstrated synergistic sensitivity to treatment with RLY-2608 in combination with fulvestrant (Abstract: Pazolli et al. Abstract# P5-16-10, SABCS 2021. https://aacrjournals.org/cancerres/article/82/4_Supplement/P5-16-10/681459). In vivo cell-derived xenograft models harboring the PIK3CA E545K mutation demonstrated sensitivity to RLY-2608 + fulvestrant treatment as measured by dose-dependent tumor regression (Abstract: Pazolli et al. Abstract# P5-16-10, SABCS 2021. https://aacrjournals.org/cancerres/article/82/4_Supplement/P5-16-10/681459). In vitro studies with MCF10A cells expressing PIK3CA E545K or H1047R demonstrate sensitivity to RLY-2608 as measured by inhibition of cellular signaling and proliferation (PMID: 37916956)."
+        }
+      ]
+    },
+    {
+      "gene": "PIK3CA",
+      "alteration": "H1047R",
+      "kind": "mutation",
+      "oncogenicity": "Oncogenic",
+      "mutationEffect": "Gain-of-function",
+      "escat": "I",
+      "escatDescription": "Target ready for implementation in routine clinical decisions",
+      "oncokbLevel": "LEVEL_1",
+      "resistanceLevel": null,
+      "treatments": [
+        {
+          "drugs": "Alpelisib + Fulvestrant",
+          "level": "LEVEL_1",
+          "fdaApproved": true,
+          "description": "Alpelisib is a selective inhibitor of the alpha form of PI3K (PI3Kα) that is FDA-approved in combination with the selective estrogen receptor (ER) degrader fulvestrant for the treatment of postmenopausal patients with ER+ HER2- PIK3CA-mutated, advanced or metastatic breast cancer. FDA approval is based on data from the Phase III randomized, double-blind, placebo-controlled SOLAR-1 trial of alpelisib plus fulvestrant versus placebo plus fulvestrant in 572 patients with breast cancer in which the progression-free survival in patients with PIK3CA mutation (n=341) was eleven months (95% CI= 7.5-14.5) with alpelisib plus fulvestrant versus 5.7 months (95% CI= 3.7-7.4) with placebo plus fulvestrant (HR= 0.65; 95% CI= 0.5-0.85; p= 0.0013) compared to PIK3CA-wildtype patients in which the hazard ratio was 0.85 (95% CI= 0.58-1.25) (PMID: 31091374). Overall response in the PIK3CA-mutant population was 35.7 months (95% CI= 27.4-44.7; n=126) with alpelisib plus fulvestrant versus 16.2 months (95% CI= 10.4-23.5; n=136) with placebo plus fulvestrant (PMID: 31091374). Previous studies, including in vivo xenograft studies and a phase I trial, also demonstrated that treatment of ER+ PIK3CA-mutant breast cancer with the combination of fulvestrant and alpelisib results in greater tumor shrinkage than either drug alone, with fulvestrant inhibiting the induction of ER-dependent gene transcription resulting from PI3Kα inhibition with alpelisib (PMID: 25877889, 30543347)."
+        },
+        {
+          "drugs": "Capivasertib + Fulvestrant",
+          "level": "LEVEL_1",
+          "fdaApproved": true,
+          "description": "Capivasertib is an orally available, ATP-competitive pan-AKT small molecule inhibitor that is FDA-approved with fulvestrant for adult patients with ER+/HER2- locally advanced or metastatic breast cancer with one or more PIK3CA/AKT1/PTEN-alterations, as detected by an FDA-approved test, following progression on at least one endocrine-based regimen in the metastatic setting or recurrence on or within twelve months of completing adjuvant therapy. Eligible PIK3CA/AKT1/PTEN-alterations (PIK3CA R88Q, N345K, C420R, E542K, E545A, E545D, E545Q, E545K, E545G, Q546E, Q546K, Q546R, Q546P, M1043V, M1043I, H1047Y, H1047R, H1047L and G1049R; AKT1 E17K; all PTEN oncogenic mutations) for treatment with capivasertib plus fulvestrant were detected by the FoundationOne CDx assay. FDA approval was based on the results from the Phase III CAPItello-291 (NCT04305496) trial of capivasertib plus fulvestrant versus placebo plus fulvestrant in 708 adult patients with ER+/HER2- locally advanced or metastatic breast cancer (n=289, patients with eligible PIK3CA/AKT1/PTEN alterations). In the Phase III CAPItello-291 (NCT04305496) trial, the capivasertib plus fulvestrant cohort with PIK3CA/AKT1/PTEN-altered tumors (n=155) demonstrated an objective response rate (ORR) of 26% (95% CI=19-34), with a 2.3% complete response (CR) rate, 23% partial response (PR) rate, and a median progression-free survival (PFS) of 7.3 months (95% CI=5.5-9.0)(PMID: 37256976). The placebo plus fulvestrant cohort with PIK3CA/AKT1/PTEN-altered tumors (n=134) demonstrated an ORR of 8% (95% CI=4-14), with an 8% PR rate and a median PFS of 3.1 months (95% CI=2.0-3.7) (HR=0.50 [95% CI=0.38-0.65]; p<0.0001) (PMID: 37256976)."
+        },
+        {
+          "drugs": "Inavolisib + Palbociclib + Fulvestrant",
+          "level": "LEVEL_1",
+          "fdaApproved": true,
+          "description": "Inavolisib is an orally available, small molecule PI3Kα inhibitor that is FDA-approved in combination with palbociclib and fulvestrant for the treatment of adults with endocrine-resistant, PIK3CA-mutated, HR-positive, HER2-negative, locally advanced or metastatic breast cancer, as detected by an FDA-approved test following recurrence on or after completing adjuvant endocrine therapy. PIK3CA oncogenic mutations for treatment with inavolisib plus palbociclib and fulvestrant were detected by the FoundationOne Liquid CDx. FDA approval was based on the results of the Phase III INAVO120 (NCT04191499) trial of inavolisib plus palbociclib and fulvestrant versus palbociclib plus fulvestrant in 325 patients with PIK3CA-mutated, HR+/HER2- breast cancer. In the Phase III INAVO120 (NCT04191499) trial, the inavolisib cohort (n=161) demonstrated an overall response rate (ORR) of 58.4%, with seven complete responses (CR) and 87 partial responses (PR), a median progression-free survival (PFS) of 15.0 months (95% CI=11.3-20.5), median overall survival (OS) was not evaluable (95% CI=0.43-0.97) and a median duration of response (DOR) of 18.4 months (95% CI=10.4-22.2) (PMID: 39476340). In contrast, the palbociclib plus fulvestrant only cohort (n=164) demonstrated an ORR of 25.0%, with one CR and 40 PRs, a median PFS of 7.3 months (95% CI=5.6-9.3) (HR=0.43 [95% CI=0.32-0.59]; p<0.0001), a median OS of 31.1 months (95% CI=22.3-NE) (HR=0.64 [95% CI=0.43-0.97]; p=0.0338) and a median DOR of 9.6 months (95% CI=7.4-16.6) (PMID: 39476340)."
+        },
+        {
+          "drugs": "RLY-2608",
+          "level": "LEVEL_4",
+          "fdaApproved": false,
+          "description": "RLY-2608 is an orally available, small-molecule, allosteric PI3Kα inhibitor. There are promising laboratory and anecdotal clinical data to support use of RLY-2608 in patients with PIK3CA-mutated solid tumors. In the Phase I ReDiscover (NCT05216432) trial of RLY-2608, one patient with HER2-low breast cancer harboring PIK3CA H1047R and E453K was treated with RLY-2608 and one patient with HER2-negative breast cancer harboring PIK3CA E542K was treated with RLY-2608 plus fulvestrant and both patients demonstrated partial responses (PMID: 37916956). Biochemical assays have demonstrated that RLY-2608 inhibits PI3Kα activity in kinase and helical domain mutants with high isoform selectivity (Abstract: Pazolli et al. Abstract# P251, TARG 2021. https://aacrjournals.org/mct/article/20/12_Supplement/P251/676005/Abstract-P251-Discovery-and-characterization-of). In vivo xenograft models harboring PIK3CA E545K and H1047R mutations demonstrated sensitivity to RLY-2608 as measured by dose-dependent tumor regression and anti-tumor activity (Abstract: Pazolli et al. Abstract# P5-16-10, SABCS 2021. https://aacrjournals.org/cancerres/article/82/4_Supplement/P5-16-10/681459). In vitro studies with MCF10A cells expressing PIK3CA E545K or H1047R demonstrate sensitivity to RLY-2608 as measured by inhibition of cellular signaling and proliferation (PMID: 37916956)."
+        },
+        {
+          "drugs": "RLY-2608 + Fulvestrant",
+          "level": "LEVEL_4",
+          "fdaApproved": false,
+          "description": "RLY-2608 is an orally available, small-molecule, allosteric PI3Kα inhibitor, and fulvestrant is an FDA-approved estrogen receptor antagonist indicated for the treatment of patients with hormone receptor (HR)-positive, HER2-negative metastatic breast cancer. There are promising laboratory and anecdotal clinical data to support use of RLY-2608 plus fulvestrant in patients with PIK3CA-mutated breast cancer. In the Phase I ReDiscover (NCT05216432) trial of RLY-2608, one patient with HER2-low breast cancer harboring PIK3CA H1047R and E453K was treated with RLY-2608 and one patient with HER2-negative breast cancer harboring PIK3CA E542K was treated with RLY-2608 plus fulvestrant and both patients demonstrated partial responses (PMID: 37916956). In vitro studies with HR+ PI3Kα mutant cell lines demonstrated synergistic sensitivity to treatment with RLY-2608 in combination with fulvestrant (Abstract: Pazolli et al. Abstract# P5-16-10, SABCS 2021. https://aacrjournals.org/cancerres/article/82/4_Supplement/P5-16-10/681459). In vivo cell-derived xenograft models harboring the PIK3CA E545K mutation demonstrated sensitivity to RLY-2608 + fulvestrant treatment as measured by dose-dependent tumor regression (Abstract: Pazolli et al. Abstract# P5-16-10, SABCS 2021. https://aacrjournals.org/cancerres/article/82/4_Supplement/P5-16-10/681459). In vitro studies with MCF10A cells expressing PIK3CA E545K or H1047R demonstrate sensitivity to RLY-2608 as measured by inhibition of cellular signaling and proliferation (PMID: 37916956)."
+        }
+      ]
+    },
+    {
+      "gene": "ESR1",
+      "alteration": "Y537S",
+      "kind": "mutation",
+      "oncogenicity": "Oncogenic",
+      "mutationEffect": "Gain-of-function",
+      "escat": "I",
+      "escatDescription": "Target ready for implementation in routine clinical decisions",
+      "oncokbLevel": "LEVEL_1",
+      "resistanceLevel": null,
+      "treatments": [
+        {
+          "drugs": "Elacestrant",
+          "level": "LEVEL_1",
+          "fdaApproved": true,
+          "description": "Elacestrant is an oral, estrogen receptor antagonist that is FDA-approved for the treatment of postmenopausal adult patients with ER+/HER2-, ESR1-mutated advanced or metastatic breast cancer. Oncogenic ESR1 ligand-binding domain missense mutations for treatment with elacesterant were detected with the Guardant360 CDx assay. FDA approval was based on the results of the Phase III EMERALD (NCT03778931) trial of elacestrant versus standard-of-care endocrine monotherapy in 477 patients with ER+/HER2- advanced breast cancer who had received one or two lines of endocrine therapy (n=228, patients with ESR1 missense mutations in codons 310-547).\nIn the Phase III EMERALD (NCT03778931) trial, the ESR1-mutated cohort had a six-month progression-free survival (PFS) of 40.8% (95% CI=30.1-51.4) versus 19.1% (95% CI=10.5-27.8) and a twelve-month progression-free survival of 26.8% (95% CI=16.2-37.4) versus 8.2% (95% CI=1.3-15.1) for the elacestrant versus standard-of-care arm, respectively (PMID: 35584336). \nIn the updated results from the Phase III EMERALD (NCT03778931) trial based on the duration of prior CDK4/6i treatment, the ESR1-mutated cohort previously treated with CDK4/6i for ≥6.0 months (n=103 elacestrant arm; n=102 stand-of-care arm), ≥12.0 months (n=78 elacestrant arm; n=81 stand-of-care arm) or ≥18.0 months (n=55 elacestrant arm; n=56 stand-of-care arm) demonstrated a median PFS of 4.1 months, 8.6 months and 8.6 months with elacestrant versus 1.9 months (HR=0.52 [95% CI=0.36-0.74]), 1.9 months (HR=0.41 [95% CI=0.26-0.63]) and 2.1 months (HR=0.47 [95% CI=0.20-0.79]) with standard-of-care treatment (PMID: 39087959)."
+        },
+        {
+          "drugs": "Imlunestrant",
+          "level": "LEVEL_1",
+          "fdaApproved": true,
+          "description": "Imlunestrant is an orally available, small-molecule estrogen receptor (ER) antagonist that is FDA-approved for the treatment of adults with ER-positive, HER2-negative, ESR1-mutated advanced or metastatic breast cancer with disease progression following at least one line of endocrine therapy. ESR1 mutations for treatment with imlunestrant were detected by the Guardant360 CDx assay. FDA approval was based on the results of the Phase III EMBER-3 (NCT04975308) trial of imlunestrant versus standard-of-care (SOC) treatment in 256 patients with ER-positive, HER2-negative locally advanced or metastatic breast cancer previously treated with an aromatase inhibitor either alone or in combination with a CDK4/6 inhibitor. Patients were excluded from the trial if they were eligible to receive a PARP inhibitor. \nIn the Phase III EMBER-3 (NCT04975308) trial, the imlunestrant monotherapy cohort (n=138) demonstrated a clinical benefit rate of 43.5% (n=60), an objective response rate (ORR) of 14.3% (95% CI=7.8-20.8), with a 0.9% complete response (CR) rate and 13.4% partial response (PR) rate, a median duration of response (DOR) of thirteen months (range=2-20), an estimated restricted mean survival time at 19.4 months of 7.9 months (95% CI=6.8-9.1) and a median progression-free survival (PFS) of 5.5 months (95% CI=3.9-7.4) (PMID: 39660834). The SOC monotherapy (fulvestrant or exemestane) (n=118) cohort demonstrated a clinical benefit rate of 33.1% (n=39), an ORR of 7.7% (95% CI=2.2-13.2), with a 7.7% PR rate, a median DOR of seven months (range=4-16), an estimated restricted mean survival time at 19.4 months of 5.4 months (95% CI=4.6-6.2) and a median PFS of 3.8 months (95% CI=3.7-5.5) (HR=0.62 [95% CI=0.46-0.82]; p=0.0008) (PMID: 39660834)."
+        },
+        {
+          "drugs": "Fulvestrant",
+          "level": "LEVEL_3A",
+          "fdaApproved": false,
+          "description": "Fulvestrant is an intramuscularly injected, steroidal selective estrogen receptor degrader (SERD) that is an estrogen receptor (ER) antagonist and results in ER degradation. There are promising clinical data of response to fulvestrant in patients with ESR1-mutant breast cancer. \nIn a retrospective analysis of the Phase III SoFEA (NCT00253422) trial of fulvestrant or exemestane in patients with hormone receptor-positive breast cancer, patients who had ER mutations had a significantly longer median progression-free survival (PFS) when treated with fulvestrant (5.7 months) versus exemestane (2.6 months) (HR, 0.52; P = 0.02), while patients without ER mutations had no significant difference in median PFS between the two treatment arms (P = 0.77) (PMID: 27269946). The addition of abemaciclib to fulvestrant in patients with hormone receptor-positive breast cancer further increased overall survival in these patients (PMID: 31563959). In the Phase III PADA-1 (NCT03079011) trial of combination fulvestrant and palbociclib in 172 patients with estrogen receptor-positive, HER2-negative advanced breast cancer with rising ESR1 mutation in blood, median PFS was 11.9 months (95% CI= 9.1-13.6) in the fulvestrant and palbociclib experimental group versus 5.7 months (95% CI= 3.9-7.5) in the aromatase inhibitor and palbociclib control group (PMID: 36183733)."
+        }
+      ]
+    },
+    {
+      "gene": "PRKDC",
+      "alteration": "Q1898*",
+      "kind": "mutation",
+      "oncogenicity": "Likely Oncogenic",
+      "mutationEffect": "Likely Loss-of-function",
+      "escat": "X",
+      "escatDescription": "No evidence for actionability or lack of data",
+      "oncokbLevel": null,
+      "resistanceLevel": null,
+      "treatments": []
+    },
+    {
+      "gene": "FOXA1",
+      "alteration": "R261G",
+      "kind": "mutation",
+      "oncogenicity": "Likely Oncogenic",
+      "mutationEffect": "Likely Gain-of-function",
+      "escat": "X",
+      "escatDescription": "No evidence for actionability or lack of data",
+      "oncokbLevel": null,
+      "resistanceLevel": null,
+      "treatments": []
+    },
+    {
+      "gene": "AURKA",
+      "alteration": "F31I",
+      "kind": "mutation",
+      "oncogenicity": "Likely Oncogenic",
+      "mutationEffect": "Likely Gain-of-function",
+      "escat": "X",
+      "escatDescription": "No evidence for actionability or lack of data",
+      "oncokbLevel": null,
+      "resistanceLevel": null,
+      "treatments": []
+    },
+    {
+      "gene": "CCND1",
+      "alteration": "AMPLIFICATION",
+      "kind": "cna",
+      "oncogenicity": "Oncogenic",
+      "escat": "X",
+      "escatDescription": "No evidence for actionability or lack of data",
+      "oncokbLevel": null,
+      "resistanceLevel": null,
+      "treatments": []
+    },
+    {
+      "gene": "FGF19",
+      "alteration": "AMPLIFICATION",
+      "kind": "cna",
+      "oncogenicity": "Likely Oncogenic",
+      "escat": "X",
+      "escatDescription": "No evidence for actionability or lack of data",
+      "oncokbLevel": null,
+      "resistanceLevel": null,
+      "treatments": []
+    }
+  ],
+  "cnv": [],
+  "fusions": [],
+  "literature": [
+    {
+      "pmid": "42099744",
+      "title": "Immunotherapy innovations in triple-negative breast cancer: targeting checkpoints, combinations, and biomarkers.",
+      "authors": "Wang ZX, Chu JH, Wang YR, Huang LY, Qian MP",
+      "journal": "Oncology reviews",
+      "year": "2026",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "42083571",
+      "title": "Multi-Omics Characterization of ABHD12 Across Pan-Cancer and Validation of Its Role in Promoting Proliferation and Metastasis in Breast Cancer.",
+      "authors": "Zhao J, Gou Y, Wang Y, Li Y, Ma H, Xing Y, Peng H, Guo C",
+      "journal": "Breast cancer (Dove Medical Press)",
+      "year": "2026",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "42034009",
+      "title": "Pathway-level somatic mutation burden reflects diffuse genomic accumulation rather than selective transcriptional disruption in ovarian serous carcinoma: Evidence from bulk, spatial, and multi-region genomic analyses.",
+      "authors": "Çağdaş EK",
+      "journal": "Gynecologic oncology",
+      "year": "2026",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "42013747",
+      "title": "Whole genome sequencing of locally advanced and metastatic breast carcinoma unravels relevant molecular signatures and novel events.",
+      "authors": "Kozan EN, Delgado-de la Mora J, Al Assaad M, Ginter P, Gundem G, Levine MF, Gorski K, Phan A, Beg S, Sigaras A, LaPolla D, Semaan A, Wilkes DC, Greco N, Sigouros M, Manohar J, Medina-Martínez JS, Sboner A, Elemento O, Hoda S, Saxena A, Andreopoulou E, Boyraz B, Mosquera JM",
+      "journal": "Pathology, research and practice",
+      "year": "2026",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "41969500",
+      "title": "Pan-cancer analysis reveals FOLH1 as a prognostic biomarker and immune modulator in human tumors.",
+      "authors": "Fan W, Guo X, Wang Y, He S, Zhang P",
+      "journal": "Translational cancer research",
+      "year": "2026",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "41969462",
+      "title": "Development and validation of a cuproptosis-related lncRNA signature for predicting prognosis and immunotherapy response in breast cancer: a retrospective analysis of TCGA data.",
+      "authors": "Hu P, Ye J, Han X, Ding H, Wang C, Song D",
+      "journal": "Translational cancer research",
+      "year": "2026",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "41935348",
+      "title": "Comparative Analysis of Homologous Recombination Repair Status Across Gynecologic and Breast Cancers in Chinese Populations.",
+      "authors": "Huang Y, Shao J, Yin X, Jiang Y, Luo J, Huang J, Zhao J, Fu S, Liao J",
+      "journal": "Current cancer drug targets",
+      "year": "2026",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "41877589",
+      "title": "Silencing RPL9 promotes malignant proliferation in breast cancer cells.",
+      "authors": "Zhu T, Dai J, Li W, Zhang H, Song Y, Zhang D, Liu R, Wang X, Shi Z, Tang H, Zhu X, Liu Y",
+      "journal": "International journal of immunopathology and pharmacology",
+      "year": "2026",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "41871940",
+      "title": "Homologous recombination deficiency and genomic alterations in advanced prostate cancer: insights for precision therapy.",
+      "authors": "Mercinelli C, Pavlick D, Agarwal N, Spiess PE, Li R, Kamat AM, Grivas P, Gupta S, Maiorano BA, Tateo V, Cigliola A, Piacentini M, Jacob JM, Bratslavsky G, Basnet A, Ross JS, Necchi A",
+      "journal": "The oncologist",
+      "year": "2026",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "41866616",
+      "title": "A cancer neuroscience-related gene model for prognosis prediction and immunotherapy response evaluation in breast cancer.",
+      "authors": "Wei Y, Li J, Li M, Qiu C",
+      "journal": "Discover oncology",
+      "year": "2026",
+      "gene": "TMB",
+      "alteration": ""
+    }
+  ],
+  "droppedVus": 517
+}

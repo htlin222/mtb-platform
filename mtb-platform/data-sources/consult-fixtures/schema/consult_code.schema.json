@@ -1,0 +1,14 @@
+{
+  "data": [
+    {
+      "CODE": "str",
+      "DESC1": "str",
+      "DESC2": "str",
+      "DESC3": "str",
+      "ITEM": "str",
+      "SORTSEQ": "float"
+    }
+  ],
+  "status": "bool",
+  "err": "str"
+}

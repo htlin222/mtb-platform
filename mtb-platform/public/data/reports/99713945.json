@@ -1,0 +1,414 @@
+{
+  "patient": {
+    "chartNo": "99713945",
+    "name": "Daniel Wu",
+    "sex": "M",
+    "age": 67,
+    "birthday": "1958-05-19",
+    "cancerType": "Pancreatic ductal adenocarcinoma",
+    "cancerCode": "PAAD",
+    "stage": "IV",
+    "team": "GI Oncology",
+    "attending": "Dr. J. Wang",
+    "status": "pending-review",
+    "reportDate": "2026-06-15",
+    "sampleId": "M25-1587R",
+    "panel": "TSO500 · 1.25 Mb"
+  },
+  "clinical": {
+    "consultReason": "Metastatic pancreatic adenocarcinoma — actionable driver assessment.",
+    "priorTherapy": [
+      "FOLFIRINOX"
+    ],
+    "ecog": 1,
+    "note": "Molecular profiling on the TSO500 · 1.25 Mb panel returned 15 clinically annotated alterations (538 variants of unknown significance filtered); TMB 16.9 mut/Mb, MSS, HRD-Negative."
+  },
+  "biomarkers": {
+    "tmb": 16.9,
+    "tmbClass": "TMB-High",
+    "variantCount": 21,
+    "panelSizeMb": 1.25,
+    "msi": "MSS",
+    "msiScore": 2.22,
+    "unstableSites": 2,
+    "totalSites": 90,
+    "hrd": 14,
+    "hrdStatus": "HRD-Negative",
+    "loh": null,
+    "tai": null,
+    "lst": null,
+    "hrdReliable": true
+  },
+  "variants": [
+    {
+      "gene": "KRAS",
+      "alteration": "G12D",
+      "kind": "mutation",
+      "oncogenicity": "Oncogenic",
+      "mutationEffect": "Gain-of-function",
+      "escat": "II",
+      "escatDescription": "Investigational target with strong evidence; enables clinical trial enrollment",
+      "oncokbLevel": "LEVEL_3A",
+      "resistanceLevel": null,
+      "treatments": [
+        {
+          "drugs": "Daraxonrasib",
+          "level": "LEVEL_3A",
+          "fdaApproved": false,
+          "description": "Daraxonrasib is an orally available, small-molecule RAS(ON) multi-selective noncovalent inhibitor. There are promising clinical data in patients with pancreatic adenocarcinoma harboring a KRAS G12 mutation treated with daraxonrasib. \nIn the Phase I RMC-6236-001 (NCT05379985) trial of daraxonrasib in 127 patients with RAS-mutant pancreatic adenocarcinoma (PDAC), the KRAS G12X-mutant cohort (n=42) demonstrated a median progression-free survival (PFS) of 8.5 months (95% CI=5.3-11.7), an objective response rate (ORR) of 29% (95% CI=16–45) and a median overall survival (OS) of 14.5 months (95% CI=8.8-NE) (Abstract: Garrido-Laguna et al. 2025 ASCO Gastrointestinal Cancers Symposium. https://www.asco.org/abstracts-presentations/ABSTRACT474560). Of the RAS-mutant cohort (G12X, G13X or Q61X) (n=57), the median PFS was 7.6 months (95% CI=5.9-11.1), the ORR was 25% (95% CI=14-38) and the median OS was 14.5 months (95% CI=8.8-NE) (Abstract: Garrido-Laguna et al. 2025 ASCO Gastrointestinal Cancers Symposium. https://www.asco.org/abstracts-presentations/ABSTRACT474560). In a clinical study of daraxonrasib in 44 patients with KRAS G12X-mutant pancreatic adenocarcinoma (n=23 KRAS G12D, n=9 KRAS G12V, n=11 KRAS G12R, n=1 KRAS G12S), the overall response rate was 20% (9/44), with nine patients (20%) demonstrating partial response (n=4 KRAS G12D, n=2 KRAS G12V, n=3 KRAS G12R), 32 patients (73%) demonstrating stable disease (n=17 KRAS G12D, n=6 KRAS G12V, n=8 KRAS G12R, n=1 KRAS G12S) and two patients (4.5%) demonstrating progressive disease (n=2 KRAS G12D) (Abstract: Arbour et al. Abstract# 6520, Annals of Oncol., 2023. https://www.annalsofoncology.org/article/S0923-7534%2823%2902675-3/fulltext). \nPreclinical studies with KRAS G12X mutated RAS-addicted cell lines and KRAS G12X mutant human xenograft models demonstrated increased sensitivity to daraxonrasib as measured by increased inhibition of cellular proliferation, dose-dependent tumor regression, anti-tumor immunity and RAS pathway inhibition (PMID: 38593348)."
+        },
+        {
+          "drugs": "Setidegrasib",
+          "level": "LEVEL_3A",
+          "fdaApproved": false,
+          "description": "Setidegrasib is an intravenously administered, small-molecule KRAS G12D-targeted degrader. There are promising clinical data of response to setidegrasib in patients with KRAS G12D-mutated pancreatic ductal adenocarcinoma (PDAC). \nIn the Phase I (NCT05382559) trial of setidegrasib as second-line treatment or third-line treatment in 21 patients with KRAS G12D-mutant PDAC, the objective response rate (ORR) was 24% (95% CI=8-47), with five confirmed partial responses (PR) and seven stable disease (SD) responses, the median time to response was 4.1 months (range=1.3-8.2), the median duration of response was 4.2 months (95% CI=2.7-NE), the median progression-free survival was 3.0 months (95% CI=1.4-6.9) and the median overall survival was 10.3 months (95% CI=4.2-13.0) (PMID: 41879829). In the exploratory analyses of the Phase I (NCT05382559) trial with 124 patients with KRAS G12D-mutant PDAC, 78% of patients with ≥50% reduced KRAS G12D variant allele frequency achieved SD or PR and demonstrated a clinical benefit (Abstract: Park et al. Abstract# 775, ASCO Gastrointestinal Cancers Symposium, 2026. https://ascopubs.org/doi/abs/10.1200/JCO.2026.44.2_suppl.775).\nIn vivo studies with KRAS G12D-mutant PDAC mouse xenograft models demonstrated antitumor activity with setidegrasib as measured by tumor regression (PMID: 40849515)."
+        },
+        {
+          "drugs": "Avutometinib + Defactinib",
+          "level": "LEVEL_3B",
+          "fdaApproved": false,
+          "description": "Avutometinib, a RAF/MEK clamp inhibitor, and defactinib, a FAK inhibitor, are FDA-approved in combination for the treatment of adult patients with KRAS-mutated recurrent low-grade serous ovarian cancer (LGSOC) who have received prior systemic therapy. FDA approval was based on the results of the Phase II RAMP-201 (NCT04625270) trial of avutometinib plus defactinib in 109 patients with recurrent LGSOC.\nIn the Phase II RAMP-201 (NCT04625270) trial, patients with KRAS-mutated LGSOC (n=57) demonstrated an overall response rate (ORR) of 44% (n=25), with a 2% (n=2) complete response (CR) rate, 40% (n=23) partial response (PR) rate and 49% (n=28) stable disease (SD) rate, a median duration of response (DOR) of 31.0 months (95% CI=14.8-31.1) and a median progression-free survival (PFS) of 22.0 months (95% CI=11.1-36.6) (PMID: 40644648). Responders included patients with the following KRAS mutations: KRAS A146V, G12D, G12R, G12V and Q61H (PMID: 40644648). Of patients with KRAS wildtype LGSOC (n=52), the cohort demonstrated an ORR of 17% (n=9), with a 17% (n=9) PR rate and 65% (n=34) SD rate, and a median PFS of 9.2 months (95% CI=5.5-NE) (PMID: 40644648)."
+        },
+        {
+          "drugs": "MRTX1133",
+          "level": "LEVEL_4",
+          "fdaApproved": false,
+          "description": "MRTX-1133 is an orally available, small-molecule inhibitor of KRAS G12D. In vitro studies with KRAS G12D-mutant PDAC cell lines demonstrated selective sensitivity to MRTX-1133 as measured by inhibition of KRAS G12D and downstream MAPK signaling activity compared to KRAS wildtype and KRAS G12C-mutant cell lines (PMID: 36472553). In vivo studies with KRAS G12D-mutant pancreatic ductal adenocarcinoma mouse xenograft models demonstrated antitumor activity to MRTX-1133 as measured by complete or near-complete remissions following treatment (PMID: 36472553)."
+        },
+        {
+          "drugs": "Trametinib",
+          "level": "LEVEL_4",
+          "fdaApproved": false,
+          "description": "Trametinib, cobimetinib, and binimetinib are MEK1/2 kinase inhibitors that are NCCN-listed and FDA-approved for patients with unresectable or metastatic melanoma with BRAF V600E or V600K mutations. In a multicenter, single-arm, open-label, phase IB trial (NCT02964689) of binimetinib in combination with cisplatin and pemetrexed in fourteen evaluable patients with stage III-IV NSCLC with KRAS (codon 12, 13 or 61) mutations, the overall response rate was 33% (95% CI=7–70) among the nine patients that received binimetinib, where three of nine patients had a partial response, two of nine had stable disease, three of nine had progressive disease, and one of nine was not assessable for response (PMID: 33933896). On average, in vitro studies have shown that trametinib inhibits the proliferation of KRAS mutant cancer cell lines (n = 50) with lower IC50s than other MEK inhibitors, including selumetinib (PMID: 24746704). Cobimetinib, which inhibits the kinase activity of MEK but allows the induction of RAF-dependent feedback phosphorylation of MEK, was demonstrated to be less effective in KRAS-mutant tumors than in BRAF-mutant tumors (PMID: 25435214, 23934108)."
+        },
+        {
+          "drugs": "Cobimetinib",
+          "level": "LEVEL_4",
+          "fdaApproved": false,
+          "description": "Trametinib, cobimetinib, and binimetinib are MEK1/2 kinase inhibitors that are NCCN-listed and FDA-approved for patients with unresectable or metastatic melanoma with BRAF V600E or V600K mutations. In a multicenter, single-arm, open-label, phase IB trial (NCT02964689) of binimetinib in combination with cisplatin and pemetrexed in fourteen evaluable patients with stage III-IV NSCLC with KRAS (codon 12, 13 or 61) mutations, the overall response rate was 33% (95% CI=7–70) among the nine patients that received binimetinib, where three of nine patients had a partial response, two of nine had stable disease, three of nine had progressive disease, and one of nine was not assessable for response (PMID: 33933896). On average, in vitro studies have shown that trametinib inhibits the proliferation of KRAS mutant cancer cell lines (n = 50) with lower IC50s than other MEK inhibitors, including selumetinib (PMID: 24746704). Cobimetinib, which inhibits the kinase activity of MEK but allows the induction of RAF-dependent feedback phosphorylation of MEK, was demonstrated to be less effective in KRAS-mutant tumors than in BRAF-mutant tumors (PMID: 25435214, 23934108)."
+        },
+        {
+          "drugs": "Binimetinib",
+          "level": "LEVEL_4",
+          "fdaApproved": false,
+          "description": "Trametinib, cobimetinib, and binimetinib are MEK1/2 kinase inhibitors that are NCCN-listed and FDA-approved for patients with unresectable or metastatic melanoma with BRAF V600E or V600K mutations. In a multicenter, single-arm, open-label, phase IB trial (NCT02964689) of binimetinib in combination with cisplatin and pemetrexed in fourteen evaluable patients with stage III-IV NSCLC with KRAS (codon 12, 13 or 61) mutations, the overall response rate was 33% (95% CI=7–70) among the nine patients that received binimetinib, where three of nine patients had a partial response, two of nine had stable disease, three of nine had progressive disease, and one of nine was not assessable for response (PMID: 33933896). On average, in vitro studies have shown that trametinib inhibits the proliferation of KRAS mutant cancer cell lines (n = 50) with lower IC50s than other MEK inhibitors, including selumetinib (PMID: 24746704). Cobimetinib, which inhibits the kinase activity of MEK but allows the induction of RAF-dependent feedback phosphorylation of MEK, was demonstrated to be less effective in KRAS-mutant tumors than in BRAF-mutant tumors (PMID: 25435214, 23934108)."
+        }
+      ]
+    },
+    {
+      "gene": "SMARCA4",
+      "alteration": "R1157Q",
+      "kind": "mutation",
+      "oncogenicity": "Likely Oncogenic",
+      "mutationEffect": "Unknown",
+      "escat": "III",
+      "escatDescription": "Clinical benefit demonstrated in other tumor types or similar molecular alterations",
+      "oncokbLevel": "LEVEL_3B",
+      "resistanceLevel": null,
+      "treatments": [
+        {
+          "drugs": "PRT3789",
+          "level": "LEVEL_3B",
+          "fdaApproved": false,
+          "description": "PRT3789 is an orally available, small molecule SMARCA2 degrader. There are promising clinical data of response to PRT3789 in patients with SMARCA4-mutated non-small cell lung cancer (NSCLC) and esophageal adenocarcinoma. In the Phase I (NCT05639751) trial of PRT3789 in 26 patients with SMARCA4-mutated NSCLC (n=24) or esophageal adenocarcinoma (n=2), three patients (n=2, esophageal adenocarcinoma; n=1, NSCLC) achieved a partial response and 26% (7/26) of patients demonstrated tumor shrinkage (Abstract: Guo, R. et al., Abstract# 603O, ESMO 2024. https://www.annalsofoncology.org/article/S0923-7534(24)02189-6/fulltext). In vivo studies with cell-derived and patient-derived xenograft models of various cancer types expressing SMARCA4 deletion mutations demonstrate sensitivity to PRT3789 as measured by tumor growth inhibition (PMID: 40991405)."
+        }
+      ]
+    },
+    {
+      "gene": "ARID1A",
+      "alteration": "R1276*",
+      "kind": "mutation",
+      "oncogenicity": "Likely Oncogenic",
+      "mutationEffect": "Likely Loss-of-function",
+      "escat": "IV",
+      "escatDescription": "Preclinical evidence of actionability",
+      "oncokbLevel": "LEVEL_4",
+      "resistanceLevel": null,
+      "treatments": [
+        {
+          "drugs": "OPN-2853 ",
+          "level": "LEVEL_4",
+          "fdaApproved": false,
+          "description": "PLX2853 is an inhibitor of the bromodomain-containing protein 4 (BRD4) that binds to the acetylated lysine recognition motifs in the bromodomains of the BRD4 protein, thereby preventing the binding of BRD4 to acetylated lysines on histones. Small molecule inhibitors of the BET family of proteins have been shown to specifically inhibit proliferation of ARID1A-mutated cell lines, both in vitro and in ovarian clear cell cancer xenografts and patient-derived xenograft models (PMID: 29760405). Similarly, loss of ARID1A has been shown to sensitize breast cancer cells to BET inhibition with various BET inhibitors including JQ1, OTX015, and IBET762 (PMID: 31913353). In an open-label Phase II clinical study of PLX2853 in patients with advanced gynecologic malignancies harboring an ARID1A mutation (n=14), partial response was achieved in one patient (7.1%), stable disease was achieved in five patients (35.7%) and progressive disease was observed in eight patients (57.1%) (PMID: 37797273)."
+        },
+        {
+          "drugs": "Tazemetostat",
+          "level": "LEVEL_4",
+          "fdaApproved": false,
+          "description": "Tazemetostat is a small molecule methyltransferase inhibitor of EZH2 indicated for the treatment of adult and pediatric patients with metastatic or locally advanced epithelioid sarcoma ineligible for complete resection as well as adults with relapsed or refractory follicular lymphoma whose tumors are positive for an EZH2 mutation. In vitro studies showed that other small molecule inhibitors of EZH2 methyltransferase activity, including GSK126, GSK343, and EPZ005687, selectively suppressed the growth of ARID1A mutated ovarian and gastric cancer cell lines compared to controls (PMID: 25686104, 32506298)."
+        }
+      ]
+    },
+    {
+      "gene": "ARID1A",
+      "alteration": "R1722*",
+      "kind": "mutation",
+      "oncogenicity": "Likely Oncogenic",
+      "mutationEffect": "Likely Loss-of-function",
+      "escat": "IV",
+      "escatDescription": "Preclinical evidence of actionability",
+      "oncokbLevel": "LEVEL_4",
+      "resistanceLevel": null,
+      "treatments": [
+        {
+          "drugs": "OPN-2853 ",
+          "level": "LEVEL_4",
+          "fdaApproved": false,
+          "description": "PLX2853 is an inhibitor of the bromodomain-containing protein 4 (BRD4) that binds to the acetylated lysine recognition motifs in the bromodomains of the BRD4 protein, thereby preventing the binding of BRD4 to acetylated lysines on histones. Small molecule inhibitors of the BET family of proteins have been shown to specifically inhibit proliferation of ARID1A-mutated cell lines, both in vitro and in ovarian clear cell cancer xenografts and patient-derived xenograft models (PMID: 29760405). Similarly, loss of ARID1A has been shown to sensitize breast cancer cells to BET inhibition with various BET inhibitors including JQ1, OTX015, and IBET762 (PMID: 31913353). In an open-label Phase II clinical study of PLX2853 in patients with advanced gynecologic malignancies harboring an ARID1A mutation (n=14), partial response was achieved in one patient (7.1%), stable disease was achieved in five patients (35.7%) and progressive disease was observed in eight patients (57.1%) (PMID: 37797273)."
+        },
+        {
+          "drugs": "Tazemetostat",
+          "level": "LEVEL_4",
+          "fdaApproved": false,
+          "description": "Tazemetostat is a small molecule methyltransferase inhibitor of EZH2 indicated for the treatment of adult and pediatric patients with metastatic or locally advanced epithelioid sarcoma ineligible for complete resection as well as adults with relapsed or refractory follicular lymphoma whose tumors are positive for an EZH2 mutation. In vitro studies showed that other small molecule inhibitors of EZH2 methyltransferase activity, including GSK126, GSK343, and EPZ005687, selectively suppressed the growth of ARID1A mutated ovarian and gastric cancer cell lines compared to controls (PMID: 25686104, 32506298)."
+        }
+      ]
+    },
+    {
+      "gene": "CDKN2A",
+      "alteration": "R58*",
+      "kind": "mutation",
+      "oncogenicity": "Likely Oncogenic",
+      "mutationEffect": "Likely Loss-of-function",
+      "escat": "IV",
+      "escatDescription": "Preclinical evidence of actionability",
+      "oncokbLevel": "LEVEL_4",
+      "resistanceLevel": null,
+      "treatments": [
+        {
+          "drugs": "Palbociclib",
+          "level": "LEVEL_4",
+          "fdaApproved": false,
+          "description": "Palbociclib, ribociclib, and abemaciclib are selective small molecule inhibitors of CDK4 and CDK6 (PMID: 25941111). There are laboratory and anecdotal clinical data to support use of palbociclib, ribociclib, and abemaciclib monotherapies in patients with CDKN2A-mutated solid tumors. \nIn a retrospective study of patients with uterine leiomyosarcoma, a patient harboring a CDKN2A mutation experienced stable disease and significant symptom reduction upon treatment with palbociclib (PMID: 28283584). In the Phase II TAPUR (NCT02693535) trial of palbociclib in 28 patients with head and neck cancer harboring CDKN2A mutations, the objective response rate was 4% (95% CI=<1-18) and the disease control rate was 40% (one-sided 90% CI=27-100) (PMID: 39413339).\nIn vitro studies of cancer cell lines with CDKN2A loss demonstrated that they are sensitive to CDK4/6 inhibition as measured by growth arrest upon drug treatment (PMID: 29232554). In a panel of melanoma and estrogen receptor-positive breast cancer cell lines, CDKN2A loss was found among cells with the highest sensitivity to palbociclib (PMID: 19874578, 24495407)."
+        },
+        {
+          "drugs": "Ribociclib",
+          "level": "LEVEL_4",
+          "fdaApproved": false,
+          "description": "Palbociclib, ribociclib, and abemaciclib are selective small molecule inhibitors of CDK4 and CDK6 (PMID: 25941111). There are laboratory and anecdotal clinical data to support use of palbociclib, ribociclib, and abemaciclib monotherapies in patients with CDKN2A-mutated solid tumors. \nIn a retrospective study of patients with uterine leiomyosarcoma, a patient harboring a CDKN2A mutation experienced stable disease and significant symptom reduction upon treatment with palbociclib (PMID: 28283584). In the Phase II TAPUR (NCT02693535) trial of palbociclib in 28 patients with head and neck cancer harboring CDKN2A mutations, the objective response rate was 4% (95% CI=<1-18) and the disease control rate was 40% (one-sided 90% CI=27-100) (PMID: 39413339).\nIn vitro studies of cancer cell lines with CDKN2A loss demonstrated that they are sensitive to CDK4/6 inhibition as measured by growth arrest upon drug treatment (PMID: 29232554). In a panel of melanoma and estrogen receptor-positive breast cancer cell lines, CDKN2A loss was found among cells with the highest sensitivity to palbociclib (PMID: 19874578, 24495407)."
+        },
+        {
+          "drugs": "Abemaciclib",
+          "level": "LEVEL_4",
+          "fdaApproved": false,
+          "description": "Palbociclib, ribociclib, and abemaciclib are selective small molecule inhibitors of CDK4 and CDK6 (PMID: 25941111). There are laboratory and anecdotal clinical data to support use of palbociclib, ribociclib, and abemaciclib monotherapies in patients with CDKN2A-mutated solid tumors. \nIn a retrospective study of patients with uterine leiomyosarcoma, a patient harboring a CDKN2A mutation experienced stable disease and significant symptom reduction upon treatment with palbociclib (PMID: 28283584). In the Phase II TAPUR (NCT02693535) trial of palbociclib in 28 patients with head and neck cancer harboring CDKN2A mutations, the objective response rate was 4% (95% CI=<1-18) and the disease control rate was 40% (one-sided 90% CI=27-100) (PMID: 39413339).\nIn vitro studies of cancer cell lines with CDKN2A loss demonstrated that they are sensitive to CDK4/6 inhibition as measured by growth arrest upon drug treatment (PMID: 29232554). In a panel of melanoma and estrogen receptor-positive breast cancer cell lines, CDKN2A loss was found among cells with the highest sensitivity to palbociclib (PMID: 19874578, 24495407)."
+        }
+      ]
+    },
+    {
+      "gene": "PRKCI",
+      "alteration": "R480C",
+      "kind": "mutation",
+      "oncogenicity": "Likely Oncogenic",
+      "mutationEffect": "Unknown",
+      "escat": "X",
+      "escatDescription": "No evidence for actionability or lack of data",
+      "oncokbLevel": null,
+      "resistanceLevel": null,
+      "treatments": []
+    },
+    {
+      "gene": "KDR",
+      "alteration": "Q472H",
+      "kind": "mutation",
+      "oncogenicity": "Likely Oncogenic",
+      "mutationEffect": "Likely Gain-of-function",
+      "escat": "X",
+      "escatDescription": "No evidence for actionability or lack of data",
+      "oncokbLevel": null,
+      "resistanceLevel": null,
+      "treatments": []
+    },
+    {
+      "gene": "DAXX",
+      "alteration": "E457del",
+      "kind": "mutation",
+      "oncogenicity": "Likely Oncogenic",
+      "mutationEffect": "Unknown",
+      "escat": "X",
+      "escatDescription": "No evidence for actionability or lack of data",
+      "oncokbLevel": null,
+      "resistanceLevel": null,
+      "treatments": []
+    },
+    {
+      "gene": "ARID2",
+      "alteration": "R274*",
+      "kind": "mutation",
+      "oncogenicity": "Likely Oncogenic",
+      "mutationEffect": "Likely Loss-of-function",
+      "escat": "X",
+      "escatDescription": "No evidence for actionability or lack of data",
+      "oncokbLevel": null,
+      "resistanceLevel": null,
+      "treatments": []
+    },
+    {
+      "gene": "TP53",
+      "alteration": "R282W",
+      "kind": "mutation",
+      "oncogenicity": "Likely Oncogenic",
+      "mutationEffect": "Inconclusive",
+      "escat": "X",
+      "escatDescription": "No evidence for actionability or lack of data",
+      "oncokbLevel": null,
+      "resistanceLevel": null,
+      "treatments": []
+    },
+    {
+      "gene": "TP53",
+      "alteration": "R158C",
+      "kind": "mutation",
+      "oncogenicity": "Likely Oncogenic",
+      "mutationEffect": "Likely Loss-of-function",
+      "escat": "X",
+      "escatDescription": "No evidence for actionability or lack of data",
+      "oncokbLevel": null,
+      "resistanceLevel": null,
+      "treatments": []
+    },
+    {
+      "gene": "TP53",
+      "alteration": "P152L",
+      "kind": "mutation",
+      "oncogenicity": "Likely Oncogenic",
+      "mutationEffect": "Likely Loss-of-function",
+      "escat": "X",
+      "escatDescription": "No evidence for actionability or lack of data",
+      "oncokbLevel": null,
+      "resistanceLevel": null,
+      "treatments": []
+    },
+    {
+      "gene": "SMAD4",
+      "alteration": "P130S",
+      "kind": "mutation",
+      "oncogenicity": "Likely Oncogenic",
+      "mutationEffect": "Loss-of-function",
+      "escat": "X",
+      "escatDescription": "No evidence for actionability or lack of data",
+      "oncokbLevel": null,
+      "resistanceLevel": null,
+      "treatments": []
+    },
+    {
+      "gene": "SMAD4",
+      "alteration": "R445*",
+      "kind": "mutation",
+      "oncogenicity": "Likely Oncogenic",
+      "mutationEffect": "Likely Loss-of-function",
+      "escat": "X",
+      "escatDescription": "No evidence for actionability or lack of data",
+      "oncokbLevel": null,
+      "resistanceLevel": null,
+      "treatments": []
+    },
+    {
+      "gene": "AURKA",
+      "alteration": "F31I",
+      "kind": "mutation",
+      "oncogenicity": "Likely Oncogenic",
+      "mutationEffect": "Likely Gain-of-function",
+      "escat": "X",
+      "escatDescription": "No evidence for actionability or lack of data",
+      "oncokbLevel": null,
+      "resistanceLevel": null,
+      "treatments": []
+    }
+  ],
+  "cnv": [],
+  "fusions": [],
+  "literature": [
+    {
+      "pmid": "41969500",
+      "title": "Pan-cancer analysis reveals FOLH1 as a prognostic biomarker and immune modulator in human tumors.",
+      "authors": "Fan W, Guo X, Wang Y, He S, Zhang P",
+      "journal": "Translational cancer research",
+      "year": "2026",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "41776634",
+      "title": "Unraveling the oncogenic and immunomodulatory roles of GINS1: a systematic pan-cancer study.",
+      "authors": "Zhang X, Lei W, Pan Y, Zhong L, Zhai L, Li H, Liu B",
+      "journal": "Cancer cell international",
+      "year": "2026",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "41595468",
+      "title": "Identification of Prognostic Genes and Establishment of a Risk Score Model Related to Pancreatic Adenocarcinoma and Brown Adipose Tissue Based on Transcriptomics and Experimental Validation.",
+      "authors": "Kang B, Wang W, Guo X, Bai T, Lv C, Shen Y",
+      "journal": "Genes",
+      "year": "2025",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "41436608",
+      "title": "Characterization of pancreatic cancer stem cells and construction of a stem cell-based prognostic signature.",
+      "authors": "Fang J, Ji H, Wang M, Zheng B, Zhou J, Xiao C",
+      "journal": "Scientific reports",
+      "year": "2025",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "41298756",
+      "title": "A autophagy related gene signature to predict the prognosis of pancreatic carcinoma and tumor immune microenvironment evaluation.",
+      "authors": "Wang X, Wang X, Ying B",
+      "journal": "Scientific reports",
+      "year": "2025",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "41261631",
+      "title": "Identification of pancreatic subtypes and prognostic markers on the basis of changes in immunologic signature gene sets activity.",
+      "authors": "Fang J, Gao S, Wang M, Ni W, Du J, Lin W, Lin M",
+      "journal": "Medicine",
+      "year": "2025",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "41253932",
+      "title": "Migrasome-related LncRNA features predict immune microenvironment and prognosis in pancreatic cancer.",
+      "authors": "Li W, Cao Y, Sun X, Wang T, Xu P, Li P",
+      "journal": "Scientific reports",
+      "year": "2025",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "41235257",
+      "title": "Integration of bulk and single-cell transcriptomic data reveals a novel signature related to liver metastasis and basement membrane in pancreatic cancer.",
+      "authors": "Zhou D, Zhong C, Yang Q, Cui B, Wang Y",
+      "journal": "Frontiers in immunology",
+      "year": "2025",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "41234856",
+      "title": "Deciphering immune landscapes: an ICD-lncRNA-derived prognostic signature for pancreatic adenocarcinoma.",
+      "authors": "Zhu H, Gan X, Shen D, Sun D",
+      "journal": "Translational cancer research",
+      "year": "2025",
+      "gene": "TMB",
+      "alteration": ""
+    },
+    {
+      "pmid": "41220570",
+      "title": "Stimulator of interferon genes signaling network-driven prognostic signature for pancreatic cancer: Hub gene discovery with multimodal validation.",
+      "authors": "Yu W, Liao J, Li J, Wu Y",
+      "journal": "Oncology letters",
+      "year": "2025",
+      "gene": "TMB",
+      "alteration": ""
+    }
+  ],
+  "droppedVus": 538
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "CHART_NO": "str",
+    "INP_NO": "str",
+    "CHART_SEQ": "int",
+    "SEQ_NO": "int",
+    "PROG_DATE": "str",
+    "SYS_DATE": "str",
+    "PROG_TIME": "str",
+    "USER_ID": "str",
+    "USER_NAME": "str",
+    "PROBLEM": "null",
+    "NOTE": "str",
+    "NOTE_P": "str",
+    "NOTE_TYPE": "str",
+    "DSS_FLAG": "str",
+    "COSIGN_WITH": "str",
+    "IMG_ID": "null",
+    "DOC_CLASS": "str",
+    "JOB_TYPE": "str",
+    "atUserArray": [],
+    "userArray": ["str"]
+  }
+]

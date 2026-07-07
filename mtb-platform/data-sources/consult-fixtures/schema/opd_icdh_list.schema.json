@@ -1,0 +1,19 @@
+{
+  "data": [
+    {
+      "SRC": "str",
+      "REG_DATE": "str",
+      "CHART_NO": "str",
+      "USER_NAME": "str",
+      "HDEPT_NAME": "str",
+      "PAT_NAME": "str",
+      "SEX": "str",
+      "PAT_IDNO": "str",
+      "BIRTHDAY": "str",
+      "ICDH_CODE1": "str",
+      "ICDH_NAME1": "str",
+      "CHK": "str"
+    }
+  ],
+  "status": "bool"
+}

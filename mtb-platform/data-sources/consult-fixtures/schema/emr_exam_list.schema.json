@@ -1,0 +1,136 @@
+{
+  "data": {
+    "2023": {
+      "20230821": {
+        "RPT": {
+          "COVID-19 病人風險評估表 Online": [
+            {
+              "MED_CLASS": "str",
+              "FORM_ID": "str",
+              "MED_VALUE": "str",
+              "VALUE": "str",
+              "DISP_DATE": "str",
+              "CHECK_NO": "str",
+              "DISP_YEAR": "str",
+              "WEB_LINK": "str",
+              "FILTER_CATEGORY": "str",
+              "MED_CLASS_NAME": "str",
+              "STATUS": "str"
+            }
+          ]
+        }
+      }
+    },
+    "2022": {
+      "20220704": {
+        "RPT": {
+          "COVID-19 病人風險評估表 Online": [
+            {
+              "MED_CLASS": "str",
+              "FORM_ID": "str",
+              "MED_VALUE": "str",
+              "VALUE": "str",
+              "DISP_DATE": "str",
+              "CHECK_NO": "str",
+              "DISP_YEAR": "str",
+              "WEB_LINK": "str",
+              "FILTER_CATEGORY": "str",
+              "MED_CLASS_NAME": "str",
+              "STATUS": "str"
+            }
+          ]
+        }
+      },
+      "20220330": {
+        "RPT": {
+          "COVID-19 病人風險評估表 Online": [
+            {
+              "MED_CLASS": "str",
+              "FORM_ID": "str",
+              "MED_VALUE": "str",
+              "VALUE": "str",
+              "DISP_DATE": "str",
+              "CHECK_NO": "str",
+              "DISP_YEAR": "str",
+              "WEB_LINK": "str",
+              "FILTER_CATEGORY": "str",
+              "MED_CLASS_NAME": "str",
+              "STATUS": "str"
+            }
+          ]
+        }
+      },
+      "20220321": {
+        "RPT": {
+          "Outside Hospital Records": [
+            {
+              "MED_CLASS_NAME": "str",
+              "MED_VALUE": "str",
+              "MED_VALUE_CH": "str",
+              "MED_CLASS": "str",
+              "CASEID": "int",
+              "CHART_NO": "str",
+              "FORMID": "str",
+              "REG_NO": "null",
+              "IPD_NO": "null",
+              "REG_DATE": "null",
+              "IPD_DATE": "null",
+              "IPD_OUT_DATE": "null",
+              "HT_CHK_IN_DATE": "null",
+              "SIGN_DATE": "str",
+              "SYSTEM_DATE": "str",
+              "HT_CHK_NO": "null",
+              "FILE_PATH": "str",
+              "PDF_PATH": "str",
+              "REG_SEQ": "str",
+              "INP_NO": "str",
+              "CLASS_NAME": "str",
+              "VALUE": "str",
+              "FORM_ID": "str",
+              "CHECK_NO": "str",
+              "DISP_DATE": "str",
+              "PDF_LINK": "str",
+              "STATUS": "str",
+              "DISP_YEAR": "str",
+              "FILTER_CATEGORY": "str"
+            }
+          ],
+          "Outside Hospital Pathology Report": [
+            {
+              "MED_CLASS_NAME": "str",
+              "MED_VALUE": "str",
+              "MED_VALUE_CH": "str",
+              "MED_CLASS": "str",
+              "CASEID": "int",
+              "CHART_NO": "str",
+              "FORMID": "str",
+              "REG_NO": "null",
+              "IPD_NO": "null",
+              "REG_DATE": "null",
+              "IPD_DATE": "null",
+              "IPD_OUT_DATE": "null",
+              "HT_CHK_IN_DATE": "null",
+              "SIGN_DATE": "str",
+              "SYSTEM_DATE": "str",
+              "HT_CHK_NO": "null",
+              "FILE_PATH": "str",
+              "PDF_PATH": "str",
+              "REG_SEQ": "str",
+              "INP_NO": "str",
+              "CLASS_NAME": "str",
+              "VALUE": "str",
+              "FORM_ID": "str",
+              "CHECK_NO": "str",
+              "DISP_DATE": "str",
+              "PDF_LINK": "str",
+              "STATUS": "str",
+              "DISP_YEAR": "str",
+              "FILTER_CATEGORY": "str"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "categories": ["str"]
+}
