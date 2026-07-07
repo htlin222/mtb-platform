@@ -1,0 +1,47 @@
+name: Deploy to Cloudflare Pages
+
+# Build the app in CI and deploy it (static assets + Pages Functions under
+# mtb-platform/functions) to Cloudflare Pages via wrangler on every push to main.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    defaults:
+      run:
+        working-directory: mtb-platform
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: mtb-platform/pnpm-lock.yaml
+
+      - run: pnpm install --frozen-lockfile
+
+      - run: pnpm test
+
+      - run: pnpm build
+
+      # Deploys mtb-platform/dist (and compiles the adjacent functions/ dir).
+      # Requires the CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID GitHub secrets
+      # and an existing Pages project named "mtb-platform".
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: mtb-platform
+          command: pages deploy dist --project-name=mtb-platform --branch=main
