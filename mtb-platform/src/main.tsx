@@ -9,6 +9,7 @@ import Research from "./pages/Research";
 import Board from "./pages/Board";
 import Cohort from "./pages/Cohort";
 import Evidence from "./pages/Evidence";
+import Deck from "./pages/Deck";
 import "./pajamas.css";
 
 // Batch pulls in IGV.js (~1.3 MB) — load it only when visited.
@@ -23,6 +24,7 @@ const router = createHashRouter([
   { path: "/upload", element: <Upload /> },
   { path: "/process/:chartNo", element: <Process /> },
   { path: "/report/:chartNo", element: <ReportPage /> },
+  { path: "/deck/:chartNo", element: <Deck /> },
   { path: "/research", element: <Research /> },
   { path: "/board/:chartNo", element: <Board /> },
   { path: "/cohort", element: <Cohort /> },
