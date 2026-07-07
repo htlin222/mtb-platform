@@ -1,9 +1,42 @@
-# MTB Platform
+# MTB Platform — a community cancer center's molecular tumor board
 
-A Molecular Tumor Board review platform. It turns the **real output of the
-`ngs-tertiary-analysis-skills` pipeline** into a per-patient molecular report,
-in a single TypeScript interface styled with GitLab's
+**Live: https://mtb-platform.pages.dev/** · Built with Claude Code for
+*Built with Claude: Life Sciences* (Builder Track).
+
+We are a community cancer center — not a university hospital. We run NGS but
+can't staff the specialty panel a molecular tumor board needs, and we need to
+stay current with fast-moving evidence. So we built the tumor board we couldn't
+staff: it turns real molecular-profiling output into a per-patient report, lets
+you drop a VCF and see actionable genes light up live, convenes an expert panel,
+grounds every call in the literature, and **re-annotates signed reports** so a
+variant reported as VUS today is flagged when it becomes actionable tomorrow.
+
+A single TypeScript interface styled with GitLab's
 [Pajamas design system](https://design.gitlab.com/).
+
+## What it does
+
+- **Worklist → report** with Overview, Clinical journal, Variants, Biomarkers,
+  Therapies, and Literature (PRISMA + GRADE) tabs.
+- **Live VCF upload** — parsed entirely in the browser, annotated against a
+  bundled hg19 actionable-gene set; feeds a live report.
+- **Animated 9-stage pipeline** view mirroring the real tertiary-analysis stages.
+- **Tumor board** — convene a panel of specialist personas, vote, capture a decision.
+- **Research topic chat** — turn a clinical gap into a PRISMA/GRADE review topic.
+- **Cohort dashboard** with the center's real ESMO 2026 pan-cancer numbers and an
+  ASHOP-style sample-matrix oncoprint.
+- **Batch genome view** (IGV.js) and **Chart.js** tier charts.
+- **Re-annotation** alerts when a variant's significance changes.
+- **Claude AI summary** — a Cloudflare Pages Function calls the Anthropic API to
+  draft an MTB discussion summary from the real findings (see setup below).
+
+## Claude usage
+
+The entire platform was built in a single Claude Code session, orchestrating the
+integration of four data sources (an NGS tertiary-analysis pipeline, a hospital
+EMR/consult schema, a PRISMA literature pipeline, and a tumor-board collaboration
+model) and browser-driven verification of every view. At runtime, the AI summary
+feature calls the Anthropic Messages API from a Pages Function.
 
 ## Data sources
 
@@ -75,5 +108,29 @@ pnpm build     # tsc + vite production build (static; deployable to Pages / Netl
 (default `/Users/htlin/ngs-tertiary-analysis-skills/reports`). The generated
 `public/data/*.json` is PHI-free and committed, so the app runs offline.
 
-Stack: Vite 8 · React 18 · GitLab Pajamas tokens (no UI framework dependency) ·
-react-router-dom (HashRouter, no server rewrite).
+Stack: Vite · React · GitLab Pajamas tokens (no UI framework dependency) ·
+react-router-dom (HashRouter) · IGV.js · Chart.js · Cloudflare Pages + Functions.
+
+### AI summary setup (optional)
+
+The `/api/summary` Pages Function needs an Anthropic API key, kept only as a
+server-side secret:
+
+```bash
+cp .dev.vars.example .dev.vars   # paste your ANTHROPIC_API_KEY
+pnpm secret                      # pushes it to the Cloudflare Pages secret
+```
+
+Without the key the feature degrades gracefully (the button shows a setup hint).
+
+## Data & privacy
+
+All committed data is PHI-free: patient identities are mocked per sample, and
+molecular content is either real de-identified pipeline output or the center's
+aggregate ESMO cohort metrics. The real `reports/` patient directory never
+enters this repo.
+
+## License
+
+[MIT](./LICENSE).
+
