@@ -82,6 +82,9 @@ export default function ReportPage() {
         <PersonIcon size={20} />
         <h1 style={{ fontSize: 20 }}>{patient.name}</h1>
         <GlBadge variant={signed ? "success" : status.variant}>{signed ? "Signed off" : status.label}</GlBadge>
+        <button className="gl-button" style={{ marginLeft: "auto" }} onClick={() => navigate(`/deck/${patient.chartNo}`)}>
+          ▷ Present case
+        </button>
       </div>
       <div className="gl-meta">
         {patient.chartNo === "live" ? (

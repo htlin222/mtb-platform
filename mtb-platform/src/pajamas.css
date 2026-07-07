@@ -459,3 +459,72 @@ details.gl-disclosure > summary { list-style: none; cursor: pointer; }
 details.gl-disclosure > summary::-webkit-details-marker { display: none; }
 details.gl-disclosure[open] .gl-chevron { transform: rotate(90deg); }
 .gl-chevron { transition: transform 0.15s; color: var(--text-muted); display: inline-flex; }
+
+/* Redacted PHI — blur until clicked */
+.gl-redacted { filter: blur(6px); cursor: pointer; transition: filter 0.15s; user-select: none; }
+.gl-redacted.revealed { filter: none; user-select: text; }
+
+/* ---- Case-presentation deck --------------------------------------------- */
+.gl-deck {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px 96px;
+}
+.gl-slide {
+  width: 100%;
+  max-width: 960px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 48px 56px;
+  color: var(--text);
+}
+.gl-slide-title { text-align: center; }
+.gl-slide-h { font-size: 34px; margin-bottom: 24px; }
+.gl-slide-title .gl-slide-h { font-size: 40px; margin-bottom: 16px; }
+.gl-slide-patient { font-size: 28px; font-weight: 600; margin-bottom: 8px; }
+.gl-slide-sub { font-size: 20px; color: var(--text-secondary); margin-bottom: 20px; }
+.gl-slide-meta { font-size: 14px; }
+.gl-slide-list { font-size: 20px; line-height: 1.8; margin: 0; padding-left: 28px; }
+.gl-slide-list li { margin-bottom: 8px; }
+.gl-slide-table { width: 100%; border-collapse: collapse; font-size: 18px; }
+.gl-slide-table th {
+  text-align: left; padding: 8px 12px; border-bottom: 2px solid var(--border-strong);
+  font-size: 14px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.03em;
+}
+.gl-slide-table td { padding: 10px 12px; border-bottom: 1px solid var(--border); }
+.gl-slide-findings { display: flex; flex-direction: column; gap: 14px; }
+.gl-slide-finding {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  font-size: 19px; padding: 12px 16px;
+  background: var(--bg-subtle); border: 1px solid var(--border); border-radius: var(--radius-sm);
+}
+.gl-slide-drugs { color: var(--text-secondary); font-size: 17px; }
+.gl-slide-narration {
+  margin-top: 28px; padding-top: 20px; border-top: 1px solid var(--border);
+  font-size: 17px; color: var(--text-secondary);
+}
+.gl-deck-chrome {
+  position: sticky; bottom: 0; z-index: 5;
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  padding: 12px 24px; background: var(--bg-surface); border-top: 1px solid var(--border);
+}
+.gl-deck-nav { display: flex; align-items: center; gap: 12px; }
+.gl-deck-counter { font-size: 14px; color: var(--text-muted); }
+.gl-deck-print { display: none; }
+
+@media print {
+  .gl-deck, .gl-deck-chrome, .gl-breadcrumb { display: none !important; }
+  .gl-deck-print { display: block; }
+  .gl-deck-print .gl-slide {
+    border: none; border-radius: 0; max-width: none;
+    break-after: page; page-break-after: always;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .gl-deck-print .gl-slide:last-child { break-after: auto; page-break-after: auto; }
+  /* Interactive controls must not leak into the printed clinical deliverable
+     (the drafted narration text is kept). */
+  .gl-deck-print .gl-button { display: none !important; }
+}
