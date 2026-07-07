@@ -1,6 +1,7 @@
 import type { Report } from "../types";
 import { biomarkerPositive } from "../lib/format";
 import { GlCard, GlBadge } from "./gl";
+import { TierDoughnut } from "./Charts";
 
 export default function BiomarkersTab({ report }: { report: Report }) {
   const b = report.biomarkers;
@@ -17,6 +18,10 @@ export default function BiomarkersTab({ report }: { report: Report }) {
           signal={biomarkerPositive("hrd", b)} signalText={b.hrdStatus}
           sub={b.hrdReliable ? "reliable" : "low tumour fraction"} />
       </div>
+
+      <GlCard header="Alterations by ESCAT tier">
+        <TierDoughnut report={report} />
+      </GlCard>
 
       <GlCard header="HRD components">
         <div className="gl-row" style={{ gap: 40, flexWrap: "wrap" }}>

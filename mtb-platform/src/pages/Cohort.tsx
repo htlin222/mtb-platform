@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { GlCard, GlBadge, ScaleIcon } from "../components/gl";
+import type { Report } from "../types";
+import { loadWorklist, loadReport } from "../lib/data";
+import Oncoprint from "../components/Oncoprint";
 
 interface CohortData {
   title: string; subtitle: string; n: number; cancerTypes: number; months: number; panel: string;
@@ -14,7 +17,14 @@ interface CohortData {
 export default function Cohort() {
   const navigate = useNavigate();
   const [d, setD] = useState<CohortData | null>(null);
+  const [reports, setReports] = useState<Report[]>([]);
   useEffect(() => { fetch(`${import.meta.env.BASE_URL}data/cohort.json`).then((r) => r.json()).then(setD).catch(() => setD(null)); }, []);
+  useEffect(() => {
+    loadWorklist()
+      .then((rows) => Promise.all(rows.map((r) => loadReport(r.chartNo).catch(() => null))))
+      .then((reps) => setReports(reps.filter(Boolean) as Report[]))
+      .catch(() => setReports([]));
+  }, []);
   if (!d) return <div className="gl-page"><div className="gl-spinner" /></div>;
 
   const maxGene = Math.max(...d.topGenes.map((g) => g.n));
@@ -78,6 +88,18 @@ export default function Cohort() {
           ))}
         </GlCard>
       </div>
+
+      {reports.length > 0 && (
+        <div style={{ marginTop: 16 }}>
+          <GlCard header="Sample matrix (oncoprint)">
+            <p className="gl-text-xs gl-text-muted" style={{ margin: "0 0 12px" }}>
+              Recurrent alterations across the cohort, grouped by cancer type. Inspired by the ASH
+              HematOmics Program (ASHOP) sample matrix.
+            </p>
+            <Oncoprint reports={reports} />
+          </GlCard>
+        </div>
+      )}
 
       <div style={{ marginTop: 16 }}>
         <GlCard header="Marquee finding">

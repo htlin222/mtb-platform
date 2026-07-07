@@ -1,6 +1,7 @@
 import type { Report } from "../types";
 import { ESCAT_META, isActionable, biomarkerPositive } from "../lib/format";
 import { GlCard, GlBadge, GlLinkButton, PulseIcon, BeakerIcon, ScaleIcon } from "./gl";
+import AiSummary from "./AiSummary";
 
 export default function Overview({ report, onGoto }: { report: Report; onGoto: (t: string) => void }) {
   const { clinical, biomarkers, variants } = report;
@@ -15,6 +16,8 @@ export default function Overview({ report, onGoto }: { report: Report; onGoto: (
 
   return (
     <div className="gl-col">
+      <AiSummary report={report} />
+
       {/* Key findings — the 10-second read */}
       <GlCard header={<><PulseIcon /> Key actionable findings</>}>
         {actionable.length === 0 ? (
