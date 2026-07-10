@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import { useParams, useNavigate, useSearchParams } from "react-router-dom";
 import type { Report } from "../types";
 import { loadReport } from "../lib/data";
@@ -13,8 +13,10 @@ import VariantsTab from "../components/VariantsTab";
 import BiomarkersTab from "../components/BiomarkersTab";
 import TherapiesTab from "../components/TherapiesTab";
 import LiteratureTab from "../components/LiteratureTab";
+import NotesTab from "../components/NotesTab";
+import { subscribeNotes, getNotes, notesFor } from "../lib/notes";
 
-type TabKey = "overview" | "clinical" | "variants" | "biomarkers" | "therapies" | "literature";
+type TabKey = "overview" | "clinical" | "variants" | "biomarkers" | "therapies" | "literature" | "notes";
 
 const TABS: { key: TabKey; label: string; icon: React.FC<{ size?: number }> }[] = [
   { key: "overview", label: "Overview", icon: ListIcon },
@@ -23,6 +25,7 @@ const TABS: { key: TabKey; label: string; icon: React.FC<{ size?: number }> }[] 
   { key: "biomarkers", label: "Biomarkers", icon: ScaleIcon },
   { key: "therapies", label: "Therapies", icon: BeakerIcon },
   { key: "literature", label: "Literature", icon: BookIcon },
+  { key: "notes", label: "Notes", icon: CommentIcon },
 ];
 
 export default function ReportPage() {
@@ -35,6 +38,7 @@ export default function ReportPage() {
   const [tab, setTab] = useState<TabKey>("overview");
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [signed, setSigned] = useState(false);
+  useSyncExternalStore(subscribeNotes, getNotes, getNotes);
 
   useEffect(() => {
     if (!chartNo) return;
@@ -66,6 +70,7 @@ export default function ReportPage() {
     biomarkers: report.cnv.length + report.fusions.length,
     therapies: report.variants.reduce((n, v) => n + v.treatments.length, 0),
     literature: report.literature.length,
+    notes: notesFor(patient.chartNo).length || null,
   };
   const actionable = report.variants.filter(isActionable);
 
@@ -225,6 +230,7 @@ export default function ReportPage() {
           {tab === "biomarkers" && <BiomarkersTab report={report} />}
           {tab === "therapies" && <TherapiesTab report={report} />}
           {tab === "literature" && <LiteratureTab report={report} />}
+          {tab === "notes" && <NotesTab report={report} />}
         </div>
 
         {/* At-a-glance rail */}

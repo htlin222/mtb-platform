@@ -44,6 +44,10 @@ variant reported as a VUS today is flagged the day it becomes actionable.
 - 🎯 **Mutation Mapper** — cBioPortal-style lollipop plots (Pfam domains, ESCAT rings,
   recurrence scaling) per mutation and cohort-wide, so hotspots and functional context
   are visible at a glance.
+- 🗒️ **Anchored clinician notes** — jot a note *on the thing you're looking at* (a variant,
+  a therapy, a report section), not a free-floating scratchpad. Notes are editable,
+  aggregated in a per-report **Notes** tab, export with the case as JSON, and every
+  add/edit/delete is logged to the audit trail as a `human` action.
 - 🧾 **Full audit trail** — every operation across every process lands in one append-only
   log, tagged by **trust class**: `code` (deterministic), `model` (a Claude call, with the
   model id), `external` (a third-party fetch, e.g. PubMed), `human` (a clinician action —
