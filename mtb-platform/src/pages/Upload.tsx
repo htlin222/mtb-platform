@@ -4,6 +4,7 @@ import type { WorklistEntry } from "../types";
 import { loadWorklist, LIVE_KEY } from "../lib/data";
 import { parseVcf, type ParseResult } from "../lib/vcf";
 import { buildLiveReport } from "../lib/liveReport";
+import { logAudit, fingerprint } from "../lib/audit";
 import { GlCard, GlBadge, UploadIcon, BeakerIcon } from "../components/gl";
 import { ESCAT_META } from "../lib/format";
 
@@ -21,6 +22,14 @@ export default function Upload() {
       const pr = parseVcf(text, name);
       if (pr.total === 0) { setErr("No PASS variant records found — is this a VCF?"); return; }
       setErr(null); setParsed(pr);
+      logAudit({
+        trust: "deterministic",
+        op: "vcf.parse",
+        summary: `Parsed ${pr.total} PASS variants (${pr.somatic} somatic) · ${pr.variants.filter((v) => v.gene).length} in actionable genes · ${pr.actionable.length} Tier I–II`,
+        detail: { filename: name, reference: pr.reference, total: pr.total, somatic: pr.somatic, tierI_II: pr.actionable.length },
+        patient: name,
+        fingerprint: fingerprint(text),
+      });
     } catch { setErr("Could not parse this file as a VCF."); }
   }, []);
 
@@ -42,7 +51,17 @@ export default function Upload() {
 
   const run = () => {
     if (!parsed) return;
-    sessionStorage.setItem(LIVE_KEY, JSON.stringify(buildLiveReport(parsed)));
+    const report = buildLiveReport(parsed);
+    sessionStorage.setItem(LIVE_KEY, JSON.stringify(report));
+    logAudit({ trust: "human", op: "pipeline.run", summary: `Ran tertiary analysis on ${parsed.filename}`, patient: parsed.filename });
+    logAudit({
+      trust: "deterministic",
+      op: "livereport.build",
+      summary: `Built live report — ${report.variants.length} annotated variants · TMB proxy ${report.biomarkers.tmb} mut/Mb`,
+      detail: { annotated: report.variants.length, tmbProxy: report.biomarkers.tmb, droppedVus: report.droppedVus },
+      patient: parsed.filename,
+      fingerprint: fingerprint(report),
+    });
     navigate(`/process/live?vcf=${encodeURIComponent(parsed.filename)}`);
   };
 

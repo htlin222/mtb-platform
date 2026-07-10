@@ -3,6 +3,7 @@ import { useParams, useNavigate, useSearchParams } from "react-router-dom";
 import type { Report } from "../types";
 import { loadReport } from "../lib/data";
 import { STAGES } from "../lib/pipeline";
+import { logAudit } from "../lib/audit";
 import { GlBadge, CheckIcon, ServerIcon } from "../components/gl";
 
 const STEP_MS = 850;
@@ -24,10 +25,15 @@ export default function Process() {
   useEffect(() => {
     if (active < 0 || !report) return;
     if (active >= STAGES.length) {
+      logAudit({ trust: "deterministic", op: "pipeline.complete", summary: `Tertiary-analysis pipeline finished — ${STAGES.length} stages`, patient: chartNo });
       const t = setTimeout(() => navigate(`/report/${chartNo}?new=1`), 900);
       return () => clearTimeout(t);
     }
-    const t = setTimeout(() => setActive((i) => i + 1), STEP_MS);
+    const stage = STAGES[active];
+    const t = setTimeout(() => {
+      logAudit({ trust: "deterministic", op: `pipeline.${stage.id}`, summary: `${stage.name} complete`, detail: { tool: stage.tool }, patient: chartNo });
+      setActive((i) => i + 1);
+    }, STEP_MS);
     return () => clearTimeout(t);
   }, [active, report, chartNo, navigate]);
 

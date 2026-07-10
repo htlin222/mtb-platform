@@ -30,6 +30,11 @@ variant reported as a VUS today is flagged the day it becomes actionable.
   appraised as a systematic review (PRISMA 2020 selection + GRADE certainty), or
   derived from retrieved PubMed evidence, with one-click live synthesis via
   [robust-lit-review](https://github.com/htlin222/robust-lit-review) and the Anthropic API.
+- 🤖 **Visible appraisal agent** — "Run robust-lit-review" is a streamed, self-correcting
+  loop, not one call: Claude **appraises** → every cited PMID is **verified live against
+  PubMed** (NCBI E-utilities) and the retrieved set → if any citation is hallucinated or
+  dead, it's fed back and Claude **revises** without it. The trace and a green/red
+  citation ledger are shown as it runs, so the self-check is on screen, not implied.
 - 📝 **AMA-default citations** (Vancouver / APA) with clipboard copy, reference-list
   export, and a [mybib.com](https://www.mybib.com/) hand-off.
 - 🩺 **Case-presentation deck** — a keyboard-navigable, print-to-PDF slide deck for the
@@ -39,6 +44,12 @@ variant reported as a VUS today is flagged the day it becomes actionable.
 - 🎯 **Mutation Mapper** — cBioPortal-style lollipop plots (Pfam domains, ESCAT rings,
   recurrence scaling) per mutation and cohort-wide, so hotspots and functional context
   are visible at a glance.
+- 🧾 **Full audit trail** — every operation across every process lands in one append-only
+  log, tagged by **trust class**: `code` (deterministic), `model` (a Claude call, with the
+  model id), `external` (a third-party fetch, e.g. PubMed), `human` (a clinician action —
+  sign-off, endorse/dissent). Each event carries a content fingerprint; the log is a
+  global slide-out drawer, filterable and exportable to JSON. The anti-hallucination
+  answer to "which step did what?" — nothing happens off the record.
 - 🛡️ **Responsible AI by default** — every Claude call is grounded in the provided
   evidence, refusals (`stop_reason: "refusal"`) are handled gracefully with a fallback
   to deterministic findings, and a citation checker verifies every PMID/DOI resolves.

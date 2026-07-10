@@ -109,6 +109,10 @@ export default function ReportPage() {
         )}
       </div>
 
+      {/* live upload: make the boundary explicit — what the VCF establishes on
+          its own vs. what genuinely needs the full pipeline. Nothing is faked. */}
+      {patient.chartNo === "live" && <LiveProvenance report={report} />}
+
       {/* re-annotation alert: variants reclassified since the report was issued */}
       {report.reannotation.events.length > 0 && (
         <div className="gl-card" style={{ marginTop: 16, borderColor: "var(--orange-100)", background: "var(--orange-50)" }}>
@@ -254,6 +258,58 @@ export default function ReportPage() {
             <div className="gl-text-xs gl-text-muted" style={{ marginTop: 4 }}>{patient.panel}</div>
           </div>
         </aside>
+      </div>
+    </div>
+  );
+}
+
+// Boundary panel for live-uploaded VCFs: the left column is everything derivable
+// from the variant calls alone (deterministic, no model); the right is what the
+// platform explicitly does NOT claim without the full pipeline. Surfacing the
+// limit is the point — it's the responsible-deployment flex, not a hedge.
+function LiveProvenance({ report }: { report: Report }) {
+  const actionable = report.variants.filter((v) => v.escat === "I" || v.escat === "II").length;
+  const established = [
+    `${report.biomarkers.variantCount} somatic PASS variants parsed in-browser`,
+    `${report.variants.length} fell in actionable genes · ${actionable} at Tier I–II`,
+    `TMB proxy ${report.biomarkers.tmb} mut/Mb (coding footprint)`,
+    `Allele fractions per variant`,
+  ];
+  const needsPipeline = [
+    "OncoKB / ESCAT evidence levels (region match only here)",
+    "MSI & HRD — require the aligned BAM, not the VCF",
+    "Copy-number & fusions",
+    "Curated systematic-review appraisal (run the agent per gene)",
+  ];
+  return (
+    <div className="gl-card" style={{ marginTop: 16 }}>
+      <div className="gl-card-body">
+        <div className="gl-row gl-center" style={{ gap: 8, marginBottom: 4 }}>
+          <span className="gl-strong">Provenance — this is a live VCF screen</span>
+          <GlBadge variant="info">no server upload</GlBadge>
+        </div>
+        <p className="gl-text-xs gl-text-muted" style={{ margin: "0 0 12px" }}>
+          Everything below is computed from the variant calls in your browser. Nothing
+          that needs the full pipeline is inferred or faked.
+        </p>
+        <div className="gl-provenance-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
+          <div>
+            <div className="gl-text-xs gl-strong" style={{ color: "var(--green-600, #217645)", marginBottom: 6 }}>
+              ✓ Established from the VCF
+            </div>
+            <ul className="gl-text-sm" style={{ margin: 0, paddingLeft: 18, lineHeight: 1.6 }}>
+              {established.map((t) => <li key={t}>{t}</li>)}
+            </ul>
+          </div>
+          <div>
+            <div className="gl-text-xs gl-strong" style={{ color: "var(--orange-700, #a35200)", marginBottom: 6 }}>
+              ⋯ Needs the full pipeline to confirm
+            </div>
+            <ul className="gl-text-sm gl-text-muted" style={{ margin: 0, paddingLeft: 18, lineHeight: 1.6 }}>
+              {needsPipeline.map((t) => <li key={t}>{t}</li>)}
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );
