@@ -36,6 +36,7 @@ export default function LiteratureTab({ report }: { report: Report }) {
           appraisal={findAppraisal(v.gene, v.alteration)}
           literature={hitsFor(v.gene)}
           cancerType={report.patient.cancerType}
+          patient={report.patient.chartNo}
         />
       ))}
 

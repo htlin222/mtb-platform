@@ -1,6 +1,7 @@
 import type { Report } from "../types";
 import { ESCAT_META, levelSense } from "../lib/format";
 import { GlCard, GlBadge } from "./gl";
+import NoteThread from "./NoteThread";
 
 interface Row {
   gene: string; alteration: string; escat: keyof typeof ESCAT_META;
@@ -47,6 +48,10 @@ export default function TherapiesTab({ report }: { report: Report }) {
               {truncate(r.description, 320)}
             </p>
           )}
+          <NoteThread
+            patient={report.patient.chartNo}
+            anchor={{ kind: "therapy", ref: `therapy:${r.drugs}:${r.gene}`, label: `${r.drugs} · ${r.gene} ${r.alteration}` }}
+          />
         </GlCard>
       ))}
     </div>

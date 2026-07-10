@@ -14,6 +14,7 @@ import {
 	SyncIcon,
 } from "./gl";
 import CiteButton from "./CiteButton";
+import NoteThread from "./NoteThread";
 
 // ---------------------------------------------------------------------------
 // Per-gene PICO-framed evidence card. When a real systematic-review Appraisal
@@ -88,11 +89,13 @@ export default function KnowledgeCard({
 	appraisal,
 	literature,
 	cancerType,
+	patient,
 }: {
 	variant: Variant;
 	appraisal?: Appraisal;
 	literature: LiteratureHit[];
 	cancerType: string;
+	patient: string;
 }) {
 	const derived = appraisal
 		? null
@@ -513,6 +516,9 @@ export default function KnowledgeCard({
 					{copied ? "✓ Copied" : "Export AMA references"}
 				</button>
 			</div>
+
+			{/* Clinician notes anchored to this alteration */}
+			<NoteThread patient={patient} anchor={{ kind: "variant", ref: ctx, label: ctx }} />
 		</GlCard>
 	);
 }
