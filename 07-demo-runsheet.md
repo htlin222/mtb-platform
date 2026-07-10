@@ -23,11 +23,15 @@
 
 > 講稿要點：顏色只講臨床意義（綠=可用藥），不解釋任何技術。
 
-## 1:00–1:40 · 往下鑽到證據（信任節拍）
+## 1:00–1:40 · 往下鑽到證據 + 讓 agent 當場自我查核（信任節拍）
 
 1. 報告 **Overview** 只掃結論：「BRCA1 → PARP（Tier I）、HRD-positive」。
 2. 切 **Literature** 分頁 → 展開一個 appraisal：PICO → **PRISMA 漏斗** → GRADE → 納入研究（Q1 / CrossRef-verified / PMID 可點）。
-3. 一句：「隨便點一條 citation，往下追到原始文獻。能扛住檢驗的系統才值得信。」
+3. 點 **Run robust-lit-review** → **agent trace 逐步跑在螢幕上**：Appraising → **Verifying cited PMIDs against PubMed**（即時打 NCBI）→（若抓到幻覺/失效引用）Revising。底下浮出**綠/紅 citation 帳本**：每個被引用的 PMID 標「✓ 已對 PubMed 確認」或「✗ 丟棄」。
+4. 一句（對 Anthropic 評審的正中紅心）：「這不是一次 prompt——它**引用完會自己去 PubMed 對帳，錯的當場丟掉**。在高風險臨床場景，能自我查核的 agent 才敢用。」
+5. 收：「隨便點一條 citation，往下追到原始文獻。能扛住檢驗的系統才值得信。」
+
+> 若當場 PubMed 卡住：帳本會標「PubMed unreachable」而**不**假稱已驗證——這個誠實本身就是給評審的加分。
 
 ## 1:40–2:20 · Re-annotation 飛輪（全案最強差異化）
 

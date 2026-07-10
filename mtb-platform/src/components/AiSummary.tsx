@@ -1,6 +1,7 @@
 import { useState } from "react";
 import type { Report } from "../types";
 import { isActionable } from "../lib/format";
+import { logAudit, fingerprint } from "../lib/audit";
 import { GlCard, GlBadge } from "./gl";
 
 // Calls the /api/summary Pages Function (Anthropic) to generate an MTB
@@ -30,12 +31,22 @@ export default function AiSummary({ report }: { report: Report }) {
       if (res.status === 503) { setState("unconfigured"); return; }
       if (res.status === 422) {
         const data = await res.json().catch(() => ({}));
-        setState(data.error === "refusal" ? "refusal" : "error");
+        const isRefusal = data.error === "refusal";
+        if (isRefusal) {
+          logAudit({ trust: "model", op: "ai.summary.refusal", summary: `Claude declined the MTB summary for ${report.patient.chartNo} — showing grounded findings`, patient: report.patient.chartNo });
+        }
+        setState(isRefusal ? "refusal" : "error");
         return;
       }
       if (!res.ok) { setState("error"); return; }
       const data = await res.json();
       setText(data.summary || ""); setState("idle");
+      logAudit({
+        trust: "model", op: "ai.summary",
+        summary: `Generated MTB discussion summary for ${report.patient.chartNo}`,
+        detail: { findings: body.findings.length, reclassified: body.reclassified.length },
+        patient: report.patient.chartNo, fingerprint: fingerprint(data.summary || ""),
+      });
     } catch { setState("error"); }
   }
 

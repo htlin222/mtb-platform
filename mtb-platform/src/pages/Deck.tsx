@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import type { Report, EscatTier } from "../types";
 import { loadReport } from "../lib/data";
 import { ESCAT_META, isActionable } from "../lib/format";
+import { logAudit, fingerprint } from "../lib/audit";
 import { GlBadge } from "../components/gl";
 import Redacted from "../components/Redacted";
 import { buildSlides, type Slide } from "../lib/deck";
@@ -74,7 +75,9 @@ export default function Deck() {
       if (res.status === 503) { setNarrateState("unconfigured"); return; }
       if (res.status === 422) {
         const data = await res.json().catch(() => ({}));
-        setNarrateState(data.error === "refusal" ? "refusal" : "error");
+        const isRefusal = data.error === "refusal";
+        if (isRefusal) logAudit({ trust: "model", op: "deck.narrate.refusal", summary: `Claude declined the deck narration for ${report.patient.chartNo}`, patient: report.patient.chartNo });
+        setNarrateState(isRefusal ? "refusal" : "error");
         return;
       }
       if (!res.ok) { setNarrateState("error"); return; }
@@ -82,6 +85,7 @@ export default function Deck() {
       const text = data.narration || "";
       setNarration({ evidence: text });
       setNarrateState("idle");
+      logAudit({ trust: "model", op: "deck.narrate", summary: `Drafted board-deck narration for ${report.patient.chartNo}`, patient: report.patient.chartNo, fingerprint: fingerprint(text) });
     } catch { setNarrateState("error"); }
   }
 

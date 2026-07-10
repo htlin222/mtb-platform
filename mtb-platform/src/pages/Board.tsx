@@ -6,6 +6,7 @@ import {
   EXPERTS, CATEGORY_LABEL, DEFAULT_PANEL, topFinding, VOTE_META,
   type Category, type Vote,
 } from "../lib/board";
+import { logAudit } from "../lib/audit";
 import { GlBadge, GlCard, PersonIcon, CheckIcon, CommentIcon } from "../components/gl";
 
 export default function Board() {
@@ -44,6 +45,16 @@ export default function Board() {
     { up: 0, down: 0, abs: 0 },
   );
   const endorsed = tally.up > tally.down && tally.up >= Math.ceil(panel.length / 2);
+
+  const captureDecision = () => {
+    logAudit({
+      trust: "human",
+      op: "board.decision",
+      summary: `Board ${endorsed ? "endorsed" : "deferred"} — ${tally.up} endorse · ${tally.down} dissent · ${tally.abs} abstain (${panel.length}-member panel)`,
+      detail: { endorsed, tally, panel: panel.map((e) => ({ role: e.role, vote: votes[e.id] ?? 0 })) },
+      patient: report.patient.chartNo,
+    });
+  };
 
   return (
     <div className="gl-page">
@@ -142,7 +153,7 @@ export default function Board() {
                       ? <>Proceed with <span className="gl-strong">{top.treatments.map((t) => t.drugs)[0] ?? "the matched therapy"}</span> targeting <span className="mono">{top.gene}</span>.</>
                       : "Panel is not in majority endorsement — defer and gather more input."}
                   </p>
-                  <button className="gl-button gl-button-confirm" onClick={() => setDecided(true)} style={{ width: "100%", justifyContent: "center" }}>
+                  <button className="gl-button gl-button-confirm" onClick={() => { captureDecision(); setDecided(true); }} style={{ width: "100%", justifyContent: "center" }}>
                     <CheckIcon size={14} /> Capture board decision
                   </button>
                 </>

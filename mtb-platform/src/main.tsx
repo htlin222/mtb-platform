@@ -10,6 +10,7 @@ import Board from "./pages/Board";
 import Cohort from "./pages/Cohort";
 import Evidence from "./pages/Evidence";
 import Deck from "./pages/Deck";
+import AuditDrawer from "./components/AuditDrawer";
 import "./pajamas.css";
 
 // Batch pulls in IGV.js (~1.3 MB) — load it only when visited.
@@ -35,5 +36,6 @@ const router = createHashRouter([
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <RouterProvider router={router} />
+    <AuditDrawer />
   </StrictMode>,
 );
