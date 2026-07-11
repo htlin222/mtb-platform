@@ -1,6 +1,7 @@
 import { StrictMode, lazy, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import { createHashRouter, RouterProvider } from "react-router-dom";
+import Landing from "./pages/Landing";
 import Worklist from "./pages/Worklist";
 import ReportPage from "./pages/Report";
 import Upload from "./pages/Upload";
@@ -21,7 +22,8 @@ const withSuspense = (el: React.ReactNode) => (
 
 // HashRouter: static hosting (GitLab Pages / Netlify) with no server rewrite.
 const router = createHashRouter([
-  { path: "/", element: <Worklist /> },
+  { path: "/", element: <Landing /> },
+  { path: "/worklist", element: <Worklist /> },
   { path: "/upload", element: <Upload /> },
   { path: "/process/:chartNo", element: <Process /> },
   { path: "/report/:chartNo", element: <ReportPage /> },

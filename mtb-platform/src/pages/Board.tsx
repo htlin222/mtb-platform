@@ -59,7 +59,7 @@ export default function Board() {
   return (
     <div className="gl-page">
       <div className="gl-breadcrumb">
-        <a role="button" onClick={() => navigate("/")} style={{ cursor: "pointer" }}>Worklist</a>
+        <a role="button" onClick={() => navigate("/worklist")} style={{ cursor: "pointer" }}>Worklist</a>
         <span className="sep">/</span>
         <a role="button" onClick={() => navigate(`/report/${chartNo}`)} style={{ cursor: "pointer" }}>{report.patient.name}</a>
         <span className="sep">/</span>Tumor board

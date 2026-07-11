@@ -102,7 +102,7 @@ export default function Research() {
   return (
     <div className="gl-page">
       <div className="gl-breadcrumb">
-        <a role="button" onClick={() => navigate("/")} style={{ cursor: "pointer" }}>Worklist</a>
+        <a role="button" onClick={() => navigate("/worklist")} style={{ cursor: "pointer" }}>Worklist</a>
         <span className="sep">/</span>Research topics
       </div>
       <div className="gl-page-title"><BookIcon size={20} /><h1>Research topic development</h1></div>
@@ -150,7 +150,7 @@ export default function Research() {
 
           {step === "done" && (
             <div style={{ marginTop: 14 }}>
-              <button className="gl-button" onClick={() => navigate("/")}>← Back to worklist</button>
+              <button className="gl-button" onClick={() => navigate("/worklist")}>← Back to worklist</button>
             </div>
           )}
         </div></div>
