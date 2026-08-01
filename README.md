@@ -1,7 +1,6 @@
 # MTB Platform — an AI-assisted Molecular Tumor Board for community cancer centers
 
 [![Live demo](https://img.shields.io/badge/live-mtb--platform.pages.dev-1f75cb)](https://mtb-platform.pages.dev/)
-[![Deploy to Cloudflare Pages](https://github.com/htlin222/mtb-platform/actions/workflows/deploy.yml/badge.svg)](https://github.com/htlin222/mtb-platform/actions/workflows/deploy.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](./mtb-platform/LICENSE)
 [![Built with Claude Code](https://img.shields.io/badge/built%20with-Claude%20Code-6666c4)](https://claude.com/claude-code)
 
@@ -95,7 +94,7 @@ back from — never rendering a refusal as clinical advice. Run
 
 Vite · React · TypeScript · GitLab **Pajamas** design tokens (no UI-framework
 dependency) · react-router-dom (HashRouter) · IGV.js · Chart.js · Vitest ·
-**Cloudflare Pages + Functions** · **Anthropic API** · GitHub Actions CI/CD.
+**Cloudflare Pages + Functions** · **Anthropic API**.
 
 ## Getting started
 
@@ -111,8 +110,8 @@ pnpm test       # Vitest (pure-logic libs)
 pnpm build      # production build → dist/
 ```
 
-Pushes to `main` build and deploy to Cloudflare Pages via
-[`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml).
+Deploys to Cloudflare Pages are run manually with `wrangler` — see
+[`docs/DEV-PROCESS.md`](./docs/DEV-PROCESS.md#5-deploy).
 
 ## License
 
